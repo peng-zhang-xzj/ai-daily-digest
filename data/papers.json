@@ -104,7 +104,7 @@
       "Zixu Hao",
       "Xin Ding"
     ],
-    "upvotes": 33,
+    "upvotes": 34,
     "url": "https://huggingface.co/papers/2611.13410",
     "arxiv": "https://arxiv.org/abs/2611.13410",
     "date": "2026-11-12"
@@ -118,7 +118,7 @@
       "Seungryong Kim",
       "Laura Leal-Taixé"
     ],
-    "upvotes": 31,
+    "upvotes": 32,
     "url": "https://huggingface.co/papers/2611.14815",
     "arxiv": "https://arxiv.org/abs/2611.14815",
     "date": "2026-11-13"
@@ -138,6 +138,20 @@
     "date": "2026-11-11"
   },
   {
+    "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+    "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled…",
+    "authors": [
+      "Lingkai Kong",
+      "Yuzhe Gu",
+      "Haiteng Zhao",
+      "Zijian Wu"
+    ],
+    "upvotes": 29,
+    "url": "https://huggingface.co/papers/2610.39671",
+    "arxiv": "https://arxiv.org/abs/2610.39671",
+    "date": "2026-11-12"
+  },
+  {
     "title": "Embodied First Exam",
     "summary": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introd…",
     "authors": [
@@ -150,20 +164,6 @@
     "url": "https://huggingface.co/papers/2611.12177",
     "arxiv": "https://arxiv.org/abs/2611.12177",
     "date": "2026-11-11"
-  },
-  {
-    "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
-    "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled…",
-    "authors": [
-      "Lingkai Kong",
-      "Yuzhe Gu",
-      "Haiteng Zhao",
-      "Zijian Wu"
-    ],
-    "upvotes": 28,
-    "url": "https://huggingface.co/papers/2610.39671",
-    "arxiv": "https://arxiv.org/abs/2610.39671",
-    "date": "2026-11-12"
   },
   {
     "title": "MMDM: Measuring Massive Multitask Decision Making",
@@ -216,9 +216,23 @@
       "Guoshan Lu",
       "Qiyuan Zhang"
     ],
-    "upvotes": 21,
+    "upvotes": 24,
     "url": "https://huggingface.co/papers/2611.15131",
     "arxiv": "https://arxiv.org/abs/2611.15131",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
+    "summary": "A systematic study of Hyper-Connections architectures identifies the simpler efficient design SimpleHC, which removes residual mixing and uses shared memory access to match mHC performance while adding minimal training overhead and improving stability.",
+    "authors": [
+      "Xiangdong Zhang",
+      "Xiaohan Qin",
+      "Sunan Zou",
+      "Tuo Dai"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.05984",
+    "arxiv": "https://arxiv.org/abs/2611.05984",
     "date": "2026-11-13"
   },
   {
@@ -236,27 +250,13 @@
     "date": "2026-11-12"
   },
   {
-    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
-    "summary": "A systematic study of Hyper-Connections architectures identifies the simpler efficient design SimpleHC, which removes residual mixing and uses shared memory access to match mHC performance while adding minimal training overhead and improving stability.",
-    "authors": [
-      "Xiangdong Zhang",
-      "Xiaohan Qin",
-      "Sunan Zou",
-      "Tuo Dai"
-    ],
-    "upvotes": 16,
-    "url": "https://huggingface.co/papers/2611.05984",
-    "arxiv": "https://arxiv.org/abs/2611.05984",
-    "date": "2026-11-13"
-  },
-  {
     "title": "WaveGen: Truly End-to-End Waveform Generation via Internal Spectral Trajectory Learning",
     "summary": "WaveGen is a fully end-to-end diffusion framework for text-to-waveform generation that jointly learns spectral and waveform trajectories via Spectral Forcing without external audio codecs, vocoders, latent models, alignment modules, or self-supervised representations, achieving state-of-the-art text-to-speech results.",
     "authors": [
       "Sang-Hoon Lee",
       "Ha-Yeong Choi"
     ],
-    "upvotes": 16,
+    "upvotes": 17,
     "url": "https://huggingface.co/papers/2611.12527",
     "arxiv": "https://arxiv.org/abs/2611.12527",
     "date": "2026-11-11"
@@ -360,7 +360,7 @@
     "date": "2026-11-12"
   },
   {
-    "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+    "title": "GTAGym: AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
     "summary": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). W…",
     "authors": [
       "Jiajun Chen",
@@ -388,6 +388,20 @@
     "date": "2026-11-11"
   },
   {
+    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
+    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
+    "authors": [
+      "Zhiyu Hou",
+      "Wen-Jie Shu",
+      "Harold Haodong Chen",
+      "Weilin Ruan"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.16217",
+    "arxiv": "https://arxiv.org/abs/2611.16217",
+    "date": "2026-11-13"
+  },
+  {
     "title": "From Tool State to Scientific Action: Auditing Decision Provenance in Biomedical Research Agents",
     "summary": "A scientific agent can give the same verdict while reading and citing different evidence. BioAgent-DF tests this separation using paired reference and candidate values saved at the same scientific computation site. It restores or transplants those values at their original coordinates, then runs the agent on healthy ha…",
     "authors": [
@@ -402,17 +416,31 @@
     "date": "2026-11-11"
   },
   {
-    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
-    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
+    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
     "authors": [
-      "Zhiyu Hou",
-      "Wen-Jie Shu",
-      "Harold Haodong Chen",
-      "Weilin Ruan"
+      "Yuxuan Chen",
+      "Xiaojie Li",
+      "Hao Chen",
+      "Juncheng Ma"
     ],
     "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.16217",
-    "arxiv": "https://arxiv.org/abs/2611.16217",
+    "url": "https://huggingface.co/papers/2611.16748",
+    "arxiv": "https://arxiv.org/abs/2611.16748",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
+    "authors": [
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li"
+    ],
+    "upvotes": 9,
+    "url": "https://huggingface.co/papers/2611.17167",
+    "arxiv": "https://arxiv.org/abs/2611.17167",
     "date": "2026-11-13"
   },
   {
@@ -458,6 +486,20 @@
     "date": "2026-11-11"
   },
   {
+    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
+    "authors": [
+      "Xu Huang",
+      "Ye Huang",
+      "Xiaotong Li",
+      "Zhengrong Yue"
+    ],
+    "upvotes": 8,
+    "url": "https://huggingface.co/papers/2611.13004",
+    "arxiv": "https://arxiv.org/abs/2611.13004",
+    "date": "2026-11-13"
+  },
+  {
     "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
     "summary": "Memory in vision-language-action policies can mistake pauses for progress because it is indexed by time, causing early stopping, while event-based indexing mitigates this without retraining.",
     "authors": [
@@ -468,20 +510,6 @@
     "url": "https://huggingface.co/papers/2611.14488",
     "arxiv": "https://arxiv.org/abs/2611.14488",
     "date": "2026-11-11"
-  },
-  {
-    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
-    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
-    "authors": [
-      "Yuxuan Chen",
-      "Xiaojie Li",
-      "Hao Chen",
-      "Juncheng Ma"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.16748",
-    "arxiv": "https://arxiv.org/abs/2611.16748",
-    "date": "2026-11-13"
   },
   {
     "title": "PhysOPSD: Code as Privilege for Physically Plausible Video Generation",
@@ -498,17 +526,17 @@
     "date": "2026-11-11"
   },
   {
-    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
-    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
+    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
+    "summary": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear a…",
     "authors": [
-      "Xu Huang",
-      "Ye Huang",
-      "Xiaotong Li",
-      "Zhengrong Yue"
+      "Jiancheng Pan",
+      "Yuzheng Liu",
+      "Hengyuan Cao",
+      "Qiyuan Zhang"
     ],
     "upvotes": 7,
-    "url": "https://huggingface.co/papers/2611.13004",
-    "arxiv": "https://arxiv.org/abs/2611.13004",
+    "url": "https://huggingface.co/papers/2611.16517",
+    "arxiv": "https://arxiv.org/abs/2611.16517",
     "date": "2026-11-13"
   },
   {
@@ -524,30 +552,5 @@
     "url": "https://huggingface.co/papers/2611.12869",
     "arxiv": "https://arxiv.org/abs/2611.12869",
     "date": "2026-11-12"
-  },
-  {
-    "title": "Are Causal Neuron Circuits Unique and Transferable?",
-    "summary": "Interpretability demonstrations often show that intervening on a group of neurons changes a model's answer. A recent example removes an 18-neuron group in Qwen3-32B and the model answers \"Simba\" instead of \"Scar\" to a two-hop Lion King riddle. Such a demonstration establishes that the group matters, but not how much o…",
-    "authors": [
-      "Ömer Tekin Yavuz"
-    ],
-    "upvotes": 6,
-    "url": "https://huggingface.co/papers/2611.13885",
-    "arxiv": "https://arxiv.org/abs/2611.13885",
-    "date": "2026-11-11"
-  },
-  {
-    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
-    "summary": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear a…",
-    "authors": [
-      "Jiancheng Pan",
-      "Yuzheng Liu",
-      "Hengyuan Cao",
-      "Qiyuan Zhang"
-    ],
-    "upvotes": 6,
-    "url": "https://huggingface.co/papers/2611.16517",
-    "arxiv": "https://arxiv.org/abs/2611.16517",
-    "date": "2026-11-13"
   }
 ]
