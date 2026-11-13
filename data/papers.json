@@ -346,6 +346,20 @@
     "date": "2026-11-12"
   },
   {
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
+    "authors": [
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li"
+    ],
+    "upvotes": 12,
+    "url": "https://huggingface.co/papers/2611.17167",
+    "arxiv": "https://arxiv.org/abs/2611.17167",
+    "date": "2026-11-13"
+  },
+  {
     "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
     "summary": "Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compute allocation and KV cache management, and rely on coarse signals that only partly capture the diverse and dynamic agent workload. These lim…",
     "authors": [
@@ -372,20 +386,6 @@
     "url": "https://huggingface.co/papers/2611.13028",
     "arxiv": "https://arxiv.org/abs/2611.13028",
     "date": "2026-11-12"
-  },
-  {
-    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
-    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
-    "authors": [
-      "Haochen Liu",
-      "Qianhao Zhu",
-      "Zixuan Wang",
-      "Dingming Li"
-    ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.17167",
-    "arxiv": "https://arxiv.org/abs/2611.17167",
-    "date": "2026-11-13"
   },
   {
     "title": "PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation",
