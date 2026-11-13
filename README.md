@@ -5,7 +5,7 @@
 | Tab | 来源 | 内容 | 节奏 |
 |-----|------|------|------|
 | 📄 论文 | [Hugging Face Daily Papers](https://huggingface.co/papers) | 每日热门论文（按 upvote 排序） | 每日 |
-| 📰 资讯 | [AI News (smol.ai)](https://news.smol.ai) | AI 工程圈每日要闻汇总 | 每日 |
+| 📰 资讯 | TechCrunch AI · The Decoder · MIT Tech Review | 多源 AI 行业新闻（合并去重、按时间排、每源限额） | 每日 |
 | 🗞 周刊 | [The Batch](https://www.deeplearning.ai/the-batch/) | DeepLearning.AI 深度周刊 | 每周 |
 
 ## ✨ 特性
@@ -56,4 +56,5 @@ ai-daily-digest/
 ## ⚠️ 已知点
 
 - **The Batch 无官方 RSS**（站点已迁 Next.js），这里改为抓取 issue 列表页 + 每期 `og:` 元数据。若对方改版需调整 `fetch_batch()`。
-- smol.ai / HF 若临时抽风，对应 Tab 当天可能为空，次日自动恢复。
+- 资讯源若某个临时抽风，其他源仍会填充；HF/The Batch 当天为空则次日自动恢复。
+- 换/加资讯源：改 `scripts/fetch.py` 里的 `NEWS_FEEDS` 列表即可。
