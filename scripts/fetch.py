@@ -82,25 +82,65 @@ def fetch_hf(days_back=3, limit=40):
 
 
 # --------------------------------------------------------------------------- #
-# 2. AI News (smol.ai)
+# 2. AI News — merge several fresh, reliable AI-news RSS feeds.
+#    (smol.ai's feed went stale/frozen, so we aggregate current sources and
+#     sort by publish time; de-dup by link.)
 # --------------------------------------------------------------------------- #
-def fetch_news(limit=20):
-    xml = get("https://news.smol.ai/rss.xml")
-    root = ET.fromstring(xml)
-    out = []
-    for item in root.iter("item"):
-        def t(tag):
-            el = item.find(tag)
-            return el.text if el is not None and el.text else ""
-        out.append({
-            "title": strip_html(t("title")),
-            "summary": clamp(strip_html(t("description")), 400),
-            "url": t("link").strip(),
-            "date": t("pubDate").strip(),
-        })
-        if len(out) >= limit:
-            break
-    return out
+NEWS_FEEDS = [
+    ("TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"),
+    ("The Decoder", "https://the-decoder.com/feed/"),
+    ("MIT Tech Review", "https://www.technologyreview.com/topic/artificial-intelligence/feed"),
+]
+
+
+def _parse_date(s):
+    from email.utils import parsedate_to_datetime
+    try:
+        d = parsedate_to_datetime(s)
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=timezone.utc)
+        return d
+    except Exception:
+        return datetime(1970, 1, 1, tzinfo=timezone.utc)
+
+
+def fetch_news(limit=24):
+    items = []
+    for source, url in NEWS_FEEDS:
+        try:
+            root = ET.fromstring(get(url))
+        except Exception as e:
+            print(f"[news] {source}: {e}", file=sys.stderr)
+            continue
+        for item in root.iter("item"):
+            def t(tag):
+                el = item.find(tag)
+                return el.text if el is not None and el.text else ""
+            link = t("link").strip()
+            if not link:
+                continue
+            items.append({
+                "title": strip_html(t("title")),
+                "summary": clamp(strip_html(t("description")), 320),
+                "url": link,
+                "date": t("pubDate").strip(),
+                "source": source,
+                "_ts": _parse_date(t("pubDate")),
+            })
+    # de-dup by url, newest first, with a soft per-source cap so one high-volume
+    # feed (e.g. TechCrunch) doesn't crowd out the others.
+    per_source_cap = 10
+    seen, counts, uniq = set(), {}, []
+    for it in sorted(items, key=lambda x: x["_ts"], reverse=True):
+        if it["url"] in seen:
+            continue
+        if counts.get(it["source"], 0) >= per_source_cap:
+            continue
+        seen.add(it["url"])
+        counts[it["source"]] = counts.get(it["source"], 0) + 1
+        it.pop("_ts", None)
+        uniq.append(it)
+    return uniq[:limit]
 
 
 # --------------------------------------------------------------------------- #

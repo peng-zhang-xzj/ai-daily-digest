@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-13T06:49:45.034431+00:00",
+  "updated_at": "2026-11-13T07:15:25.807492+00:00",
   "sources": {
     "papers": {
       "count": 40,
       "error": null
     },
     "news": {
-      "count": 20,
+      "count": 24,
       "error": null
     },
     "batch": {
-      "count": 0,
-      "error": "HTTP Error 403: Forbidden"
+      "count": 6,
+      "error": null
     }
   }
 }

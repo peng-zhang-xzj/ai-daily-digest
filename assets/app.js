@@ -37,7 +37,7 @@
 
     let tag = "";
     if (tab === "papers") tag = it.upvotes ? `▲${it.upvotes}` : "paper";
-    else if (tab === "news") tag = hostOf(it.url) || "news";
+    else if (tab === "news") tag = it.source || hostOf(it.url) || "news";
     else tag = it.issue ? `Issue ${it.issue}` : "周刊";
 
     const links =
