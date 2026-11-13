@@ -14,16 +14,18 @@
     "date": "2026-11-11"
   },
   {
-    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
-    "summary": "Tree-Ising repairs reasoning loops in LLM weights by solving sparse Ising/QUBO problems over BF16 parameters, improving math benchmark accuracy with fewer weight edits and no gradient or LLM-token cost.",
+    "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+    "summary": "SO-Arena evaluates System One models across domains and capability families, revealing that scaling and reasoning gains vary and that high overall accuracy does not ensure reliable decision-making.",
     "authors": [
-      "Hadi Salloum",
-      "Ammar Ali"
+      "Lichen Li",
+      "Ziping Dong",
+      "Sicheng Feng",
+      "Qi Li"
     ],
-    "upvotes": 64,
-    "url": "https://huggingface.co/papers/2611.14210",
-    "arxiv": "https://arxiv.org/abs/2611.14210",
-    "date": "2026-11-11"
+    "upvotes": 72,
+    "url": "https://huggingface.co/papers/2611.15777",
+    "arxiv": "https://arxiv.org/abs/2611.15777",
+    "date": "2026-11-13"
   },
   {
     "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
@@ -34,7 +36,7 @@
       "Jinheon Baek",
       "Sung Ju Hwang"
     ],
-    "upvotes": 63,
+    "upvotes": 66,
     "url": "https://huggingface.co/papers/2611.14320",
     "arxiv": "https://arxiv.org/abs/2611.14320",
     "date": "2026-11-11"
@@ -48,51 +50,9 @@
       "Yuehan Zhang",
       "Mingyang Du"
     ],
-    "upvotes": 58,
+    "upvotes": 56,
     "url": "https://huggingface.co/papers/2611.12885",
     "arxiv": "https://arxiv.org/abs/2611.12885",
-    "date": "2026-11-11"
-  },
-  {
-    "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
-    "summary": "A large-scale corpus of structured proof-supervision records derived from university mathematics textbooks improves language model mathematical reasoning by 16.7 percentage points over a base model when used for fine-tuning.",
-    "authors": [
-      "Youqing Fang",
-      "Zhouqi Hua",
-      "Yinhao Tang",
-      "Yuzhe Gu"
-    ],
-    "upvotes": 42,
-    "url": "https://huggingface.co/papers/2610.40394",
-    "arxiv": "https://arxiv.org/abs/2610.40394",
-    "date": "2026-11-12"
-  },
-  {
-    "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
-    "summary": "A large aligned benchmark reveals that tabular generation, imputation, and prediction share useful conditional information but show distinct fidelity rankings and objective interactions, motivating unified models that improve categorical reconstruction and joint sampling.",
-    "authors": [
-      "Yuanrui Wang",
-      "Kaifang Li",
-      "Xuanyue Li",
-      "Ziyun Li"
-    ],
-    "upvotes": 39,
-    "url": "https://huggingface.co/papers/2611.13001",
-    "arxiv": "https://arxiv.org/abs/2611.13001",
-    "date": "2026-11-11"
-  },
-  {
-    "title": "dNaViT: Discrete Codes are General-Purpose Visual Representations",
-    "summary": "A discrete native-resolution vision transformer with grouped product quantization and a dual-branch objective acts as a versatile visual tokenizer, matching or exceeding task-specific baselines across visual understanding, generation, and editing tasks.",
-    "authors": [
-      "Xiaotong Li",
-      "Zhengrong Yue",
-      "Xu Huang",
-      "Jialv Zou"
-    ],
-    "upvotes": 35,
-    "url": "https://huggingface.co/papers/2611.12426",
-    "arxiv": "https://arxiv.org/abs/2611.12426",
     "date": "2026-11-11"
   },
   {
@@ -104,9 +64,91 @@
       "Seungryong Kim",
       "Laura Leal-Taixé"
     ],
-    "upvotes": 34,
+    "upvotes": 46,
     "url": "https://huggingface.co/papers/2611.14815",
     "arxiv": "https://arxiv.org/abs/2611.14815",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+    "summary": "Tree-Ising repairs reasoning loops in LLM weights by solving sparse Ising/QUBO problems over BF16 parameters, improving math benchmark accuracy with fewer weight edits and no gradient or LLM-token cost.",
+    "authors": [
+      "Hadi Salloum",
+      "Ammar Ali"
+    ],
+    "upvotes": 45,
+    "url": "https://huggingface.co/papers/2611.14210",
+    "arxiv": "https://arxiv.org/abs/2611.14210",
+    "date": "2026-11-11"
+  },
+  {
+    "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+    "summary": "A large-scale corpus of structured proof-supervision records derived from university mathematics textbooks improves language model mathematical reasoning by 16.7 percentage points over a base model when used for fine-tuning.",
+    "authors": [
+      "Youqing Fang",
+      "Zhouqi Hua",
+      "Yinhao Tang",
+      "Yuzhe Gu"
+    ],
+    "upvotes": 44,
+    "url": "https://huggingface.co/papers/2610.40394",
+    "arxiv": "https://arxiv.org/abs/2610.40394",
+    "date": "2026-11-12"
+  },
+  {
+    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
+    "authors": [
+      "Yuxuan Chen",
+      "Xiaojie Li",
+      "Hao Chen",
+      "Juncheng Ma"
+    ],
+    "upvotes": 42,
+    "url": "https://huggingface.co/papers/2611.16748",
+    "arxiv": "https://arxiv.org/abs/2611.16748",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
+    "authors": [
+      "Xu Huang",
+      "Ye Huang",
+      "Xiaotong Li",
+      "Zhengrong Yue"
+    ],
+    "upvotes": 40,
+    "url": "https://huggingface.co/papers/2611.13004",
+    "arxiv": "https://arxiv.org/abs/2611.13004",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "summary": "A large aligned benchmark reveals that tabular generation, imputation, and prediction share useful conditional information but show distinct fidelity rankings and objective interactions, motivating unified models that improve categorical reconstruction and joint sampling.",
+    "authors": [
+      "Yuanrui Wang",
+      "Kaifang Li",
+      "Xuanyue Li",
+      "Ziyun Li"
+    ],
+    "upvotes": 38,
+    "url": "https://huggingface.co/papers/2611.13001",
+    "arxiv": "https://arxiv.org/abs/2611.13001",
+    "date": "2026-11-11"
+  },
+  {
+    "title": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+    "summary": "A reciprocal world model enables real-time full-duplex audiovisual interaction by jointly modeling intent and realization using autoregressive reasoning, synchronized attention, and dual rollout distillation.",
+    "authors": [
+      "Hengyuan Cao",
+      "Biao Gong",
+      "Guoshan Lu",
+      "Qiyuan Zhang"
+    ],
+    "upvotes": 35,
+    "url": "https://huggingface.co/papers/2611.15131",
+    "arxiv": "https://arxiv.org/abs/2611.15131",
     "date": "2026-11-13"
   },
   {
@@ -118,9 +160,37 @@
       "Zixu Hao",
       "Xin Ding"
     ],
-    "upvotes": 34,
+    "upvotes": 35,
     "url": "https://huggingface.co/papers/2611.13410",
     "arxiv": "https://arxiv.org/abs/2611.13410",
+    "date": "2026-11-12"
+  },
+  {
+    "title": "dNaViT: Discrete Codes are General-Purpose Visual Representations",
+    "summary": "A discrete native-resolution vision transformer with grouped product quantization and a dual-branch objective acts as a versatile visual tokenizer, matching or exceeding task-specific baselines across visual understanding, generation, and editing tasks.",
+    "authors": [
+      "Xiaotong Li",
+      "Zhengrong Yue",
+      "Xu Huang",
+      "Jialv Zou"
+    ],
+    "upvotes": 34,
+    "url": "https://huggingface.co/papers/2611.12426",
+    "arxiv": "https://arxiv.org/abs/2611.12426",
+    "date": "2026-11-11"
+  },
+  {
+    "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+    "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled…",
+    "authors": [
+      "Lingkai Kong",
+      "Yuzhe Gu",
+      "Haiteng Zhao",
+      "Zijian Wu"
+    ],
+    "upvotes": 31,
+    "url": "https://huggingface.co/papers/2610.39671",
+    "arxiv": "https://arxiv.org/abs/2610.39671",
     "date": "2026-11-12"
   },
   {
@@ -138,18 +208,18 @@
     "date": "2026-11-11"
   },
   {
-    "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
-    "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled…",
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
     "authors": [
-      "Lingkai Kong",
-      "Yuzhe Gu",
-      "Haiteng Zhao",
-      "Zijian Wu"
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li"
     ],
     "upvotes": 29,
-    "url": "https://huggingface.co/papers/2610.39671",
-    "arxiv": "https://arxiv.org/abs/2610.39671",
-    "date": "2026-11-12"
+    "url": "https://huggingface.co/papers/2611.17167",
+    "arxiv": "https://arxiv.org/abs/2611.17167",
+    "date": "2026-11-13"
   },
   {
     "title": "Embodied First Exam",
@@ -164,6 +234,20 @@
     "url": "https://huggingface.co/papers/2611.12177",
     "arxiv": "https://arxiv.org/abs/2611.12177",
     "date": "2026-11-11"
+  },
+  {
+    "title": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+    "summary": "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open…",
+    "authors": [
+      "Arpit Jadon",
+      "Valentinos Pariza",
+      "Jona Ruthardt",
+      "Ryousuke Yamada"
+    ],
+    "upvotes": 28,
+    "url": "https://huggingface.co/papers/2611.15844",
+    "arxiv": "https://arxiv.org/abs/2611.15844",
+    "date": "2026-11-13"
   },
   {
     "title": "MMDM: Measuring Massive Multitask Decision Making",
@@ -202,24 +286,10 @@
       "Lingfei Qian",
       "Haohang Li"
     ],
-    "upvotes": 25,
+    "upvotes": 26,
     "url": "https://huggingface.co/papers/2611.07464",
     "arxiv": "https://arxiv.org/abs/2611.07464",
     "date": "2026-11-11"
-  },
-  {
-    "title": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
-    "summary": "A reciprocal world model enables real-time full-duplex audiovisual interaction by jointly modeling intent and realization using autoregressive reasoning, synchronized attention, and dual rollout distillation.",
-    "authors": [
-      "Hengyuan Cao",
-      "Biao Gong",
-      "Guoshan Lu",
-      "Qiyuan Zhang"
-    ],
-    "upvotes": 24,
-    "url": "https://huggingface.co/papers/2611.15131",
-    "arxiv": "https://arxiv.org/abs/2611.15131",
-    "date": "2026-11-13"
   },
   {
     "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
@@ -230,9 +300,23 @@
       "Sunan Zou",
       "Tuo Dai"
     ],
-    "upvotes": 22,
+    "upvotes": 26,
     "url": "https://huggingface.co/papers/2611.05984",
     "arxiv": "https://arxiv.org/abs/2611.05984",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+    "summary": "Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of huma…",
+    "authors": [
+      "Hao Li",
+      "Fangzhou Hong",
+      "Zhaoxi Chen",
+      "Hui En Pang"
+    ],
+    "upvotes": 25,
+    "url": "https://huggingface.co/papers/2611.17060",
+    "arxiv": "https://arxiv.org/abs/2611.17060",
     "date": "2026-11-13"
   },
   {
@@ -244,10 +328,24 @@
       "Xinyang Ma",
       "Le Xu"
     ],
-    "upvotes": 19,
+    "upvotes": 21,
     "url": "https://huggingface.co/papers/2608.22237",
     "arxiv": "https://arxiv.org/abs/2608.22237",
     "date": "2026-11-12"
+  },
+  {
+    "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
+    "summary": "By baking global scene information from cross-view attention into a lightweight MLP, Test-Time Baking (TTB) enhances the fidelity of novel-view decoding in Large View Synthesis Models while maintaining the efficiency of Test-Time Training.",
+    "authors": [
+      "Chin-Yang Lin",
+      "Ryo Hachiuma",
+      "Jaesung Choe",
+      "Min-Hung Chen"
+    ],
+    "upvotes": 19,
+    "url": "https://huggingface.co/papers/2611.17331",
+    "arxiv": "https://arxiv.org/abs/2611.17331",
+    "date": "2026-11-13"
   },
   {
     "title": "WaveGen: Truly End-to-End Waveform Generation via Internal Spectral Trajectory Learning",
@@ -276,20 +374,6 @@
     "date": "2026-11-11"
   },
   {
-    "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
-    "summary": "SO-Arena evaluates System One models across domains and capability families, revealing that scaling and reasoning gains vary and that high overall accuracy does not ensure reliable decision-making.",
-    "authors": [
-      "Lichen Li",
-      "Ziping Dong",
-      "Sicheng Feng",
-      "Qi Li"
-    ],
-    "upvotes": 15,
-    "url": "https://huggingface.co/papers/2611.15777",
-    "arxiv": "https://arxiv.org/abs/2611.15777",
-    "date": "2026-11-13"
-  },
-  {
     "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
     "summary": "How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modification, matches full fine-tuning (FFT) at scale across three LLM post-training regimes: reinforcement learning with verifiable rewards, super…",
     "authors": [
@@ -302,20 +386,6 @@
     "url": "https://huggingface.co/papers/2611.10866",
     "arxiv": "https://arxiv.org/abs/2611.10866",
     "date": "2026-11-11"
-  },
-  {
-    "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
-    "summary": "PISA and PISA-E use prompt-adaptive capability estimation to route prompts or select cost-aware ensembles, improving cost-performance trade-offs across LLM routing benchmarks.",
-    "authors": [
-      "Saul Urso",
-      "Emanuele Carlini",
-      "Patrizio Dazzi",
-      "Matteo Mordacchini"
-    ],
-    "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.10193",
-    "arxiv": "https://arxiv.org/abs/2611.10193",
-    "date": "2026-11-12"
   },
   {
     "title": "ProTEUS: A mutation-resolved world model for closed-loop protein evolution",
@@ -332,6 +402,34 @@
     "date": "2026-11-11"
   },
   {
+    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
+    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
+    "authors": [
+      "Zhiyu Hou",
+      "Wen-Jie Shu",
+      "Harold Haodong Chen",
+      "Weilin Ruan"
+    ],
+    "upvotes": 14,
+    "url": "https://huggingface.co/papers/2611.16217",
+    "arxiv": "https://arxiv.org/abs/2611.16217",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
+    "summary": "PISA and PISA-E use prompt-adaptive capability estimation to route prompts or select cost-aware ensembles, improving cost-performance trade-offs across LLM routing benchmarks.",
+    "authors": [
+      "Saul Urso",
+      "Emanuele Carlini",
+      "Patrizio Dazzi",
+      "Matteo Mordacchini"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.10193",
+    "arxiv": "https://arxiv.org/abs/2611.10193",
+    "date": "2026-11-12"
+  },
+  {
     "title": "Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds",
     "summary": "Interactive Visual Gym enables closed-loop evaluation and training of visual interaction models by jointly simulating task environments and human users, exposing limitations in state-of-the-art VLMs and improving performance through closed-loop training.",
     "authors": [
@@ -346,17 +444,31 @@
     "date": "2026-11-12"
   },
   {
-    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
-    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
+    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
     "authors": [
-      "Haochen Liu",
-      "Qianhao Zhu",
-      "Zixuan Wang",
-      "Dingming Li"
+      "Jaemyung Yu",
+      "Byeongho Heo",
+      "Sangdoo Yun",
+      "Dongyoon Han"
     ],
     "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.17167",
-    "arxiv": "https://arxiv.org/abs/2611.17167",
+    "url": "https://huggingface.co/papers/2611.16905",
+    "arxiv": "https://arxiv.org/abs/2611.16905",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
+    "summary": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear a…",
+    "authors": [
+      "Jiancheng Pan",
+      "Yuzheng Liu",
+      "Hengyuan Cao",
+      "Qiyuan Zhang"
+    ],
+    "upvotes": 12,
+    "url": "https://huggingface.co/papers/2611.16517",
+    "arxiv": "https://arxiv.org/abs/2611.16517",
     "date": "2026-11-13"
   },
   {
@@ -368,7 +480,7 @@
       "Ziyang Li",
       "Zheng Du"
     ],
-    "upvotes": 12,
+    "upvotes": 11,
     "url": "https://huggingface.co/papers/2611.12304",
     "arxiv": "https://arxiv.org/abs/2611.12304",
     "date": "2026-11-12"
@@ -382,7 +494,7 @@
       "Jiahao Lu",
       "Yuxin Wang"
     ],
-    "upvotes": 12,
+    "upvotes": 11,
     "url": "https://huggingface.co/papers/2611.13028",
     "arxiv": "https://arxiv.org/abs/2611.13028",
     "date": "2026-11-12"
@@ -402,34 +514,6 @@
     "date": "2026-11-11"
   },
   {
-    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
-    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
-    "authors": [
-      "Yuxuan Chen",
-      "Xiaojie Li",
-      "Hao Chen",
-      "Juncheng Ma"
-    ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.16748",
-    "arxiv": "https://arxiv.org/abs/2611.16748",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
-    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
-    "authors": [
-      "Zhiyu Hou",
-      "Wen-Jie Shu",
-      "Harold Haodong Chen",
-      "Weilin Ruan"
-    ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.16217",
-    "arxiv": "https://arxiv.org/abs/2611.16217",
-    "date": "2026-11-13"
-  },
-  {
     "title": "From Tool State to Scientific Action: Auditing Decision Provenance in Biomedical Research Agents",
     "summary": "A scientific agent can give the same verdict while reading and citing different evidence. BioAgent-DF tests this separation using paired reference and candidate values saved at the same scientific computation site. It restores or transplants those values at their original coordinates, then runs the agent on healthy ha…",
     "authors": [
@@ -442,20 +526,6 @@
     "url": "https://huggingface.co/papers/2611.01527",
     "arxiv": "https://arxiv.org/abs/2611.01527",
     "date": "2026-11-11"
-  },
-  {
-    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
-    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
-    "authors": [
-      "Jaemyung Yu",
-      "Byeongho Heo",
-      "Sangdoo Yun",
-      "Dongyoon Han"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.16905",
-    "arxiv": "https://arxiv.org/abs/2611.16905",
-    "date": "2026-11-13"
   },
   {
     "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
@@ -484,73 +554,5 @@
     "url": "https://huggingface.co/papers/2611.10486",
     "arxiv": "https://arxiv.org/abs/2611.10486",
     "date": "2026-11-11"
-  },
-  {
-    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
-    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
-    "authors": [
-      "Xu Huang",
-      "Ye Huang",
-      "Xiaotong Li",
-      "Zhengrong Yue"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.13004",
-    "arxiv": "https://arxiv.org/abs/2611.13004",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
-    "summary": "Memory in vision-language-action policies can mistake pauses for progress because it is indexed by time, causing early stopping, while event-based indexing mitigates this without retraining.",
-    "authors": [
-      "Chubin Zhang",
-      "Bo An"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.14488",
-    "arxiv": "https://arxiv.org/abs/2611.14488",
-    "date": "2026-11-11"
-  },
-  {
-    "title": "PhysOPSD: Code as Privilege for Physically Plausible Video Generation",
-    "summary": "PhysOPSD uses executable code as privileged physical context to improve the physical plausibility of video generative models through on-policy self-distillation with dual-level privilege and controlled variations.",
-    "authors": [
-      "Harold Haodong Chen",
-      "Rui Peng",
-      "Lingteng Qiu",
-      "Kejie Qiu"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.12411",
-    "arxiv": "https://arxiv.org/abs/2611.12411",
-    "date": "2026-11-11"
-  },
-  {
-    "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
-    "summary": "Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of huma…",
-    "authors": [
-      "Hao Li",
-      "Fangzhou Hong",
-      "Zhaoxi Chen",
-      "Hui En Pang"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.17060",
-    "arxiv": "https://arxiv.org/abs/2611.17060",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
-    "summary": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear a…",
-    "authors": [
-      "Jiancheng Pan",
-      "Yuzheng Liu",
-      "Hengyuan Cao",
-      "Qiyuan Zhang"
-    ],
-    "upvotes": 7,
-    "url": "https://huggingface.co/papers/2611.16517",
-    "arxiv": "https://arxiv.org/abs/2611.16517",
-    "date": "2026-11-13"
   }
 ]

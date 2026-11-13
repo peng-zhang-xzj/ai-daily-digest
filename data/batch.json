@@ -1,5 +1,13 @@
 [
   {
+    "title": "GPT-6 Cyber Versus Linux, The Problem With LLM-Powered Search, LLMs Edit Model Weights, Agentic Doc Retrieval",
+    "summary": "Building an agent harness has been a rapidly growing method to build an AI agent. The OpenWorkerproject just released the open source OpenWorker Agent Harness SDK, which I invite you to check out. If you have not built an agent harness before, I encourage you to do so. (This skill is reflected in the AI Engineering Skills Map, and job interviews increasingl…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-379/",
+    "issue": 379,
+    "date": "2026-11-13T07:00:00.000-08:00"
+  },
+  {
     "title": "Gemini 4 Carbon Heads Toward Wider Availability, What Anthropic's IPO Means for Developers, Genie 4 Combines with Gemini to Train Robots",
     "summary": "LinkedIn data shows that AI has helped create 2 million jobs. Further, AI Engineer is among the top 10 fastest-growing jobs in seven major economies. I know many people are worried about job loss —and there have been painful layoffs. At the same time, the LinkedIn data undermines the jobpocalypse story that AI is leading to massive unemployment. Of the many…",
     "image": "",
@@ -38,13 +46,5 @@
     "url": "https://www.deeplearning.ai/the-batch/issue-374/",
     "issue": 374,
     "date": "2026-10-09T07:00:25.000-07:00"
-  },
-  {
-    "title": "The Next Top Open Model, Google Voice Agents, DeepSeek Shrinks Caches: Plus a letter on open weight cybersecurity capabilities",
-    "summary": "Anthropic recently released an encouraging analysis of the cyber capabilities of open weight model GLM-5.3. The study shows that GLM-5.3 approaches the cyber capabilities of Claude's closed weight Mythos. For example, the diagram below shows that, using a comparable number of tokens, GLM-5.3 succeeded in 12% of attempts to exploit vulnerabilities on a subse…",
-    "image": "",
-    "url": "https://www.deeplearning.ai/the-batch/issue-373/",
-    "issue": 373,
-    "date": "2026-10-02T05:55:55.000-07:00"
   }
 ]
