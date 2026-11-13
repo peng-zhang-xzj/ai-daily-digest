@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T07:27:43.743011+00:00",
+  "updated_at": "2026-11-13T07:27:59.337320+00:00",
   "sources": {
     "papers": {
       "count": 40,
@@ -10,8 +10,8 @@
       "error": null
     },
     "batch": {
-      "count": 6,
-      "error": null
+      "count": 0,
+      "error": "HTTP Error 403: Forbidden"
     }
   }
 }
