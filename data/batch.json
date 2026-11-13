@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "title": "Gemini 4 Carbon Heads Toward Wider Availability, What Anthropic's IPO Means for Developers, Genie 4 Combines with Gemini to Train Robots",
+    "summary": "LinkedIn data shows that AI has helped create 2 million jobs. Further, AI Engineer is among the top 10 fastest-growing jobs in seven major economies. I know many people are worried about job loss —and there have been painful layoffs. At the same time, the LinkedIn data undermines the jobpocalypse story that AI is leading to massive unemployment. Of the many…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-378/",
+    "issue": 378,
+    "date": "2026-11-06T07:00:00.000-08:00"
+  },
+  {
+    "title": "Zombie Agents, Vampire Models, Witch Hunts, and the Mummy's Curse: AI Fears for Halloween 2026",
+    "summary": "Following our annual tradition, this special Halloween edition of The Batch treats leading AI fears. AI’s potency means our community has real problems to solve. At the same time, fear-mongering has long been a tactic for drumming up publicity or influencing investors and politicians. So amidst all the exciting progress, fears about AI’s power have long bee…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-377/",
+    "issue": 377,
+    "date": "2026-10-30T07:00:00.000-07:00"
+  },
+  {
+    "title": "Meta’s Muse Wonder and Spark Open, Educational Use of ChatGPT, Reflection's Partnership with Nvidia",
+    "summary": "What should an engineering leader such as a VP Engineering or an Engineering manager do to help their team become more proficient in AI? I speak regularly with engineering leaders, and want to share some effective practices. If you’re starting a new team of 2-3 persons, you can start with exclusively AI-native people, but many large companies have to find w…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-376/",
+    "issue": 376,
+    "date": "2026-10-23T07:00:00.000-07:00"
+  },
+  {
+    "title": "Claude Haiku 5.5, Mistral Large 4, and Local Models for Mac and Windows",
+    "summary": "The gulf between LLM performance on verifiable tasks vs. unverifiable tasks that require judgement is larger than most people realize. Verifiable tasks, like coding or solving math problems, have a right answer that can be checked automatically. Judgement tasks — like how to respond to a customer complaint, how to organize data collection for your AI projec…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-375/",
+    "issue": 375,
+    "date": "2026-10-16T07:00:12.000-07:00"
+  },
+  {
+    "title": "OpenAI’s DevDay, Google’s First Gemini 4 Model, Black Forest Labs Dives Into Robots",
+    "summary": "I think most people still underestimate the data center build-outs that will be required to meet demand. In 2024, I predicted that we would need more compute infrastructure for inference because of the large number of tokens consumed by agentic workflows.This remains true today. But many people still underestimate the compute infrastructure that will be nec…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-374/",
+    "issue": 374,
+    "date": "2026-10-09T07:00:25.000-07:00"
+  },
+  {
+    "title": "The Next Top Open Model, Google Voice Agents, DeepSeek Shrinks Caches: Plus a letter on open weight cybersecurity capabilities",
+    "summary": "Anthropic recently released an encouraging analysis of the cyber capabilities of open weight model GLM-5.3. The study shows that GLM-5.3 approaches the cyber capabilities of Claude's closed weight Mythos. For example, the diagram below shows that, using a comparable number of tokens, GLM-5.3 succeeded in 12% of attempts to exploit vulnerabilities on a subse…",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-373/",
+    "issue": 373,
+    "date": "2026-10-02T05:55:55.000-07:00"
+  }
+]

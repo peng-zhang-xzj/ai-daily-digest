@@ -41,7 +41,11 @@ def get(url, as_bytes=False):
 
 
 def strip_html(s):
-    s = re.sub(r"<[^>]+>", " ", s or "")
+    s = s or ""
+    s = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", s)      # markdown images
+    s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)   # markdown links -> text
+    s = re.sub(r"[*_`]+", "", s)                      # md emphasis marks
+    s = re.sub(r"<[^>]+>", " ", s)
     return unescape(re.sub(r"\s+", " ", s)).strip()
 
 
@@ -151,31 +155,42 @@ def fetch_news(limit=24):
 # --------------------------------------------------------------------------- #
 # 3. The Batch (DeepLearning.AI) — scrape issue list, then og: meta per issue
 # --------------------------------------------------------------------------- #
+BATCH_HOME = "https://www.deeplearning.ai/the-batch/"
+# deeplearning.ai (Cloudflare) 403s datacenter IPs (GitHub Actions), so we read
+# through the r.jina.ai reader proxy, which fetches server-side and returns text.
+JINA = "https://r.jina.ai/"
+
+
 def fetch_batch(limit=6):
-    index = get("https://www.deeplearning.ai/the-batch/")
+    index = get(JINA + BATCH_HOME)
     nums = sorted({int(n) for n in re.findall(r"the-batch/issue-(\d+)", index)}, reverse=True)
     out = []
     for n in nums[:limit]:
-        url = f"https://www.deeplearning.ai/the-batch/issue-{n}/"
+        page_url = f"https://www.deeplearning.ai/the-batch/issue-{n}/"
         try:
-            html = get(url)
+            txt = get(JINA + page_url)
         except Exception as e:
             print(f"[batch] issue-{n}: {e}", file=sys.stderr)
             continue
-
-        def og(prop):
-            m = re.search(
-                rf'<meta[^>]+property=["\']og:{prop}["\'][^>]+content=["\']([^"\']*)["\']',
-                html,
-            )
-            return unescape(m.group(1)) if m else ""
-
+        # jina reader output has "Title:", "Published Time:", then "Markdown Content:"
+        mtitle = re.search(r"^Title:\s*(.+)$", txt, re.M)
+        mpub = re.search(r"^Published Time:\s*(.+)$", txt, re.M)
+        title = (mtitle.group(1).strip() if mtitle else f"The Batch — Issue {n}")
+        # first substantive paragraph of the letter as summary
+        body = txt.split("Markdown Content:", 1)[-1]
+        summary = ""
+        for para in body.split("\n"):
+            p = strip_html(para).strip()
+            if len(p) > 60 and not p.startswith(("Dear friends", "![", "Image", "[")):
+                summary = p
+                break
         out.append({
-            "title": og("title") or f"The Batch — Issue {n}",
-            "summary": clamp(strip_html(og("description")), 400),
-            "image": og("image"),
-            "url": url,
+            "title": title,
+            "summary": clamp(summary, 360),
+            "image": "",
+            "url": page_url,
             "issue": n,
+            "date": (mpub.group(1).strip() if mpub else ""),
         })
     return out
 
