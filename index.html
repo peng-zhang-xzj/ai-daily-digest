@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Daily Digest · 每日 AI 简报</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <h1>AI Daily Digest</h1>
+    </div>
+    <div class="top-right">
+      <span id="updated" class="updated"></span>
+      <button id="theme" class="icon-btn" title="切换主题">🌙</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="papers" role="tab">
+      📄 论文 <span class="count" id="c-papers"></span>
+    </button>
+    <button class="tab" data-tab="news" role="tab">
+      📰 资讯 <span class="count" id="c-news"></span>
+    </button>
+    <button class="tab" data-tab="batch" role="tab">
+      🗞 周刊 <span class="count" id="c-batch"></span>
+    </button>
+  </nav>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="按标题 / 摘要过滤…" />
+    <label class="chk"><input type="checkbox" id="unreadOnly" /> 只看未读</label>
+    <button id="markAll" class="ghost-btn">全部已读</button>
+  </div>
+
+  <main id="panels">
+    <section class="panel active" id="panel-papers"></section>
+    <section class="panel" id="panel-news"></section>
+    <section class="panel" id="panel-batch"></section>
+  </main>
+
+  <footer class="foot">
+    来源：Hugging Face Daily Papers · AI News (smol.ai) · The Batch —
+    <a href="https://github.com/" target="_blank" rel="noopener">fork &amp; 复用</a>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

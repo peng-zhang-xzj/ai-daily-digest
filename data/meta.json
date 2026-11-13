@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-11-13T05:55:25.865886+00:00",
+  "sources": {
+    "papers": {
+      "count": 40,
+      "error": null
+    },
+    "news": {
+      "count": 20,
+      "error": null
+    },
+    "batch": {
+      "count": 6,
+      "error": null
+    }
+  }
+}

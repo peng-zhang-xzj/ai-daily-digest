@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Gemini 4 Carbon Heads Toward Wider Availability, What Anthropic's IPO Means for Developers, Genie 4 Combines with Gemini to Train Robots",
+    "summary": "The Batch News & Insights: LinkedIn data shows that AI has helped create 2 million jobs.",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/11/Most-Common-AI-Builder-Occupations.webp",
+    "url": "https://www.deeplearning.ai/the-batch/issue-378/",
+    "issue": 378
+  },
+  {
+    "title": "Zombie Agents, Vampire Models, Witch Hunts, and the Mummy's Curse: AI Fears for Halloween 2026",
+    "summary": "The Batch News & Insights: Following our annual tradition, this special Halloween edition of The Batch treats leading AI fears.",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/10/Cozy-Halloween-Storytime-Circle.webp",
+    "url": "https://www.deeplearning.ai/the-batch/issue-377/",
+    "issue": 377
+  },
+  {
+    "title": "Meta’s Muse Wonder and Spark Open, Educational Use of ChatGPT, Reflection's Partnership with Nvidia",
+    "summary": "The Batch News & Insights: What should an engineering leader such as a VP Engineering or an Engineering manager do to help their team become...",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/10/Futuristic-Space-Station-Classroom-Crew.webp",
+    "url": "https://www.deeplearning.ai/the-batch/issue-376/",
+    "issue": 376
+  },
+  {
+    "title": "Claude Haiku 5.5, Mistral Large 4, and Local Models for Mac and Windows",
+    "summary": "The Batch News & Insights: The gulf between LLM performance on verifiable tasks vs. unverifiable tasks that require judgement is larger than...",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/10/Thoughts--Proofs--and-Robot-Triumph.webp",
+    "url": "https://www.deeplearning.ai/the-batch/issue-375/",
+    "issue": 375
+  },
+  {
+    "title": "OpenAI’s DevDay, Google’s First Gemini 4 Model, Black Forest Labs Dives Into Robots",
+    "summary": "The Batch News & Insights: I think most people still underestimate the data center build-outs that will be required to meet demand.",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/10/ChewingCompute_5_1200px--1--1.jpg",
+    "url": "https://www.deeplearning.ai/the-batch/issue-374/",
+    "issue": 374
+  },
+  {
+    "title": "GLM-5.3’s ExploitBench Score is Good News for Cybersecurity",
+    "summary": "The Batch News & Insights: Anthropic recently released an encouraging analysis of the cyber capabilities of open weight model GLM-5.3.",
+    "image": "https://charonhub.deeplearning.ai/content/images/2026/10/Andrew-Letter-2026.10.01.webp",
+    "url": "https://www.deeplearning.ai/the-batch/issue-373/",
+    "issue": 373
+  }
+]
