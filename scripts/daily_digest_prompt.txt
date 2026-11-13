@@ -1,21 +1,18 @@
-每天悉尼时间早上 9 点的「AI 今日必看」简报任务。关键：不要依赖线上旧数据，自己现场抓最新。按步骤执行：
+每天悉尼时间早上 9 点的「AI 今日必看」简报任务。关键：先现场刷新数据再提炼，不要依赖线上旧数据。按步骤执行：
 
-1. 现场抓取最新数据：
-   cd /mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/ai-daily-digest
-   python3 scripts/fetch.py
-   这会把 data/papers.json / news.json / batch.json 刷新成"当下"最新（直接从 HF / TechCrunch / The Decoder / MIT / The Batch 抓）。
+1. 刷新数据并同步看板（一步到位，固定脚本）：
+   bash /mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/ai-daily-digest/scripts/refresh_and_push.sh
+   它会：实时抓取各源 → 写本地 data/*.json → 若 ~/.gh_token 存在则 commit 并 push，让线上看板同步更新。脚本内部已容错，push 失败也不影响后续。
 
-2. 顺带刷新线上看板（可选，失败不影响简报）：若存在 ~/.gh_token，则 git add data/*.json、commit、并用 token 推到 GitHub，让 dashboard 同步更新；无 token 或推送失败就跳过，不要中断。
-
-3. 读取刚生成的本地 data/*.json，提炼「今日必看」：
+2. 读取刚生成的本地数据 data/papers.json / news.json / batch.json，提炼「今日必看」：
    - 论文：按 upvotes 取 top 3；
    - 资讯：取最新且最重要的 3 条（模型发布 / 大厂动态 / 监管优先，其次其他）；
    - 周刊：最新一期。
 
-4. 为每条写一句中文摘要（把英文标题+summary 自己提炼成中文，别直接贴英文），标来源 + 原文链接，总长控制在 2 分钟可读完。
+3. 为每条写一句中文摘要（把英文标题+summary 自己提炼成中文，别直接贴英文），标来源 + 原文链接，总长控制在 2 分钟可读完。
 
-5. 用 botmux send 发送，必须 --mention ou_fdddeaba4f220f3235db25d55edceeec（张鹏），--response-kind final。结构：
+4. 用 botmux send 发送，必须 --mention ou_fdddeaba4f220f3235db25d55edceeec（张鹏），--response-kind final。结构：
    - 开头：🔗 今日刷新完成：https://peng-zhang-xzj.github.io/ai-daily-digest/ （附数据更新时间）
    - 分「📄 论文 / 📰 资讯 / 🗞 周刊」三节，每条：中文一句话 + 来源 + 链接。
 
-注意：这是无发送者的自动回合，用 --mention 指定收件人，不要用 --mention-back。除了抓取数据和（可选）推送 data，不做其他代码/仓库改动。
+注意：这是无发送者的自动回合，用 --mention 指定收件人，不要用 --mention-back。除了运行上面的刷新脚本，不做其他代码/仓库改动。
