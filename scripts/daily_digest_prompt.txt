@@ -1,0 +1,21 @@
+每天悉尼时间早上 9 点的「AI 今日必看」简报任务。按下面步骤执行：
+
+1. 读取线上最新数据（GitHub Actions 已在更早自动刷新，直接读即可）：
+   curl -s https://peng-zhang-xzj.github.io/ai-daily-digest/data/papers.json
+   curl -s https://peng-zhang-xzj.github.io/ai-daily-digest/data/news.json
+   curl -s https://peng-zhang-xzj.github.io/ai-daily-digest/data/batch.json
+   curl -s https://peng-zhang-xzj.github.io/ai-daily-digest/data/meta.json   （看 updated_at 确认数据是今天的；若还是旧数据，可等几分钟重试一次）
+
+2. 提炼「今日必看」：
+   - 论文：按 upvotes 取 top 3；
+   - 资讯：取最新且最重要的 3 条（优先模型发布 / 大厂动态 / 监管，其次其他）；
+   - 周刊：最新一期（若本周无新一期可省略或标注）。
+
+3. 为每条写一句中文摘要（你自己把英文标题+summary 提炼成中文，别直接贴英文），标注来源，并附原文链接。控制总长度，让用户 2 分钟能读完，感兴趣的点链接深入。
+
+4. 用 botmux send 发送，必须 --mention ou_fdddeaba4f220f3235db25d55edceeec（张鹏）。消息结构：
+   - 开头一行：🔗 今日刷新完成：https://peng-zhang-xzj.github.io/ai-daily-digest/  （附数据更新时间）
+   - 然后分「📄 论文 / 📰 资讯 / 🗞 周刊」三小节列今日必看，每条：中文一句话 + 来源 + 链接。
+   - 用 --response-kind final 发送。
+
+注意：这是无发送者的自动回合，用 --mention 指定收件人，不要用 --mention-back。只做这件事，不要改代码或仓库。
