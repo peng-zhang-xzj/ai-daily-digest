@@ -136,9 +136,17 @@ def fetch_batch(limit=6):
 
 
 # --------------------------------------------------------------------------- #
+try:
+    from enrich import enrich
+except Exception:
+    def enrich(items):
+        return items
+
+
 def run_one(name, fn):
     try:
         data = fn()
+        data = enrich(data)
         (DATA / f"{name}.json").write_text(
             json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
         )

@@ -78,55 +78,53 @@ body {
 }
 #search:focus { outline: none; border-color: var(--accent); }
 .chk { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.hint { color: var(--read); font-size: 12px; margin-left: auto; }
 
-/* ---- panels / cards ---- */
-#panels { max-width: 860px; margin: 0 auto; padding: 16px 20px 40px; }
+/* ---- panels / dense rows ---- */
+#panels { max-width: 860px; margin: 0 auto; padding: 8px 20px 40px; }
 .panel { display: none; }
 .panel.active { display: block; }
 
-.card {
-  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-  padding: 16px 18px; margin-bottom: 12px; box-shadow: var(--shadow);
-  transition: border-color .15s;
+.row { border-bottom: 1px solid var(--line); }
+.row-main {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 6px; cursor: pointer; border-radius: 8px;
 }
-.card:hover { border-color: var(--accent); }
-.card.read { opacity: .55; }
-.card.read .card-title { color: var(--read); }
-
-.card-head { display: flex; align-items: flex-start; gap: 10px; }
-.dot {
-  flex: none; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent); margin-top: 8px;
+.row-main:hover { background: var(--accent-soft); }
+.dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-top: 7px; }
+.row.read .dot { background: transparent; border: 1px solid var(--read); }
+.row-text { flex: 1; min-width: 0; }
+.row-title { font-size: 15px; font-weight: 650; line-height: 1.4; }
+.row.read .row-title { color: var(--read); font-weight: 600; }
+.row-tldr {
+  font-size: 13px; color: var(--muted); line-height: 1.45; margin-top: 2px;
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
 }
-.card.read .dot { background: transparent; border: 1px solid var(--read); }
-.card-title {
-  margin: 0; font-size: 16px; font-weight: 650; line-height: 1.45; flex: 1;
+.row.open .row-tldr { -webkit-line-clamp: unset; overflow: visible; }
+.tag {
+  display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent);
+  background: var(--accent-soft); border-radius: 5px; padding: 0 6px; margin-left: 8px;
+  vertical-align: middle; white-space: nowrap;
 }
-.card-title a { color: inherit; text-decoration: none; }
-.card-title a:hover { text-decoration: underline; }
-
-.meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
-  margin: 8px 0 0 18px; font-size: 12px; color: var(--muted); }
-.badge {
-  background: var(--accent-soft); color: var(--accent); border-radius: 6px;
-  padding: 1px 7px; font-weight: 600;
-}
-.summary { margin: 8px 0 0 18px; color: var(--muted); font-size: 14px; }
-.actions { margin: 10px 0 0 18px; display: flex; gap: 14px; }
-.actions a, .star {
-  font-size: 13px; color: var(--accent); text-decoration: none;
-  background: none; border: none; cursor: pointer; padding: 0;
+.star {
+  flex: none; background: none; border: none; cursor: pointer; font-size: 16px;
+  color: var(--muted); padding: 2px 4px; line-height: 1;
 }
 .star.on { color: #e8a13a; }
 
-/* ---- weekly (batch) special ---- */
-.batch-card { display: flex; gap: 16px; }
-.batch-card img {
-  width: 150px; height: 96px; object-fit: cover; border-radius: 8px; flex: none;
-  background: var(--chip);
+.row-detail { display: none; padding: 2px 6px 14px 23px; }
+.row.open .row-detail { display: block; }
+.detail-img {
+  max-width: 260px; width: 100%; border-radius: 8px; margin-bottom: 8px; background: var(--chip);
 }
-.batch-body { flex: 1; }
+.detail-en { font-size: 12px; color: var(--read); margin-bottom: 6px; }
+.detail-sum { font-size: 14px; color: var(--ink); margin: 0 0 8px; line-height: 1.6; }
+.detail-meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.detail-links { margin-top: 8px; display: flex; gap: 16px; }
+.detail-links a { font-size: 13px; color: var(--accent); text-decoration: none; }
+.detail-links a:hover { text-decoration: underline; }
 
+.count.has { background: var(--accent); color: #fff; }
 .empty { color: var(--muted); text-align: center; padding: 48px 0; }
 .foot {
   max-width: 860px; margin: 0 auto; padding: 20px; text-align: center;

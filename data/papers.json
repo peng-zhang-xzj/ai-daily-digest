@@ -216,23 +216,9 @@
       "Guoshan Lu",
       "Qiyuan Zhang"
     ],
-    "upvotes": 24,
+    "upvotes": 21,
     "url": "https://huggingface.co/papers/2611.15131",
     "arxiv": "https://arxiv.org/abs/2611.15131",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
-    "summary": "A systematic study of Hyper-Connections architectures identifies the simpler efficient design SimpleHC, which removes residual mixing and uses shared memory access to match mHC performance while adding minimal training overhead and improving stability.",
-    "authors": [
-      "Xiangdong Zhang",
-      "Xiaohan Qin",
-      "Sunan Zou",
-      "Tuo Dai"
-    ],
-    "upvotes": 22,
-    "url": "https://huggingface.co/papers/2611.05984",
-    "arxiv": "https://arxiv.org/abs/2611.05984",
     "date": "2026-11-13"
   },
   {
@@ -248,6 +234,20 @@
     "url": "https://huggingface.co/papers/2608.22237",
     "arxiv": "https://arxiv.org/abs/2608.22237",
     "date": "2026-11-12"
+  },
+  {
+    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
+    "summary": "A systematic study of Hyper-Connections architectures identifies the simpler efficient design SimpleHC, which removes residual mixing and uses shared memory access to match mHC performance while adding minimal training overhead and improving stability.",
+    "authors": [
+      "Xiangdong Zhang",
+      "Xiaohan Qin",
+      "Sunan Zou",
+      "Tuo Dai"
+    ],
+    "upvotes": 18,
+    "url": "https://huggingface.co/papers/2611.05984",
+    "arxiv": "https://arxiv.org/abs/2611.05984",
+    "date": "2026-11-13"
   },
   {
     "title": "WaveGen: Truly End-to-End Waveform Generation via Internal Spectral Trajectory Learning",
@@ -416,34 +416,6 @@
     "date": "2026-11-11"
   },
   {
-    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
-    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
-    "authors": [
-      "Yuxuan Chen",
-      "Xiaojie Li",
-      "Hao Chen",
-      "Juncheng Ma"
-    ],
-    "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.16748",
-    "arxiv": "https://arxiv.org/abs/2611.16748",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
-    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
-    "authors": [
-      "Haochen Liu",
-      "Qianhao Zhu",
-      "Zixuan Wang",
-      "Dingming Li"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.17167",
-    "arxiv": "https://arxiv.org/abs/2611.17167",
-    "date": "2026-11-13"
-  },
-  {
     "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
     "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
     "authors": [
@@ -472,6 +444,20 @@
     "date": "2026-11-11"
   },
   {
+    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "summary": "PhysLoop leverages large language models to guide video generation, selection, and correction, enabling physically consistent self-improvement and controllable data construction for video models.",
+    "authors": [
+      "Yuxuan Chen",
+      "Xiaojie Li",
+      "Hao Chen",
+      "Juncheng Ma"
+    ],
+    "upvotes": 9,
+    "url": "https://huggingface.co/papers/2611.16748",
+    "arxiv": "https://arxiv.org/abs/2611.16748",
+    "date": "2026-11-13"
+  },
+  {
     "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
     "summary": "Diffusion language models (DLMs) generate text through iterative denoising, where decisions about which tokens to commit or remask strongly affect output quality. Existing certainty-aware strategies rely on instantaneous confidence or entropy, but these local signals can be misleading on difficult reasoning problems.…",
     "authors": [
@@ -484,20 +470,6 @@
     "url": "https://huggingface.co/papers/2611.10486",
     "arxiv": "https://arxiv.org/abs/2611.10486",
     "date": "2026-11-11"
-  },
-  {
-    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
-    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
-    "authors": [
-      "Xu Huang",
-      "Ye Huang",
-      "Xiaotong Li",
-      "Zhengrong Yue"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.13004",
-    "arxiv": "https://arxiv.org/abs/2611.13004",
-    "date": "2026-11-13"
   },
   {
     "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
@@ -526,17 +498,31 @@
     "date": "2026-11-11"
   },
   {
-    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
-    "summary": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear a…",
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
     "authors": [
-      "Jiancheng Pan",
-      "Yuzheng Liu",
-      "Hengyuan Cao",
-      "Qiyuan Zhang"
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li"
     ],
     "upvotes": 7,
-    "url": "https://huggingface.co/papers/2611.16517",
-    "arxiv": "https://arxiv.org/abs/2611.16517",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "arxiv": "https://arxiv.org/abs/2611.17167",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+    "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under…",
+    "authors": [
+      "Xu Huang",
+      "Ye Huang",
+      "Xiaotong Li",
+      "Zhengrong Yue"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.13004",
+    "arxiv": "https://arxiv.org/abs/2611.13004",
     "date": "2026-11-13"
   },
   {
@@ -552,5 +538,16 @@
     "url": "https://huggingface.co/papers/2611.12869",
     "arxiv": "https://arxiv.org/abs/2611.12869",
     "date": "2026-11-12"
+  },
+  {
+    "title": "Are Causal Neuron Circuits Unique and Transferable?",
+    "summary": "Interpretability demonstrations often show that intervening on a group of neurons changes a model's answer. A recent example removes an 18-neuron group in Qwen3-32B and the model answers \"Simba\" instead of \"Scar\" to a two-hop Lion King riddle. Such a demonstration establishes that the group matters, but not how much o…",
+    "authors": [
+      "Ömer Tekin Yavuz"
+    ],
+    "upvotes": 6,
+    "url": "https://huggingface.co/papers/2611.13885",
+    "arxiv": "https://arxiv.org/abs/2611.13885",
+    "date": "2026-11-11"
   }
 ]
