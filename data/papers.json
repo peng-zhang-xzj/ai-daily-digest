@@ -8,7 +8,7 @@
       "Sicheng Feng",
       "Qi Li"
     ],
-    "upvotes": 134,
+    "upvotes": 135,
     "url": "https://huggingface.co/papers/2611.15777",
     "arxiv": "https://arxiv.org/abs/2611.15777",
     "date": "2026-11-13"
@@ -134,7 +134,7 @@
       "Zixuan Wang",
       "Dingming Li"
     ],
-    "upvotes": 32,
+    "upvotes": 33,
     "url": "https://huggingface.co/papers/2611.17167",
     "arxiv": "https://arxiv.org/abs/2611.17167",
     "date": "2026-11-13"
@@ -148,7 +148,7 @@
       "Sunan Zou",
       "Tuo Dai"
     ],
-    "upvotes": 28,
+    "upvotes": 29,
     "url": "https://huggingface.co/papers/2611.05984",
     "arxiv": "https://arxiv.org/abs/2611.05984",
     "date": "2026-11-13"
@@ -218,7 +218,7 @@
       "Patrizio Dazzi",
       "Matteo Mordacchini"
     ],
-    "upvotes": 16,
+    "upvotes": 17,
     "url": "https://huggingface.co/papers/2611.10193",
     "arxiv": "https://arxiv.org/abs/2611.10193",
     "date": "2026-11-12"
@@ -238,6 +238,20 @@
     "date": "2026-11-13"
   },
   {
+    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
+    "authors": [
+      "Jaemyung Yu",
+      "Byeongho Heo",
+      "Sangdoo Yun",
+      "Dongyoon Han"
+    ],
+    "upvotes": 14,
+    "url": "https://huggingface.co/papers/2611.16905",
+    "arxiv": "https://arxiv.org/abs/2611.16905",
+    "date": "2026-11-13"
+  },
+  {
     "title": "Unbundling Multimodal Vision Encoding",
     "summary": "Controlled experiments show that multimodal language models do not need a pretrained vision encoder, but benefit from dedicated vision capacity trained jointly with the backbone and integrated early rather than before fusion.",
     "authors": [
@@ -249,20 +263,6 @@
     "upvotes": 14,
     "url": "https://huggingface.co/papers/2611.17334",
     "arxiv": "https://arxiv.org/abs/2611.17334",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
-    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
-    "authors": [
-      "Jaemyung Yu",
-      "Byeongho Heo",
-      "Sangdoo Yun",
-      "Dongyoon Han"
-    ],
-    "upvotes": 13,
-    "url": "https://huggingface.co/papers/2611.16905",
-    "arxiv": "https://arxiv.org/abs/2611.16905",
     "date": "2026-11-13"
   },
   {
@@ -443,6 +443,20 @@
     "date": "2026-11-13"
   },
   {
+    "title": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+    "summary": "Language-model agents trained with reinforcement learning can improve by learning to create and curate experience artifacts that help future rollouts, not just by optimizing actions from scalar rewards.",
+    "authors": [
+      "Doyoung Kim",
+      "Byeongguk Jeon",
+      "Kailin Zhang",
+      "Sherry Yang"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.16409",
+    "arxiv": "https://arxiv.org/abs/2611.16409",
+    "date": "2026-11-13"
+  },
+  {
     "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
     "summary": "AI \"humanizers\" rewrite machine-generated text so that detectors classify it as human-written. Public leaderboards score evasion and embedding similarity, but not whether checkable details survive. We check whether numbers, dates, person and organization names, and quoted spans survive each rewrite, using a rule-based…",
     "authors": [
@@ -481,6 +495,20 @@
     "url": "https://huggingface.co/papers/2611.14418",
     "arxiv": "https://arxiv.org/abs/2611.14418",
     "date": "2026-11-12"
+  },
+  {
+    "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "summary": "A hybrid decision model routes between implicit single-forward-pass answering and full autoregressive reasoning via a self-routing block trained with calibrated decision policy optimization, reducing token and latency costs while preserving accuracy.",
+    "authors": [
+      "Zhengxu Yu",
+      "Ke Xu",
+      "Meng Fang",
+      "Haitham Ammar"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.16961",
+    "arxiv": "https://arxiv.org/abs/2611.16961",
+    "date": "2026-11-13"
   },
   {
     "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
@@ -522,32 +550,5 @@
     "url": "https://huggingface.co/papers/2611.14413",
     "arxiv": "https://arxiv.org/abs/2611.14413",
     "date": "2026-11-12"
-  },
-  {
-    "title": "CARTBench: Rubric-Based Evaluation of Shopping Advice for Complex and Ambiguous Requests with Timelines",
-    "summary": "Large language model (LLM) shopping assistants now recommend products in multi-turn conversations. However, reliable evaluation faces Data scarcity and Difficulty Standardizing Criteria. To address these obstacles, we introduce CARTBench for CART (Complex and Ambiguous Requests with Timelines). For Data scarcity, we c…",
-    "authors": [
-      "Yuqin Dai",
-      "Zhanwei Zhang",
-      "Honghui Yang",
-      "Zhouheng Yao"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.05862",
-    "arxiv": "https://arxiv.org/abs/2611.05862",
-    "date": "2026-11-12"
-  },
-  {
-    "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
-    "summary": "A spectrum can be given to a model as a table in nanometers or as a plot in photon energy, and the decision should not depend on which one it sees. When the data needed for an answer are missing, the model should say so. We test representation invariance and abstention on measured optical spectra of silicon metasurfac…",
-    "authors": [
-      "Ziyuan Wang",
-      "Genliang Zhu",
-      "Xiaobo Chen"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.00428",
-    "arxiv": "https://arxiv.org/abs/2611.00428",
-    "date": "2026-11-13"
   }
 ]
