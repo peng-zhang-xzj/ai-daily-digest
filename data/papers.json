@@ -8,7 +8,7 @@
       "Sicheng Feng",
       "Qi Li"
     ],
-    "upvotes": 74,
+    "upvotes": 134,
     "url": "https://huggingface.co/papers/2611.15777",
     "arxiv": "https://arxiv.org/abs/2611.15777",
     "date": "2026-11-13"
@@ -22,7 +22,7 @@
       "Seungryong Kim",
       "Laura Leal-Taixé"
     ],
-    "upvotes": 46,
+    "upvotes": 50,
     "url": "https://huggingface.co/papers/2611.14815",
     "arxiv": "https://arxiv.org/abs/2611.14815",
     "date": "2026-11-13"
@@ -36,7 +36,7 @@
       "Yinhao Tang",
       "Yuzhe Gu"
     ],
-    "upvotes": 44,
+    "upvotes": 47,
     "url": "https://huggingface.co/papers/2610.40394",
     "arxiv": "https://arxiv.org/abs/2610.40394",
     "date": "2026-11-12"
@@ -50,7 +50,7 @@
       "Hao Chen",
       "Juncheng Ma"
     ],
-    "upvotes": 42,
+    "upvotes": 46,
     "url": "https://huggingface.co/papers/2611.16748",
     "arxiv": "https://arxiv.org/abs/2611.16748",
     "date": "2026-11-13"
@@ -64,7 +64,7 @@
       "Xiaotong Li",
       "Zhengrong Yue"
     ],
-    "upvotes": 40,
+    "upvotes": 45,
     "url": "https://huggingface.co/papers/2611.13004",
     "arxiv": "https://arxiv.org/abs/2611.13004",
     "date": "2026-11-13"
@@ -78,7 +78,7 @@
       "Guoshan Lu",
       "Qiyuan Zhang"
     ],
-    "upvotes": 35,
+    "upvotes": 40,
     "url": "https://huggingface.co/papers/2611.15131",
     "arxiv": "https://arxiv.org/abs/2611.15131",
     "date": "2026-11-13"
@@ -92,7 +92,7 @@
       "Zixu Hao",
       "Xin Ding"
     ],
-    "upvotes": 35,
+    "upvotes": 36,
     "url": "https://huggingface.co/papers/2611.13410",
     "arxiv": "https://arxiv.org/abs/2611.13410",
     "date": "2026-11-12"
@@ -106,24 +106,10 @@
       "Haiteng Zhao",
       "Zijian Wu"
     ],
-    "upvotes": 31,
+    "upvotes": 35,
     "url": "https://huggingface.co/papers/2610.39671",
     "arxiv": "https://arxiv.org/abs/2610.39671",
     "date": "2026-11-12"
-  },
-  {
-    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
-    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
-    "authors": [
-      "Haochen Liu",
-      "Qianhao Zhu",
-      "Zixuan Wang",
-      "Dingming Li"
-    ],
-    "upvotes": 29,
-    "url": "https://huggingface.co/papers/2611.17167",
-    "arxiv": "https://arxiv.org/abs/2611.17167",
-    "date": "2026-11-13"
   },
   {
     "title": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
@@ -134,9 +120,23 @@
       "Jona Ruthardt",
       "Ryousuke Yamada"
     ],
-    "upvotes": 29,
+    "upvotes": 34,
     "url": "https://huggingface.co/papers/2611.15844",
     "arxiv": "https://arxiv.org/abs/2611.15844",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "summary": "A decision model that acts poorly can still teach reinforcement learning policies effectively by judging complete action trajectories, improving success on ALFWorld and WebShop.",
+    "authors": [
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li"
+    ],
+    "upvotes": 32,
+    "url": "https://huggingface.co/papers/2611.17167",
+    "arxiv": "https://arxiv.org/abs/2611.17167",
     "date": "2026-11-13"
   },
   {
@@ -148,7 +148,7 @@
       "Sunan Zou",
       "Tuo Dai"
     ],
-    "upvotes": 26,
+    "upvotes": 28,
     "url": "https://huggingface.co/papers/2611.05984",
     "arxiv": "https://arxiv.org/abs/2611.05984",
     "date": "2026-11-13"
@@ -162,7 +162,7 @@
       "Zhaoxi Chen",
       "Hui En Pang"
     ],
-    "upvotes": 25,
+    "upvotes": 26,
     "url": "https://huggingface.co/papers/2611.17060",
     "arxiv": "https://arxiv.org/abs/2611.17060",
     "date": "2026-11-13"
@@ -176,7 +176,7 @@
       "Xinyang Ma",
       "Le Xu"
     ],
-    "upvotes": 21,
+    "upvotes": 22,
     "url": "https://huggingface.co/papers/2608.22237",
     "arxiv": "https://arxiv.org/abs/2608.22237",
     "date": "2026-11-12"
@@ -190,23 +190,23 @@
       "Jaesung Choe",
       "Min-Hung Chen"
     ],
-    "upvotes": 19,
+    "upvotes": 22,
     "url": "https://huggingface.co/papers/2611.17331",
     "arxiv": "https://arxiv.org/abs/2611.17331",
     "date": "2026-11-13"
   },
   {
-    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
-    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
+    "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+    "summary": "Exposing benchmark success criteria to self-improving embodied coding agents can raise measured success under those criteria without improving instructed-task completion, and the advantage weakens under slight criteria changes and transfers poorly across tasks, while instruction-faithful criteria better reflect instru…",
     "authors": [
-      "Zhiyu Hou",
-      "Wen-Jie Shu",
-      "Harold Haodong Chen",
-      "Weilin Ruan"
+      "Wenbo Huang",
+      "Jianxin Bi",
+      "Shunyu Yang",
+      "Ruiyang Si"
     ],
-    "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.16217",
-    "arxiv": "https://arxiv.org/abs/2611.16217",
+    "upvotes": 18,
+    "url": "https://huggingface.co/papers/2611.08318",
+    "arxiv": "https://arxiv.org/abs/2611.08318",
     "date": "2026-11-13"
   },
   {
@@ -218,9 +218,65 @@
       "Patrizio Dazzi",
       "Matteo Mordacchini"
     ],
-    "upvotes": 13,
+    "upvotes": 16,
     "url": "https://huggingface.co/papers/2611.10193",
     "arxiv": "https://arxiv.org/abs/2611.10193",
+    "date": "2026-11-12"
+  },
+  {
+    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
+    "summary": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two compl…",
+    "authors": [
+      "Zhiyu Hou",
+      "Wen-Jie Shu",
+      "Harold Haodong Chen",
+      "Weilin Ruan"
+    ],
+    "upvotes": 16,
+    "url": "https://huggingface.co/papers/2611.16217",
+    "arxiv": "https://arxiv.org/abs/2611.16217",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Unbundling Multimodal Vision Encoding",
+    "summary": "Controlled experiments show that multimodal language models do not need a pretrained vision encoder, but benefit from dedicated vision capacity trained jointly with the backbone and integrated early rather than before fusion.",
+    "authors": [
+      "Ellis Brown",
+      "Chris Hoang",
+      "Shengyi Qian",
+      "Shang-Wen Li"
+    ],
+    "upvotes": 14,
+    "url": "https://huggingface.co/papers/2611.17334",
+    "arxiv": "https://arxiv.org/abs/2611.17334",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
+    "authors": [
+      "Jaemyung Yu",
+      "Byeongho Heo",
+      "Sangdoo Yun",
+      "Dongyoon Han"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.16905",
+    "arxiv": "https://arxiv.org/abs/2611.16905",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "GTAGym: AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+    "summary": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). W…",
+    "authors": [
+      "Jiajun Chen",
+      "Shicheng Fang",
+      "Jiahao Lu",
+      "Yuxin Wang"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.13028",
+    "arxiv": "https://arxiv.org/abs/2611.13028",
     "date": "2026-11-12"
   },
   {
@@ -236,20 +292,6 @@
     "url": "https://huggingface.co/papers/2611.08286",
     "arxiv": "https://arxiv.org/abs/2611.08286",
     "date": "2026-11-12"
-  },
-  {
-    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
-    "summary": "FOAM is a lightweight SOAP variant that uses input-only preconditioning and a factored Adam-moment estimator to match strong second-order and Muon baselines in LLM pre-training while using half the optimizer state and running at Muon-class speed.",
-    "authors": [
-      "Jaemyung Yu",
-      "Byeongho Heo",
-      "Sangdoo Yun",
-      "Dongyoon Han"
-    ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.16905",
-    "arxiv": "https://arxiv.org/abs/2611.16905",
-    "date": "2026-11-13"
   },
   {
     "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
@@ -280,31 +322,31 @@
     "date": "2026-11-12"
   },
   {
-    "title": "GTAGym: AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
-    "summary": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). W…",
+    "title": "WMIP: A Working-Memory-Inspired Programmable Probe of Cumulative State Tracking in Large Language Models",
+    "summary": "Large language models struggle with cumulative state tracking across multiple updates despite strong single-step arithmetic, and their measured accuracy depends heavily on output protocols.",
     "authors": [
-      "Jiajun Chen",
-      "Shicheng Fang",
-      "Jiahao Lu",
-      "Yuxin Wang"
+      "Dengzhe Hou",
+      "Lingyu Jiang",
+      "Deng Li",
+      "Zirui Li"
     ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.13028",
-    "arxiv": "https://arxiv.org/abs/2611.13028",
+    "upvotes": 8,
+    "url": "https://huggingface.co/papers/2603.27343",
+    "arxiv": "https://arxiv.org/abs/2603.27343",
     "date": "2026-11-12"
   },
   {
-    "title": "Unbundling Multimodal Vision Encoding",
-    "summary": "Controlled experiments show that multimodal language models do not need a pretrained vision encoder, but benefit from dedicated vision capacity trained jointly with the backbone and integrated early rather than before fusion.",
+    "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+    "summary": "MixUA distills lessons from independent user-agent trajectories and assigns them to appropriate scopes to balance cross-user and cross-agent learning with privacy, evaluated by CrossLearnBench.",
     "authors": [
-      "Ellis Brown",
-      "Chris Hoang",
-      "Shengyi Qian",
-      "Shang-Wen Li"
+      "Yunzhe Wang",
+      "Mesut Erhan Unal",
+      "Sheng Zhang",
+      "Shabnam Ghadar"
     ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.17334",
-    "arxiv": "https://arxiv.org/abs/2611.17334",
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.10439",
+    "arxiv": "https://arxiv.org/abs/2611.10439",
     "date": "2026-11-13"
   },
   {
@@ -321,18 +363,17 @@
     "date": "2026-11-12"
   },
   {
-    "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
-    "summary": "Exposing benchmark success criteria to self-improving embodied coding agents can raise measured success under those criteria without improving instructed-task completion, and the advantage weakens under slight criteria changes and transfers poorly across tasks, while instruction-faithful criteria better reflect instru…",
+    "title": "Subliminal Learning in Vision-Language Models",
+    "summary": "Subliminal learning can transfer hidden preferences from teacher to student vision-language models through unrelated visual tasks, affecting image choices and explanations.",
     "authors": [
-      "Wenbo Huang",
-      "Jianxin Bi",
-      "Shunyu Yang",
-      "Ruiyang Si"
+      "Arman Hatami",
+      "Romina Aalishah",
+      "Ilya E. Monosov"
     ],
     "upvotes": 6,
-    "url": "https://huggingface.co/papers/2611.08318",
-    "arxiv": "https://arxiv.org/abs/2611.08318",
-    "date": "2026-11-13"
+    "url": "https://huggingface.co/papers/2611.08538",
+    "arxiv": "https://arxiv.org/abs/2611.08538",
+    "date": "2026-11-12"
   },
   {
     "title": "Where Does Alignment Emerge and What Does It Mean? A Closer Look at the Platonic Representation Hypothesis",
@@ -349,19 +390,6 @@
     "date": "2026-11-12"
   },
   {
-    "title": "Subliminal Learning in Vision-Language Models",
-    "summary": "Subliminal learning can transfer hidden preferences from teacher to student vision-language models through unrelated visual tasks, affecting image choices and explanations.",
-    "authors": [
-      "Arman Hatami",
-      "Romina Aalishah",
-      "Ilya E. Monosov"
-    ],
-    "upvotes": 5,
-    "url": "https://huggingface.co/papers/2611.08538",
-    "arxiv": "https://arxiv.org/abs/2611.08538",
-    "date": "2026-11-12"
-  },
-  {
     "title": "CogBattery: Human-Referenced Evaluation of Cognitive Task Behavior and Structure in Language Models",
     "summary": "CogBattery compares open-weight language models to humans across cognitive tasks, revealing that matching effect directions does not imply human-like error patterns or confidence calibration.",
     "authors": [
@@ -370,10 +398,76 @@
       "Fangzhou Lin",
       "Kazunori D Yamada"
     ],
-    "upvotes": 4,
+    "upvotes": 5,
     "url": "https://huggingface.co/papers/2607.24999",
     "arxiv": "https://arxiv.org/abs/2607.24999",
     "date": "2026-11-12"
+  },
+  {
+    "title": "DeepStress: Stress-Testing Deep Search Agents",
+    "summary": "A dynamic stress-testing framework shows that search agents often answer confidently despite unreliable retrieved evidence and may rely on memorized knowledge when documents are factually wrong.",
+    "authors": [
+      "Ismael Rousseau",
+      "Geraldine Damnati",
+      "Frederic Bechet"
+    ],
+    "upvotes": 5,
+    "url": "https://huggingface.co/papers/2607.13920",
+    "arxiv": "https://arxiv.org/abs/2607.13920",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+    "summary": "A real-source data synthesis framework trains a 4B agent on 4k task instances with supervised fine-tuning and rubric-based reinforcement learning, improving realistic productivity work and file-grounded reasoning over larger models.",
+    "authors": [
+      "Teng Pan",
+      "Zixuan Wang",
+      "Yuchen Yan",
+      "Qifei Wu"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.08219",
+    "arxiv": "https://arxiv.org/abs/2611.08219",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
+    "summary": "Reference-frame stabilization registers every frame of a hovering-drone video onto one reference frame, keeping object positions comparable. The registration pipelines it relies on are selected on feature-matching benchmarks in which only the camera moves. Over a busy intersection, vehicles moving together supply mutu…",
+    "authors": [
+      "Robert Fonod",
+      "Nikolas Geroliminis"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.17190",
+    "arxiv": "https://arxiv.org/abs/2611.17190",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
+    "summary": "AI \"humanizers\" rewrite machine-generated text so that detectors classify it as human-written. Public leaderboards score evasion and embedding similarity, but not whether checkable details survive. We check whether numbers, dates, person and organization names, and quoted spans survive each rewrite, using a rule-based…",
+    "authors": [
+      "Ziyuan Wang",
+      "Genliang Zhu",
+      "Xiaobo Chen"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.00359",
+    "arxiv": "https://arxiv.org/abs/2611.00359",
+    "date": "2026-11-13"
+  },
+  {
+    "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+    "summary": "A simplified evaluation harness that keeps full episode history and stops motions early substantially improves robot-use agent scores on RoboDojo, with scene geometry providing the largest additional benefit.",
+    "authors": [
+      "Zefan Wang",
+      "Yufan Dang",
+      "Xuanwei Shi",
+      "Mingqi Gao"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.16009",
+    "arxiv": "https://arxiv.org/abs/2611.16009",
+    "date": "2026-11-13"
   },
   {
     "title": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
@@ -389,32 +483,45 @@
     "date": "2026-11-12"
   },
   {
-    "title": "WMIP: A Working-Memory-Inspired Programmable Probe of Cumulative State Tracking in Large Language Models",
-    "summary": "Large language models struggle with cumulative state tracking across multiple updates despite strong single-step arithmetic, and their measured accuracy depends heavily on output protocols.",
+    "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
+    "summary": "Machine-learning surrogates are increasingly used to accelerate computational fluid dynamics, yet progress is limited by the lack of benchmarks capturing realistic, time-dependent turbulent flows. We introduce TurtLES, a 14 TB dataset of 3D turbulent cylinder wakes in the shear-layer transition regime, computed via hi…",
     "authors": [
-      "Dengzhe Hou",
-      "Lingyu Jiang",
-      "Deng Li",
-      "Zirui Li"
+      "Jarno Platenburg",
+      "Armand Kassaï Koupaï",
+      "Paola Cinnella",
+      "Patrick Gallinari"
     ],
     "upvotes": 4,
-    "url": "https://huggingface.co/papers/2603.27343",
-    "arxiv": "https://arxiv.org/abs/2603.27343",
-    "date": "2026-11-12"
+    "url": "https://huggingface.co/papers/2611.09567",
+    "arxiv": "https://arxiv.org/abs/2611.09567",
+    "date": "2026-11-13"
   },
   {
-    "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-    "summary": "A real-source data synthesis framework trains a 4B agent on 4k task instances with supervised fine-tuning and rubric-based reinforcement learning, improving realistic productivity work and file-grounded reasoning over larger models.",
+    "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+    "summary": "Frontier video generation models work in a VAE latent space that compresses video in both space and time. This compression made training tractable, but now limits high-resolution, controllable, and interactive generation -- doubling resolution quadruples token count, conditions apply to groups of frames rather than in…",
     "authors": [
-      "Teng Pan",
-      "Zixuan Wang",
-      "Yuchen Yan",
-      "Qifei Wu"
+      "Yanke Song",
+      "Shuo Chen",
+      "Chris Rockwell",
+      "Guande He"
     ],
     "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.08219",
-    "arxiv": "https://arxiv.org/abs/2611.08219",
+    "url": "https://huggingface.co/papers/2611.17336",
+    "arxiv": "https://arxiv.org/abs/2611.17336",
     "date": "2026-11-13"
+  },
+  {
+    "title": "Bits or permutations? Spending a fixed inference budget on weight precision or on option-order averaging in small local language models",
+    "summary": "Local language models can save memory by storing weights in fewer bits, and they can reduce sensitivity to the order of answer options by averaging a few reorderings. We ask whether the first makes the second worse, and which is the cheaper way to spend a fixed budget. On Qwen3-0.6B and Qwen3-1.7B with simulated round…",
+    "authors": [
+      "Mohammed Nayeem Khan",
+      "Logesh L",
+      "Aliyas Ahmad Misri"
+    ],
+    "upvotes": 3,
+    "url": "https://huggingface.co/papers/2611.14413",
+    "arxiv": "https://arxiv.org/abs/2611.14413",
+    "date": "2026-11-12"
   },
   {
     "title": "CARTBench: Rubric-Based Evaluation of Shopping Advice for Complex and Ambiguous Requests with Timelines",
@@ -431,19 +538,6 @@
     "date": "2026-11-12"
   },
   {
-    "title": "DeepStress: Stress-Testing Deep Search Agents",
-    "summary": "A dynamic stress-testing framework shows that search agents often answer confidently despite unreliable retrieved evidence and may rely on memorized knowledge when documents are factually wrong.",
-    "authors": [
-      "Ismael Rousseau",
-      "Geraldine Damnati",
-      "Frederic Bechet"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2607.13920",
-    "arxiv": "https://arxiv.org/abs/2607.13920",
-    "date": "2026-11-13"
-  },
-  {
     "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
     "summary": "A spectrum can be given to a model as a table in nanometers or as a plot in photon energy, and the decision should not depend on which one it sees. When the data needed for an answer are missing, the model should say so. We test representation invariance and abstention on measured optical spectra of silicon metasurfac…",
     "authors": [
@@ -454,103 +548,6 @@
     "upvotes": 3,
     "url": "https://huggingface.co/papers/2611.00428",
     "arxiv": "https://arxiv.org/abs/2611.00428",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "Evidence-Guided Recovery for AI Agents with Ambiguous Tool Outcomes and Partial Execution",
-    "summary": "Tool timeouts can leave AI agents facing ambiguous tool outcomes and partial execution: an action may have failed, committed or remained in flight while other workflow steps have already completed. We formulate evidence-guided task recovery over approved obligations, provider capabilities and states compatible with pu…",
-    "authors": [
-      "Genliang Zhu",
-      "Xiaobo Chen",
-      "Ziyuan Wang",
-      "Chu Wang"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2610.41453",
-    "arxiv": "https://arxiv.org/abs/2610.41453",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-    "summary": "A novel multimodal memory framework enhances long-term interaction by combining relational graph expansion of semantic seeds with query-adaptive composition of heterogeneous evidence forms.",
-    "authors": [
-      "Haozhen Zhang",
-      "Bohan Liu",
-      "Jianzhu Bao",
-      "Qingyuan Liu"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.12872",
-    "arxiv": "https://arxiv.org/abs/2611.12872",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
-    "summary": "A simplified evaluation harness that keeps full episode history and stops motions early substantially improves robot-use agent scores on RoboDojo, with scene geometry providing the largest additional benefit.",
-    "authors": [
-      "Zefan Wang",
-      "Yufan Dang",
-      "Xuanwei Shi",
-      "Mingqi Gao"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.16009",
-    "arxiv": "https://arxiv.org/abs/2611.16009",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "Mixed Signals: Weight-Space Programming for EEG and ECG",
-    "summary": "Weight-space programming allows language models to read a trained neural network's weights and edit them. This opens the door to training'' by reasoning rather than through gradient descent. Prior work has demonstrated its functionality and promise for game-playing networks and fixing specific failures in language mod…",
-    "authors": [
-      "Dara Varam",
-      "Taraneh Aminosharieh Najafi",
-      "David Atienza"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.13758",
-    "arxiv": "https://arxiv.org/abs/2611.13758",
-    "date": "2026-11-12"
-  },
-  {
-    "title": "Module-Aware Optimization for Graph Neural Networks",
-    "summary": "GraphMuon adapts Muon's matrix orthogonalization to the covariance of graph-propagated representations, reducing graph-induced update amplification and speeding validation-loss time-to-target on graph benchmarks.",
-    "authors": [
-      "Guy Hadad",
-      "Haggai Roitman",
-      "Moshe Eliasof",
-      "Bracha Shapira"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.08379",
-    "arxiv": "https://arxiv.org/abs/2611.08379",
-    "date": "2026-11-12"
-  },
-  {
-    "title": "Probing Transformer Representations Layer by Layer, Module by Module",
-    "summary": "Jointly selecting layers and modules in transformer foundation models yields better probing features than depth-only or final-layer approaches, and simple fixed strategies recover much of the gain.",
-    "authors": [
-      "Ambroise Odonnat",
-      "Theo Gnassounou",
-      "Laetitia Chapel",
-      "Romain Tavenard"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.11531",
-    "arxiv": "https://arxiv.org/abs/2611.11531",
-    "date": "2026-11-12"
-  },
-  {
-    "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
-    "summary": "Machine-learning surrogates are increasingly used to accelerate computational fluid dynamics, yet progress is limited by the lack of benchmarks capturing realistic, time-dependent turbulent flows. We introduce TurtLES, a 14 TB dataset of 3D turbulent cylinder wakes in the shear-layer transition regime, computed via hi…",
-    "authors": [
-      "Jarno Platenburg",
-      "Armand Kassaï Koupaï",
-      "Paola Cinnella",
-      "Patrick Gallinari"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.09567",
-    "arxiv": "https://arxiv.org/abs/2611.09567",
     "date": "2026-11-13"
   }
 ]

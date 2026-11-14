@@ -1,5 +1,68 @@
 [
   {
+    "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+    "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    "date": "Sat, 14 Nov 2026 21:41:22 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+    "summary": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces. Anthropic's commitments now total nearly $901 billion, and it's still far from clear whether future revenue will justify those costs. The planned IPO is largely meant…",
+    "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+    "date": "Sat, 14 Nov 2026 19:05:17 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+    "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+    "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+    "date": "Sat, 14 Nov 2026 17:30:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+    "summary": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The article Gemini 4 Carbon t…",
+    "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+    "date": "Sat, 14 Nov 2026 16:48:01 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+    "summary": "Anthropic has made Claude Opus 5.5 the default model on all paid plans and published a guide that does away with old prompting habits. The main takeaway is to drop \"think hard\" and start at Medium effort. The article Anthropic says outdated prompting habits are slowing down Claude Opus 5.5 appeared first on The Decode…",
+    "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+    "date": "Sat, 14 Nov 2026 16:42:56 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+    "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+    "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+    "date": "Sat, 14 Nov 2026 16:34:15 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
+    "summary": "OpenAI is dissolving its standalone robotics team for the second time, but not because it lacks data. General-purpose models like GPT-6 Astra can apparently control robots directly, making a dedicated unit unnecessary. The researchers are being redistributed across other teams in what the company frames as a way to ac…",
+    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+    "date": "Sat, 14 Nov 2026 11:40:51 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
+    "summary": "Former OpenAI and Anthropic researcher Jacob Coxon points to a slide from Anthropic's IPO roadshow as a reason he left, saying it shows the company's algorithms are improving not just quickly but at an accelerating rate. Coxon continues to call for a pause on frontier model development so competitors can catch up and…",
+    "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+    "date": "Sat, 14 Nov 2026 11:21:41 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
+    "summary": "Runway releases its robotics model Praxis-1 with open weights and source code under the Apache 2.0 license. The model uses knowledge from video training for robot control and leads the World Action Model category on Nvidia's RoboLab-120 benchmark. It can't yet plan complex action sequences on its own, though. The arti…",
+    "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+    "date": "Sat, 14 Nov 2026 09:45:45 +0000",
+    "source": "The Decoder"
+  },
+  {
     "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
     "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
     "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
@@ -63,41 +126,6 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "Nearly 70 percent of US agencies use generative AI, and unions are finally catching up with guardrails",
-    "summary": "US public-sector unions are increasingly pushing through protections against AI surveillance and automated firings. In Oakland, a strike vote forced retraining programs instead of layoffs, and a transport union in Ohio won veto power over autonomous vehicles. California banned so-called bossware. All of this is happen…",
-    "url": "https://the-decoder.com/nearly-70-percent-of-us-agencies-use-generative-ai-and-unions-are-finally-catching-up-with-guardrails/",
-    "date": "Fri, 13 Nov 2026 15:53:49 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
-    "summary": "Former OpenAI researcher Will DePue says he has produced the first technical evidence that DeepSeek, Moonshot AI, MiniMax, and Ant Group are using Nvidia's latest Blackwell GPUs despite US export controls. His forensic method reads characteristic chip signatures directly from published model weights. He estimates the…",
-    "url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
-    "date": "Fri, 13 Nov 2026 15:21:04 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Anthropic's IPO is six times oversubscribed and on track to become the largest public offering in history",
-    "summary": "Anthropic is on track for the largest IPO ever, with orders exceeding available shares by a factor of six. The article Anthropic's IPO is six times oversubscribed and on track to become the largest public offering in history appeared first on The Decoder .",
-    "url": "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
-    "date": "Fri, 13 Nov 2026 15:15:08 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Meta's Muse now calls businesses for you, but many companies might just hang up on the AI",
-    "summary": "Meta's AI agent Muse can now call businesses on behalf of paying US subscribers, handling everything from cable providers to restaurants. The agent already has over 10 million users, according to Meta's AI chief Alexandr Wang. Google Gemini, Instinct, and xAI's Grok Bot offer the same feature, but many businesses hang…",
-    "url": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
-    "date": "Fri, 13 Nov 2026 15:12:44 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OpenAI enters the cybersecurity market with two Daybreak products",
-    "summary": "OpenAI has launched two security products under its Daybreak brand. The article OpenAI enters the cybersecurity market with two Daybreak products appeared first on The Decoder .",
-    "url": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
-    "date": "Fri, 13 Nov 2026 15:08:57 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
     "summary": "ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.",
     "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
@@ -110,34 +138,6 @@
     "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
     "date": "Fri, 13 Nov 2026 12:52:19 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "Jensen Huang didn’t show confidence in his successor, report says",
-    "summary": "Huang described Kress as a \"deer in the headlights\" during a meeting in summer.",
-    "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/",
-    "date": "Fri, 13 Nov 2026 12:28:23 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-    "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
-    "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-    "date": "Thu, 12 Nov 2026 22:42:51 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Muse can now place calls to US businesses — if you pay",
-    "summary": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
-    "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-    "date": "Thu, 12 Nov 2026 22:22:28 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Claude Meetings lets Anthropic's AI join your video calls",
-    "summary": "Anthropic is adding Claude directly to video calls. Claude Meetings joins Google Meet sessions and creates documents, whiteboards, and meeting notes in real time. The feature launches in beta for Team and Enterprise plans, with more platforms coming later. The article Claude Meetings lets Anthropic's AI join your vide…",
-    "url": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/",
-    "date": "Thu, 12 Nov 2026 20:26:50 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
