@@ -134,7 +134,7 @@
       "Jaesung Choe",
       "Min-Hung Chen"
     ],
-    "upvotes": 24,
+    "upvotes": 25,
     "url": "https://huggingface.co/papers/2611.17331",
     "arxiv": "https://arxiv.org/abs/2611.17331",
     "date": "2026-11-13"
@@ -218,7 +218,7 @@
       "Sheng Zhang",
       "Shabnam Ghadar"
     ],
-    "upvotes": 8,
+    "upvotes": 13,
     "url": "https://huggingface.co/papers/2611.10439",
     "arxiv": "https://arxiv.org/abs/2611.10439",
     "date": "2026-11-13"
@@ -381,20 +381,6 @@
     "upvotes": 4,
     "url": "https://huggingface.co/papers/2611.12872",
     "arxiv": "https://arxiv.org/abs/2611.12872",
-    "date": "2026-11-13"
-  },
-  {
-    "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
-    "summary": "A hybrid decision model routes between implicit single-forward-pass answering and full autoregressive reasoning via a self-routing block trained with calibrated decision policy optimization, reducing token and latency costs while preserving accuracy.",
-    "authors": [
-      "Zhengxu Yu",
-      "Ke Xu",
-      "Meng Fang",
-      "Haitham Ammar"
-    ],
-    "upvotes": 4,
-    "url": "https://huggingface.co/papers/2611.16961",
-    "arxiv": "https://arxiv.org/abs/2611.16961",
     "date": "2026-11-13"
   },
   {
