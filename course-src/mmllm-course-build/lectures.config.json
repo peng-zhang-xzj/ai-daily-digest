@@ -1,0 +1,86 @@
+[
+ {
+  "id": "l0",
+  "grp": "开篇",
+  "kick": "Lecture 0",
+  "title": "为什么要让模型「看见」",
+  "lead": "核心矛盾、一条贯穿全课的问题、以及这门课的地图。"
+ },
+ {
+  "id": "l1",
+  "grp": "前世 · 视觉语言地基与桥接",
+  "kick": "Lecture 1",
+  "title": "起源:看图说话",
+  "lead": "前 Transformer 时代——CNN+RNN、image captioning 与 VQA 的萌芽。"
+ },
+ {
+  "id": "l2",
+  "grp": "前世 · 视觉语言地基与桥接",
+  "kick": "Lecture 2",
+  "title": "对齐的突破:CLIP 与对比学习",
+  "lead": "用网络规模的图文对比预训练,造出一个「语义对齐」的视觉底座。"
+ },
+ {
+  "id": "l3",
+  "grp": "前世 · 视觉语言地基与桥接",
+  "kick": "Lecture 3",
+  "title": "桥接时代:BLIP-2 与 Flamingo",
+  "lead": "如何把「冻结的视觉」接到「冻结的语言」——连接器思想的诞生。"
+ },
+ {
+  "id": "l4",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 4",
+  "title": "范式确立:LLaVA 与视觉指令微调",
+  "lead": "一个简单到能逐行读完的配方,定义了现代 VLM。"
+ },
+ {
+  "id": "l5",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 5",
+  "title": "数据的艺术",
+  "lead": "数据是 VLM 效果的天花板——比结构更决定上限。"
+ },
+ {
+  "id": "l6",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 6",
+  "title": "结构的进化",
+  "lead": "视觉编码器、连接器、分辨率、位置编码——从 LLaVA 到 Qwen2.5-VL 变了什么。"
+ },
+ {
+  "id": "l7",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 7",
+  "title": "Tokenizer 的分叉",
+  "lead": "最易被忽略的核心:图像到底算不算 token?连续 vs 离散两条路。"
+ },
+ {
+  "id": "l8",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 8",
+  "title": "训练与对齐",
+  "lead": "三段式、冻结策略、DPO,以及 VLM 的头号顽疾——幻觉。"
+ },
+ {
+  "id": "l9",
+  "grp": "今生 · 视觉指令与通用VLM",
+  "kick": "Lecture 9",
+  "title": "如何评判",
+  "lead": "benchmark 地图、评测方法学,以及怎么读榜不被数字骗。"
+ },
+ {
+  "id": "l10",
+  "grp": "未来",
+  "kick": "Lecture 10",
+  "title": "前沿与开放问题",
+  "lead": "统一生成、任意模态、Agent、效率与安全——以及留给你的问题。"
+ },
+ {
+  "id": "lab",
+  "grp": "实验",
+  "kick": "Lab",
+  "title": "实验课:跑通 + 评测",
+  "lead": "看十遍不如跑一遍。四级实验(CPU→GPU→评测→误差分析)+ 精确书单 + 自检清单。"
+ }
+]

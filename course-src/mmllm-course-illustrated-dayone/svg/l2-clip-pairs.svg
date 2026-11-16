@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="l2-clip-pairs-title l2-clip-pairs-desc" class="d1-figure">
+<title id="l2-clip-pairs-title">CLIP：配对数据 → 双塔 → 匹配矩阵</title><desc id="l2-clip-pairs-desc">两对图文分别编码并归一化；教学手算令向量为单位基、温度0.5，相似度矩阵为[[2,0],[0,2]]。正确配对位于对角线，双向交叉熵为0.1269。</desc>
+<defs><marker id="l2-clip-pairs-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse"><path d="M0,0 L9,4.5 L0,9 Z" fill="context-stroke" /></marker></defs>
+<g>
+<rect x="1" y="1" width="958" height="618" rx="18" stroke-width="1.5" class="d1-f-panel d1-s-line" />
+<text x="32" y="43" font-size="28" text-anchor="start" font-weight="700" class="d1-f-ink">
+<tspan x="32" dy="0">CLIP：配对数据 → 双塔 → 匹配矩阵</tspan>
+</text>
+<rect x="40" y="112" width="165" height="100" rx="10" stroke-width="1.5" class="d1-f-sky d1-s-line" />
+<rect x="42" y="177.0" width="161" height="33.0" rx="6" stroke-width="1.5" class="d1-f-green d1-s-green" />
+<circle cx="168.70000000000002" cy="134.0" r="11" stroke-width="2" class="d1-f-amber d1-s-amber" />
+<rect x="89.5" y="159.0" width="49.5" height="20.0" rx="8" stroke-width="1.5" class="d1-f-amber d1-s-brown" />
+<circle cx="139.0" cy="157.0" r="14.000000000000002" stroke-width="2" class="d1-f-amber d1-s-brown" />
+<path d="M134.05,146.0 l-7,-15 l17,10 Z" class="d1-f-brown" />
+<rect x="96.1" y="175.0" width="8" height="16.0" rx="2" stroke-width="1.5" class="d1-f-brown d1-s-brown" />
+<rect x="127.45" y="175.0" width="8" height="16.0" rx="2" stroke-width="1.5" class="d1-f-brown d1-s-brown" />
+<path d="M89.5,166.0 L77.95,151.0" fill="none" stroke-width="6" class="d1-s-brown" />
+<circle cx="145.60000000000002" cy="154.0" r="2" stroke-width="2" class="d1-f-ink d1-s-ink" />
+<text x="123" y="239" font-size="20" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="123" dy="0">图像 1：狗</tspan>
+</text>
+<rect x="40" y="275" width="165" height="90" rx="12" stroke-width="1.5" class="d1-f-sky d1-s-acc" />
+<rect x="70" y="303" width="100" height="28" rx="7" stroke-width="1.5" class="d1-f-acc d1-s-acc" />
+<rect x="90" y="287" width="49" height="31" rx="5" stroke-width="1.5" class="d1-f-sky d1-s-acc" />
+<circle cx="91" cy="336" r="12" stroke-width="2" class="d1-f-gray d1-s-mut" />
+<circle cx="149" cy="336" r="12" stroke-width="2" class="d1-f-gray d1-s-mut" />
+<text x="123" y="395" font-size="20" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="123" dy="0">图像 2：汽车</tspan>
+</text>
+<rect x="270" y="114" width="228" height="104" rx="12" stroke-width="1.5" class="d1-f-sky d1-s-acc" />
+<text x="384.0" y="146" font-size="22" text-anchor="middle" font-weight="700" class="d1-f-acc">
+<tspan x="384.0" dy="0">图像编码器</tspan>
+</text>
+<text x="384.0" y="177" font-size="19" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="384.0" dy="0">归一化 → x₁, x₂</tspan>
+</text>
+<rect x="270" y="276" width="228" height="104" rx="12" stroke-width="1.5" class="d1-f-green d1-s-grn" />
+<text x="384.0" y="308" font-size="22" text-anchor="middle" font-weight="700" class="d1-f-grn">
+<tspan x="384.0" dy="0">文本编码器</tspan>
+</text>
+<text x="384.0" y="339" font-size="19" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="384.0" dy="0">归一化 → y₁, y₂</tspan>
+</text>
+<path d="M215,163 L257,163" fill="none" stroke-width="2.5" marker-end="url(#l2-clip-pairs-arrow)" class="d1-s-acc" />
+<path d="M215,319 L238,319 L238,198 L257,198" fill="none" stroke-width="2.5" marker-end="url(#l2-clip-pairs-arrow)" class="d1-s-acc" />
+<text x="40" y="443" font-size="21" text-anchor="start" font-weight="400" class="d1-f-ink">
+<tspan x="40" dy="0">文本 1：“一只狗”</tspan>
+<tspan x="40" dy="30.45">文本 2：“一辆汽车”</tspan>
+</text>
+<path d="M235,435 L253,435 L253,336 L260,336" fill="none" stroke-width="2.5" marker-end="url(#l2-clip-pairs-arrow)" class="d1-s-grn" />
+<path d="M508,166 L552,211" fill="none" stroke-width="2.5" marker-end="url(#l2-clip-pairs-arrow)" class="d1-s-acc" />
+<path d="M508,332 L552,279" fill="none" stroke-width="2.5" marker-end="url(#l2-clip-pairs-arrow)" class="d1-s-grn" />
+<text x="725" y="116" font-size="25" text-anchor="middle" font-weight="700" class="d1-f-acc">
+<tspan x="725" dy="0">Sᵢⱼ = xᵢ·yⱼ / τ</tspan>
+</text>
+<text x="640" y="158" font-size="21" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="640" dy="0">文本 1</tspan>
+</text>
+<text x="795" y="158" font-size="21" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="795" dy="0">文本 2</tspan>
+</text>
+<text x="578" y="223" font-size="18" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="578" dy="0">图 1</tspan>
+</text>
+<rect x="603" y="181" width="133" height="72" rx="8" stroke-width="1.5" class="d1-f-green d1-s-grn" />
+<text x="669" y="226" font-size="29" text-anchor="middle" font-weight="700" class="d1-f-grn">
+<tspan x="669" dy="0">2 ✓</tspan>
+</text>
+<rect x="758" y="181" width="133" height="72" rx="8" stroke-width="1.5" class="d1-f-gray d1-s-line" />
+<text x="824" y="226" font-size="29" text-anchor="middle" font-weight="700" class="d1-f-mut">
+<tspan x="824" dy="0">0</tspan>
+</text>
+<text x="578" y="307" font-size="18" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="578" dy="0">图 2</tspan>
+</text>
+<rect x="603" y="265" width="133" height="72" rx="8" stroke-width="1.5" class="d1-f-gray d1-s-line" />
+<text x="669" y="310" font-size="29" text-anchor="middle" font-weight="700" class="d1-f-mut">
+<tspan x="669" dy="0">0</tspan>
+</text>
+<rect x="758" y="265" width="133" height="72" rx="8" stroke-width="1.5" class="d1-f-green d1-s-grn" />
+<text x="824" y="310" font-size="29" text-anchor="middle" font-weight="700" class="d1-f-grn">
+<tspan x="824" dy="0">2 ✓</tspan>
+</text>
+<rect x="552" y="389" width="364" height="112" rx="12" stroke-width="1.5" class="d1-f-green d1-s-grn" />
+<text x="734.0" y="421" font-size="22" text-anchor="middle" font-weight="700" class="d1-f-grn">
+<tspan x="734.0" dy="0">每行 / 每列分别做 CE</tspan>
+</text>
+<text x="734.0" y="452" font-size="19" text-anchor="middle" font-weight="400" class="d1-f-ink">
+<tspan x="734.0" dy="0">正确项概率 0.8808</tspan>
+<tspan x="734.0" dy="27.55">双向平均 loss ≈ 0.1269</tspan>
+</text>
+</g></svg>

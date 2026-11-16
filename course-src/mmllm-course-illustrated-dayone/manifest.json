@@ -1,0 +1,156 @@
+[
+  {
+    "id": "l1-attention-story",
+    "lecture": "l1",
+    "title": "注意力登场：每个词，重新读取图像",
+    "section": "3. 注意力为什么会登场：不是所有输出词都需要同一份图像信息",
+    "caption": "先看上行的单向量瓶颈，再看下行：图像网格保留位置，语言状态决定本步的读取权重。“狗”和“草地”的框仅为教学示意，不是实测注意力。 示意框 ≠ 理解证明；是否依赖图像，还要做遮挡、换图等对照。",
+    "svg": "svg/l1-attention-story.svg",
+    "path": "svg/l1-attention-story.svg",
+    "width": 960,
+    "height": 620
+  },
+  {
+    "id": "l1-attention-math",
+    "lecture": "l1",
+    "title": "把注意力算完：3 个区域 → 1 个上下文",
+    "section": "5. 完整手算：注意力不是一句“看向狗”就解释完了",
+    "caption": "区域向量分别为(1,0)、(0,1)、(1,1)，人为给定分数ln4、0、ln5，softmax得到0.4、0.1、0.5；加权结果为(0.9,0.6)。 exp(e)=(4,1,5)，总和=10；归一化沿“图像区域”维度，权重和为 1。",
+    "svg": "svg/l1-attention-math.svg",
+    "path": "svg/l1-attention-math.svg",
+    "width": 960,
+    "height": 580
+  },
+  {
+    "id": "l2-clip-pairs",
+    "lecture": "l2",
+    "title": "CLIP：配对数据 → 双塔 → 匹配矩阵",
+    "section": "4. 手算2×2：损失怎么把正确配对拉近",
+    "caption": "两对图文分别编码并归一化；教学手算令向量为单位基、温度0.5，相似度矩阵为[[2,0],[0,2]]。正确配对位于对角线，双向交叉熵为0.1269。 数值为单位基向量手算；不代表图中插画的真实 CLIP 输出。",
+    "svg": "svg/l2-clip-pairs.svg",
+    "path": "svg/l2-clip-pairs.svg",
+    "width": 960,
+    "height": 620
+  },
+  {
+    "id": "l2-clip-zeroshot",
+    "lecture": "l2",
+    "title": "Zero-shot 分类：在共同空间里找最像的文字",
+    "section": "6. 不训练新分类头，怎么做zero-shot分类",
+    "caption": "将类别名称写成提示句，经文本编码器得到单位向量；图像向量和候选文本比较余弦相似度，选择最高者。图中的角度和分数是教学构造，不是实测。 小角度 → 大余弦；提示模板、候选集合和模型偏差会影响结果。",
+    "svg": "svg/l2-clip-zeroshot.svg",
+    "path": "svg/l2-clip-zeroshot.svg",
+    "width": 960,
+    "height": 590
+  },
+  {
+    "id": "l3-bridge-comparison",
+    "lecture": "l3",
+    "title": "BLIP-2 与 Flamingo：视觉信息从哪里进入 LLM？",
+    "section": "8. 放在同一张表里，差异才看得清",
+    "caption": "BLIP-2将Q-Former的输出投影为LLM输入前缀；Flamingo经Perceiver压缩后，在语言层之间用带门控的交叉注意力重新读取。灰色模块为冻结，青色模块为训练。 框图展示核心接口；没有画出所有 Transformer 子层与训练目标。",
+    "svg": "svg/l3-bridge-comparison.svg",
+    "path": "svg/l3-bridge-comparison.svg",
+    "width": 960,
+    "height": 650
+  },
+  {
+    "id": "l3-query-read",
+    "lecture": "l3",
+    "title": "Query 是读取需求：同一组 K/V，读出不同混合",
+    "section": "4. 先手算一个query，再看维度与压缩量",
+    "caption": "令K=V为三个二维区域向量，q1=(1,0)、q2=(0,1)。省略投影与根号d缩放，两组softmax得到不同的加权输出。query数量决定输出行数。 教学算例省略可学习投影和 √d 缩放；query 不是固定的人工对象类别。",
+    "svg": "svg/l3-query-read.svg",
+    "path": "svg/l3-query-read.svg",
+    "width": 960,
+    "height": 580
+  },
+  {
+    "id": "l4-llava-shapes",
+    "lecture": "l4",
+    "title": "LLaVA-1.5：像素如何变成 LLM 的输入向量？",
+    "section": "5. 与文字怎么拼：token id与输入向量不能混为一谈",
+    "caption": "典型7B配置中，336方图得到576个1024维patch特征，经两层MLP变成576个4096维输入向量；文字id查嵌入表后，与视觉向量沿序列长度维拼接。 典型 LLaVA-1.5-7B 教学配置；图未画特殊标记和模板细节。",
+    "svg": "svg/l4-llava-shapes.svg",
+    "path": "svg/l4-llava-shapes.svg",
+    "width": 960,
+    "height": 650
+  },
+  {
+    "id": "l4-llava-versions",
+    "lecture": "l4",
+    "title": "别混版本：初版 LLaVA 与 LLaVA-1.5",
+    "section": "2. 先分清版本，才能讨论具体数字",
+    "caption": "初版经典配置为224分辨率、256patch与线性投影；1.5常用336分辨率、576patch与两层MLP。增加分辨率改变位置数，改变连接器深度不必改变位置数。 网格仅为缩略示意；真实网格分别是 16×16 与 24×24。",
+    "svg": "svg/l4-llava-versions.svg",
+    "path": "svg/l4-llava-versions.svg",
+    "width": 960,
+    "height": 570
+  },
+  {
+    "id": "l6-resolution-budget",
+    "lecture": "l6",
+    "title": "分辨率预算：patch、视觉 token 与总序列分开算",
+    "section": "5. 把数字算完：patch、视觉token、总序列分开",
+    "caption": "对比LLaVA固定分辨率、教学AnyRes切图加全局缩略图、Qwen动态分辨率加2×2合并。AnyRes的25倍只指视觉序列全局注意力项，加300文本后总序列项约13.18倍。 AnyRes 是简化切图模型；实际有去填充等细节。注意力项比例 ≠ 整体耗时比例。",
+    "svg": "svg/l6-resolution-budget.svg",
+    "path": "svg/l6-resolution-budget.svg",
+    "width": 960,
+    "height": 680
+  },
+  {
+    "id": "l6-position-coordinates",
+    "lecture": "l6",
+    "title": "RoPE / M-RoPE：旋转特征，保留相对位置",
+    "section": "9. M-RoPE：把哪些维度对分配给时间、高、宽",
+    "caption": "左侧在内容固定时，(m,n)=(6,10)与(8,12)的位移都为4，所以点积均为cos1.6≈−0.0292。右侧合并后网格的局部(t,h,w)区分向右与向下；时间需映射实际时间。 右图为合并后局部网格；真实混合序列需加起点偏移。多频点积不保证单调衰减。",
+    "svg": "svg/l6-position-coordinates.svg",
+    "path": "svg/l6-position-coordinates.svg",
+    "width": 960,
+    "height": 700
+  },
+  {
+    "id": "l7-vq-nearest",
+    "lecture": "l7",
+    "title": "VQ 图像 token：先编码到潜空间，再找码本",
+    "section": "4. 最近邻手算：看清量化丢失在哪一步",
+    "caption": "图像经编码器形成潜网格，每个潜向量选最近的学习码字。手算z=(0.8,0.6)，到(1,0)的平方距离0.4，小于到(0,1)的0.8，所以选择码字1；解码器从码字重建。 量化发生在学习得到的潜空间；本站 RGB 量化互动只是直观类比。",
+    "svg": "svg/l7-vq-nearest.svg",
+    "path": "svg/l7-vq-nearest.svg",
+    "width": 960,
+    "height": 650
+  },
+  {
+    "id": "l7-codebook-count",
+    "lecture": "l7",
+    "title": "码本大小 K 与空间网格：两个独立的旋钮",
+    "section": "5. K与网格尺寸分别决定什么",
+    "caption": "上行保持2×2空间网格，码本K从2增至8，id序列仍有4个位置；下行保持K=8，网格从2×2增至4×4，位置数从4变16。图形为教学示意，不表示真实重建图。 网格数字是示例码字 id，允许重复；K 增大不自动增加序列长度，也不保证端到端质量必然变好。",
+    "svg": "svg/l7-codebook-count.svg",
+    "path": "svg/l7-codebook-count.svg",
+    "width": 960,
+    "height": 650
+  },
+  {
+    "id": "l8-label-shift",
+    "lecture": "l8",
+    "title": "监督 mask 与 shift：只计答案，也能训练视觉路径",
+    "section": "3. 监督mask具体怎么标",
+    "caption": "八个输入位置中，前五个label忽略，回答狗、坐着、EOS为三个目标。位置4、5、6的logits分别预测位置5、6、7；答案loss仍可沿注意力向视觉路径传梯度。 −100 是框架忽略约定；图示简化模板。监督 mask ≠ causal mask ≠ 参数冻结。",
+    "svg": "svg/l8-label-shift.svg",
+    "path": "svg/l8-label-shift.svg",
+    "width": 960,
+    "height": 650
+  },
+  {
+    "id": "l8-training-recipes",
+    "lecture": "l8",
+    "title": "教学三段式 ≠ 每个 VLM 的真实训练配方",
+    "section": "6. 教学阶段概括与真实Qwen配方，必须同时摆出来",
+    "caption": "上行是连接器对齐、SFT、偏好对齐的简化教学框架；下行按Qwen2.5-VL报告区分三阶段预训练与SFT+DPO，后两步冻结ViT。不能把LLaVA冻结策略推广到全部模型。 依据 Qwen2.5-VL 技术报告 §2.2.2 / §2.3.4；上行不是该模型的真实配方。",
+    "svg": "svg/l8-training-recipes.svg",
+    "path": "svg/l8-training-recipes.svg",
+    "width": 960,
+    "height": 650
+  }
+]

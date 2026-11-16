@@ -1,0 +1,29 @@
+.d1-figure{font-family:inherit}
+.d1-f-ink{fill:var(--ink)}
+.d1-s-ink{stroke:var(--ink)}
+.d1-f-mut{fill:var(--mut)}
+.d1-s-mut{stroke:var(--mut)}
+.d1-f-acc{fill:var(--acc)}
+.d1-s-acc{stroke:var(--acc)}
+.d1-f-grn{fill:var(--grn)}
+.d1-s-grn{stroke:var(--grn)}
+.d1-f-amber{fill:var(--acc2)}
+.d1-s-amber{stroke:var(--acc2)}
+.d1-f-red{fill:var(--red)}
+.d1-s-red{stroke:var(--red)}
+.d1-f-panel{fill:var(--panel)}
+.d1-s-panel{stroke:var(--panel)}
+.d1-f-gray{fill:var(--panel2)}
+.d1-s-gray{stroke:var(--panel2)}
+.d1-f-line{fill:var(--line)}
+.d1-s-line{stroke:var(--line)}
+.d1-f-sky{fill:color-mix(in srgb,var(--acc) 12%,var(--panel))}
+.d1-s-sky{stroke:color-mix(in srgb,var(--acc) 12%,var(--panel))}
+.d1-f-green{fill:color-mix(in srgb,var(--grn) 16%,var(--panel))}
+.d1-s-green{stroke:color-mix(in srgb,var(--grn) 16%,var(--panel))}
+.d1-f-gold{fill:color-mix(in srgb,var(--acc2) 15%,var(--panel))}
+.d1-s-gold{stroke:color-mix(in srgb,var(--acc2) 15%,var(--panel))}
+.d1-f-edge{fill:color-mix(in srgb,var(--acc) 50%,var(--panel))}
+.d1-s-edge{stroke:color-mix(in srgb,var(--acc) 50%,var(--panel))}
+.d1-f-brown{fill:color-mix(in srgb,var(--acc2) 65%,var(--ink))}
+.d1-s-brown{stroke:color-mix(in srgb,var(--acc2) 65%,var(--ink))}

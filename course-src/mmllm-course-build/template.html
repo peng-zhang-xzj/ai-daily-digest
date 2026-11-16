@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>多模态大模型的前世今生 · 互动课程</title>
+<style>
+:root{
+  --bg:#0e1116; --panel:#161b22; --panel2:#1c232d; --ink:#e7ecf3; --mut:#9aa4b2;
+  --line:#2a333f; --acc:#6b8afd; --acc2:#f0a84a; --grn:#49c184; --red:#e06c6c;
+  --vio:#b48bff; --shadow:0 2px 14px rgba(0,0,0,.35);
+  --cyan:#3bc9db; --fsky:#8fb3d9; --fgrass:#7cb262; --fdog:#b58050;
+}
+[data-theme="light"]{
+  --bg:#f5f7fa; --panel:#ffffff; --panel2:#f0f3f7; --ink:#1b2230; --mut:#5b6472;
+  --line:#e2e7ee; --acc:#3b5bdb; --acc2:#c9801f; --grn:#1f9d63; --red:#c9524f;
+  --vio:#7c5cff; --shadow:0 2px 12px rgba(20,30,60,.08);
+  --cyan:#0c8599; --fsky:#9cc0e0; --fgrass:#6aa845; --fdog:#8a5a2b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--acc)}
+code{background:var(--panel2);padding:1px 6px;border-radius:5px;font-size:.9em;
+  font-family:"SF Mono",Consolas,Monaco,monospace}
+/* layout */
+#top{position:fixed;top:0;left:0;right:0;height:56px;z-index:30;display:flex;align-items:center;
+  justify-content:space-between;padding:0 20px;background:var(--panel);border-bottom:1px solid var(--line)}
+#top .lft{display:flex;align-items:center;gap:12px;min-width:0}
+#top h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#top h1 span{color:var(--acc)}
+.tbtn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;
+  padding:6px 12px;cursor:pointer;font-size:13px}
+.tbtn:hover{border-color:var(--acc)}
+#menuBtn{display:none;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:6px 11px;cursor:pointer;font-size:15px}
+#wrap{display:flex;padding-top:56px}
+#nav{position:fixed;top:56px;bottom:0;left:0;width:280px;overflow-y:auto;background:var(--panel);
+  border-right:1px solid var(--line);padding:16px 0}
+#nav .grp{color:var(--mut);font-size:12px;font-weight:700;letter-spacing:1px;padding:14px 22px 6px;text-transform:uppercase}
+#nav a{display:block;color:var(--ink);text-decoration:none;padding:7px 22px;font-size:14.5px;border-left:3px solid transparent}
+#nav a:hover{background:var(--panel2)}
+#nav a.on{border-left-color:var(--acc);color:var(--acc);background:var(--panel2);font-weight:600}
+#nav a small{color:var(--mut);font-weight:400}
+#main{margin-left:280px;flex:1;min-width:0;max-width:880px;padding:36px 48px 120px}
+/* lecture */
+.lec{display:none;animation:fade .25s}
+.lec.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.kick{color:var(--acc);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.lec h2{font-size:30px;margin:6px 0 4px;line-height:1.25}
+.lead{color:var(--mut);font-size:17px;margin:0 0 8px}
+.lec h3{font-size:20px;margin:30px 0 8px;padding-top:6px}
+.lec h4{font-size:16px;margin:20px 0 6px;color:var(--acc)}
+.lec p{margin:10px 0}
+.lec ul,.lec ol{margin:10px 0;padding-left:22px}
+.lec li{margin:5px 0}
+.tag{display:inline-block;background:var(--panel2);border:1px solid var(--line);color:var(--mut);
+  border-radius:20px;padding:2px 11px;font-size:12px;margin-right:6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0;box-shadow:var(--shadow)}
+.note{border-left:3px solid var(--acc2);background:var(--panel2);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.note b{color:var(--acc2)}
+.key{border-left:3px solid var(--grn);background:var(--panel2);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.key b{color:var(--grn)}
+.warn{border-left:3px solid var(--red);background:var(--panel2);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.warn b{color:var(--red)}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:var(--panel2);font-weight:600}
+.flow{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:var(--panel2);
+  border:1px solid var(--line);border-radius:10px;padding:14px;white-space:pre;overflow-x:auto;color:var(--mut)}
+.quiz{margin:22px 0 0;border:1px solid var(--line);border-radius:12px;background:var(--panel2);overflow:hidden}
+.quiz summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14.5px;color:var(--acc);list-style:none}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary:before{content:"▸ ";color:var(--mut)}
+.quiz[open] summary:before{content:"▾ "}
+.quiz .qa{padding:0 16px 14px;color:var(--ink);font-size:14.5px;border-top:1px solid var(--line);padding-top:10px}
+.navbtns{display:flex;justify-content:space-between;margin-top:40px;gap:12px}
+.navbtns button{flex:1;background:var(--panel);border:1px solid var(--line);color:var(--ink);
+  border-radius:10px;padding:12px;cursor:pointer;font-size:14px}
+.navbtns button:hover:not(:disabled){border-color:var(--acc);color:var(--acc)}
+.navbtns button:disabled{opacity:.35;cursor:default}
+/* widgets */
+.widget{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:20px 0;box-shadow:var(--shadow)}
+.widget .wh{font-weight:700;font-size:15px;margin-bottom:4px}
+.widget .wsub{color:var(--mut);font-size:13px;margin-bottom:12px}
+.ctrl{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0}
+.ctrl label{font-size:13px;color:var(--mut);min-width:84px}
+input[type=range]{flex:1;min-width:140px;accent-color:var(--acc)}
+.pill{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:13px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.seg button{background:var(--panel2);border:none;color:var(--mut);padding:7px 14px;cursor:pointer;font-size:13px}
+.seg button.on{background:var(--acc);color:#fff}
+canvas{max-width:100%;display:block;background:var(--panel2);border-radius:10px;border:1px solid var(--line)}
+.stat{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+.stat div{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-width:92px}
+.stat b{display:block;font-size:22px;color:var(--acc)}
+.stat span{font-size:12px;color:var(--mut)}
+/* timeline */
+.tl{position:relative;margin:10px 0;overflow-x:auto;padding-bottom:8px}
+.tl-row{display:flex;gap:0;min-width:900px}
+.tl-item{flex:1;text-align:center;cursor:pointer;position:relative;padding-top:26px;background:none;border:none;color:inherit;font:inherit}
+.tl-item:before{content:"";position:absolute;top:8px;left:0;right:0;height:2px;background:var(--line)}
+.tl-item .dot{position:absolute;top:3px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--panel);transition:.15s}
+.tl-item.on .dot{background:var(--acc);box-shadow:0 0 0 4px rgba(107,138,253,.25)}
+.tl-item .yr{font-size:12px;color:var(--mut)}
+.tl-item .nm{font-size:12.5px;font-weight:600;margin-top:2px}
+.tl-item.on .nm{color:var(--acc)}
+.tl-detail{margin-top:12px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px}
+.phase{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--mut)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* present (大字/投屏) mode */
+[data-present="1"] #main{max-width:1100px;font-size:19px;line-height:1.85}
+[data-present="1"] .lec h2{font-size:38px}
+[data-present="1"] .lec h3{font-size:25px}
+[data-present="1"] .lead{font-size:20px}
+[data-present="1"] .flow{font-size:15px}
+@media(max-width:860px){
+  #nav{display:none}
+  #nav.open{display:block;position:fixed;top:56px;left:0;bottom:0;width:270px;z-index:40;box-shadow:var(--shadow)}
+  #menuBtn{display:inline-block}
+  #main{margin-left:0;padding:24px 16px 100px}
+  #navScrim{display:none;position:fixed;inset:56px 0 0 0;background:rgba(0,0,0,.35);z-index:35}
+  #navScrim.on{display:block}
+}
+/* figures (inline themeable SVG — offline, dark/light + print safe) */
+.fig{margin:18px 0;overflow-x:auto}
+.fig svg{display:block;width:100%;max-width:660px;margin:0 auto;height:auto;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px}
+.fig figcaption{color:var(--mut);font-size:12.5px;text-align:center;margin:7px auto 0;max-width:640px;line-height:1.55}
+.figbox{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
+.figbox-acc{fill:var(--panel);stroke:var(--acc);stroke-width:2}
+.figtx{fill:var(--ink);font-family:-apple-system,"PingFang SC",sans-serif;font-size:13px}
+.figtx-b{fill:var(--ink);font-family:-apple-system,"PingFang SC",sans-serif;font-size:13px;font-weight:700}
+.figtx-mut{fill:var(--mut);font-family:-apple-system,"PingFang SC",sans-serif;font-size:11px}
+.figtx-acc{fill:var(--acc);font-family:-apple-system,"PingFang SC",sans-serif;font-size:12px;font-weight:600}
+.figln{stroke:var(--mut);stroke-width:1.5;fill:none}
+.figfill-mut{fill:var(--mut)}
+.figfill-acc{fill:var(--acc)}
+.figfill-sky{fill:var(--acc);fill-opacity:.45}
+.figfill-grn{fill:var(--grn);fill-opacity:.55}
+.figfill-acc2{fill:var(--acc2);fill-opacity:.6}
+.figcell-ok{fill:var(--grn);fill-opacity:.14;stroke:var(--grn);stroke-width:1.5}
+.figcell-bad{fill:var(--red);fill-opacity:.16;stroke:var(--red);stroke-width:1.5}
+.figcell-warn{fill:var(--acc2);fill-opacity:.16;stroke:var(--acc2);stroke-width:1.5}
+/* DayOne 语义色(d1-*):只给颜色,不设 font-size/stroke-width,保留其几何尺寸;深浅/打印自动适配 */
+.d1-read{fill:var(--cyan)} .d1-read-s{stroke:var(--cyan);fill:none} .d1-read-t{fill:var(--cyan);fill-opacity:.16}
+.d1-sel{fill:var(--acc2)} .d1-sel-s{stroke:var(--acc2);fill:none} .d1-sel-t{fill:var(--acc2);fill-opacity:.16}
+.d1-grad{fill:var(--red)} .d1-grad-s{stroke:var(--red);fill:none} .d1-grad-t{fill:var(--red);fill-opacity:.16}
+.d1-sky{fill:var(--fsky)} .d1-grass{fill:var(--fgrass)} .d1-dog{fill:var(--fdog)}
+.d1-box{fill:var(--panel);stroke:var(--line)} .d1-panel{fill:var(--panel2)}
+.d1-ln{stroke:var(--mut);fill:none} .d1-ln-acc{stroke:var(--acc);fill:none}
+.d1-tx{fill:var(--ink)} .d1-tx-mut{fill:var(--mut)} .d1-tx-acc{fill:var(--acc)} .d1-tx-read{fill:var(--cyan)} .d1-fill-mut{fill:var(--mut)} .d1-fill-acc{fill:var(--acc)}
+.figzoom{display:block;margin:8px auto 0;background:var(--panel2);border:1px solid var(--line);color:var(--acc);border-radius:8px;padding:4px 14px;font-size:12px;cursor:pointer}
+.figzoom:hover{border-color:var(--acc)}
+#figModal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.62);display:none;align-items:center;justify-content:center;padding:14px}
+#figModal.on{display:flex}
+#figModalInner{background:var(--panel);border:1px solid var(--line);border-radius:14px;max-width:96vw;max-height:92vh;overflow:auto;padding:14px;box-shadow:var(--shadow)}
+#figClose{display:block;margin:0 0 10px auto;position:sticky;top:0;background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 13px;font-size:13px;cursor:pointer}
+#figModalBody svg{width:900px;max-width:none;height:auto;display:block;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px}
+#figModalCap{color:var(--mut);font-size:13px;margin-top:8px;max-width:900px;line-height:1.55}
+@media print{
+  /* force a readable light palette regardless of dark/light theme, so note/panel backgrounds don't stay dark */
+  html{--bg:#fff!important;--panel:#fff!important;--panel2:#f3f3f3!important;--ink:#000!important;
+    --mut:#2a2a2a!important;--line:#b9b9b9!important;--acc:#15379c!important;--acc2:#8a5a10!important;
+    --grn:#157a46!important;--red:#b23b36!important;--vio:#5a3fb0!important;--shadow:none!important;
+    --cyan:#0b6b7d!important;--fsky:#6f93ba!important;--fgrass:#4f8a37!important;--fdog:#7a4e24!important}
+  *{box-shadow:none!important}
+  #top,#nav,#navScrim,.navbtns,.tbtn,#menuBtn,.figzoom,#figModal{display:none!important}
+  #wrap{padding-top:0}
+  #main{margin:0;max-width:none;padding:0}
+  body{background:#fff;color:#000}
+  .lec{display:block!important;animation:none;page-break-after:always}
+  .widget,.card,table,.quiz,.note,.key,.warn,.fig{break-inside:avoid}
+  .fig{overflow:visible}
+  /* long command/diagram blocks must wrap on paper (A4 can't scroll) and may paginate */
+  .flow{white-space:pre-wrap;overflow:visible;overflow-wrap:anywhere;break-inside:auto}
+  .quiz{border:1px solid #b9b9b9}
+}
+</style>
+</head>
+<body>
+<div id="top">
+  <div class="lft">
+    <button id="menuBtn" aria-label="目录">☰</button>
+    <h1><span>◆</span> 多模态大模型的<span>前世今生</span></h1>
+  </div>
+  <div>
+    <span id="prog" class="pill" style="margin-right:10px"></span>
+    <button class="tbtn" id="present" title="投屏大字模式">🖥️</button>
+    <button class="tbtn" id="theme" aria-label="切换主题">🌙</button>
+  </div>
+</div>
+<div id="wrap">
+  <nav id="nav"></nav>
+  <div id="navScrim"></div>
+  <main id="main"></main>
+</div>
+<!-- embedded lab files for offline Blob download -->
+<script type="text/plain" id="file-lab_shapes.py">
+"""CPU processor evidence; optional GPU inference. Never invent model answers."""
+import argparse
+import importlib.metadata
+import json
+import platform
+from pathlib import Path
+
+import torch
+from PIL import Image, ImageDraw
+from transformers import AutoProcessor
+
+ROOT = Path(__file__).resolve().parent
+MODELS = {
+    "llava": "llava-hf/llava-1.5-7b-hf",
+    "qwen": "Qwen/Qwen2.5-VL-3B-Instruct",
+}
+
+
+def make_image(path, side):
+    im = Image.new("RGB", (side, side), "white")
+    d = ImageDraw.Draw(im)
+    # A deterministic, self-created OCR fixture; not a real-world benchmark.
+    lines = ["SAMPLE INVOICE", "ID: INV-042", "ITEM      QTY      PRICE",
+             "Notebook   3      12.50", "TOTAL: 37.50", "PAID: NO"]
+    for i, line in enumerate(lines):
+        d.text((side // 12, side // 10 + i * side // 11), line,
+               fill="black", font_size=max(12, side // 30))
+    im.save(path)
+    return im
+
+
+def main():
+    a = argparse.ArgumentParser()
+    a.add_argument("--model", choices=MODELS, default="qwen")
+    a.add_argument("--sizes", nargs="+", type=int, default=[336, 672])
+    a.add_argument("--infer", action="store_true")
+    a.add_argument("--out", type=Path, default=ROOT / "evidence" / "lab-shapes.json")
+    args = a.parse_args()
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    model_id = MODELS[args.model]
+    # Explicit sizes below remain below this budget and avoid unexpected resize.
+    kwargs = {"min_pixels": 28 * 28, "max_pixels": 1280 * 28 * 28} if args.model == "qwen" else {}
+    processor = AutoProcessor.from_pretrained(model_id, **kwargs)
+    versions = {n: importlib.metadata.version(n) for n in ["torch", "transformers", "pillow", "accelerate"]}
+    result = {"model": model_id, "python": platform.python_version(), "versions": versions,
+              "cuda": torch.cuda.is_available(), "processor_only": not args.infer,
+              "fixture": "self-created synthetic invoice, not a benchmark", "cases": []}
+    model = None
+    if args.infer:
+        if not torch.cuda.is_available():
+            raise RuntimeError("GPU inference requested, but CUDA is unavailable. Use processor-only mode.")
+        from transformers import LlavaForConditionalGeneration, Qwen2_5_VLForConditionalGeneration
+        cls = Qwen2_5_VLForConditionalGeneration if args.model == "qwen" else LlavaForConditionalGeneration
+        model = cls.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
+        model.eval()
+    for side in args.sizes:
+        image_path = args.out.parent / f"invoice-{side}.png"
+        im = make_image(image_path, side)
+        prompt = "Read ID, total, and paid status. Answer only with a JSON object."
+        if args.model == "qwen":
+            text = processor.apply_chat_template(
+                [{"role": "user", "content": [{"type": "image"}, {"type": "text", "text": prompt}]}],
+                tokenize=False, add_generation_prompt=True)
+            image_token = "<|image_pad|>"
+        else:
+            text = "USER: <image>\n" + prompt + " ASSISTANT:"
+            image_token = "<image>"
+        inputs = processor(text=[text], images=[im], return_tensors="pt")
+        case = {"source_size": [side, side], "fixture_file": image_path.name,
+                "prompt": prompt, "input_shapes": {k: list(v.shape) for k, v in inputs.items()},
+                "expanded_image_placeholders": int((inputs["input_ids"] == processor.tokenizer.convert_tokens_to_ids(image_token)).sum())}
+        if args.model == "qwen":
+            grid = inputs["image_grid_thw"][0].tolist()
+            case["image_grid_thw"] = grid
+            case["expected_llm_visual_tokens"] = grid[0] * grid[1] * grid[2] // 4
+        else:
+            h, w = inputs["pixel_values"].shape[-2:]
+            case["expected_llm_visual_tokens"] = h // 14 * (w // 14)
+        assert case["expanded_image_placeholders"] == case["expected_llm_visual_tokens"], case
+        if model is not None:
+            inputs = inputs.to(model.device)
+            with torch.inference_mode():
+                generated = model.generate(**inputs, do_sample=False, max_new_tokens=128)
+            case["actual_model_output"] = processor.batch_decode(
+                generated[:, inputs["input_ids"].shape[1]:], skip_special_tokens=True)[0]
+        result["cases"].append(case)
+    args.out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()
+
+</script>
+<script type="text/plain" id="file-requirements-observed.txt">
+# Actual processor-only test environment; GPU inference was not tested.
+torch==2.11.0
+transformers==5.12.1
+Pillow==11.3.0
+accelerate==1.13.0
+
+</script>
+<script type="text/plain" id="file-qwen-processor-shapes.json">
+{
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "python": "3.11.2",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.12.1",
+    "pillow": "11.3.0",
+    "accelerate": "1.13.0"
+  },
+  "cuda": false,
+  "processor_only": true,
+  "fixture": "self-created synthetic invoice, not a benchmark",
+  "cases": [
+    {
+      "source_size": [
+        336,
+        336
+      ],
+      "fixture_file": "invoice-336.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          181
+        ],
+        "attention_mask": [
+          1,
+          181
+        ],
+        "mm_token_type_ids": [
+          1,
+          181
+        ],
+        "pixel_values": [
+          576,
+          1176
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "expanded_image_placeholders": 144,
+      "image_grid_thw": [
+        1,
+        24,
+        24
+      ],
+      "expected_llm_visual_tokens": 144
+    },
+    {
+      "source_size": [
+        672,
+        672
+      ],
+      "fixture_file": "invoice-672.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          613
+        ],
+        "attention_mask": [
+          1,
+          613
+        ],
+        "mm_token_type_ids": [
+          1,
+          613
+        ],
+        "pixel_values": [
+          2304,
+          1176
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "expanded_image_placeholders": 576,
+      "image_grid_thw": [
+        1,
+        48,
+        48
+      ],
+      "expected_llm_visual_tokens": 576
+    }
+  ]
+}
+</script>
+<script type="text/plain" id="file-llava-processor-shapes.json">
+{
+  "model": "llava-hf/llava-1.5-7b-hf",
+  "python": "3.11.2",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.12.1",
+    "pillow": "11.3.0",
+    "accelerate": "1.13.0"
+  },
+  "cuda": false,
+  "processor_only": true,
+  "fixture": "self-created synthetic invoice, not a benchmark",
+  "cases": [
+    {
+      "source_size": [
+        336,
+        336
+      ],
+      "fixture_file": "invoice-336.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          604
+        ],
+        "attention_mask": [
+          1,
+          604
+        ],
+        "pixel_values": [
+          1,
+          3,
+          336,
+          336
+        ]
+      },
+      "expanded_image_placeholders": 576,
+      "expected_llm_visual_tokens": 576
+    },
+    {
+      "source_size": [
+        672,
+        672
+      ],
+      "fixture_file": "invoice-672.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          604
+        ],
+        "attention_mask": [
+          1,
+          604
+        ],
+        "pixel_values": [
+          1,
+          3,
+          336,
+          336
+        ]
+      },
+      "expanded_image_placeholders": 576,
+      "expected_llm_visual_tokens": 576
+    }
+  ]
+}
+</script>
+<script type="text/plain" id="file-score_pope.py">
+#!/usr/bin/env python3
+"""GPU-free POPE-style scorer (stdlib only) —— 教学最小脚本,采用严格协议。
+
+读取黄金标签与模型预测两个 JSONL,计算 POPE 的混淆矩阵与指标。
+不需要 GPU、不需要模型。用于 Lab 的 C 级最小评分实验,把 L9 的
+TP/FP/FN/TN、Precision/Recall/F1、yes-ratio、真实正例率亲手算一遍。
+
+严格协议(出任何不合规都报错退出,绝不输出"貌似有效"的成绩):
+  - label 只能是 "yes" / "no"(大小写不限),否则报错。
+  - answer 必须是受控格式: yes / no / 是 / 否(去空格、大小写不限),
+    否则报错(本脚本不做自由文本语义判断,见 Lab 说明)。
+  - gold 与 pred 的 id 必须一一对应: 不允许缺失、多余、重复。
+  - 以上任一不满足 → 打印错误并以非零状态退出。
+
+JSONL 每行一个对象:
+  gold.jsonl : {"id": "q1", "label": "yes"}     # yes = 图里真的有该对象
+  pred.jsonl : {"id": "q1", "answer": "yes"}     # 受控格式: yes/no/是/否
+
+用法:
+  python score_pope.py --gold pope_mini_gold.jsonl --pred pope_mini_pred.jsonl
+"""
+import argparse
+import json
+import sys
+
+YES = {"yes", "是"}
+NO = {"no", "否"}
+
+
+def die(msg):
+    sys.stderr.write("错误: " + msg + "\n")
+    sys.exit(1)
+
+
+def parse_controlled(value, where):
+    t = str(value).strip().lower()
+    if t in YES:
+        return "yes"
+    if t in NO:
+        return "no"
+    die("%s 不是受控格式(只接受 yes/no/是/否),实际收到: %r" % (where, value))
+
+
+def load_jsonl_strict(path, field, kind):
+    """读入 {id: value},严格禁止重复 id。"""
+    out = {}
+    with open(path, encoding="utf-8") as f:
+        for i, line in enumerate(f, 1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                o = json.loads(line)
+            except json.JSONDecodeError as e:
+                die("%s 第 %d 行不是合法 JSON: %s" % (path, i, e))
+            if "id" not in o or field not in o:
+                die("%s 第 %d 行缺少 'id' 或 '%s'" % (path, i, field))
+            qid = o["id"]
+            if qid in out:
+                die("%s 出现重复 id: %r" % (path, qid))
+            out[qid] = o[field]
+    if not out:
+        die("%s 没有任何记录" % path)
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--gold", required=True)
+    ap.add_argument("--pred", required=True)
+    args = ap.parse_args()
+
+    gold_raw = load_jsonl_strict(args.gold, "label", "gold")
+    pred_raw = load_jsonl_strict(args.pred, "answer", "pred")
+
+    # id 必须一一对应
+    gset, pset = set(gold_raw), set(pred_raw)
+    missing = gset - pset
+    extra = pset - gset
+    if missing:
+        die("pred 缺少这些 id: %s" % sorted(missing))
+    if extra:
+        die("pred 有多余 id(gold 里没有): %s" % sorted(extra))
+
+    gold = {k: parse_controlled(v, "gold[%s].label" % k) for k, v in gold_raw.items()}
+    pred = {k: parse_controlled(v, "pred[%s].answer" % k) for k, v in pred_raw.items()}
+
+    tp = fp = fn = tn = 0
+    for qid in gold:
+        g, a = gold[qid], pred[qid]
+        if g == "yes" and a == "yes":
+            tp += 1
+        elif g == "no" and a == "yes":
+            fp += 1
+        elif g == "yes" and a == "no":
+            fn += 1
+        else:
+            tn += 1
+
+    n = len(gold)  # 与 pred 一一对应,分母一致
+    precision = tp / (tp + fp) if (tp + fp) else 0.0
+    recall = tp / (tp + fn) if (tp + fn) else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+    acc = (tp + tn) / n
+    yes_ratio = (tp + fp) / n
+    true_pos_rate = (tp + fn) / n  # 真实正例率,分母与上面一致
+
+    print("样本数 n = %d" % n)
+    print("混淆矩阵: TP=%d  FP=%d  FN=%d  TN=%d" % (tp, fp, fn, tn))
+    print("Precision = %.3f" % precision)
+    print("Recall    = %.3f" % recall)
+    print("F1        = %.3f" % f1)
+    print("Accuracy  = %.3f" % acc)
+    print("yes-ratio = %.3f   (对照真实正例率 = %.3f)" % (yes_ratio, true_pos_rate))
+    print("\n解读: FP 就是幻觉(图里没有却答有); yes-ratio 要对照真实正例率看,不是固定 0.5。")
+
+
+if __name__ == "__main__":
+    main()
+
+</script>
+<script type="text/plain" id="file-pope_mini_gold.jsonl">
+{"id":"q1","label":"yes"}
+{"id":"q2","label":"no"}
+{"id":"q3","label":"yes"}
+{"id":"q4","label":"no"}
+{"id":"q5","label":"yes"}
+{"id":"q6","label":"no"}
+{"id":"q7","label":"yes"}
+{"id":"q8","label":"no"}
+{"id":"q9","label":"yes"}
+{"id":"q10","label":"no"}
+
+</script>
+<script type="text/plain" id="file-pope_mini_pred.jsonl">
+{"id":"q1","answer":"yes"}
+{"id":"q2","answer":"no"}
+{"id":"q3","answer":"是"}
+{"id":"q4","answer":"yes"}
+{"id":"q5","answer":"yes"}
+{"id":"q6","answer":"否"}
+{"id":"q7","answer":"是"}
+{"id":"q8","answer":"yes"}
+{"id":"q9","answer":"是"}
+{"id":"q10","answer":"no"}
+
+</script>
+<script>
+/* ============ COURSE CONTENT ============ */
+const LECTURES = __LECTURES__;
+
+const CHECKLIST=[
+ "能对着三件套图讲清一张图如何变成答案",
+ "能区分初版 LLaVA(224/256/线性) 与 LLaVA-1.5(336/576/MLP)",
+ "能说清 CLIP/BLIP-2 各解决了什么历史问题",
+ "能讲「分辨率—token—自注意力长度」三角与三种解法",
+ "能区分连续 soft-token 与离散 VQ 两条路线,且不把结论说绝对",
+ "能分清「教学三段式」与 Qwen2.5-VL 报告里的真实训练配方",
+ "能把文档/数理/幻觉映射到榜,说出 POPE 的覆盖范围与读榜陷阱",
+ "跑通过 A 级 processor 实验(或进一步 B/C/D)"
+];
+
+/* ============ RENDER NAV + LECTURES ============ */
+const nav=document.getElementById('nav'), main=document.getElementById('main');
+let curGrp="";
+LECTURES.forEach((L,i)=>{
+  if(L.grp!==curGrp){curGrp=L.grp;const g=document.createElement('div');g.className='grp';g.textContent=L.grp;nav.appendChild(g);}
+  const a=document.createElement('a');a.href="#"+L.id;a.dataset.i=i;
+  a.innerHTML=`${L.kick.replace('Lecture','L')} · ${L.title}`;
+  a.onclick=e=>{e.preventDefault();show(i);closeMenu();};
+  nav.appendChild(a);
+  const sec=document.createElement('section');sec.className='lec';sec.id=L.id;
+  const quiz=L.quiz?`<details class="quiz"><summary>🧠 检查题:${L.quiz.q}</summary><div class="qa"><b>参考答案:</b>${L.quiz.a}</div></details>`:'';
+  sec.innerHTML=`<div class="kick">${L.kick}</div><h2>${L.title}</h2><p class="lead">${L.lead}</p>${L.html}${quiz}
+    <div class="navbtns"><button class="prev">← 上一讲</button><button class="next">下一讲 →</button></div>`;
+  main.appendChild(sec);
+});
+const VERSION='v2026.11.16 · rev5(插图版)';
+(function(){const vf=document.createElement('div');vf.className='grp';
+  vf.style.cssText='margin-top:18px;border-top:1px solid var(--line);padding-top:12px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--mut)';
+  vf.innerHTML=VERSION+'<br>收口 DayTwo · review DayOne';nav.appendChild(vf);})();
+let cur=0;
+function idToIndex(id){return LECTURES.findIndex(L=>L.id===id);}
+function show(i){
+  cur=Math.max(0,Math.min(LECTURES.length-1,i));
+  document.querySelectorAll('.lec').forEach((s,k)=>s.classList.toggle('on',k===cur));
+  document.querySelectorAll('#nav a').forEach((a,k)=>a.classList.toggle('on',k===cur));
+  document.getElementById('prog').textContent=`${cur+1} / ${LECTURES.length}`;
+  window.scrollTo(0,0);
+  const sec=document.querySelectorAll('.lec')[cur];
+  sec.querySelector('.prev').disabled=cur===0;
+  sec.querySelector('.next').disabled=cur===LECTURES.length-1;
+  sec.querySelector('.prev').onclick=()=>show(cur-1);
+  sec.querySelector('.next').onclick=()=>show(cur+1);
+  const id=LECTURES[cur].id;
+  try{ if(location.hash!=='#'+id) location.hash=id; }catch(e){}
+  LS.set('mmc_pos',id);
+  mountWidgets();
+}
+/* theme + storage (localStorage guarded: file:// / opaque origins can throw) */
+const LS={get(k){try{return localStorage.getItem(k);}catch(e){return null;}},set(k,v){try{localStorage.setItem(k,v);}catch(e){}}};
+function theme(m){document.documentElement.setAttribute('data-theme',m);
+  document.getElementById('theme').textContent=m==='light'?'🌙':'☀️';
+  LS.set('mmc_theme',m);redrawAll();}
+document.getElementById('theme').onclick=()=>theme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light');
+theme(LS.get('mmc_theme')||'dark');
+/* present (大字/投屏) mode */
+function present(on){document.documentElement.setAttribute('data-present',on?'1':'0');
+  document.getElementById('present').style.borderColor=on?'var(--acc)':'';LS.set('mmc_present',on?'1':'0');redrawAll();}
+document.getElementById('present').onclick=()=>present(document.documentElement.getAttribute('data-present')!=='1');
+present(LS.get('mmc_present')==='1');
+/* mobile menu */
+const navEl=document.getElementById('nav'),scrim=document.getElementById('navScrim');
+function openMenu(){navEl.classList.add('open');scrim.classList.add('on');}
+function closeMenu(){navEl.classList.remove('open');scrim.classList.remove('on');}
+document.getElementById('menuBtn').onclick=()=>navEl.classList.contains('open')?closeMenu():openMenu();
+scrim.onclick=closeMenu;
+/* keyboard nav (ignore when typing / adjusting a control) */
+document.addEventListener('keydown',e=>{
+  const t=(e.target.tagName||'').toUpperCase();
+  if(t==='INPUT'||t==='TEXTAREA'||t==='SELECT')return;
+  if(e.key==='ArrowRight')show(cur+1);
+  else if(e.key==='ArrowLeft')show(cur-1);
+});
+/* hash routing: explicit deep-link wins over saved progress */
+window.addEventListener('hashchange',()=>{const i=idToIndex(location.hash.slice(1));if(i>=0&&i!==cur)show(i);});
+/* print: mount every widget + render checklist so all lectures print fully */
+window.addEventListener('beforeprint',()=>{mountAll();});
+
+/* ============ WIDGETS ============ */
+function cssv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+let mounted={};
+function mountWidgets(){
+  const id=LECTURES[cur].id;
+  if(id==='l0'&&!mounted.tl){buildTimeline();mounted.tl=1;}
+  if(id==='l5'&&!mounted.data){buildData();mounted.data=1;}
+  if(id==='l6'){ if(!mounted.res){buildRes();mounted.res=1;} if(!mounted.rope){buildRope();mounted.rope=1;} }
+  if(id==='l7'&&!mounted.vq){buildVQ();mounted.vq=1;}
+  if(id==='lab'){ if(!mounted.chk){buildChecklist();mounted.chk=1;} if(!mounted.dl){buildLabDownloads();mounted.dl=1;} }
+}
+function mountAll(){
+  if(!mounted.tl){buildTimeline();mounted.tl=1;}
+  if(!mounted.data){buildData();mounted.data=1;}
+  if(!mounted.res){buildRes();mounted.res=1;}
+  if(!mounted.rope){buildRope();mounted.rope=1;}
+  if(!mounted.vq){buildVQ();mounted.vq=1;}
+  if(!mounted.chk){buildChecklist();mounted.chk=1;}
+  if(!mounted.dl){buildLabDownloads();mounted.dl=1;}
+}
+function redrawAll(){ if(window._res)window._res(); if(window._rope)window._rope(); if(window._vq)window._vq(); }
+
+/* --- Timeline --- */
+const TL=[
+ {y:"2015",n:"Show & Tell / VQA",p:"前世",d:"CNN 看图 + RNN 说话,image captioning 开端;Show,Attend&Tell 引入视觉注意力;同年 VQA 数据集把任务从「描述」升级到「推理」。"},
+ {y:"2021",n:"CLIP",p:"前世",d:"4 亿图文对对比学习,造出(与其文本编码器)语义对齐的视觉底座——现代 VLM 的常见地基。"},
+ {y:"2022",n:"Flamingo",p:"前世",d:"冻结双塔 + Perceiver Resampler + gated cross-attention + few-shot,首次有了多模态的上下文学习。"},
+ {y:"2023",n:"BLIP-2",p:"前世",d:"Q-Former:用少量 query 把视觉特征压成固定 token——连接器的代表方案。"},
+ {y:"2023",n:"LLaVA / LLaVA-1.5",p:"今生",d:"极简三件套 + 视觉指令微调,定义现代 VLM 范式。初版 224/256/线性;1.5 升到 336/576/2层MLP。"},
+ {y:"2023",n:"Qwen-VL",p:"今生",d:"早期 Qwen 视觉-语言模型,Resampler 连接器。注意:此时尚无 M-RoPE。"},
+ {y:"2024",n:"Qwen2-VL",p:"今生",d:"原生动态分辨率 + M-RoPE(时/高/宽),强文档/OCR。"},
+ {y:"2024",n:"InternVL",p:"今生",d:"动态切图(tiling)高分辨率路线;与 Qwen 的原生动态分辨率是不同取舍,并非都用 M-RoPE。"},
+ {y:"2024",n:"Chameleon / Emu3",p:"今生",d:"离散视觉 token,统一理解与生成的另一条路。"},
+ {y:"2024",n:"Molmo",p:"今生",d:"全开放数据范式,不蒸馏、用人类原始数据。"},
+ {y:"2025",n:"Qwen2.5-VL / Omni / Agent",p:"未来",d:"视觉侧 window attention、时间对齐绝对时间;任意模态、GUI/Agent、效率与安全成为主战场。"},
+];
+function buildTimeline(){
+  const host=document.getElementById('timeline');if(!host)return;
+  host.innerHTML=`<div class="widget"><div class="wh">📜 多模态演化时间线</div>
+   <div class="wsub">点击里程碑查看它在历史中的位置(年份为代表性节点)</div>
+   <div class="tl"><div class="tl-row" id="tlrow"></div></div>
+   <div class="tl-detail" id="tld"></div></div>`;
+  const row=host.querySelector('#tlrow');
+  TL.forEach((t,i)=>{const d=document.createElement('button');d.className='tl-item'+(i===0?' on':'');
+    d.setAttribute('aria-pressed',i===0?'true':'false');
+    d.innerHTML=`<div class="dot"></div><div class="yr">${t.y}</div><div class="nm">${t.n}</div>`;
+    d.onclick=()=>{row.querySelectorAll('.tl-item').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false');});
+      d.classList.add('on');d.setAttribute('aria-pressed','true');
+      host.querySelector('#tld').innerHTML=`<span class="phase">${t.p}</span> · <b>${t.y} ${t.n}</b><br>${t.d}`;};
+    row.appendChild(d);});
+  host.querySelector('#tld').innerHTML=`<span class="phase">${TL[0].p}</span> · <b>${TL[0].y} ${TL[0].n}</b><br>${TL[0].d}`;
+}
+
+/* --- Data before/after --- */
+function buildData(){
+  const host=document.getElementById('dataW');if(!host)return;
+  const S={
+   raw:{t:"原始网络 alt 文本",c:"IMG_20240517_woof.jpg | #dog #cute pic.twitter...",n:"噪声大、和图几乎无关,直接用会拖累对齐。",f:""},
+   clean:{t:"清洗后(短但忠实)",c:"一只狗坐在草地上,旁边有一个红色飞盘。",n:"去噪、只保留可在图中看到的事实。信息少但可靠。清洗不会无中生有补事实。",f:""},
+   recap:{t:"Re-caption(详细且忠实)",c:"一只棕色的狗坐在绿色草坪上,右下方有一个红色飞盘;背景是浅色天空。",n:"强 VLM 重写:细节更多,且每条都能在图里验证。代价:算力 + 可能继承幻觉。",f:""},
+   halluc:{t:"长但幻觉(反例)",c:"一只金毛寻回犬在蓝天白云下的草坪上奔跑,远处有树林,旁边有个红色飞盘。",n:"⚠️ 「金毛/奔跑/蓝天白云/树林」图里都没有——描述很长却无视觉依据,这类数据会把幻觉直接喂给模型。",f:"蓝天白云 · 奔跑 · 树林(均无依据)"}
+  };
+  host.innerHTML=`<div class="widget"><div class="wh">🧹 同一张图,四种数据策略</div>
+   <div class="wsub">对照下面这张自制教学示意图,判断每种描述里哪些是「可观察事实」、哪些是「脑补」</div>
+   <div class="seg" id="dseg"><button data-k="raw" class="on">原始 alt</button><button data-k="clean">清洗后</button><button data-k="recap">Re-caption</button><button data-k="halluc">长但幻觉</button></div>
+   <div class="card" style="margin-top:12px">
+     <canvas id="dscene" width="260" height="180" style="margin:0 auto"></canvas>
+     <div style="color:var(--mut);font-size:12px;text-align:center;margin:6px 0 10px">(自制教学样例图 · 非真实模型输出)</div>
+     <div class="wh" id="dt"></div>
+     <div class="flow" id="dc" style="white-space:pre-wrap;margin:8px 0"></div>
+     <div class="wsub" id="dn"></div>
+   </div></div>`;
+  const cv=host.querySelector('#dscene'),cx=cv.getContext('2d');
+  function scene(){
+    // sky (plain, NO clouds) + grass + brown dog + red frisbee
+    cx.fillStyle='#d2dee9';cx.fillRect(0,0,260,110);
+    cx.fillStyle='#6aa84f';cx.fillRect(0,110,260,70);
+    cx.fillStyle='#8a5a2b';cx.beginPath();cx.ellipse(95,120,34,22,0,0,7);cx.fill(); // body
+    cx.beginPath();cx.ellipse(62,104,14,13,0,0,7);cx.fill(); // head
+    cx.fillStyle='#6b4420';cx.beginPath();cx.ellipse(52,96,5,8,0.5,0,7);cx.fill(); // ear
+    cx.fillStyle='#d94b3b';cx.beginPath();cx.ellipse(185,150,20,7,0,0,7);cx.fill(); // red frisbee
+    cx.strokeStyle='#a03125';cx.lineWidth=2;cx.beginPath();cx.ellipse(185,150,20,7,0,0,7);cx.stroke();
+  }
+  scene();
+  const upd=k=>{host.querySelector('#dt').textContent=S[k].t;host.querySelector('#dc').textContent='"'+S[k].c+'"';host.querySelector('#dn').innerHTML=S[k].n;};
+  host.querySelectorAll('#dseg button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#dseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');upd(b.dataset.k);});
+  upd('raw');
+}
+
+/* --- Resolution <-> tokens (教学估算 + 真实记录) --- */
+function buildRes(){
+  const host=document.getElementById('resW');if(!host)return;
+  host.innerHTML=`<div class="widget"><div class="wh">🔍 分辨率 ↔ 视觉 token ↔ LLM 自注意力长度</div>
+   <div class="wsub">教学估算(patch=14);拖动分辨率,看 token 数与「LLM 全局自注意力的长度项」如何变化</div>
+   <div class="ctrl"><label>分辨率</label><input type="range" id="rr" min="224" max="1568" step="112" value="336" aria-label="分辨率"><span class="pill" id="rrv">336²</span></div>
+   <div class="ctrl"><label>2×2 合并压缩</label><span class="seg" id="rmg"><button data-v="0" class="on">关</button><button data-v="1">开</button></span>
+     <label style="min-width:60px">模式</label><span class="seg" id="rmode"><button data-v="native" class="on">原生</button><button data-v="anyres">AnyRes切图</button></span></div>
+   <div class="ctrl"><label>文本 token</label><input type="range" id="rtx" min="0" max="2000" step="50" value="300" aria-label="文本token数"><span class="pill" id="rtxv">300</span></div>
+   <div class="stat">
+     <div><b id="rp">—</b><span>patch 数</span></div>
+     <div><b id="rt">—</b><span>视觉 token</span></div>
+     <div><b id="rc">—</b><span>仅视觉自注意力(相对)</span></div>
+     <div><b id="rcs">—</b><span>总序列自注意力(相对)</span></div>
+   </div>
+   <div class="wsub" id="rnote" style="margin-top:10px"></div>
+   <div class="note" style="margin-top:12px"><b>真实 processor 记录</b>(CPU 实测,仅 processor;torch2.11/transformers5.12.1):
+     <ul style="margin:6px 0 0">
+       <li><b>LLaVA-1.5</b>:输入 336² 与 672² 都先缩放到 336² → 均 <b>576</b> 视觉 token。</li>
+       <li><b>Qwen2.5-VL-3B</b>:336² → 24×24=576 patch → 2×2 合并 → <b>144</b>;672² → 48×48=2304 → 合并 → <b>576</b>。</li>
+     </ul>
+     教学估算只给直觉;真实 processor 受 <code>min/max_pixels</code> 与 28 倍数对齐约束,不强制正方形,不同模型处理流程不同。</div>
+   </div>`;
+  let merge=0, mode='native';
+  function draw(){
+    const res=+host.querySelector('#rr').value;
+    host.querySelector('#rrv').textContent=res+'²';
+    const txt=+host.querySelector('#rtx').value;
+    host.querySelector('#rtxv').textContent=txt;
+    const perSide=Math.round(res/14);
+    let patch=perSide*perSide;
+    let tiles=1, note='';
+    if(mode==='anyres'){ tiles=Math.max(1,Math.ceil(res/336)**2); patch=(tiles+1)*(24*24); note=`AnyRes:切成 ${tiles} 块 × 576 + 1 张全局缩略图(576)= ${patch.toLocaleString()} patch,token 随块数线性涨、块间缺全局关系。`; }
+    else { note=`原生动态分辨率:直接按 ${perSide}×${perSide} 个 patch 处理,保长宽比。`; }
+    let tok=patch; if(merge){tok=Math.round(patch/4); note+=' 2×2 合并(发生在喂入 LLM 之前)后 token 降 4 倍(省算力,略丢细节)。';}
+    const costV=(tok*tok/(576*576));           // 仅视觉长度² 相对 LLaVA-1.5(576)
+    const total=tok+txt, base=576+txt;
+    const costS=(total*total/(base*base));      // 总序列(视觉+文本)² 相对
+    host.querySelector('#rp').textContent=patch.toLocaleString();
+    host.querySelector('#rt').textContent=tok.toLocaleString();
+    host.querySelector('#rc').textContent=(costV>=100?Math.round(costV):costV.toFixed(1))+'×';
+    host.querySelector('#rcs').textContent=(costS>=100?Math.round(costS):costS.toFixed(1))+'×';
+    host.querySelector('#rnote').innerHTML=note+' <b>口径</b>:这里的「相对」= LLM 端<b>全局自注意力的长度平方项</b>(∝ 序列长度²),相对 LLaVA-1.5 的 576。它<b>不是 ViT 的算力测量</b>,也<b>不等于实际耗时/显存倍数</b>(prefill 与逐 token 的 KV-cache decode 性质不同;FlashAttention 省显存但不消除二次计算;Qwen 的 window attention 又是局部算法)。';
+  }
+  host.querySelector('#rr').oninput=draw;
+  host.querySelector('#rtx').oninput=draw;
+  host.querySelectorAll('#rmg button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#rmg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');merge=+b.dataset.v;draw();});
+  host.querySelectorAll('#rmode button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#rmode button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.v;draw();});
+  window._res=draw; draw();
+}
+
+/* --- RoPE / M-RoPE --- */
+function buildRope(){
+  const host=document.getElementById('ropeW');if(!host)return;
+  host.innerHTML=`<div class="widget"><div class="wh">🧭 RoPE / M-RoPE 旋转位置编码</div>
+   <div class="wsub">RoPE 把位置编成「旋转」。两个 token 的注意力点积只依赖它们的<b>相对位移</b>——下面可亲手验证。</div>
+   <div class="ctrl"><label>模式</label><span class="seg" id="romode"><button data-v="rope" class="on">相对位置点积(文本 RoPE)</button><button data-v="mrope">M-RoPE 坐标(t,h,w)</button></span></div>
+   <div id="ropeCtrls"></div>
+   <canvas id="ropec" width="640" height="240"></canvas>
+   <div class="wsub" id="ronote" style="margin-top:10px"></div></div>`;
+  const cv=host.querySelector('#ropec'),ctx=cv.getContext('2d');
+  const ctrls=host.querySelector('#ropeCtrls');
+  let mode='rope', mk='image';
+  const TH=0.4; // 单频(单位向量)便于看清 cos((n-m)θ)
+  function dial(cx,cy,r,ang,col,lab){
+    ctx.strokeStyle=cssv('--line');ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(cx,cy,r,0,7);ctx.stroke();
+    ctx.strokeStyle=col;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+r*Math.cos(ang),cy-r*Math.sin(ang));ctx.stroke();
+    ctx.fillStyle=col;ctx.beginPath();ctx.arc(cx+r*Math.cos(ang),cy-r*Math.sin(ang),4,0,7);ctx.fill();
+    ctx.fillStyle=cssv('--mut');ctx.font='12px sans-serif';ctx.textAlign='center';ctx.fillText(lab,cx,cy+r+18);
+  }
+  function renderCtrls(){
+    if(mode==='rope'){
+      ctrls.innerHTML=`<div class="ctrl"><label>query 位置 m</label><input type="range" id="rom" min="0" max="24" step="1" value="6"><span class="pill" id="romv">6</span></div>
+       <div class="ctrl"><label>key 位置 n</label><input type="range" id="ron" min="0" max="24" step="1" value="10"><span class="pill" id="ronv">10</span></div>`;
+      ctrls.querySelector('#rom').oninput=draw;ctrls.querySelector('#ron').oninput=draw;
+    } else {
+      ctrls.innerHTML=`<div class="ctrl"><label>内容类型</label><span class="seg" id="mkind"><button data-v="text">文本</button><button data-v="image" class="on">单图</button><button data-v="video">视频</button></span></div>
+       <div class="ctrl"><label>位置</label><input type="range" id="rom" min="0" max="8" step="1" value="2"><span class="pill" id="romv">2</span></div>`;
+      ctrls.querySelector('#rom').oninput=draw;
+      ctrls.querySelectorAll('#mkind button').forEach(b=>b.onclick=()=>{ctrls.querySelectorAll('#mkind button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mk=b.dataset.v;draw();});
+    }
+  }
+  function drawRope(){
+    const m=+ctrls.querySelector('#rom').value, n=+ctrls.querySelector('#ron').value;
+    ctrls.querySelector('#romv').textContent=m;ctrls.querySelector('#ronv').textContent=n;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    const d=n-m, dot=Math.cos(d*TH);
+    // left: two dials
+    dial(90,80,42,m*TH,cssv('--acc'),`R(mθ)q  m=${m}`);
+    dial(90,80,42,m*TH,cssv('--acc'),'');
+    dial(210,80,42,n*TH,cssv('--acc2'),`R(nθ)k  n=${n}`);
+    // right: cos((Δ)θ) curve over Δ
+    const x0=330,x1=620,y0=30,y1=150,cy=(y0+y1)/2;
+    ctx.strokeStyle=cssv('--line');ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x0,cy);ctx.lineTo(x1,cy);ctx.stroke();
+    ctx.strokeStyle=cssv('--grn');ctx.lineWidth=2;ctx.beginPath();
+    for(let dd=-24;dd<=24;dd++){const px=x0+((dd+24)/48)*(x1-x0);const py=cy-Math.cos(dd*TH)*((y1-y0)/2-4);if(dd===-24)ctx.moveTo(px,py);else ctx.lineTo(px,py);}
+    ctx.stroke();
+    const px=x0+((d+24)/48)*(x1-x0),py=cy-dot*((y1-y0)/2-4);
+    ctx.fillStyle=cssv('--red');ctx.beginPath();ctx.arc(px,py,5,0,7);ctx.fill();
+    ctx.fillStyle=cssv('--mut');ctx.font='12px sans-serif';ctx.textAlign='center';
+    ctx.fillText('点积 q·k = cos(Δθ)  随相对位移 Δ=n−m',(x0+x1)/2,y1+22);
+    host.querySelector('#ronote').innerHTML=`当前 m=${m}, n=${n} → <b>相对位移 Δ=n−m=${d}</b>,单频点积 <b>cos(Δθ)=${dot.toFixed(3)}</b>。<br>
+      把 m、n <b>同时 +k</b>,Δ 不变 → 点积不变,这就是 RoPE 的<b>相对位置</b>性质:注意力只看 token 间距离。<br>
+      <b>别叫它「衰减曲线」</b>:单频时点积是<b>振荡</b>的(上图是 cos);多频叠加也不保证单调或必然近似衰减,结果取决于频率、q/k 内容与学习到的权重。圆盘是某一对维度的抽象可视化。`;
+  }
+  function grid(x0,y0,cell,rows,colsN,sel,colorFn,labFn){
+    for(let r=0;r<rows;r++)for(let c=0;c<colsN;c++){
+      ctx.fillStyle=colorFn(r,c);ctx.fillRect(x0+c*cell,y0+r*cell,cell-2,cell-2);
+      if(sel&&sel.r===r&&sel.c===c){ctx.strokeStyle=cssv('--red');ctx.lineWidth=3;ctx.strokeRect(x0+c*cell,y0+r*cell,cell-2,cell-2);}
+    }
+  }
+  function drawMrope(){
+    const p=+ctrls.querySelector('#rom').value;ctrls.querySelector('#romv').textContent=p;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.font='13px sans-serif';ctx.textAlign='left';
+    let note='';
+    if(mk==='text'){
+      // 文本:一行 token,(t,h,w) 三者都=位置
+      const n=9,cell=48,x0=40,y0=70;
+      for(let i=0;i<n;i++){ctx.fillStyle=i===p?cssv('--acc'):cssv('--panel2');ctx.fillRect(x0+i*cell,y0,cell-4,cell-4);
+        ctx.fillStyle=cssv('--mut');ctx.textAlign='center';ctx.fillText(i,x0+i*cell+(cell-4)/2,y0+cell+12);}
+      ctx.fillStyle=cssv('--ink');ctx.textAlign='left';ctx.fillText(`文本 token #${p} → (t,h,w) = (${p}, ${p}, ${p})  三分量相同`,40,40);
+      note=`<b>文本</b>:M-RoPE 退化成普通 RoPE——三个分量 (t,h,w) 取同一个序号。拖动位置,三者一起变。`;
+    } else if(mk==='image'){
+      const rows=4,cols=4,cell=40,x0=60,y0=60;const r=Math.floor(p/cols)%rows,c=p%cols;
+      grid(x0,y0,cell,rows,cols,{r,c},(rr,cc)=>(rr===r&&cc===c)?cssv('--acc'):cssv('--panel2'));
+      ctx.fillStyle=cssv('--ink');ctx.fillText(`单图 patch (h=${r}, w=${c}) → (t,h,w) = (0, ${r}, ${c})`,x0,40);
+      ctx.fillStyle=cssv('--mut');ctx.fillText('横移只改 w,竖移只改 h,t 固定=0',x0,y0+rows*cell+24);
+      note=`<b>单图</b>:时间分量 <b>t 固定=0</b>;每个 patch 用它的 2D 网格坐标 (h,w)。<b>水平移动只改变 w、垂直移动只改变 h</b>——这正是 M-RoPE 表达二维位置的方式。`;
+    } else {
+      const frames=3,cols=3,cell=38,gap=24,y0=70;const fr=Math.floor(p/cols)%frames;
+      for(let f=0;f<frames;f++){const x0=40+f*(cols*cell+gap);
+        grid(x0,y0,cell,1,cols,{r:0,c:(f===fr?p%cols:-1)},(rr,cc)=>(f===fr&&cc===p%cols)?cssv('--acc'):cssv('--panel2'));
+        ctx.fillStyle=cssv('--mut');ctx.textAlign='center';ctx.fillText('t='+f,x0+cols*cell/2,y0-10);}
+      ctx.fillStyle=cssv('--ink');ctx.textAlign='left';ctx.fillText(`视频:第 ${fr} 帧、同一行的 w=${p%cols} → (t,h,w) = (${fr}, 0, ${p%cols})`,40,40);
+      note=`<b>视频</b>:同一空间位置 (h,w) <b>跨帧时 t 逐帧递增</b>。Qwen2.5-VL 还让 t 对齐<b>绝对时间</b>(秒),不是单纯帧号,利于定位"第几秒发生了什么"。`;
+    }
+    host.querySelector('#ronote').innerHTML=note+`<br>可检查性:三态下,只有对应维度随位置变化,其余维度保持约定值。`;
+  }
+  function draw(){ if(mode==='rope')drawRope(); else drawMrope(); }
+  host.querySelectorAll('#romode button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#romode button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.v;renderCtrls();draw();});
+  renderCtrls();window._rope=draw;draw();
+}
+
+/* --- VQ quantization (RGB nearest-neighbor ANALOGY; nested codebook for non-increasing error) --- */
+function buildVQ(){
+  const host=document.getElementById('vqW');if(!host)return;
+  host.innerHTML=`<div class="widget"><div class="wh">🎨 量化丢了什么(RGB 最近邻类比)</div>
+   <div class="wsub">用有限「调色板」把图像颜色量化成离散 id。这是<b>教学类比</b>,不是真实 VQ(真实 VQ 在潜空间 + 学习码本 + 解码器重建)。</div>
+   <div class="ctrl"><label>码本大小 K</label><input type="range" id="vqk" min="2" max="64" step="1" value="8" aria-label="码本大小"><span class="pill" id="vqkv">8 色</span></div>
+   <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start">
+     <div><canvas id="vqa" width="220" height="220"></canvas><div class="wsub" style="text-align:center">原图 · 原始 RGB</div></div>
+     <div><canvas id="vqb" width="220" height="220"></canvas><div class="wsub" style="text-align:center" id="vqinfo">调色板重建 · K 色</div></div>
+   </div>
+   <div class="wsub" id="vqnote" style="margin-top:8px"></div></div>`;
+  const a=host.querySelector('#vqa'),b=host.querySelector('#vqb');
+  const ca=a.getContext('2d'),cb=b.getContext('2d');
+  function pix(x,y){
+    if(Math.hypot(x-150,y-60)<32) return [255,205,60];       // sun
+    if(y>150) return [60,110+(y-150)*0.4,60];                // ground
+    return [100+y*0.5,160+y*0.4,235-y*0.4];                  // sky gradient
+  }
+  function drawA(){
+    const img=ca.createImageData(220,220);
+    for(let y=0;y<220;y++)for(let x=0;x<220;x++){
+      const p=pix(x,y),o=(y*220+x)*4;
+      img.data[o]=p[0];img.data[o+1]=p[1];img.data[o+2]=p[2];img.data[o+3]=255;
+    }
+    ca.putImageData(img,0,0);
+  }
+  // Fixed ordered 64-color palette; take first K -> NESTED codebook so error is non-increasing in K
+  const FULL=(()=>{const c=[];for(let i=0;i<64;i++){const t=i/63;c.push([100+t*155,160-t*50,235-t*175]);}
+    c[0]=[255,205,60];c[1]=[60,140,60];return c;})();
+  function nearest(p,c){let bi=0,bd=1e9;for(let i=0;i<c.length;i++){const d=(p[0]-c[i][0])**2+(p[1]-c[i][1])**2+(p[2]-c[i][2])**2;if(d<bd){bd=d;bi=i;}}return c[bi];}
+  function drawB(){
+    const k=+host.querySelector('#vqk').value;
+    host.querySelector('#vqkv').textContent=k+' 色';
+    const c=FULL.slice(0,k);
+    const img=cb.createImageData(220,220);
+    let err=0;
+    for(let y=0;y<220;y++)for(let x=0;x<220;x++){
+      const p=pix(x,y),q=nearest(p,c),o=(y*220+x)*4;
+      img.data[o]=q[0];img.data[o+1]=q[1];img.data[o+2]=q[2];img.data[o+3]=255;
+      err+=Math.abs(p[0]-q[0])+Math.abs(p[1]-q[1])+Math.abs(p[2]-q[2]);
+    }
+    cb.putImageData(img,0,0);
+    const avg=(err/(220*220*3)).toFixed(1);
+    host.querySelector('#vqinfo').textContent=`调色板重建 · ${k} 色 · RGB 平均绝对误差 ${avg}`;
+    host.querySelector('#vqnote').innerHTML=`码本只有 <b>${k}</b> 个颜色,每个像素被映射到最近的码本色 → 平滑渐变变成色块(可见"带状"失真)。这里用<b>嵌套码本</b>(取前 K 个),所以误差随 K <b>不增</b>;但一般独立码本<b>不保证单调下降</b>,误差也会因码本覆盖差而出现平台。<br>
+      <b>读数边界</b>:显示的是 <b>RGB 平均绝对误差</b>,不是训练时的 VQ/commitment loss;码本大小 K 主要决定每个 id 的<b>容量 log₂K</b>,而视觉 <b>token 数量</b>主要由空间下采样率决定——两者是两件事。量化会丢信息是离散路线的<b>潜在限制之一</b>,但不能据此断言所有离散模型都弱。`;
+  }
+  host.querySelector('#vqk').oninput=drawB;
+  window._vq=()=>{drawA();drawB();};
+  window._vq();
+}
+
+/* --- Lab checklist (clickable, persisted) --- */
+function buildChecklist(){
+  const host=document.getElementById('checklist');if(!host)return;
+  let saved={};try{saved=JSON.parse(LS.get('mmc_check')||'{}')||{};}catch(e){saved={};}
+  const wrap=document.createElement('div');wrap.className='widget';
+  CHECKLIST.forEach((t,i)=>{
+    const row=document.createElement('label');row.style.cssText='display:flex;gap:10px;align-items:flex-start;cursor:pointer;margin:7px 0;font-size:14.5px';
+    const cb=document.createElement('input');cb.type='checkbox';cb.style.marginTop='5px';cb.checked=!!saved['c'+i];
+    cb.onchange=()=>{saved['c'+i]=cb.checked;LS.set('mmc_check',JSON.stringify(saved));};
+    const span=document.createElement('span');span.textContent=t;
+    row.appendChild(cb);row.appendChild(span);wrap.appendChild(row);
+  });
+  host.innerHTML='';host.appendChild(wrap);
+}
+
+/* --- Lab file downloads (embedded blobs → work online & offline) --- */
+function fileText(id){const el=document.getElementById(id);return el?el.textContent:'';}
+function dlFile(name,mime){const t=fileText('file-'+name);if(!t){alert('该文件未内嵌,请从仓库 course/ 目录获取');return;}
+  const blob=new Blob([t],{type:mime});const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(u),2000);}
+function buildLabDownloads(){
+  const host=document.getElementById('labdl');if(!host)return;
+  const files=[['lab_shapes.py','text/x-python','📜 lab_shapes.py'],
+    ['requirements-observed.txt','text/plain','📦 依赖版本'],
+    ['qwen-processor-shapes.json','application/json','🔢 Qwen 实测 JSON'],
+    ['llava-processor-shapes.json','application/json','🔢 LLaVA 实测 JSON'],
+    ['score_pope.py','text/x-python','🧮 score_pope.py'],
+    ['pope_mini_gold.jsonl','application/json','🏷️ 标签样例'],
+    ['pope_mini_pred.jsonl','application/json','📝 预测样例']];
+  host.innerHTML='<div class="wsub" style="margin-bottom:6px">下载实验文件(在线/离线都可用):</div>';
+  const row=document.createElement('div');row.className='ctrl';row.style.gap='8px';
+  files.forEach(f=>{const b=document.createElement('button');b.className='tbtn';b.textContent=f[2];
+    b.onclick=()=>dlFile(f[0],f[1]);row.appendChild(b);});
+  host.appendChild(row);
+}
+
+/* --- figure zoom (放大看图): lightbox with large scrollable SVG --- */
+function closeFig(){const m=document.getElementById('figModal');if(m)m.classList.remove('on');}
+function openFig(fig){const svg=fig.querySelector('svg');if(!svg)return;
+  const body=document.getElementById('figModalBody');body.innerHTML='';
+  body.appendChild(svg.cloneNode(true));
+  const cap=fig.querySelector('figcaption');
+  document.getElementById('figModalCap').textContent=cap?cap.textContent:'';
+  document.getElementById('figModal').classList.add('on');
+  const inner=document.getElementById('figModalInner');if(inner){inner.scrollLeft=0;inner.scrollTop=0;}}
+function setupFigureZoom(){
+  let modal=document.getElementById('figModal');
+  if(!modal){modal=document.createElement('div');modal.id='figModal';
+    modal.innerHTML='<div id="figModalInner"><button id="figClose" type="button" aria-label="关闭">✕ 关闭</button><div id="figModalBody"></div><div id="figModalCap"></div></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener('click',e=>{if(e.target===modal)closeFig();});
+    modal.querySelector('#figClose').onclick=closeFig;
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeFig();});
+  }
+  document.querySelectorAll('figure.fig').forEach(fig=>{
+    if(fig.querySelector('.figzoom'))return;
+    const b=document.createElement('button');b.className='figzoom';b.type='button';b.textContent='🔍 放大看图';
+    b.onclick=()=>openFig(fig);
+    fig.appendChild(b);
+  });
+}
+
+/* ============ BOOT: explicit deep-link > saved progress > first ============ */
+(function boot(){
+  const hashId=location.hash.slice(1);
+  let start=idToIndex(hashId);
+  if(start<0){const posId=LS.get('mmc_pos');start=idToIndex(posId||'');}
+  if(start<0)start=0;
+  show(start);
+  setupFigureZoom();
+})();
+</script>
+</body>
+</html>
