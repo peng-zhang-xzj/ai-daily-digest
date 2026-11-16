@@ -1,0 +1,67 @@
+{
+  "model": "llava-hf/llava-1.5-7b-hf",
+  "python": "3.11.2",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.12.1",
+    "pillow": "11.3.0",
+    "accelerate": "1.13.0"
+  },
+  "cuda": false,
+  "processor_only": true,
+  "fixture": "self-created synthetic invoice, not a benchmark",
+  "cases": [
+    {
+      "source_size": [
+        336,
+        336
+      ],
+      "fixture_file": "invoice-336.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          604
+        ],
+        "attention_mask": [
+          1,
+          604
+        ],
+        "pixel_values": [
+          1,
+          3,
+          336,
+          336
+        ]
+      },
+      "expanded_image_placeholders": 576,
+      "expected_llm_visual_tokens": 576
+    },
+    {
+      "source_size": [
+        672,
+        672
+      ],
+      "fixture_file": "invoice-672.png",
+      "prompt": "Read ID, total, and paid status. Answer only with a JSON object.",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          604
+        ],
+        "attention_mask": [
+          1,
+          604
+        ],
+        "pixel_values": [
+          1,
+          3,
+          336,
+          336
+        ]
+      },
+      "expanded_image_placeholders": 576,
+      "expected_llm_visual_tokens": 576
+    }
+  ]
+}
