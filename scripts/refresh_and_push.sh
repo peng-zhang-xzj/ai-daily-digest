@@ -4,7 +4,8 @@
 # Exits 0 even if push is skipped/fails, so the digest step still proceeds.
 set -uo pipefail
 
-REPO="/mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/ai-daily-digest"
+# Resolve the repo root from this script's own location (robust to being moved).
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO" || exit 1
 
 echo "[refresh] fetching sources..."

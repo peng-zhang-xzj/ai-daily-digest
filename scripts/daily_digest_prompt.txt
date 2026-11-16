@@ -1,10 +1,10 @@
 每天悉尼时间早上 9 点的「AI 今日必看」简报任务。关键：先现场刷新数据再提炼，不要依赖线上旧数据。按步骤执行：
 
 1. 刷新数据并同步看板（一步到位，固定脚本）：
-   bash /mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/ai-daily-digest/scripts/refresh_and_push.sh
+   bash /mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/git_resources/ai-daily-digest/scripts/refresh_and_push.sh
    它会：实时抓取各源 → 写本地 data/*.json → 若 ~/.gh_token 存在则 commit 并 push，让线上看板同步更新。脚本内部已容错，push 失败也不影响后续。
 
-2. 读取刚生成的本地数据 data/papers.json / news.json / batch.json，提炼「今日必看」：
+2. 读取刚生成的本地数据（仓库在 /mnt/bn/tns-user-interaction-safety-my/zhangpeng.xzj/git_resources/ai-daily-digest/，数据文件即该目录下 data/papers.json / data/news.json / data/batch.json），提炼「今日必看」：
    - 论文：按 upvotes 取 top 3；
    - 资讯：取最新且最重要的 3 条（模型发布 / 大厂动态 / 监管优先，其次其他）；
    - 周刊：最新一期。
