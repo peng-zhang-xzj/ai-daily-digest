@@ -26,11 +26,14 @@ code{background:var(--panel2);padding:1px 6px;border-radius:5px;font-size:.9em;
 /* layout */
 #top{position:fixed;top:0;left:0;right:0;height:56px;z-index:30;display:flex;align-items:center;
   justify-content:space-between;padding:0 20px;background:var(--panel);border-bottom:1px solid var(--line)}
-#top h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.3px}
+#top .lft{display:flex;align-items:center;gap:12px;min-width:0}
+#top h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #top h1 span{color:var(--acc)}
 .tbtn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;
   padding:6px 12px;cursor:pointer;font-size:13px}
 .tbtn:hover{border-color:var(--acc)}
+#menuBtn{display:none;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:6px 11px;cursor:pointer;font-size:15px}
 #wrap{display:flex;padding-top:56px}
 #nav{position:fixed;top:56px;bottom:0;left:0;width:280px;overflow-y:auto;background:var(--panel);
   border-right:1px solid var(--line);padding:16px 0}
@@ -39,7 +42,7 @@ code{background:var(--panel2);padding:1px 6px;border-radius:5px;font-size:.9em;
 #nav a:hover{background:var(--panel2)}
 #nav a.on{border-left-color:var(--acc);color:var(--acc);background:var(--panel2);font-weight:600}
 #nav a small{color:var(--mut);font-weight:400}
-#main{margin-left:280px;flex:1;max-width:880px;padding:36px 48px 120px}
+#main{margin-left:280px;flex:1;min-width:0;max-width:880px;padding:36px 48px 120px}
 /* lecture */
 .lec{display:none;animation:fade .25s}
 .lec.on{display:block}
@@ -59,11 +62,19 @@ code{background:var(--panel2);padding:1px 6px;border-radius:5px;font-size:.9em;
 .note b{color:var(--acc2)}
 .key{border-left:3px solid var(--grn);background:var(--panel2);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
 .key b{color:var(--grn)}
-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}
+.warn{border-left:3px solid var(--red);background:var(--panel2);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.warn b{color:var(--red)}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:var(--panel2);font-weight:600}
 .flow{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:var(--panel2);
   border:1px solid var(--line);border-radius:10px;padding:14px;white-space:pre;overflow-x:auto;color:var(--mut)}
+.quiz{margin:22px 0 0;border:1px solid var(--line);border-radius:12px;background:var(--panel2);overflow:hidden}
+.quiz summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14.5px;color:var(--acc);list-style:none}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary:before{content:"▸ ";color:var(--mut)}
+.quiz[open] summary:before{content:"▾ "}
+.quiz .qa{padding:0 16px 14px;color:var(--ink);font-size:14.5px;border-top:1px solid var(--line);padding-top:10px}
 .navbtns{display:flex;justify-content:space-between;margin-top:40px;gap:12px}
 .navbtns button{flex:1;background:var(--panel);border:1px solid var(--line);color:var(--ink);
   border-radius:10px;padding:12px;cursor:pointer;font-size:14px}
@@ -87,8 +98,8 @@ canvas{max-width:100%;display:block;background:var(--panel2);border-radius:10px;
 .stat span{font-size:12px;color:var(--mut)}
 /* timeline */
 .tl{position:relative;margin:10px 0;overflow-x:auto;padding-bottom:8px}
-.tl-row{display:flex;gap:0;min-width:760px}
-.tl-item{flex:1;text-align:center;cursor:pointer;position:relative;padding-top:26px}
+.tl-row{display:flex;gap:0;min-width:900px}
+.tl-item{flex:1;text-align:center;cursor:pointer;position:relative;padding-top:26px;background:none;border:none;color:inherit;font:inherit}
 .tl-item:before{content:"";position:absolute;top:8px;left:0;right:0;height:2px;background:var(--line)}
 .tl-item .dot{position:absolute;top:3px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--panel);transition:.15s}
 .tl-item.on .dot{background:var(--acc);box-shadow:0 0 0 4px rgba(107,138,253,.25)}
@@ -97,19 +108,47 @@ canvas{max-width:100%;display:block;background:var(--panel2);border-radius:10px;
 .tl-item.on .nm{color:var(--acc)}
 .tl-detail{margin-top:12px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px}
 .phase{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--mut)}
-@media(max-width:860px){#nav{display:none}#main{margin-left:0;padding:24px 18px 100px}}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* present (大字/投屏) mode */
+[data-present="1"] #main{max-width:1100px;font-size:19px;line-height:1.85}
+[data-present="1"] .lec h2{font-size:38px}
+[data-present="1"] .lec h3{font-size:25px}
+[data-present="1"] .lead{font-size:20px}
+[data-present="1"] .flow{font-size:15px}
+@media(max-width:860px){
+  #nav{display:none}
+  #nav.open{display:block;position:fixed;top:56px;left:0;bottom:0;width:270px;z-index:40;box-shadow:var(--shadow)}
+  #menuBtn{display:inline-block}
+  #main{margin-left:0;padding:24px 16px 100px}
+  #navScrim{display:none;position:fixed;inset:56px 0 0 0;background:rgba(0,0,0,.35);z-index:35}
+  #navScrim.on{display:block}
+}
+@media print{
+  #top,#nav,#navScrim,.navbtns,.tbtn,#menuBtn{display:none!important}
+  #wrap{padding-top:0}
+  #main{margin:0;max-width:none;padding:0}
+  .lec{display:block!important;animation:none;page-break-after:always}
+  body{background:#fff;color:#000}
+  .widget,.card,.flow,table,.quiz{break-inside:avoid}
+  .quiz{border:1px solid #bbb}
+}
 </style>
 </head>
 <body>
 <div id="top">
-  <h1><span>◆</span> 多模态大模型的<span>前世今生</span></h1>
+  <div class="lft">
+    <button id="menuBtn" aria-label="目录">☰</button>
+    <h1><span>◆</span> 多模态大模型的<span>前世今生</span></h1>
+  </div>
   <div>
     <span id="prog" class="pill" style="margin-right:10px"></span>
-    <button class="tbtn" id="theme">🌙</button>
+    <button class="tbtn" id="present" title="投屏大字模式">🖥️</button>
+    <button class="tbtn" id="theme" aria-label="切换主题">🌙</button>
   </div>
 </div>
 <div id="wrap">
   <nav id="nav"></nav>
+  <div id="navScrim"></div>
   <main id="main"></main>
 </div>
 <script>
@@ -117,11 +156,14 @@ canvas{max-width:100%;display:block;background:var(--panel2);border-radius:10px;
 const LECTURES = [
  {id:"l0", grp:"开篇", kick:"Lecture 0", title:"为什么要让模型「看见」",
   lead:"核心矛盾、一条贯穿全课的问题、以及这门课的地图。",
+  quiz:{q:"把一张图接到 LLM，最需要解决哪三个接口问题？",
+    a:"① 从像素里<b>提取信息</b>；② 让视觉特征在<b>维度与语义上对齐</b>语言空间;③ 把视觉与文本<b>组织成一条带位置的序列</b>。——不只是给像素起个「token」的名字。"},
   html:`
   <p>欢迎来到《多模态大模型的前世今生》。这门课只围绕<b>一个问题</b>展开:</p>
   <div class="key"><b>核心问题</b>:怎么让一台机器既<b>看得见</b>(理解图像),又<b>说得清</b>(用语言表达)?</div>
   <p>人类看一张图能脱口而出它的内容,因为我们的视觉和语言在大脑里是打通的。但对机器来说,图像是<b>像素网格</b>,语言是<b>离散符号</b>,两者天生不在一个空间。多模态大模型(Vision-Language Model, VLM)这十年的全部故事,本质就是:</p>
   <div class="note"><b>一句话</b>:想方设法把「像素」翻译成语言模型能接着处理的「类词向量」,让一个会读文字的大模型顺便"看得见"。</div>
+  <div class="note"><b>读前须知</b>:本课以<b>视觉-语言模型(VLM)</b>为主线;默认你了解 Transformer、embedding 与基本的监督训练。音频 / Omni 作为拓展顺带提及,不是重点。L6 信息量最大,会拆成「编码器 / 连接器·分辨率 / 位置编码」三小段。</div>
   <h3>这门课怎么讲</h3>
   <p>我们不按工程模块平铺,而是沿着<b>时间线</b>讲一个演化故事,分三幕:</p>
   <ul>
@@ -129,6 +171,7 @@ const LECTURES = [
     <li><span class="tag">今生</span> LLM 时代——LLaVA 确立范式,再从数据、结构、tokenizer、训练、评估逐层深入(L4–L9)。</li>
     <li><span class="tag">未来</span> 统一生成、任意模态、Agent、效率与安全(L10)。</li>
   </ul>
+  <p>每讲用同一节奏推进:<b>问题 → 旧方案瓶颈 → 新机制 → 证据 → 边界 → 检查题</b>。</p>
   <p>下面这条时间线是全课的骨架。<b>点一下任意里程碑</b>,看它在历史中的位置:</p>
   <div id="timeline"></div>
   <h3>先建立一张"心智地图"</h3>
@@ -150,19 +193,21 @@ const LECTURES = [
 
  {id:"l1", grp:"前世 · LLM 之前", kick:"Lecture 1", title:"起源:看图说话",
   lead:"前 Transformer 时代——CNN+RNN、image captioning 与 VQA 的萌芽。",
+  quiz:{q:"把整图压成单个向量,和「区域注意力」相比,差在哪?",
+    a:"单向量把全图<b>压扁、丢细节</b>;区域注意力让模型生成每个词时<b>看向图像不同区域</b>,细粒度更好。但要注意:注意力图是一种对齐线索,<b>并不等于充分的因果解释</b>。"},
   html:`
   <p>多模态并不是大模型时代才有的。早在 2015 年前后,研究者就想让机器给图像配文字说明(image captioning)。</p>
   <h3>第一代范式:CNN 看图 + RNN 说话</h3>
   <p>代表作 <b>Show and Tell</b>(2015):</p>
   <ul>
     <li><b>CNN</b>(如 VGG/GoogLeNet)把图像压成一个固定向量——这是"看"。</li>
-    <li>把这个向量作为<b>初始状态</b>喂给 <b>RNN/LSTM</b>,让它一个词一个词地生成句子——这是"说"。</li>
+    <li>把这个图像向量作为 <b>RNN/LSTM 的初始时间步输入</b>,让它一个词一个词地生成句子——这是"说"。(「视觉向量当初始状态」是常见的架构类比,具体喂入方式各篇略有不同。)</li>
   </ul>
   <div class="note"><b>注意</b>:这个"CNN 编码 + 语言模型解码"的骨架,和今天 VLM 的"视觉编码器 + LLM"惊人地相似。变的是零件(CNN→ViT、LSTM→Transformer),不变的是思路。</div>
   <h3>注意力的登场</h3>
   <p><b>Show, Attend and Tell</b>(2015)引入了视觉注意力:生成每个词时,模型学会"看向"图像的不同区域(生成"狗"时看向狗)。这是"注意力对齐文字与图像区域"的最早雏形——日后 Transformer 把注意力推向极致。</p>
   <h3>VQA:从"描述"到"问答"</h3>
-  <p>很快任务升级为 <b>视觉问答(VQA)</b>:给图 + 问题 → 答案。这迫使模型不只是描述,还要<b>推理</b>("图里有几个人?""她在做什么?")。VQA 数据集和评测方法一直沿用到今天(L9 会再见到)。</p>
+  <p>很快任务升级为 <b>视觉问答(VQA)</b>:给图 + 问题 → 答案。这迫使模型不只是描述,还要<b>推理</b>("图里有几个人?""她在做什么?")。VQA 数据集(2015)和评测范式一直沿用到今天(L9 会再见到)。</p>
   <h3>这一代的天花板</h3>
   <ul>
     <li>CNN 把整图压成一个向量,<b>细节丢失严重</b>;</li>
@@ -174,6 +219,8 @@ const LECTURES = [
 
  {id:"l2", grp:"前世 · LLM 之前", kick:"Lecture 2", title:"对齐的突破:CLIP 与对比学习",
   lead:"用网络规模的图文对比预训练,造出一个「语义对齐」的视觉底座。",
+  quiz:{q:"CLIP 已经能做图文相似度匹配,为什么接 LLM 时还要一个连接器?",
+    a:"CLIP 的图像向量是和<b>它自己的文本编码器</b>对齐的,不等于和<b>任意 LLM 的词向量空间</b>对齐——维度不同、训练分布不同。所以还要一个连接器把它「翻译」进目标 LLM 的空间(L4)。"},
   html:`
   <p>2021 年的 <b>CLIP</b>(OpenAI)是整个现代 VLM 的地基。几乎今天每一个 VLM 的视觉编码器,要么是 CLIP,要么是它的后代(如 SigLIP)。</p>
   <h3>CLIP 的核心想法:对比学习</h3>
@@ -185,24 +232,26 @@ const LECTURES = [
        → 这就是"对比损失"</div>
   <h3>为什么这一步如此关键</h3>
   <ul>
-    <li><b>语义对齐</b>:CLIP 的图像向量天生"懂语言"——它的视觉空间已经和文字语义对齐了。后面只要再"翻译"一下就能接 LLM(这正是 L4 LLaVA 做的)。</li>
+    <li><b>语义对齐</b>:CLIP 的图像向量和<b>它自己的文本编码器</b>对齐,天生"懂语言"。但这只是和 CLIP 文本空间对齐,接 LLM 时仍需再"翻译"一下(这正是 L4 LLaVA 做的)。</li>
     <li><b>规模即能力</b>:4 亿网络图文对带来了强大的泛化(zero-shot 分类:给任意类别名就能分类)。</li>
-    <li><b>可复用</b>:训练一次,被无数下游 VLM 当作冻结的视觉编码器反复使用。</li>
+    <li><b>可复用</b>:训练一次,被无数下游 VLM 当作视觉编码器反复使用(常冻结,也有继续训练的)。</li>
   </ul>
-  <div class="note"><b>进化</b>:<b>SigLIP</b>(2023)把 CLIP 的 softmax 对比损失换成 sigmoid,更稳更省、效果更好,是如今新 VLM 的常用视觉底座。</div>
-  <div class="key"><b>记住</b>:CLIP 解决了"看"的<b>质量</b>与"语义对齐"问题。它是 VLM 三件套里"视觉编码器"那一件的默认答案。</div>
+  <div class="note"><b>进化</b>:<b>SigLIP</b>(2023)把 CLIP 的 softmax 对比损失换成 sigmoid,训练更稳、更省,在很多设置下更好,是如今新 VLM 的常用视觉底座——但"更好"要看具体任务与规模,并非无条件。</div>
+  <div class="key"><b>记住</b>:CLIP 解决了"看"的<b>质量</b>与"语义对齐"问题。它是 VLM 三件套里"视觉编码器"那一件的常见默认答案(但不是唯一;如 Qwen2.5-VL 自训 ViT,见 L6)。</div>
   `},
 
  {id:"l3", grp:"前世 · LLM 之前", kick:"Lecture 3", title:"桥接时代:BLIP-2 与 Flamingo",
   lead:"如何把「冻结的视觉」接到「冻结的语言」——连接器思想的诞生。",
+  quiz:{q:"BLIP-2 用固定 32 个 query 把视觉压成 32 个 token,收益与代价各是什么?",
+    a:"收益:把<b>任意数量</b>的视觉特征压成<b>固定、少量</b>的 token,控制喂进 LLM 的序列长度、省算力。代价:这个瓶颈可能<b>丢失细粒度信息</b>(小字、密集细节)。"},
   html:`
   <p>有了强视觉编码器(CLIP)和强语言模型(早期 LLM),下一个问题是:<b>怎么把两者接起来?</b> 2022–2023 年,两条重要思路出现。</p>
   <h3>Flamingo(2022):冻结双塔 + 交叉注意力 + few-shot</h3>
   <ul>
-    <li>视觉编码器和语言模型都<b>冻结</b>,中间插入可训练的<b>交叉注意力</b>层,让语言模型"回头看"图像特征。</li>
+    <li>视觉编码器和语言模型都<b>冻结</b>,中间插入可训练的 <b>gated cross-attention</b> 层,让语言模型"回头看"图像特征;视觉侧还用 <b>Perceiver Resampler</b> 把特征重采样成固定数量。</li>
     <li>支持<b>少样本(few-shot)</b>:在上下文里给几个"图+答案"示例,就能适应新任务——第一次让多模态有了"上下文学习"的味道。</li>
   </ul>
-  <h3>BLIP-2(2023):Q-Former —— 连接器的经典答案</h3>
+  <h3>BLIP-2(2023):Q-Former —— 连接器的代表答案</h3>
   <p>BLIP-2 提出 <b>Q-Former</b>,优雅地解决"视觉特征太多、怎么喂给 LLM"的问题:</p>
   <div class="flow">视觉特征(很多个)
      │  ← 一组可学习的 "query 向量"(如 32 个)
@@ -210,17 +259,25 @@ const LECTURES = [
  32 个浓缩的视觉 token ──▶ 投影 ──▶ 喂给冻结的 LLM</div>
   <ul>
     <li><b>关键创新</b>:用少量 query 把任意数量的视觉特征<b>压成固定的少数几个 token</b>,大大降低 LLM 的负担。</li>
-    <li>这是"连接器(connector)"这一模块的鼻祖,日后 LLaVA 的 MLP、Qwen 的 Resampler 都是它的变体(L6 详述)。</li>
+    <li>这是"连接器(connector)"思想的<b>代表性方案之一</b>;后来 LLaVA 的 MLP、Qwen 的 Resampler 都在同一问题上做不同取舍(L6 详述),不是谁照抄谁。</li>
   </ul>
   <div class="note"><b>承上启下</b>:到这里,"视觉编码器 + 连接器 + 语言模型"的三件套雏形已经齐了。但它们还很笨重(Q-Former 难训、few-shot 能力有限)。真正让 VLM "飞入寻常百姓家"的,是下一讲一个<b>极其简单</b>的配方——LLaVA。</div>
   `},
 
  {id:"l4", grp:"今生 · LLM 时代", kick:"Lecture 4", title:"范式确立:LLaVA 与视觉指令微调",
   lead:"一个简单到能逐行读完的配方,定义了现代 VLM。",
+  quiz:{q:"「336/14=24,所以 576 个 patch」——576 是初版 LLaVA 的配置吗?",
+    a:"不是。576 是本课主例 <b>LLaVA-1.5</b>(ViT-L/14 @336px,24×24=576,2 层 MLP)。<b>初版 LLaVA</b>(2023.4)用 @224px → 16×16=<b>256</b> patch、<b>线性投影</b>。看到 576 要默认它是 1.5。"},
   html:`
   <p>2023 年的 <b>LLaVA</b> 证明了一件事:不需要 Q-Former 那么复杂,一个<b>极简</b>配方就能造出强大的 VLM。它是现代 VLM 的"Hello World",也是你理解一切的骨架。</p>
-  <h3>三件套(记住这三个框)</h3>
-  <div class="flow">图像 ─▶ [CLIP ViT 视觉编码器(冻结)] ─▶ 576 个视觉特征
+  <div class="warn"><b>先分清版本(本课贯穿)</b>:
+    <ul style="margin:6px 0 0">
+      <li><b>初版 LLaVA</b>(2023.4):CLIP ViT-L/14 <b>@224px</b> → 16×16=<b>256</b> 视觉 token;连接器是<b>单层线性投影</b>;指令数据约 <b>158K</b>(纯文本 GPT-4 合成)。</li>
+      <li><b>LLaVA-1.5</b>(2023.10,下面三件套的主例):升到 <b>@336px</b> → 24×24=<b>576</b> 视觉 token;连接器换成 <b>2 层 MLP</b>;数据配方扩充(含学术 VQA 等)。</li>
+    </ul>
+  </div>
+  <h3>三件套(记住这三个框 · 以 LLaVA-1.5 为例)</h3>
+  <div class="flow">图像 ─▶ [CLIP ViT-L/14 @336 视觉编码器] ─▶ 576 个视觉特征
                                                │
                                         [2层 MLP 投影]
                                                ▼
@@ -228,8 +285,8 @@ const LECTURES = [
  文本 ─▶ [分词器] ─▶ 文本 token ───┐           │
                                    └───────────┴──▶ [LLM Vicuna] ─▶ 文字答案</div>
   <ul>
-    <li><b>视觉编码器</b>:CLIP ViT-L/14 @336px,一张图切成 24×24=<b>576 个 patch</b>,每个输出一个向量。</li>
-    <li><b>连接器</b>:就一个 <b>2 层 MLP</b>,把视觉向量映射到 LLM 的词向量维度,得到 576 个"视觉 token"。</li>
+    <li><b>视觉编码器</b>:CLIP ViT-L/14 @336px,一张图切成 24×24=<b>576 个 patch</b>,每个输出一个向量(初版 @224 为 256)。</li>
+    <li><b>连接器</b>:LLaVA-1.5 是一个 <b>2 层 MLP</b>,把视觉向量映射到 LLM 的词向量维度(初版为线性)。</li>
     <li><b>LLM</b>:Vicuna。它把 [576 视觉 token + 文本 token] 当成一条普通长序列处理。</li>
   </ul>
   <div class="key"><b>关键直觉</b>:在 LLM 眼里,那 576 个视觉 token 和普通词向量<b>没有区别</b>——它只是在读一段更长的"文本",前面 576 个"词"恰好编码了图像。</div>
@@ -238,12 +295,14 @@ const LECTURES = [
   <tr><td>① 对齐预训练</td><td>只训 MLP 投影</td><td>冻 CLIP + 冻 LLM</td><td>先让视觉向量"对上"语言空间</td></tr>
   <tr><td>② 视觉指令微调</td><td>训 MLP + LLM</td><td>冻 CLIP</td><td>教它听指令、按要求作答</td></tr></table>
   <h3>一个巧妙的数据招(埋点到 L5)</h3>
-  <p>LLaVA 没有现成的"图文对话"数据,于是用<b>纯文本 GPT-4</b>:把图的 caption + 物体坐标(都是文字)喂给它,让它"脑补"出多轮对话、详细描述、推理问答。零成本造出几十万条指令数据——但也埋下了<b>幻觉</b>的种子(L8 再谈)。</p>
+  <p>LLaVA 没有现成的"图文对话"数据,于是用<b>纯文本 GPT-4</b>:把图的 caption + 物体坐标(都是文字)喂给它,让它"脑补"出多轮对话、详细描述、推理问答,造出约 158K 条指令数据。<b>成本低但不是零</b>——有 API 费用、还要筛选与校验;而且因为 GPT-4 没真看图,也<b>埋下了幻觉的种子</b>(L8 再谈)。</p>
   <div class="note"><b>承上启下</b>:LLaVA 简单但有短板——分辨率低、token 固定、连接器朴素、会幻觉。接下来五讲(L5–L9),就是沿着这些短板,逐层看现代 VLM(以 Qwen2.5-VL 为主参考)如何进化。</div>
   `},
 
  {id:"l5", grp:"今生 · LLM 时代", kick:"Lecture 5", title:"数据的艺术",
   lead:"数据是 VLM 效果的天花板——比结构更决定上限。",
+  quiz:{q:"caption 越长越详细,就一定对训练越好吗?",
+    a:"不一定。<b>忠实性优先于长度</b>:越长越容易掺入图里没有的细节,这些<b>无视觉依据的描述会把幻觉写进训练数据</b>。好的 re-caption 是「详细且可在图中逐条验证」。"},
   html:`
   <p>如果说结构决定模型"能不能学",数据决定它"学成什么样"。这一讲看 VLM 的数据怎么来、怎么洗、怎么配。</p>
   <h3>两大类数据(对应两阶段)</h3>
@@ -252,12 +311,13 @@ const LECTURES = [
   <tr><td>指令/SFT 数据</td><td>阶段②</td><td>图 + 多轮对话/问答</td><td>求"对":高质量,练具体能力</td></tr></table>
   <h3>三个核心技巧</h3>
   <h4>① Re-caption(重写描述)</h4>
-  <p>网络 alt 文本极脏("IMG_1234.jpg")。用强 VLM 给图<b>重新生成高质量详细描述</b>替换它(如 ShareGPT4V)。效果显著,但要花算力,且会继承 captioner 的幻觉。</p>
+  <p>网络 alt 文本极脏("IMG_1234.jpg")。用强 VLM 给图<b>重新生成高质量详细描述</b>替换它(如 ShareGPT4V)。效果显著,但要花算力,且会继承 captioner 的幻觉。注意:清洗是<b>去噪/过滤/去重</b>,不会无中生有补事实;re-caption 则是一次<b>新的标注</b>。</p>
   <h4>② 用 LLM 合成指令数据</h4>
   <p>就是 LLaVA 那招。局限:合成模型没真看图,可能脑补出图里没有的细节——<b>幻觉数据的源头之一</b>。</p>
   <h4>③ 全开放数据范式(Molmo / PixMo)</h4>
   <p>多数"开源"VLM 只开权重不开数据。<b>Molmo</b> 连数据和采集管线都公开:让标注员<b>口头描述图像 60–90 秒</b>再转写,得到超详细、不套路的 caption,且<b>不从别的 VLM 蒸馏</b>,避免"近亲繁殖"式的天花板。想理解"数据怎么造",它是最透明的一手材料。</p>
   <h3>互动:同一张图,数据策略不同,喂进去的文本天差地别</h3>
+  <p>下面是一张<b>自制教学示意图</b>。对照图像,判断每种描述里<b>哪些是可观察事实、哪些是无依据的脑补</b>:</p>
   <div id="dataW"></div>
   <h3>数据工程三件事</h3>
   <ul>
@@ -270,64 +330,89 @@ const LECTURES = [
 
  {id:"l6", grp:"今生 · LLM 时代", kick:"Lecture 6", title:"结构的进化",
   lead:"视觉编码器、连接器、分辨率、位置编码——从 LLaVA 到 Qwen2.5-VL 变了什么。",
+  quiz:{q:"一张 672×672 图,patch=14,2×2 合并后是多少视觉 token?",
+    a:"48×48 = <b>2304</b> 个 patch,2×2 合并后 = <b>576</b> 个视觉 token(这与我们实测 Qwen2.5-VL 处理 672² 的结果一致)。注:真实 processor 还可能加少量特殊/边界 token,此处未计。"},
   html:`
-  <p>LLaVA 的结构最简,也因此有短板。现代 VLM 的结构创新,几乎都围绕一个矛盾:<b>如何高效处理高分辨率与多图/视频</b>。</p>
-  <h3>连接器三流派</h3>
+  <p>LLaVA 的结构最简,也因此有短板。现代 VLM 的结构创新,几乎都围绕一个矛盾:<b>如何高效处理高分辨率与多图/视频</b>。这一讲分三小段:连接器 → 分辨率 → 位置编码。</p>
+  <h3>一、连接器三流派</h3>
   <ul>
     <li><b>MLP</b>(LLaVA):最简单,不改 token 数(576 进 576 出)。保真但 token 不可控。</li>
-    <li><b>Q-Former</b>(BLIP-2):用 query 把视觉特征压成固定少量 token。省算力但丢细节。</li>
+    <li><b>Q-Former</b>(BLIP-2):用 query 把视觉特征压成固定少量 token。省算力但易丢细节。</li>
     <li><b>Resampler</b>(Qwen-VL 等):cross-attention 重采样。本质都在平衡 <b>token 数 ↔ 信息保真</b>。</li>
   </ul>
-  <h3>头号难题:分辨率(决定文档/OCR 能力)</h3>
+  <h3>二、头号难题:分辨率(决定文档/OCR 能力)</h3>
   <p>336px 看不清小字,但分辨率一高,patch 数<b>平方级</b>暴涨,LLM 吃不消。三种解法:</p>
   <ol>
-    <li><b>固定低分辨率</b>(LLaVA):简单,文档能力弱。</li>
-    <li><b>AnyRes 切图</b>(LLaVA-NeXT):把大图切成多个 336px 小块分别编码。看得清,但 token 线性涨、切割割裂全局。</li>
-    <li><b>原生动态分辨率</b>(Qwen2-VL,借鉴 NaViT):ViT 直接处理任意分辨率/长宽比,输出<b>可变数量</b> token,再适度压缩。目前较优方向。</li>
+    <li><b>固定低分辨率</b>(LLaVA-1.5):简单,文档能力弱。</li>
+    <li><b>AnyRes 切图</b>(LLaVA-NeXT):把大图切成多个 336px 小块、<b>外加一张全局缩略图</b>分别编码。看得清,但 token 线性涨、块间缺全局关系。(真实 LLaVA-NeXT 还有候选分辨率网格、unpadding、换行 token 等细节,下面的滑块只是<b>教学估算</b>,不等于真实 processor。)</li>
+    <li><b>原生动态分辨率</b>(Qwen2-VL,借鉴 NaViT):ViT 直接处理任意分辨率/长宽比,输出<b>可变数量</b> token,再适度压缩(2×2 合并)。目前较优方向。</li>
   </ol>
-  <h3>互动:拖一拖,看"分辨率—token 数—算力"怎么联动</h3>
+  <h3>互动:拖一拖,看"分辨率—token 数—自注意力长度"怎么联动</h3>
   <div id="resW"></div>
-  <h3>位置编码:M-RoPE</h3>
-  <p>文本是 1D、图像是 2D、视频多一维时间。<b>M-RoPE</b>(Qwen2-VL)把旋转位置编码拆成<b>时间/高/宽</b>三个分量:文本三分量相同(退化成普通 RoPE),图像/视频按其 2D/3D 位置赋值。统一表达了三种模态的位置,还对分辨率/帧数外推更友好。</p>
-  <h3>互动:亲眼看 RoPE 怎么"旋转"位置,以及 M-RoPE 的三分量</h3>
+  <h3>三、位置编码:M-RoPE</h3>
+  <p>文本是 1D、图像是 2D、视频多一维时间。<b>M-RoPE</b>(Qwen2-VL)把旋转位置编码拆成<b>时间/高/宽</b>三个分量:文本三分量相同(退化成普通 RoPE),图像按其 2D(h,w) 位置赋值、视频再加时间 t。统一表达三种模态的位置,对分辨率/帧数外推更友好。Qwen2.5-VL 还让<b>时间分量对齐绝对时间</b>(不是单纯帧序号),利于定位视频中的时刻。</p>
+  <h3>互动:亲眼看 RoPE 的相对位置点积,以及 M-RoPE 的 (t,h,w) 坐标</h3>
   <div id="ropeW"></div>
-  <div class="key"><b>一张表看进化</b>:LLaVA(固定336/576token/MLP/原生RoPE/无视频) → Qwen2.5-VL(原生动态分辨率/可变token+压缩/M-RoPE/支持视频)。</div>
+  <h3>把编码器也算进来:Qwen2.5-VL 不是直接套现成 CLIP</h3>
+  <p>它<b>自训 ViT</b>,<b>大多数层用 window attention</b>(只在局部窗口内做注意力,降低高分辨率下的算力),少数层做全局;再配 M-RoPE 与动态分辨率。所以"视觉编码器 = 冻结的 CLIP"只是 LLaVA 系的做法,不能推广到所有 VLM。</p>
+  <table><tr><th></th><th>LLaVA-1.5</th><th>Qwen2.5-VL</th></tr>
+  <tr><td>视觉编码器</td><td>冻结 CLIP ViT-L/14</td><td>自训 ViT,多层 window attention</td></tr>
+  <tr><td>分辨率</td><td>固定 336</td><td>原生动态分辨率(28 倍数对齐)</td></tr>
+  <tr><td>视觉 token</td><td>固定 576</td><td>可变 + 2×2 合并(336²→144,672²→576)</td></tr>
+  <tr><td>位置编码</td><td>普通 RoPE</td><td>M-RoPE(时/高/宽,时间对齐绝对时间)</td></tr>
+  <tr><td>视频</td><td>不支持</td><td>支持</td></tr></table>
+  <div class="key"><b>一句话</b>:从 LLaVA-1.5 到 Qwen2.5-VL,主线是"把分辨率、token 数、位置编码、模态"四件事从<b>固定</b>做成<b>可变且统一</b>。</div>
   `},
 
  {id:"l7", grp:"今生 · LLM 时代", kick:"Lecture 7", title:"Tokenizer 的分叉",
   lead:"最易被忽略的核心:图像到底算不算 token?连续 vs 离散两条路。",
+  quiz:{q:"把码本大小扩大一倍,视觉序列会变长一倍吗?",
+    a:"不会。<b>token 数量主要由潜空间网格(空间下采样率)决定</b>,和码本大小几乎无关;码本 K 变大,只是每个 id 的<b>容量</b>从 log₂K 增加约 1 bit。「码本大小」和「token 数量」是两件事。"},
   html:`
   <p>这一讲回答一个大多数人没想清的问题:<b>图像被"token 化"了吗?</b> 答案取决于走哪条路。</p>
   <h3>先回顾:文本的 tokenizer</h3>
   <p>BPE 把文字切成<b>词表里的离散 id</b>,再查表变向量。关键:<b>离散 id → 查表 → 向量</b>,词表有限。那图像呢?两条完全不同的路线。</p>
-  <h3>路线 A:连续 soft-token(主流,理解类)</h3>
+  <h3>路线 A:连续 soft-token(理解类主流)</h3>
   <p>就是前面那套:图 → ViT → 投影 → 连续向量,<b>直接</b>当 LLM 输入。</p>
-  <div class="key"><b>关键认知</b>:这些"视觉 token"<b>根本不经过"离散 id→查表"</b>,它们是<b>连续向量</b>,不对应词表里任何格子。所以严格说,LLaVA/Qwen 这类模型<b>对图像没有 tokenizer,只有编码器+投影</b>。代价:输出端只会预测离散词 → <b>不能生成图像</b>。</p>
+  <div class="key"><b>关键认知</b>:这些"视觉 token"<b>不经过"离散 id→查表"</b>,它们是<b>连续向量</b>,不对应词表里任何格子。所以严格说,LLaVA/Qwen-VL 这类模型<b>对图像没有离散 tokenizer,只有编码器+投影</b>。</div>
+  <div class="note"><b>别过度推论</b>:连续视觉<b>输入</b>本身<b>并不决定</b>模型一定不能生成图——能不能生图还取决于<b>输出头/解码器与训练目标</b>。本课的 LLaVA/Qwen-VL 是<b>理解</b>模型,默认只输出文本;但<b>连续条件 + 扩散/flow 解码</b>同样能生图,<b>Janus</b> 更是把"理解用的视觉编码"和"生成用的视觉编码"分开。所以不存在"连续=只能看、离散=才能画"的绝对结论。</div>
   <h3>路线 B:离散视觉 token(统一/生成类)</h3>
-  <p>用 <b>VQ(向量量化)</b>把图像每块映射到一个有限"码本"里最近的格子 → 图像变成一串<b>离散 id</b>,和文字 token 同进一个词表、同一个自回归目标。于是模型既能理解、又能<b>生成图像</b>(预测视觉 token 再解码)。代表:<b>Chameleon、Emu3</b>。</p>
-  <h3>互动:亲眼看"量化"丢了什么——码本越小,损失越大</h3>
+  <p>用 <b>VQ(向量量化)</b>把图像(在一个<b>潜空间</b>里)每块映射到有限"码本"里最近的格子 → 图像变成一串<b>离散 id</b>,和文字 token 同进一个词表、同一个自回归目标。于是模型可以用同一套自回归既理解、又<b>生成图像</b>(预测视觉 token 再解码重建)。代表:<b>Chameleon、Emu3</b>。</p>
+  <div class="note"><b>真实 VQ ≠ 调色板</b>:真实 VQ 工作在<b>潜空间</b>、用<b>可学习码本</b>,再经<b>解码器</b>重建图像,还有 commitment 等训练损失。下面的组件只是用 <b>RGB 最近邻量化</b>做的<b>直观类比</b>,帮你体会"离散化会丢信息"这件事本身。</div>
+  <h3>互动:亲眼看"量化"丢了什么(RGB 类比)</h3>
   <div id="vqW"></div>
   <table><tr><th></th><th>A 连续 soft-token</th><th>B 离散视觉 token</th></tr>
   <tr><td>图像表示</td><td>连续向量(不进词表)</td><td>离散 id(进统一词表)</td></tr>
   <tr><td>代表</td><td>LLaVA、Qwen-VL</td><td>Chameleon、Emu3</td></tr>
-  <tr><td>有图像 tokenizer?</td><td>没有</td><td>有(VQ)</td></tr>
-  <tr><td>能生成图?</td><td>不能</td><td>能</td></tr>
-  <tr><td>理解类效果</td><td>强(主流)</td><td>偏弱(量化损失)</td></tr></table>
-  <div class="note"><b>一句话</b>:想<b>看懂图</b>→连续(A,更强更主流);想<b>一个模型又看又画</b>→离散(B,更统一但更难)。这是多模态最重要的分叉之一。</div>
+  <tr><td>有离散图像 tokenizer?</td><td>没有</td><td>有(VQ)</td></tr>
+  <tr><td>能否生图</td><td>理解模型默认只输出文本;接扩散/生成头亦可生图</td><td>可在同一自回归里生图</td></tr>
+  <tr><td>理解类效果</td><td>目前主流更强</td><td>量化是潜在限制之一(非唯一原因)</td></tr></table>
+  <div class="note"><b>一句话</b>:连续(A)与离散(B)是多模态最重要的分叉之一;但两条路<b>正在互相借鉴、融合</b>(L10)。量化会丢信息是事实,却<b>不能据此断言所有离散模型都弱</b>——效果由数据、规模、训练共同决定。</div>
   `},
 
  {id:"l8", grp:"今生 · LLM 时代", kick:"Lecture 8", title:"训练与对齐",
   lead:"三段式、冻结策略、DPO,以及 VLM 的头号顽疾——幻觉。",
+  quiz:{q:"答案 loss 的 mask 不包含图像,那连接器还有梯度吗?",
+    a:"有。只要连接器<b>未冻结</b>且在<b>计算图</b>里,梯度就能通过「答案 token 的 loss」沿反向传播回到连接器(乃至未冻结的视觉侧)。「图像不作监督标签」≠「视觉侧没有梯度」。"},
   html:`
-  <p>这一讲把"怎么训出来"讲透。现代 VLM 基本是 LLaVA 两段式的扩展——<b>三段式</b>。</p>
+  <p>这一讲把"怎么训出来"讲透。先给一个<b>教学用的概括模型</b>,再对照 Qwen2.5-VL 的<b>真实配方</b>——两者别混为一谈。</p>
+  <h3>教学概括:三段式(简化心智模型)</h3>
   <table><tr><th>阶段</th><th>训/冻</th><th>数据</th><th>目的</th></tr>
   <tr><td>① 对齐预训练</td><td>只训连接器,冻 LLM</td><td>海量图文对</td><td>对齐视觉到语言空间</td></tr>
-  <tr><td>② 多任务/指令微调</td><td>放开 LLM(+编码器)</td><td>大规模多能力数据</td><td>灌能力、学听指令</td></tr>
+  <tr><td>② 多任务/指令微调</td><td>放开 LLM(常也放开编码器)</td><td>大规模多能力数据</td><td>灌能力、学听指令</td></tr>
   <tr><td>③ 对齐优化(可选)</td><td>偏好对齐</td><td>偏好对</td><td>降幻觉、合人类偏好</td></tr></table>
-  <h3>训练目标其实很朴素</h3>
-  <p>对理解类 VLM:目标就是 LLM 老本行——<b>对"答案文本"做 next-token 预测</b>。图像只是<b>条件</b>,不参与 loss;只有回答段算损失(视觉 token、问题段都 mask 掉)。</p>
+  <div class="warn"><b>别把 LLaVA 的冻结策略推广到所有 VLM。</b>不同模型何时冻/解冻 ViT、分几阶段,差异很大。上表是<b>概括</b>,下面才是具体模型的<b>实配</b>。</div>
+  <h3>真实配方:Qwen2.5-VL(据技术报告 arXiv:2502.13923)</h3>
+  <table><tr><th>报告章节</th><th>做法</th></tr>
+  <tr><td>§2.2.2 预训练(三阶段)</td><td>先<b>训练视觉侧</b> → 再<b>全参数</b>训练 → 再<b>长序列/长上下文</b>阶段</td></tr>
+  <tr><td>§2.3.4 后训练</td><td><b>SFT + DPO</b>,且这两步<b>冻结 ViT</b></td></tr></table>
+  <p>可见它的"三阶段"指的是<b>预训练内部</b>的三步,和上面教学概括的"对齐/指令/偏好"不是同一套划分。读任何模型都要回到它自己的报告。</p>
+  <h3>训练目标其实很朴素(以指令 SFT 为例)</h3>
+  <p>对理解类 VLM 的指令微调:目标就是 LLM 老本行——<b>对"答案文本"做 next-token 预测</b>。图像与问题段<b>不作为监督标签</b>(不计入 loss),只有答案段算损失。</p>
   <div class="flow">序列:  [视觉tokens]  USER: 图里有什么?  ASSISTANT: 一只狗。
-loss :   ✗ 不算       ✗ 不算            ✓ 只算这段</div>
+标签 :   ✗ 不监督     ✗ 不监督           ✓ 只监督这段
+梯度 :   仍可经答案loss回传到"未冻结的"视觉侧/连接器</div>
+  <p class="wsub" style="color:var(--mut)">注意:这描述的是<b>指令 SFT</b>;其他预训练目标(如含图文对比、生成式目标)不能一概而论。</p>
   <h3>冻结策略(VLM 训练的艺术)</h3>
   <ul>
     <li>阶段①只开连接器:省算力、稳,别一上来就动大模型。</li>
@@ -349,20 +434,23 @@ loss :   ✗ 不算       ✗ 不算            ✓ 只算这段</div>
 
  {id:"l9", grp:"今生 · LLM 时代", kick:"Lecture 9", title:"如何评判",
   lead:"benchmark 地图、评测方法学,以及怎么读榜不被数字骗。",
+  quiz:{q:"POPE 分数很高,能证明这个模型适合上线做内容审核吗?",
+    a:"不能。POPE 只测<b>一类「对象是否存在」的是/否幻觉</b>,和审核标签不是一回事。要上线审核,还得看<b>该任务的数据</b>、<b>FP/FN 与误判成本</b>、漏判、拒答、以及分布变化下的稳健性。"},
   html:`
   <p>怎么判断一个 VLM 行不行?别背榜名,按<b>能力维度</b>记。</p>
   <table><tr><th>能力</th><th>代表 benchmark</th></tr>
   <tr><td>综合学科推理</td><td>MMMU</td></tr>
   <tr><td>通用多模态</td><td>MMBench、MME、SEED</td></tr>
   <tr><td>开放式(LLM 裁判)</td><td>MM-Vet</td></tr>
-  <tr><td>文档/图表/界面</td><td>DocVQA、ChartQA、AI2D、OCRBench</td></tr>
+  <tr><td>文档/图表/图解</td><td>DocVQA、ChartQA、AI2D(图解理解)、OCRBench</td></tr>
   <tr><td>数理视觉推理</td><td>MathVista、MathVision</td></tr>
-  <tr><td>幻觉</td><td>POPE、HallusionBench</td></tr>
+  <tr><td>幻觉(对象存在)</td><td>POPE、HallusionBench</td></tr>
   <tr><td>定位 grounding</td><td>RefCOCO</td></tr>
   <tr><td>真实世界</td><td>RealWorldQA</td></tr></table>
+  <p class="wsub" style="color:var(--mut)">提醒:<b>AI2D 是图解(diagram)理解</b>,不等于 GUI/界面 benchmark;别把它当 UI 能力的证明。</p>
   <h3>评测方法学(决定数字可信度)</h3>
   <ul>
-    <li><b>选择题/固定答案</b>(MMBench/POPE):好自动判分,但有位置偏置、答案提取问题。</li>
+    <li><b>选择题/固定答案</b>(MMBench 等):好自动判分,但有位置偏置、答案提取问题。<b>POPE 是"是/否"二分题</b>,不是通用多选。</li>
     <li><b>开放式 + LLM 裁判</b>(MM-Vet):灵活,但裁判有偏见(偏好长答案)、不稳定、成本高——看分数要问"用哪个裁判、哪个版本"。</li>
     <li><b>标注匹配</b>(grounding 用 IoU):受表述多样性影响,需规范化。</li>
   </ul>
@@ -374,17 +462,19 @@ loss :   ✗ 不算       ✗ 不算            ✓ 只算这段</div>
     <li><b>单榜领先 ≠ 全面强</b>:看一组榜的画像。</li>
     <li><b>平均分掩盖偏科</b>:按你的实际用途看对应维度。</li>
   </ol>
-  <div class="note"><b>特别提醒</b>:看 VLM 靠不靠谱,<b>幻觉榜(POPE)比综合榜更能暴露问题</b>。建议第一个亲手跑的就是 POPE。</div>
+  <div class="note"><b>特别提醒</b>:<b>幻觉榜(POPE)比综合榜更能暴露问题</b>,建议第一个亲手跑的就是 POPE。但要记住它只覆盖"对象存在"一类幻觉,<b>不是整体可靠性或内容安全的证明</b>。</div>
   <div class="key"><b>能力画像速查</b>:给一个新模型,看这 6 个数即可画像——MMMU、MMBench、DocVQA/OCRBench、ChartQA、MathVista、POPE。</div>
   `},
 
  {id:"l10", grp:"未来", kick:"Lecture 10", title:"前沿与开放问题",
   lead:"统一生成、任意模态、Agent、效率与安全——以及留给你的问题。",
+  quiz:{q:"「连续视觉输入」和「图像生成」可以同时存在于一个模型里吗?",
+    a:"可以。能不能生图由<b>输出结构与训练目标</b>决定,不由输入是否连续决定。<b>连续条件 + 扩散/flow</b>、或 <b>Janus</b> 式分离理解/生成编码,都是反例。L7 的「分叉」正在被重新缝合。"},
   html:`
   <p>我们走完了前世与今生。最后看看多模态大模型正奔向哪里。</p>
   <h3>五个前沿方向</h3>
   <ul>
-    <li><b>统一理解 + 生成</b>:让一个模型既看懂又能画(离散 token 路线 Emu3、Janus,或扩散与自回归融合)。L7 的"分叉"正在被重新缝合。</li>
+    <li><b>统一理解 + 生成</b>:让一个模型既看懂又能画(离散 token 路线 Emu3;或 <b>Janus</b> 分离理解/生成编码;或<b>连续条件 + 扩散/flow</b> 融合)。L7 的"分叉"正在被重新缝合。</li>
     <li><b>任意模态(Omni)</b>:文/图/音/视频统一(如 Qwen2.5-Omni),朝"全能感官"走。</li>
     <li><b>视频与长上下文</b>:从单图到长视频的时序理解、流式处理。</li>
     <li><b>GUI / Agent</b>:看屏幕、点按钮、操作软件——多模态成为 Agent 的眼睛。</li>
@@ -403,37 +493,63 @@ loss :   ✗ 不算       ✗ 不算            ✓ 只算这段</div>
   `},
 
  {id:"lab", grp:"实验", kick:"Lab", title:"实验课:跑通 + 评测",
-  lead:"看十遍不如跑一遍。三步上手 + 精确书单 + 自检清单。",
+  lead:"看十遍不如跑一遍。四级实验(CPU→GPU→评测→误差分析)+ 精确书单 + 自检清单。",
+  quiz:{q:"两个模型都是 576 视觉 token,为什么效果可能差很多?",
+    a:"因为「token 数」不等于「信息量/效果」。两者的<b>原图分辨率、视觉编码器、合并结构、训练数据与目标</b>都不同——例如 LLaVA-1.5 的 576 来自 336² 固定输入,Qwen2.5-VL 的 576 来自 672² 原生+合并。<b>序列长度相等,承载的信息未必相等</b>。"},
   html:`
-  <h3>三步上手</h3>
-  <ol>
-    <li><b>跑通 LLaVA 推理</b>:对一张图提问,<b>打印中间 shape</b>,亲眼确认"576 个视觉 token"真实存在(验证 L4)。</li>
-    <li><b>跑通 Qwen2.5-VL</b>:同一张高分辨率文档图问 LLaVA 和 Qwen,对比文档/OCR 能力,看它<b>可变的视觉 token 数</b>(验证 L6)。</li>
-    <li><b>评测一次</b>:用 <b>VLMEvalKit</b> 在 <b>POPE</b> 上评,不仅看分数,<b>人工翻 30 条输出</b>找它在哪编造了不存在的物体(验证 L8/L9)。</li>
-  </ol>
+  <h3>先建立正确预期</h3>
+  <div class="note"><b>关于"纯前端跑真实推理"</b>:本站是无依赖静态页,<b>不内置推理运行时</b>,所以互动组件用的是<b>可复现的原理级可视化 + 预设/实测数值</b>,不是现场大模型输出。(原则上 WebGPU/WASM 可跑小模型;现场大模型 demo 建议另配 GPU 服务,并保留可复现的离线记录。)真要跑真实模型,就按下面四级实验在有环境的机器上做。</div>
+  <h3>四级实验(从 CPU 到评测,逐级加码)</h3>
+  <table><tr><th>层次</th><th>做什么</th><th>通过标准</th></tr>
+  <tr><td><b>A · CPU 接口实验</b><br>(无需 GPU)</td><td>用真实 HuggingFace <b>processor</b> 处理同一张图,打印输入张量与视觉占位 token 数</td><td>记录版本、原尺寸、grid、pixel shape、视觉 token 数;断言与预期一致</td></tr>
+  <tr><td><b>B · GPU 推理</b></td><td>同图同问题、greedy 解码,分别跑 LLaVA 与 Qwen</td><td>保存模型原始答案、checkpoint/revision、环境、采样设置、时延与显存;观察差异,<b>不预设谁必胜</b></td></tr>
+  <tr><td><b>C · 评测</b></td><td>VLMEvalKit 选定 <b>POPE</b> 变体与 split,先固定小样本</td><td>固定工具 commit、模型 id、样本 id/种子、prompt;输出预测表 + TP/FP/TN/FN + P/R/F1/acc/yes-ratio。小样本<b>不声称全集成绩</b></td></tr>
+  <tr><td><b>D · 人工误差分析</b></td><td>翻 30 条有 id 的输出</td><td>区分视觉漏识别 / 语言先验 / 答案提取错误 / 标签争议;给 3 条<b>有图有证据</b>的失败案例</td></tr></table>
+  <h3>A 级:CPU 就能验证(本课实测基线)</h3>
+  <p>DayOne 用真实 processor 在 CPU 上实测(torch 2.11.0 / transformers 5.12.1 / Pillow 11.3.0,<b>仅 processor,未跑 GPU 生成</b>),结果:</p>
+  <table><tr><th>模型</th><th>输入 336²</th><th>输入 672²</th></tr>
+  <tr><td>LLaVA-1.5-7b</td><td>缩放到 336² → <b>576</b> 视觉 token</td><td>仍缩放到 336² → <b>576</b> 视觉 token</td></tr>
+  <tr><td>Qwen2.5-VL-3B</td><td>grid 24×24=576 patch → 合并 → <b>144</b> 视觉 token</td><td>grid 48×48=2304 → 合并 → <b>576</b> 视觉 token</td></tr></table>
+  <div class="flow"># A 级:只下载 processor 相关小文件,CPU 即可;脚本 lab_shapes.py 见交付包
+python lab_shapes.py --model llava --sizes 336 672 --out llava-shapes.json
+python lab_shapes.py --model qwen  --sizes 336 672 --out qwen-shapes.json
+
+# B 级:需 CUDA 与足够显存;--infer 才下载权重并尝试生成(两模型分开跑,别同时载入)
+python lab_shapes.py --model qwen  --sizes 336 672 --infer --out qwen-infer.json</div>
+  <div class="warn"><b>先别抄随版本漂移的命令</b>:VLMEvalKit 的 <code>--model</code> 配置名与 <code>--data</code> 注册名,要在<b>固定 commit</b> 上实际查询并跑通后再写进笔记。本包的 <b>GPU 路径未验证</b>,需你在目标授课机跑通后才标"验证通过";没有 GPU 时,A 级 processor 实验已是有效的第一步。</div>
+  <h3>环境与显存(B 级前必读)</h3>
+  <ul>
+    <li>用独立 venv/conda + 固定依赖版本文件(本课实测版本见上)。</li>
+    <li>显存<b>不只由参数量决定</b>:还要算 dtype、输入/输出长度、量化配置。先给估算,再按目标机实测。</li>
+    <li>首次权重下载耗时不计入授课时间;建议提前预下载。</li>
+  </ul>
   <h3>精确书单(按顺序读)</h3>
-  <p><b>必读</b>:① LLaVA(Visual Instruction Tuning + 1.5)② Qwen2.5-VL 技术报告(信息密度最高)③ CLIP。<br>
-  <b>补齐</b>:④ BLIP-2(Q-Former)⑤ Molmo/PixMo(数据)⑥ SigLIP。<br>
-  <b>Tokenizer 分叉</b>:⑦ Chameleon ⑧ Emu3。<br>
-  <b>工具</b>:VLMEvalKit / lmms-eval 文档 + 一篇近期 MLLM 综述。</p>
+  <p><b>必读</b>:① LLaVA(初版 2304.08485 + 1.5 2310.03744)② Qwen2.5-VL 技术报告 2502.13923(信息密度最高)③ CLIP 2103.00020。<br>
+  <b>补齐</b>:④ BLIP-2 2301.12597(Q-Former)⑤ Molmo/PixMo(数据)⑥ SigLIP。<br>
+  <b>Tokenizer 分叉</b>:⑦ Chameleon ⑧ Emu3 ⑨ Janus / JanusFlow 2411.07975。<br>
+  <b>评测</b>:POPE 2305.10355、原始 VQA 1505.00468;工具 VLMEvalKit(固定 commit)。</p>
   <h3>核心代码仓库</h3>
   <ul>
     <li><code>haotian-liu/LLaVA</code> — 官方,代码友好</li>
-    <li><code>QwenLM/Qwen2.5-VL</code> — 官方推理示例</li>
-    <li><code>open-compass/VLMEvalKit</code> — 一站式评测</li>
+    <li><code>QwenLM/Qwen2.5-VL</code> — 官方推理示例(链接指<b>具体型号/固定版本</b>,main 已转向新系列)</li>
+    <li><code>open-compass/VLMEvalKit</code> — 一站式评测(固定 commit 与实际注册名)</li>
   </ul>
-  <h3>自检清单(全打钩 = 入门完成)</h3>
-  <ul>
-    <li>☐ 能对着三件套图讲清一张图如何变成答案</li>
-    <li>☐ 能说清 CLIP/BLIP-2 各解决了什么历史问题</li>
-    <li>☐ 能讲"分辨率—token—细节"三角与三种解法</li>
-    <li>☐ 能区分连续 soft-token 与离散 VQ 两条路线</li>
-    <li>☐ 能讲三段式训练、loss 只算答案段、幻觉三来源</li>
-    <li>☐ 能把文档/数理/幻觉映射到榜,说出读榜陷阱</li>
-    <li>☐ 亲手跑通过 LLaVA+Qwen 并在 POPE 评测过</li>
-  </ul>
-  <div class="key">🎉 恭喜走完《多模态大模型的前世今生》。你现在有了读懂任何新 VLM 的坐标系,也有了亲手验证的手感。</div>
+  <h3>自检清单(可点击勾选,进度自动保存)</h3>
+  <div id="checklist"></div>
+  <div class="note"><b>诚实提醒</b>:勾完清单代表"入门路径走通",<b>不等于"掌握任何新 VLM"</b>——真正的手感来自多读几份报告、多跑几次对比。</div>
+  <div class="key">🎉 恭喜走完《多模态大模型的前世今生》。你现在有了读懂任何新 VLM 的坐标系,也有了亲手验证的方法。</div>
   `}
+];
+
+const CHECKLIST=[
+ "能对着三件套图讲清一张图如何变成答案",
+ "能区分初版 LLaVA(224/256/线性) 与 LLaVA-1.5(336/576/MLP)",
+ "能说清 CLIP/BLIP-2 各解决了什么历史问题",
+ "能讲「分辨率—token—自注意力长度」三角与三种解法",
+ "能区分连续 soft-token 与离散 VQ 两条路线,且不把结论说绝对",
+ "能分清「教学三段式」与 Qwen2.5-VL 报告里的真实训练配方",
+ "能把文档/数理/幻觉映射到榜,说出 POPE 的覆盖范围与读榜陷阱",
+ "跑通过 A 级 processor 实验(或进一步 B/C/D)"
 ];
 
 /* ============ RENDER NAV + LECTURES ============ */
@@ -442,35 +558,66 @@ let curGrp="";
 LECTURES.forEach((L,i)=>{
   if(L.grp!==curGrp){curGrp=L.grp;const g=document.createElement('div');g.className='grp';g.textContent=L.grp;nav.appendChild(g);}
   const a=document.createElement('a');a.href="#"+L.id;a.dataset.i=i;
-  a.innerHTML=`${L.kick.replace('Lecture','L').replace('Lab','Lab')} · ${L.title}`;
-  a.onclick=e=>{e.preventDefault();show(i);};
+  a.innerHTML=`${L.kick.replace('Lecture','L')} · ${L.title}`;
+  a.onclick=e=>{e.preventDefault();show(i);closeMenu();};
   nav.appendChild(a);
   const sec=document.createElement('section');sec.className='lec';sec.id=L.id;
-  sec.innerHTML=`<div class="kick">${L.kick}</div><h2>${L.title}</h2><p class="lead">${L.lead}</p>${L.html}
+  const quiz=L.quiz?`<details class="quiz"><summary>🧠 检查题:${L.quiz.q}</summary><div class="qa"><b>参考答案:</b>${L.quiz.a}</div></details>`:'';
+  sec.innerHTML=`<div class="kick">${L.kick}</div><h2>${L.title}</h2><p class="lead">${L.lead}</p>${L.html}${quiz}
     <div class="navbtns"><button class="prev">← 上一讲</button><button class="next">下一讲 →</button></div>`;
   main.appendChild(sec);
 });
+const VERSION='v2026.11.16 · rev2';
+(function(){const vf=document.createElement('div');vf.className='grp';
+  vf.style.cssText='margin-top:18px;border-top:1px solid var(--line);padding-top:12px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--mut)';
+  vf.innerHTML=VERSION+'<br>收口 DayTwo · review DayOne';nav.appendChild(vf);})();
 let cur=0;
+function idToIndex(id){return LECTURES.findIndex(L=>L.id===id);}
 function show(i){
   cur=Math.max(0,Math.min(LECTURES.length-1,i));
   document.querySelectorAll('.lec').forEach((s,k)=>s.classList.toggle('on',k===cur));
   document.querySelectorAll('#nav a').forEach((a,k)=>a.classList.toggle('on',k===cur));
   document.getElementById('prog').textContent=`${cur+1} / ${LECTURES.length}`;
-  main.scrollTo?main.scrollTo(0,0):0;window.scrollTo(0,0);
+  window.scrollTo(0,0);
   const sec=document.querySelectorAll('.lec')[cur];
   sec.querySelector('.prev').disabled=cur===0;
   sec.querySelector('.next').disabled=cur===LECTURES.length-1;
   sec.querySelector('.prev').onclick=()=>show(cur-1);
   sec.querySelector('.next').onclick=()=>show(cur+1);
+  const id=LECTURES[cur].id;
+  try{ if(location.hash!=='#'+id) location.hash=id; }catch(e){}
+  LS.set('mmc_pos',id);
   mountWidgets();
 }
-/* theme (localStorage guarded: file:// / opaque origins can throw) */
+/* theme + storage (localStorage guarded: file:// / opaque origins can throw) */
 const LS={get(k){try{return localStorage.getItem(k);}catch(e){return null;}},set(k,v){try{localStorage.setItem(k,v);}catch(e){}}};
 function theme(m){document.documentElement.setAttribute('data-theme',m);
   document.getElementById('theme').textContent=m==='light'?'🌙':'☀️';
   LS.set('mmc_theme',m);redrawAll();}
 document.getElementById('theme').onclick=()=>theme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light');
 theme(LS.get('mmc_theme')||'dark');
+/* present (大字/投屏) mode */
+function present(on){document.documentElement.setAttribute('data-present',on?'1':'0');
+  document.getElementById('present').style.borderColor=on?'var(--acc)':'';LS.set('mmc_present',on?'1':'0');redrawAll();}
+document.getElementById('present').onclick=()=>present(document.documentElement.getAttribute('data-present')!=='1');
+present(LS.get('mmc_present')==='1');
+/* mobile menu */
+const navEl=document.getElementById('nav'),scrim=document.getElementById('navScrim');
+function openMenu(){navEl.classList.add('open');scrim.classList.add('on');}
+function closeMenu(){navEl.classList.remove('open');scrim.classList.remove('on');}
+document.getElementById('menuBtn').onclick=()=>navEl.classList.contains('open')?closeMenu():openMenu();
+scrim.onclick=closeMenu;
+/* keyboard nav (ignore when typing / adjusting a control) */
+document.addEventListener('keydown',e=>{
+  const t=(e.target.tagName||'').toUpperCase();
+  if(t==='INPUT'||t==='TEXTAREA'||t==='SELECT')return;
+  if(e.key==='ArrowRight')show(cur+1);
+  else if(e.key==='ArrowLeft')show(cur-1);
+});
+/* hash routing: explicit deep-link wins over saved progress */
+window.addEventListener('hashchange',()=>{const i=idToIndex(location.hash.slice(1));if(i>=0&&i!==cur)show(i);});
+/* print: mount every widget + render checklist so all lectures print fully */
+window.addEventListener('beforeprint',()=>{mountAll();});
 
 /* ============ WIDGETS ============ */
 function cssv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
@@ -481,32 +628,44 @@ function mountWidgets(){
   if(id==='l5'&&!mounted.data){buildData();mounted.data=1;}
   if(id==='l6'){ if(!mounted.res){buildRes();mounted.res=1;} if(!mounted.rope){buildRope();mounted.rope=1;} }
   if(id==='l7'&&!mounted.vq){buildVQ();mounted.vq=1;}
+  if(id==='lab'&&!mounted.chk){buildChecklist();mounted.chk=1;}
+}
+function mountAll(){
+  if(!mounted.tl){buildTimeline();mounted.tl=1;}
+  if(!mounted.data){buildData();mounted.data=1;}
+  if(!mounted.res){buildRes();mounted.res=1;}
+  if(!mounted.rope){buildRope();mounted.rope=1;}
+  if(!mounted.vq){buildVQ();mounted.vq=1;}
+  if(!mounted.chk){buildChecklist();mounted.chk=1;}
 }
 function redrawAll(){ if(window._res)window._res(); if(window._rope)window._rope(); if(window._vq)window._vq(); }
 
 /* --- Timeline --- */
 const TL=[
- {y:"2015",n:"Show & Tell",p:"前世",d:"CNN 看图 + RNN 说话,image captioning 开端;随后 Show,Attend&Tell 引入视觉注意力。"},
- {y:"2016",n:"VQA",p:"前世",d:"视觉问答:从「描述」升级到「推理」,评测范式沿用至今。"},
- {y:"2021",n:"CLIP",p:"前世",d:"4 亿图文对对比学习,造出语义对齐的视觉底座——现代 VLM 的地基。"},
- {y:"2022",n:"Flamingo",p:"前世",d:"冻结双塔 + 交叉注意力 + few-shot,首次有了多模态的上下文学习。"},
- {y:"2023",n:"BLIP-2",p:"前世",d:"Q-Former:用少量 query 把视觉特征压成固定 token——连接器鼻祖。"},
- {y:"2023",n:"LLaVA",p:"今生",d:"极简三件套 + 视觉指令微调,定义现代 VLM 范式。"},
- {y:"2024",n:"Qwen-VL / InternVL",p:"今生",d:"原生动态分辨率、M-RoPE、强文档/OCR——工业级 SOTA。"},
- {y:"2024",n:"Chameleon/Emu3",p:"今生",d:"离散视觉 token,统一理解与生成的另一条路。"},
+ {y:"2015",n:"Show & Tell / VQA",p:"前世",d:"CNN 看图 + RNN 说话,image captioning 开端;Show,Attend&Tell 引入视觉注意力;同年 VQA 数据集把任务从「描述」升级到「推理」。"},
+ {y:"2021",n:"CLIP",p:"前世",d:"4 亿图文对对比学习,造出(与其文本编码器)语义对齐的视觉底座——现代 VLM 的常见地基。"},
+ {y:"2022",n:"Flamingo",p:"前世",d:"冻结双塔 + Perceiver Resampler + gated cross-attention + few-shot,首次有了多模态的上下文学习。"},
+ {y:"2023",n:"BLIP-2",p:"前世",d:"Q-Former:用少量 query 把视觉特征压成固定 token——连接器的代表方案。"},
+ {y:"2023",n:"LLaVA / LLaVA-1.5",p:"今生",d:"极简三件套 + 视觉指令微调,定义现代 VLM 范式。初版 224/256/线性;1.5 升到 336/576/2层MLP。"},
+ {y:"2023",n:"Qwen-VL",p:"今生",d:"早期 Qwen 视觉-语言模型,Resampler 连接器。注意:此时尚无 M-RoPE。"},
+ {y:"2024",n:"Qwen2-VL",p:"今生",d:"原生动态分辨率 + M-RoPE(时/高/宽),强文档/OCR。"},
+ {y:"2024",n:"InternVL",p:"今生",d:"动态切图(tiling)高分辨率路线;与 Qwen 的原生动态分辨率是不同取舍,并非都用 M-RoPE。"},
+ {y:"2024",n:"Chameleon / Emu3",p:"今生",d:"离散视觉 token,统一理解与生成的另一条路。"},
  {y:"2024",n:"Molmo",p:"今生",d:"全开放数据范式,不蒸馏、用人类原始数据。"},
- {y:"2025",n:"Omni / Agent",p:"未来",d:"任意模态统一、GUI/Agent、效率与安全成为主战场。"},
+ {y:"2025",n:"Qwen2.5-VL / Omni / Agent",p:"未来",d:"视觉侧 window attention、时间对齐绝对时间;任意模态、GUI/Agent、效率与安全成为主战场。"},
 ];
 function buildTimeline(){
   const host=document.getElementById('timeline');if(!host)return;
   host.innerHTML=`<div class="widget"><div class="wh">📜 多模态演化时间线</div>
-   <div class="wsub">点击里程碑查看它在历史中的位置</div>
+   <div class="wsub">点击里程碑查看它在历史中的位置(年份为代表性节点)</div>
    <div class="tl"><div class="tl-row" id="tlrow"></div></div>
    <div class="tl-detail" id="tld"></div></div>`;
   const row=host.querySelector('#tlrow');
-  TL.forEach((t,i)=>{const d=document.createElement('div');d.className='tl-item'+(i===0?' on':'');
+  TL.forEach((t,i)=>{const d=document.createElement('button');d.className='tl-item'+(i===0?' on':'');
+    d.setAttribute('aria-pressed',i===0?'true':'false');
     d.innerHTML=`<div class="dot"></div><div class="yr">${t.y}</div><div class="nm">${t.n}</div>`;
-    d.onclick=()=>{row.querySelectorAll('.tl-item').forEach(x=>x.classList.remove('on'));d.classList.add('on');
+    d.onclick=()=>{row.querySelectorAll('.tl-item').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false');});
+      d.classList.add('on');d.setAttribute('aria-pressed','true');
       host.querySelector('#tld').innerHTML=`<span class="phase">${t.p}</span> · <b>${t.y} ${t.n}</b><br>${t.d}`;};
     row.appendChild(d);});
   host.querySelector('#tld').innerHTML=`<span class="phase">${TL[0].p}</span> · <b>${TL[0].y} ${TL[0].n}</b><br>${TL[0].d}`;
@@ -516,56 +675,84 @@ function buildTimeline(){
 function buildData(){
   const host=document.getElementById('dataW');if(!host)return;
   const S={
-   raw:{t:"原始网络 alt 文本",c:"IMG_20240517_woof.jpg | #goldenretriever #cute pic.twitter...",n:"噪声大、和图几乎无关,直接用会拖累对齐。"},
-   clean:{t:"清洗后",c:"A golden retriever sitting on grass.",n:"去噪、保留基本事实。可用,但信息少、细节缺。"},
-   recap:{t:"Re-caption 重写",c:"一只金毛寻回犬坐在阳光下的草坪上,舌头微吐,背景是虚化的树木;画面右下角有一个红色飞盘。",n:"强 VLM 重写:细节丰富、可训练细粒度能力。代价:算力 + 可能继承幻觉。"}
+   raw:{t:"原始网络 alt 文本",c:"IMG_20240517_woof.jpg | #dog #cute pic.twitter...",n:"噪声大、和图几乎无关,直接用会拖累对齐。",f:""},
+   clean:{t:"清洗后(短但忠实)",c:"一只狗坐在草地上,旁边有一个红色飞盘。",n:"去噪、只保留可在图中看到的事实。信息少但可靠。清洗不会无中生有补事实。",f:""},
+   recap:{t:"Re-caption(详细且忠实)",c:"一只棕色的狗坐在绿色草坪上,右下方有一个红色飞盘;背景是浅色天空。",n:"强 VLM 重写:细节更多,且每条都能在图里验证。代价:算力 + 可能继承幻觉。",f:""},
+   halluc:{t:"长但幻觉(反例)",c:"一只金毛寻回犬在蓝天白云下的草坪上奔跑,远处有树林,旁边有个红色飞盘。",n:"⚠️ 「金毛/奔跑/蓝天白云/树林」图里都没有——描述很长却无视觉依据,这类数据会把幻觉直接喂给模型。",f:"蓝天白云 · 奔跑 · 树林(均无依据)"}
   };
-  host.innerHTML=`<div class="widget"><div class="wh">🧹 同一张图,三种数据策略</div>
-   <div class="wsub">切换看喂给模型的"文本"如何从噪声变成高质量描述</div>
-   <div class="seg" id="dseg"><button data-k="raw" class="on">原始 alt</button><button data-k="clean">清洗后</button><button data-k="recap">Re-caption</button></div>
+  host.innerHTML=`<div class="widget"><div class="wh">🧹 同一张图,四种数据策略</div>
+   <div class="wsub">对照下面这张自制教学示意图,判断每种描述里哪些是「可观察事实」、哪些是「脑补」</div>
+   <div class="seg" id="dseg"><button data-k="raw" class="on">原始 alt</button><button data-k="clean">清洗后</button><button data-k="recap">Re-caption</button><button data-k="halluc">长但幻觉</button></div>
    <div class="card" style="margin-top:12px">
-     <div style="font-size:48px;text-align:center">🐕‍🦺🥏</div>
-     <div style="color:var(--mut);font-size:12px;text-align:center;margin-bottom:10px">(示意图像)</div>
+     <canvas id="dscene" width="260" height="180" style="margin:0 auto"></canvas>
+     <div style="color:var(--mut);font-size:12px;text-align:center;margin:6px 0 10px">(自制教学样例图 · 非真实模型输出)</div>
      <div class="wh" id="dt"></div>
      <div class="flow" id="dc" style="white-space:pre-wrap;margin:8px 0"></div>
      <div class="wsub" id="dn"></div>
    </div></div>`;
-  const upd=k=>{host.querySelector('#dt').textContent=S[k].t;host.querySelector('#dc').textContent='"'+S[k].c+'"';host.querySelector('#dn').textContent=S[k].n;};
+  const cv=host.querySelector('#dscene'),cx=cv.getContext('2d');
+  function scene(){
+    // sky (plain, NO clouds) + grass + brown dog + red frisbee
+    cx.fillStyle='#d2dee9';cx.fillRect(0,0,260,110);
+    cx.fillStyle='#6aa84f';cx.fillRect(0,110,260,70);
+    cx.fillStyle='#8a5a2b';cx.beginPath();cx.ellipse(95,120,34,22,0,0,7);cx.fill(); // body
+    cx.beginPath();cx.ellipse(62,104,14,13,0,0,7);cx.fill(); // head
+    cx.fillStyle='#6b4420';cx.beginPath();cx.ellipse(52,96,5,8,0.5,0,7);cx.fill(); // ear
+    cx.fillStyle='#d94b3b';cx.beginPath();cx.ellipse(185,150,20,7,0,0,7);cx.fill(); // red frisbee
+    cx.strokeStyle='#a03125';cx.lineWidth=2;cx.beginPath();cx.ellipse(185,150,20,7,0,0,7);cx.stroke();
+  }
+  scene();
+  const upd=k=>{host.querySelector('#dt').textContent=S[k].t;host.querySelector('#dc').textContent='"'+S[k].c+'"';host.querySelector('#dn').innerHTML=S[k].n;};
   host.querySelectorAll('#dseg button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#dseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');upd(b.dataset.k);});
   upd('raw');
 }
 
-/* --- Resolution <-> tokens --- */
+/* --- Resolution <-> tokens (教学估算 + 真实记录) --- */
 function buildRes(){
   const host=document.getElementById('resW');if(!host)return;
-  host.innerHTML=`<div class="widget"><div class="wh">🔍 分辨率 ↔ 视觉 token ↔ 算力</div>
-   <div class="wsub">patch=14px;拖动分辨率,看 token 数与注意力算力如何变化</div>
-   <div class="ctrl"><label>分辨率</label><input type="range" id="rr" min="224" max="1568" step="112" value="336"><span class="pill" id="rrv">336²</span></div>
+  host.innerHTML=`<div class="widget"><div class="wh">🔍 分辨率 ↔ 视觉 token ↔ LLM 自注意力长度</div>
+   <div class="wsub">教学估算(patch=14);拖动分辨率,看 token 数与「LLM 全局自注意力的长度项」如何变化</div>
+   <div class="ctrl"><label>分辨率</label><input type="range" id="rr" min="224" max="1568" step="112" value="336" aria-label="分辨率"><span class="pill" id="rrv">336²</span></div>
    <div class="ctrl"><label>2×2 合并压缩</label><span class="seg" id="rmg"><button data-v="0" class="on">关</button><button data-v="1">开</button></span>
      <label style="min-width:60px">模式</label><span class="seg" id="rmode"><button data-v="native" class="on">原生</button><button data-v="anyres">AnyRes切图</button></span></div>
+   <div class="ctrl"><label>文本 token</label><input type="range" id="rtx" min="0" max="2000" step="50" value="300" aria-label="文本token数"><span class="pill" id="rtxv">300</span></div>
    <div class="stat">
      <div><b id="rp">—</b><span>patch 数</span></div>
      <div><b id="rt">—</b><span>视觉 token</span></div>
-     <div><b id="rc">—</b><span>注意力算力(相对)</span></div>
+     <div><b id="rc">—</b><span>仅视觉自注意力(相对)</span></div>
+     <div><b id="rcs">—</b><span>总序列自注意力(相对)</span></div>
    </div>
-   <div class="wsub" id="rnote" style="margin-top:10px"></div></div>`;
+   <div class="wsub" id="rnote" style="margin-top:10px"></div>
+   <div class="note" style="margin-top:12px"><b>真实 processor 记录</b>(CPU 实测,仅 processor;torch2.11/transformers5.12.1):
+     <ul style="margin:6px 0 0">
+       <li><b>LLaVA-1.5</b>:输入 336² 与 672² 都先缩放到 336² → 均 <b>576</b> 视觉 token。</li>
+       <li><b>Qwen2.5-VL-3B</b>:336² → 24×24=576 patch → 2×2 合并 → <b>144</b>;672² → 48×48=2304 → 合并 → <b>576</b>。</li>
+     </ul>
+     教学估算只给直觉;真实 processor 受 <code>min/max_pixels</code> 与 28 倍数对齐约束,不强制正方形,不同模型处理流程不同。</div>
+   </div>`;
   let merge=0, mode='native';
   function draw(){
     const res=+host.querySelector('#rr').value;
     host.querySelector('#rrv').textContent=res+'²';
+    const txt=+host.querySelector('#rtx').value;
+    host.querySelector('#rtxv').textContent=txt;
     const perSide=Math.round(res/14);
     let patch=perSide*perSide;
     let tiles=1, note='';
-    if(mode==='anyres'){ tiles=Math.max(1,Math.ceil(res/336)**2); patch=tiles*(24*24); note=`AnyRes:切成 ${tiles} 块 × 576 + 全局图,token 随块数线性涨、块间缺全局关系。`; }
+    if(mode==='anyres'){ tiles=Math.max(1,Math.ceil(res/336)**2); patch=(tiles+1)*(24*24); note=`AnyRes:切成 ${tiles} 块 × 576 + 1 张全局缩略图(576)= ${patch.toLocaleString()} patch,token 随块数线性涨、块间缺全局关系。`; }
     else { note=`原生动态分辨率:直接按 ${perSide}×${perSide} 个 patch 处理,保长宽比。`; }
-    let tok=patch; if(merge){tok=Math.round(patch/4); note+=' 2×2 合并后 token 降 4 倍(省算力,略丢细节)。';}
-    const cost=(tok*tok/ (576*576)); // relative to LLaVA 576
+    let tok=patch; if(merge){tok=Math.round(patch/4); note+=' 2×2 合并(发生在喂入 LLM 之前)后 token 降 4 倍(省算力,略丢细节)。';}
+    const costV=(tok*tok/(576*576));           // 仅视觉长度² 相对 LLaVA-1.5(576)
+    const total=tok+txt, base=576+txt;
+    const costS=(total*total/(base*base));      // 总序列(视觉+文本)² 相对
     host.querySelector('#rp').textContent=patch.toLocaleString();
     host.querySelector('#rt').textContent=tok.toLocaleString();
-    host.querySelector('#rc').textContent=(cost>=100?Math.round(cost):cost.toFixed(1))+'×';
-    host.querySelector('#rnote').textContent=note+' 注意:注意力算力 ∝ token²,所以分辨率一高,算力平方级暴涨——这就是 VLM 的头号矛盾。';
+    host.querySelector('#rc').textContent=(costV>=100?Math.round(costV):costV.toFixed(1))+'×';
+    host.querySelector('#rcs').textContent=(costS>=100?Math.round(costS):costS.toFixed(1))+'×';
+    host.querySelector('#rnote').innerHTML=note+' <b>口径</b>:这里的「相对」= LLM 端<b>全局自注意力的长度平方项</b>(∝ 序列长度²),相对 LLaVA-1.5 的 576。它<b>不是 ViT 的算力测量</b>,也<b>不等于实际耗时/显存倍数</b>(prefill 与逐 token 的 KV-cache decode 性质不同;FlashAttention 省显存但不消除二次计算;Qwen 的 window attention 又是局部算法)。';
   }
   host.querySelector('#rr').oninput=draw;
+  host.querySelector('#rtx').oninput=draw;
   host.querySelectorAll('#rmg button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#rmg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');merge=+b.dataset.v;draw();});
   host.querySelectorAll('#rmode button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#rmode button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.v;draw();});
   window._res=draw; draw();
@@ -575,54 +762,108 @@ function buildRes(){
 function buildRope(){
   const host=document.getElementById('ropeW');if(!host)return;
   host.innerHTML=`<div class="widget"><div class="wh">🧭 RoPE / M-RoPE 旋转位置编码</div>
-   <div class="wsub">RoPE 用"旋转"编码位置:位置越靠后转得越多,不同维度转速不同。拖动位置看旋转。</div>
-   <div class="ctrl"><label>序列位置 m</label><input type="range" id="rom" min="0" max="32" step="1" value="6"><span class="pill" id="romv">6</span></div>
-   <div class="ctrl"><label>模式</label><span class="seg" id="romode"><button data-v="rope" class="on">RoPE(文本)</button><button data-v="mrope">M-RoPE(图/视频)</button></span></div>
-   <canvas id="ropec" width="640" height="220"></canvas>
+   <div class="wsub">RoPE 把位置编成「旋转」。两个 token 的注意力点积只依赖它们的<b>相对位移</b>——下面可亲手验证。</div>
+   <div class="ctrl"><label>模式</label><span class="seg" id="romode"><button data-v="rope" class="on">相对位置点积(文本 RoPE)</button><button data-v="mrope">M-RoPE 坐标(t,h,w)</button></span></div>
+   <div id="ropeCtrls"></div>
+   <canvas id="ropec" width="640" height="240"></canvas>
    <div class="wsub" id="ronote" style="margin-top:10px"></div></div>`;
   const cv=host.querySelector('#ropec'),ctx=cv.getContext('2d');
-  let mode='rope';
+  const ctrls=host.querySelector('#ropeCtrls');
+  let mode='rope', mk='image';
+  const TH=0.4; // 单频(单位向量)便于看清 cos((n-m)θ)
   function dial(cx,cy,r,ang,col,lab){
     ctx.strokeStyle=cssv('--line');ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(cx,cy,r,0,7);ctx.stroke();
     ctx.strokeStyle=col;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+r*Math.cos(ang),cy-r*Math.sin(ang));ctx.stroke();
     ctx.fillStyle=col;ctx.beginPath();ctx.arc(cx+r*Math.cos(ang),cy-r*Math.sin(ang),4,0,7);ctx.fill();
     ctx.fillStyle=cssv('--mut');ctx.font='12px sans-serif';ctx.textAlign='center';ctx.fillText(lab,cx,cy+r+18);
   }
-  function draw(){
-    const m=+host.querySelector('#rom').value;host.querySelector('#romv').textContent=m;
-    ctx.clearRect(0,0,cv.width,cv.height);
-    const freqs=[1,0.5,0.25,0.12]; // 不同维度不同转速
+  function renderCtrls(){
     if(mode==='rope'){
-      freqs.forEach((f,i)=>dial(90+i*150,100,48,m*f,cssv('--acc'),`维度对 ${i+1}  (转速×${f})`));
-      host.querySelector('#ronote').innerHTML=`<b>RoPE</b>:每一对维度以不同"转速"旋转,旋转角 = 位置 m × 该维度频率。低维转得快(编码近距离),高维转得慢(编码远距离)。两个 token 的相对位置 = 它们旋转角之差,所以模型天然获得<b>相对位置</b>感知。`;
+      ctrls.innerHTML=`<div class="ctrl"><label>query 位置 m</label><input type="range" id="rom" min="0" max="24" step="1" value="6"><span class="pill" id="romv">6</span></div>
+       <div class="ctrl"><label>key 位置 n</label><input type="range" id="ron" min="0" max="24" step="1" value="10"><span class="pill" id="ronv">10</span></div>`;
+      ctrls.querySelector('#rom').oninput=draw;ctrls.querySelector('#ron').oninput=draw;
     } else {
-      const cols=[cssv('--acc2'),cssv('--grn'),cssv('--vio')];
-      const labs=['时间 t','高 h','宽 w'];
-      // 图像 token:假设它在 t=固定, h,w 随位置变化
-      const comps=[Math.floor(m/8), m%8*0.6, (m*0.9)%8*0.6];
-      [0,1,2].forEach(i=>dial(130+i*190,100,52,comps[i],cols[i],labs[i]));
-      host.querySelector('#ronote').innerHTML=`<b>M-RoPE</b>:把旋转拆成<b>时间/高/宽</b>三个分量。文本 token 三者相同(退化成普通 RoPE);图像 token 用它的 2D(h,w) 位置,视频再加时间 t。于是一个统一框架同时表达文本顺序、图像二维、视频时序。`;
+      ctrls.innerHTML=`<div class="ctrl"><label>内容类型</label><span class="seg" id="mkind"><button data-v="text">文本</button><button data-v="image" class="on">单图</button><button data-v="video">视频</button></span></div>
+       <div class="ctrl"><label>位置</label><input type="range" id="rom" min="0" max="8" step="1" value="2"><span class="pill" id="romv">2</span></div>`;
+      ctrls.querySelector('#rom').oninput=draw;
+      ctrls.querySelectorAll('#mkind button').forEach(b=>b.onclick=()=>{ctrls.querySelectorAll('#mkind button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mk=b.dataset.v;draw();});
     }
   }
-  host.querySelector('#rom').oninput=draw;
-  host.querySelectorAll('#romode button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#romode button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.v;draw();});
-  window._rope=draw; draw();
+  function drawRope(){
+    const m=+ctrls.querySelector('#rom').value, n=+ctrls.querySelector('#ron').value;
+    ctrls.querySelector('#romv').textContent=m;ctrls.querySelector('#ronv').textContent=n;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    const d=n-m, dot=Math.cos(d*TH);
+    // left: two dials
+    dial(90,80,42,m*TH,cssv('--acc'),`R(mθ)q  m=${m}`);
+    dial(90,80,42,m*TH,cssv('--acc'),'');
+    dial(210,80,42,n*TH,cssv('--acc2'),`R(nθ)k  n=${n}`);
+    // right: cos((Δ)θ) curve over Δ
+    const x0=330,x1=620,y0=30,y1=150,cy=(y0+y1)/2;
+    ctx.strokeStyle=cssv('--line');ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x0,cy);ctx.lineTo(x1,cy);ctx.stroke();
+    ctx.strokeStyle=cssv('--grn');ctx.lineWidth=2;ctx.beginPath();
+    for(let dd=-24;dd<=24;dd++){const px=x0+((dd+24)/48)*(x1-x0);const py=cy-Math.cos(dd*TH)*((y1-y0)/2-4);if(dd===-24)ctx.moveTo(px,py);else ctx.lineTo(px,py);}
+    ctx.stroke();
+    const px=x0+((d+24)/48)*(x1-x0),py=cy-dot*((y1-y0)/2-4);
+    ctx.fillStyle=cssv('--red');ctx.beginPath();ctx.arc(px,py,5,0,7);ctx.fill();
+    ctx.fillStyle=cssv('--mut');ctx.font='12px sans-serif';ctx.textAlign='center';
+    ctx.fillText('点积 q·k = cos(Δθ)  随相对位移 Δ=n−m',(x0+x1)/2,y1+22);
+    host.querySelector('#ronote').innerHTML=`当前 m=${m}, n=${n} → <b>相对位移 Δ=n−m=${d}</b>,单频点积 <b>cos(Δθ)=${dot.toFixed(3)}</b>。<br>
+      把 m、n <b>同时 +k</b>,Δ 不变 → 点积不变,这就是 RoPE 的<b>相对位置</b>性质:注意力只看 token 间距离。<br>
+      <b>别叫它「衰减曲线」</b>:单频时点积是<b>振荡</b>的(上图是 cos);多频叠加也不保证单调或必然近似衰减,结果取决于频率、q/k 内容与学习到的权重。圆盘是某一对维度的抽象可视化。`;
+  }
+  function grid(x0,y0,cell,rows,colsN,sel,colorFn,labFn){
+    for(let r=0;r<rows;r++)for(let c=0;c<colsN;c++){
+      ctx.fillStyle=colorFn(r,c);ctx.fillRect(x0+c*cell,y0+r*cell,cell-2,cell-2);
+      if(sel&&sel.r===r&&sel.c===c){ctx.strokeStyle=cssv('--red');ctx.lineWidth=3;ctx.strokeRect(x0+c*cell,y0+r*cell,cell-2,cell-2);}
+    }
+  }
+  function drawMrope(){
+    const p=+ctrls.querySelector('#rom').value;ctrls.querySelector('#romv').textContent=p;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.font='13px sans-serif';ctx.textAlign='left';
+    let note='';
+    if(mk==='text'){
+      // 文本:一行 token,(t,h,w) 三者都=位置
+      const n=9,cell=48,x0=40,y0=70;
+      for(let i=0;i<n;i++){ctx.fillStyle=i===p?cssv('--acc'):cssv('--panel2');ctx.fillRect(x0+i*cell,y0,cell-4,cell-4);
+        ctx.fillStyle=cssv('--mut');ctx.textAlign='center';ctx.fillText(i,x0+i*cell+(cell-4)/2,y0+cell+12);}
+      ctx.fillStyle=cssv('--ink');ctx.textAlign='left';ctx.fillText(`文本 token #${p} → (t,h,w) = (${p}, ${p}, ${p})  三分量相同`,40,40);
+      note=`<b>文本</b>:M-RoPE 退化成普通 RoPE——三个分量 (t,h,w) 取同一个序号。拖动位置,三者一起变。`;
+    } else if(mk==='image'){
+      const rows=4,cols=4,cell=40,x0=60,y0=60;const r=Math.floor(p/cols)%rows,c=p%cols;
+      grid(x0,y0,cell,rows,cols,{r,c},(rr,cc)=>(rr===r&&cc===c)?cssv('--acc'):cssv('--panel2'));
+      ctx.fillStyle=cssv('--ink');ctx.fillText(`单图 patch (h=${r}, w=${c}) → (t,h,w) = (0, ${r}, ${c})`,x0,40);
+      ctx.fillStyle=cssv('--mut');ctx.fillText('横移只改 w,竖移只改 h,t 固定=0',x0,y0+rows*cell+24);
+      note=`<b>单图</b>:时间分量 <b>t 固定=0</b>;每个 patch 用它的 2D 网格坐标 (h,w)。<b>水平移动只改变 w、垂直移动只改变 h</b>——这正是 M-RoPE 表达二维位置的方式。`;
+    } else {
+      const frames=3,cols=3,cell=38,gap=24,y0=70;const fr=Math.floor(p/cols)%frames;
+      for(let f=0;f<frames;f++){const x0=40+f*(cols*cell+gap);
+        grid(x0,y0,cell,1,cols,{r:0,c:(f===fr?p%cols:-1)},(rr,cc)=>(f===fr&&cc===p%cols)?cssv('--acc'):cssv('--panel2'));
+        ctx.fillStyle=cssv('--mut');ctx.textAlign='center';ctx.fillText('t='+f,x0+cols*cell/2,y0-10);}
+      ctx.fillStyle=cssv('--ink');ctx.textAlign='left';ctx.fillText(`视频:第 ${fr} 帧、同一行的 w=${p%cols} → (t,h,w) = (${fr}, 0, ${p%cols})`,40,40);
+      note=`<b>视频</b>:同一空间位置 (h,w) <b>跨帧时 t 逐帧递增</b>。Qwen2.5-VL 还让 t 对齐<b>绝对时间</b>(秒),不是单纯帧号,利于定位"第几秒发生了什么"。`;
+    }
+    host.querySelector('#ronote').innerHTML=note+`<br>可检查性:三态下,只有对应维度随位置变化,其余维度保持约定值。`;
+  }
+  function draw(){ if(mode==='rope')drawRope(); else drawMrope(); }
+  host.querySelectorAll('#romode button').forEach(b=>b.onclick=()=>{host.querySelectorAll('#romode button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.v;renderCtrls();draw();});
+  renderCtrls();window._rope=draw;draw();
 }
 
-/* --- VQ quantization --- */
+/* --- VQ quantization (RGB nearest-neighbor ANALOGY; nested codebook for non-increasing error) --- */
 function buildVQ(){
   const host=document.getElementById('vqW');if(!host)return;
-  host.innerHTML=`<div class="widget"><div class="wh">🎨 离散视觉 token:量化丢了什么</div>
-   <div class="wsub">路线 B 用有限"码本"把图像颜色量化成离散 id。码本越小,损失越大。左:原图(连续);右:量化重建(离散)。</div>
-   <div class="ctrl"><label>码本大小</label><input type="range" id="vqk" min="2" max="64" step="1" value="8"><span class="pill" id="vqkv">8 色</span></div>
+  host.innerHTML=`<div class="widget"><div class="wh">🎨 量化丢了什么(RGB 最近邻类比)</div>
+   <div class="wsub">用有限「调色板」把图像颜色量化成离散 id。这是<b>教学类比</b>,不是真实 VQ(真实 VQ 在潜空间 + 学习码本 + 解码器重建)。</div>
+   <div class="ctrl"><label>码本大小 K</label><input type="range" id="vqk" min="2" max="64" step="1" value="8" aria-label="码本大小"><span class="pill" id="vqkv">8 色</span></div>
    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start">
-     <div><canvas id="vqa" width="220" height="220"></canvas><div class="wsub" style="text-align:center">原图 · 连续(路线A)</div></div>
-     <div><canvas id="vqb" width="220" height="220"></canvas><div class="wsub" style="text-align:center" id="vqinfo">量化 · 离散(路线B)</div></div>
+     <div><canvas id="vqa" width="220" height="220"></canvas><div class="wsub" style="text-align:center">原图 · 原始 RGB</div></div>
+     <div><canvas id="vqb" width="220" height="220"></canvas><div class="wsub" style="text-align:center" id="vqinfo">调色板重建 · K 色</div></div>
    </div>
    <div class="wsub" id="vqnote" style="margin-top:8px"></div></div>`;
   const a=host.querySelector('#vqa'),b=host.querySelector('#vqb');
   const ca=a.getContext('2d'),cb=b.getContext('2d');
-  // synthetic smooth image: sky gradient + sun + ground
   function pix(x,y){
     if(Math.hypot(x-150,y-60)<32) return [255,205,60];       // sun
     if(y>150) return [60,110+(y-150)*0.4,60];                // ground
@@ -636,16 +877,14 @@ function buildVQ(){
     }
     ca.putImageData(img,0,0);
   }
-  function codebook(k){
-    const c=[];for(let i=0;i<k;i++){const t=i/(k-1||1);c.push([100+t*155,160-t*50,235-t*175]);}
-    c[0]=[255,205,60];c[k-1]=[60,140,60];   // anchor sun + ground
-    return c;
-  }
+  // Fixed ordered 64-color palette; take first K -> NESTED codebook so error is non-increasing in K
+  const FULL=(()=>{const c=[];for(let i=0;i<64;i++){const t=i/63;c.push([100+t*155,160-t*50,235-t*175]);}
+    c[0]=[255,205,60];c[1]=[60,140,60];return c;})();
   function nearest(p,c){let bi=0,bd=1e9;for(let i=0;i<c.length;i++){const d=(p[0]-c[i][0])**2+(p[1]-c[i][1])**2+(p[2]-c[i][2])**2;if(d<bd){bd=d;bi=i;}}return c[bi];}
   function drawB(){
     const k=+host.querySelector('#vqk').value;
     host.querySelector('#vqkv').textContent=k+' 色';
-    const c=codebook(k);
+    const c=FULL.slice(0,k);
     const img=cb.createImageData(220,220);
     let err=0;
     for(let y=0;y<220;y++)for(let x=0;x<220;x++){
@@ -655,14 +894,38 @@ function buildVQ(){
     }
     cb.putImageData(img,0,0);
     const avg=(err/(220*220*3)).toFixed(1);
-    host.querySelector('#vqinfo').textContent=`量化 · 离散(路线B) · 平均误差 ${avg}`;
-    host.querySelector('#vqnote').innerHTML=`码本只有 <b>${k}</b> 个颜色,每个像素被强行映射到最近的码本色 → 平滑渐变变成色块(可见"带状"失真)。<b>码本越小,损失越大</b>。这就是离散路线(Chameleon/Emu3)在细粒度理解上常不如连续路线的根因:量化天然丢信息。`;
+    host.querySelector('#vqinfo').textContent=`调色板重建 · ${k} 色 · RGB 平均绝对误差 ${avg}`;
+    host.querySelector('#vqnote').innerHTML=`码本只有 <b>${k}</b> 个颜色,每个像素被映射到最近的码本色 → 平滑渐变变成色块(可见"带状"失真)。这里用<b>嵌套码本</b>(取前 K 个),所以误差随 K <b>不增</b>;但一般独立码本<b>不保证单调下降</b>,误差也会因码本覆盖差而出现平台。<br>
+      <b>读数边界</b>:显示的是 <b>RGB 平均绝对误差</b>,不是训练时的 VQ/commitment loss;码本大小 K 主要决定每个 id 的<b>容量 log₂K</b>,而视觉 <b>token 数量</b>主要由空间下采样率决定——两者是两件事。量化会丢信息是离散路线的<b>潜在限制之一</b>,但不能据此断言所有离散模型都弱。`;
   }
   host.querySelector('#vqk').oninput=drawB;
   window._vq=()=>{drawA();drawB();};
   window._vq();
 }
-show(0);
+
+/* --- Lab checklist (clickable, persisted) --- */
+function buildChecklist(){
+  const host=document.getElementById('checklist');if(!host)return;
+  let saved={};try{saved=JSON.parse(LS.get('mmc_check')||'{}')||{};}catch(e){saved={};}
+  const wrap=document.createElement('div');wrap.className='widget';
+  CHECKLIST.forEach((t,i)=>{
+    const row=document.createElement('label');row.style.cssText='display:flex;gap:10px;align-items:flex-start;cursor:pointer;margin:7px 0;font-size:14.5px';
+    const cb=document.createElement('input');cb.type='checkbox';cb.style.marginTop='5px';cb.checked=!!saved['c'+i];
+    cb.onchange=()=>{saved['c'+i]=cb.checked;LS.set('mmc_check',JSON.stringify(saved));};
+    const span=document.createElement('span');span.textContent=t;
+    row.appendChild(cb);row.appendChild(span);wrap.appendChild(row);
+  });
+  host.innerHTML='';host.appendChild(wrap);
+}
+
+/* ============ BOOT: explicit deep-link > saved progress > first ============ */
+(function boot(){
+  const hashId=location.hash.slice(1);
+  let start=idToIndex(hashId);
+  if(start<0){const posId=LS.get('mmc_pos');start=idToIndex(posId||'');}
+  if(start<0)start=0;
+  show(start);
+})();
 </script>
 </body>
 </html>
