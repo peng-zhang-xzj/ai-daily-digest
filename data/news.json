@@ -1,24 +1,136 @@
 [
   {
-    "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-    "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
-    "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-    "date": "Sun, 15 Nov 2026 23:30:00 +0000",
+    "title": "California state AG sues OpenAI over rogue agent incidents",
+    "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident",
+    "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+    "date": "Mon, 16 Nov 2026 20:07:13 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
-    "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
-    "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
-    "date": "Sun, 15 Nov 2026 21:56:35 +0000",
+    "title": "Google warns that fully automated cyberattacks have arrived and will get worse fast",
+    "summary": "Google's Threat Intelligence Group has for the first time caught attackers finding and exploiting security vulnerabilities with no human involvement at all. An AI framework called \"exploitagent,\" found on an exposed server, automatically compared code before and after patches, built exploits, and ran them on its own.…",
+    "url": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
+    "date": "Mon, 16 Nov 2026 19:42:13 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "OpenAI's GPT-6 Astra tackles the Standard Model's toughest math problem on a lattice",
+    "summary": "OpenAI physicist Nathaniel Craig used GPT-6 Astra to tackle a problem that had stumped particle physicists for over 25 years. The AI model took Craig's strategy for defining the full Standard Model on a computational lattice and turned it into a working proof. Craig says a lot of work remains before realistic simulati…",
+    "url": "https://the-decoder.com/openais-gpt-6-astra-tackles-the-standard-models-toughest-math-problem-on-a-lattice/",
+    "date": "Mon, 16 Nov 2026 19:19:56 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
+    "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
+    "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+    "date": "Mon, 16 Nov 2026 19:12:02 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
-    "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
-    "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
-    "date": "Sun, 15 Nov 2026 20:20:57 +0000",
+    "title": "Moonshot AI pivots Kimi models from coding to science as benchmark gains flatten",
+    "summary": "Moonshot AI is done chasing coding benchmarks, it says. The Beijing startup is pivoting its Kimi language models toward biology, chemistry, and pharma research, arguing that science demands smarter AI than law, finance, or code. The article Moonshot AI pivots Kimi models from coding to science as benchmark gains flatt…",
+    "url": "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/",
+    "date": "Mon, 16 Nov 2026 18:52:55 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "The open-source movement wants Jensen Huang back",
+    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several…",
+    "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
+    "date": "Mon, 16 Nov 2026 18:38:47 +0000",
+    "source": "MIT Tech Review"
+  },
+  {
+    "title": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
+    "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
+    "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
+    "date": "Mon, 16 Nov 2026 18:11:10 +0000",
     "source": "TechCrunch AI"
+  },
+  {
+    "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
+    "summary": "The FBI says that the open source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
+    "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+    "date": "Mon, 16 Nov 2026 17:36:43 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
+    "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.",
+    "url": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/",
+    "date": "Mon, 16 Nov 2026 17:10:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI will embed safety researchers to investigate AI subversion",
+    "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
+    "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
+    "date": "Mon, 16 Nov 2026 17:02:43 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+    "summary": "ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning.",
+    "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+    "date": "Mon, 16 Nov 2026 17:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Alibaba's Qwen4-Max takes on Opus 5.5, GPT-6, and Kimi K3.1 Pro at much lower prices",
+    "summary": "Alibaba launches Qwen4-Max, a new flagship model with 2.4 trillion parameters that activates only 71 billion per token. A hybrid architecture sharply cuts costs on long contexts. Qwen4-Max lands just behind Kimi K3.1 Pro on the Artificial Analysis Intelligence Index, and Alibaba plans to release smaller Qwen4 models a…",
+    "url": "https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/",
+    "date": "Mon, 16 Nov 2026 16:56:04 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Claude now builds interactive websites inside canvas graphics, reviving the Flash era with real HTML",
+    "summary": "Claude can now embed text, buttons, and other web elements into complex graphics and 3D effects. The article Claude now builds interactive websites inside canvas graphics, reviving the Flash era with real HTML appeared first on The Decoder .",
+    "url": "https://the-decoder.com/claude-now-builds-interactive-websites-inside-canvas-graphics-reviving-the-flash-era-with-real-html/",
+    "date": "Mon, 16 Nov 2026 16:10:22 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Building trustworthy AI by fencing it in, not predicting it",
+    "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migration, then said it hadn’t. No rule had told the agents to d…",
+    "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
+    "date": "Mon, 16 Nov 2026 16:04:28 +0000",
+    "source": "MIT Tech Review"
+  },
+  {
+    "title": "Audible turns to AI to help users discover audiobooks",
+    "summary": "Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.",
+    "url": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks/",
+    "date": "Mon, 16 Nov 2026 15:52:19 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Anthropic says the key to agent memory is knowing what to forget, not how much to store",
+    "summary": "Anthropic studied how Claude retains knowledge across sessions. Selective notes beat exhaustive archives by a wide margin. In a Pokémon Red test, the newer Claude Fable 5 got four times as far as the older Sonnet 3.7 by keeping just a handful of strategy files instead of more than 400. A \"Dreaming\" process retroactive…",
+    "url": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/",
+    "date": "Mon, 16 Nov 2026 15:25:48 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
+    "summary": "Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
+    "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+    "date": "Mon, 16 Nov 2026 15:02:34 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Google Maps can now build trip itineraries with real-time details about each stop",
+    "summary": "You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.",
+    "url": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
+    "date": "Mon, 16 Nov 2026 14:48:13 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Building AI that can work across the enterprise",
+    "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and autonomous workflows are confronting a deeper challenge: ret…",
+    "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
+    "date": "Mon, 16 Nov 2026 13:00:00 +0000",
+    "source": "MIT Tech Review"
   },
   {
     "title": "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them",
@@ -49,122 +161,10 @@
     "source": "The Decoder"
   },
   {
-    "title": "Where was Nvidia’s security team?",
-    "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate secu…",
-    "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-    "date": "Sun, 15 Nov 2026 00:08:07 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-    "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-    "date": "Sat, 14 Nov 2026 21:41:22 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
-    "summary": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces. Anthropic's commitments now total nearly $901 billion, and it's still far from clear whether future revenue will justify those costs. The planned IPO is largely meant…",
-    "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
-    "date": "Sat, 14 Nov 2026 19:05:17 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-    "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "date": "Sat, 14 Nov 2026 17:30:00 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
-    "summary": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The article Gemini 4 Carbon t…",
-    "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
-    "date": "Sat, 14 Nov 2026 16:48:01 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
-    "summary": "Anthropic has made Claude Opus 5.5 the default model on all paid plans and published a guide that does away with old prompting habits. The main takeaway is to drop \"think hard\" and start at Medium effort. The article Anthropic says outdated prompting habits are slowing down Claude Opus 5.5 appeared first on The Decode…",
-    "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
-    "date": "Sat, 14 Nov 2026 16:42:56 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-    "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-    "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-    "date": "Sat, 14 Nov 2026 16:34:15 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
-    "summary": "OpenAI is dissolving its standalone robotics team for the second time, but not because it lacks data. General-purpose models like GPT-6 Astra can apparently control robots directly, making a dedicated unit unnecessary. The researchers are being redistributed across other teams in what the company frames as a way to ac…",
-    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
-    "date": "Sat, 14 Nov 2026 11:40:51 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
-    "summary": "Former OpenAI and Anthropic researcher Jacob Coxon points to a slide from Anthropic's IPO roadshow as a reason he left, saying it shows the company's algorithms are improving not just quickly but at an accelerating rate. Coxon continues to call for a pause on frontier model development so competitors can catch up and…",
-    "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
-    "date": "Sat, 14 Nov 2026 11:21:41 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
-    "summary": "Runway releases its robotics model Praxis-1 with open weights and source code under the Apache 2.0 license. The model uses knowledge from video training for robot control and leads the World Action Model category on Nvidia's RoboLab-120 benchmark. It can't yet plan complex action sequences on its own, though. The arti…",
-    "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
-    "date": "Sat, 14 Nov 2026 09:45:45 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-    "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-    "date": "Fri, 13 Nov 2026 22:43:00 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "AI agent startup LangChain hits $3B valuation",
-    "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-    "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-    "date": "Fri, 13 Nov 2026 19:37:57 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-    "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
-    "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "date": "Fri, 13 Nov 2026 18:40:30 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
     "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
     "summary": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “potentially infeasible.…",
     "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
     "date": "Thu, 12 Nov 2026 20:16:24 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "The backlash about data centers might really just be about electricity",
-    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It’s also where…",
-    "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-    "date": "Mon, 09 Nov 2026 19:35:33 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "Nancy Pelosi’s replacement is ready to regulate AI",
-    "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy.  I spoke with Wiener on Friday, only a…",
-    "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-    "date": "Mon, 09 Nov 2026 17:05:43 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "Innovating with AI in the special chemicals industry",
-    "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to market. For specialty chemicals manufacturer Lubrizol, digita…",
-    "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
-    "date": "Mon, 09 Nov 2026 13:00:00 +0000",
     "source": "MIT Tech Review"
   }
 ]
