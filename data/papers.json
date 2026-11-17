@@ -8,7 +8,7 @@
       "Duo Li",
       "Siyao Li"
     ],
-    "upvotes": 107,
+    "upvotes": 112,
     "url": "https://huggingface.co/papers/2611.18359",
     "arxiv": "https://arxiv.org/abs/2611.18359",
     "date": "2026-11-16"
@@ -22,7 +22,7 @@
       "Qi Deng",
       "Yukun Chen"
     ],
-    "upvotes": 87,
+    "upvotes": 89,
     "url": "https://huggingface.co/papers/2611.18397",
     "arxiv": "https://arxiv.org/abs/2611.18397",
     "date": "2026-11-16"
@@ -36,7 +36,7 @@
       "Lele Yang",
       "Wenbin Xu"
     ],
-    "upvotes": 83,
+    "upvotes": 84,
     "url": "https://huggingface.co/papers/2611.15789",
     "arxiv": "https://arxiv.org/abs/2611.15789",
     "date": "2026-11-16"
@@ -50,7 +50,7 @@
       "Jiayan Nan",
       "Peng Xia"
     ],
-    "upvotes": 45,
+    "upvotes": 46,
     "url": "https://huggingface.co/papers/2611.12068",
     "arxiv": "https://arxiv.org/abs/2611.12068",
     "date": "2026-11-16"
@@ -64,7 +64,7 @@
       "Song Wang",
       "Gongfan Fang"
     ],
-    "upvotes": 35,
+    "upvotes": 36,
     "url": "https://huggingface.co/papers/2611.18482",
     "arxiv": "https://arxiv.org/abs/2611.18482",
     "date": "2026-11-16"
@@ -91,7 +91,7 @@
       "Dongjun Kim",
       "Yong Suk Choi"
     ],
-    "upvotes": 21,
+    "upvotes": 22,
     "url": "https://huggingface.co/papers/2611.17831",
     "arxiv": "https://arxiv.org/abs/2611.17831",
     "date": "2026-11-16"
@@ -105,7 +105,7 @@
       "Mingyi He",
       "Can Rong"
     ],
-    "upvotes": 20,
+    "upvotes": 21,
     "url": "https://huggingface.co/papers/2611.17878",
     "arxiv": "https://arxiv.org/abs/2611.17878",
     "date": "2026-11-16"
@@ -119,9 +119,23 @@
       "Chenlong Zhang",
       "Cheng Luo"
     ],
-    "upvotes": 19,
+    "upvotes": 21,
     "url": "https://huggingface.co/papers/2611.07226",
     "arxiv": "https://arxiv.org/abs/2611.07226",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Mobile AI Factory: Building Specialized Language Models for Your Mobile Device",
+    "summary": "Mobile AI Factory is an agentic system that automatically builds task- and phone-specific fine-tuned quantized small language models, using an orchestrator LLM, real device measurements, and adaptive search to match or outperform larger models with much less GPU time.",
+    "authors": [
+      "Evan Li",
+      "Krishna Deshpande",
+      "Wen Cheng",
+      "Shyamnath Gollakota"
+    ],
+    "upvotes": 19,
+    "url": "https://huggingface.co/papers/2611.13509",
+    "arxiv": "https://arxiv.org/abs/2611.13509",
     "date": "2026-11-16"
   },
   {
@@ -133,7 +147,7 @@
       "Xiaofeng Mao",
       "Jin Zhang"
     ],
-    "upvotes": 17,
+    "upvotes": 18,
     "url": "https://huggingface.co/papers/2611.17814",
     "arxiv": "https://arxiv.org/abs/2611.17814",
     "date": "2026-11-16"
@@ -153,20 +167,6 @@
     "date": "2026-11-16"
   },
   {
-    "title": "Mobile AI Factory: Building Specialized Language Models for Your Mobile Device",
-    "summary": "Mobile AI Factory is an agentic system that automatically builds task- and phone-specific fine-tuned quantized small language models, using an orchestrator LLM, real device measurements, and adaptive search to match or outperform larger models with much less GPU time.",
-    "authors": [
-      "Evan Li",
-      "Krishna Deshpande",
-      "Wen Cheng",
-      "Shyamnath Gollakota"
-    ],
-    "upvotes": 17,
-    "url": "https://huggingface.co/papers/2611.13509",
-    "arxiv": "https://arxiv.org/abs/2611.13509",
-    "date": "2026-11-16"
-  },
-  {
     "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
     "summary": "JVT, a simple large-patch DiT-style Transformer, enables pixel-space video diffusion without pretrained autoencoders or U-Net skip connections, achieving competitive quality and supporting joint camera-conditioned RGB-disparity generation.",
     "authors": [
@@ -174,7 +174,7 @@
       "Hua Geng",
       "Haoyu Guo"
     ],
-    "upvotes": 14,
+    "upvotes": 15,
     "url": "https://huggingface.co/papers/2611.18549",
     "arxiv": "https://arxiv.org/abs/2611.18549",
     "date": "2026-11-16"
@@ -247,6 +247,33 @@
     "date": "2026-11-16"
   },
   {
+    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
+    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
+    "authors": [
+      "Kyudan Jung",
+      "Jihwan Kim",
+      "Minwoo Lee",
+      "Eunji Shin"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.18529",
+    "arxiv": "https://arxiv.org/abs/2611.18529",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "AI Reviews Are Biased Towards the Appendix",
+    "summary": "Large language models used for peer review draw about half or more of their identified weaknesses from paper appendices, whereas human reviewers draw only 8.4% and focus on presentation and core ideas.",
+    "authors": [
+      "Saptarshi Ghosh",
+      "Mohammad Saim",
+      "Tianyu Jiang"
+    ],
+    "upvotes": 10,
+    "url": "https://huggingface.co/papers/2611.17811",
+    "arxiv": "https://arxiv.org/abs/2611.17811",
+    "date": "2026-11-16"
+  },
+  {
     "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
     "summary": "Continual-ARC, a lifelong stream of ARC-AGI tasks, compares memory- and weight-based continual learning under frozen-weight agent harnesses, revealing that harness persistence rarely improves memorization and most harness methods underperform simple caching, while weight-based learning shows better generalization.",
     "authors": [
@@ -282,33 +309,6 @@
     "upvotes": 10,
     "url": "https://huggingface.co/papers/2611.16439",
     "arxiv": "https://arxiv.org/abs/2611.16439",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
-    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
-    "authors": [
-      "Kyudan Jung",
-      "Jihwan Kim",
-      "Minwoo Lee",
-      "Eunji Shin"
-    ],
-    "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.18529",
-    "arxiv": "https://arxiv.org/abs/2611.18529",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "AI Reviews Are Biased Towards the Appendix",
-    "summary": "Large language models used for peer review draw about half or more of their identified weaknesses from paper appendices, whereas human reviewers draw only 8.4% and focus on presentation and core ideas.",
-    "authors": [
-      "Saptarshi Ghosh",
-      "Mohammad Saim",
-      "Tianyu Jiang"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.17811",
-    "arxiv": "https://arxiv.org/abs/2611.17811",
     "date": "2026-11-16"
   },
   {
@@ -386,7 +386,7 @@
       "Yucheng Han",
       "Ruoyu Wang"
     ],
-    "upvotes": 4,
+    "upvotes": 5,
     "url": "https://huggingface.co/papers/2611.17194",
     "arxiv": "https://arxiv.org/abs/2611.17194",
     "date": "2026-11-16"
@@ -432,6 +432,20 @@
     "date": "2026-11-16"
   },
   {
+    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
+    "summary": "Distilled few-step diffusion models exhibit diversity collapse because activation variance is concentrated into fewer directions in an intermediate block at the initial denoising step, and ReDiverse restores sample diversity by reintroducing teacher variance directions through adapter fine-tuning or training-free acti…",
+    "authors": [
+      "Furkan Horoz",
+      "Ozgur Kara",
+      "Kaan Oktay",
+      "Adil Kaan Akan"
+    ],
+    "upvotes": 2,
+    "url": "https://huggingface.co/papers/2611.18550",
+    "arxiv": "https://arxiv.org/abs/2611.18550",
+    "date": "2026-11-16"
+  },
+  {
     "title": "Dual Flow: Joint Image-Measurement Interpolation for Inverse Problems",
     "summary": "Generative model-based approaches to linear inverse problems typically use the acquired noisy measurement to condition or guide sampling in the image domain. In this work, we introduce Dual Flow, a novel joint-flow model for solving linear inverse problems by jointly estimating the clean image and corresponding noise-…",
     "authors": [
@@ -453,6 +467,18 @@
     "upvotes": 1,
     "url": "https://huggingface.co/papers/2611.16500",
     "arxiv": "https://arxiv.org/abs/2611.16500",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
+    "summary": "A unified generative backbone jointly models image appearance and depth, surpassing specialized depth models at scale while preserving general image generation.",
+    "authors": [
+      "Alejandro Cañada",
+      "Chema Garabito"
+    ],
+    "upvotes": 1,
+    "url": "https://huggingface.co/papers/2611.16010",
+    "arxiv": "https://arxiv.org/abs/2611.16010",
     "date": "2026-11-16"
   },
   {
@@ -484,6 +510,20 @@
     "date": "2026-11-16"
   },
   {
+    "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
+    "summary": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the t…",
+    "authors": [
+      "Wei Feng",
+      "Meiling Chen",
+      "Boxiao Chen",
+      "Lu Liu"
+    ],
+    "upvotes": 1,
+    "url": "https://huggingface.co/papers/2611.16661",
+    "arxiv": "https://arxiv.org/abs/2611.16661",
+    "date": "2026-11-16"
+  },
+  {
     "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
     "summary": "Robots handle much more than rigid objects: towels, cables, water, sand. The simulators used to train robots at scale are strongest on rigid bodies, and adding another material usually means a second engine and hand-written glue between the two. We present Alloy, an open-source physics engine for robot learning in whi…",
     "authors": [
@@ -493,20 +533,6 @@
     "upvotes": 0,
     "url": "https://huggingface.co/papers/2611.16312",
     "arxiv": "https://arxiv.org/abs/2611.16312",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-    "summary": "Distilled few-step diffusion models exhibit diversity collapse because activation variance is concentrated into fewer directions in an intermediate block at the initial denoising step, and ReDiverse restores sample diversity by reintroducing teacher variance directions through adapter fine-tuning or training-free acti…",
-    "authors": [
-      "Furkan Horoz",
-      "Ozgur Kara",
-      "Kaan Oktay",
-      "Adil Kaan Akan"
-    ],
-    "upvotes": 0,
-    "url": "https://huggingface.co/papers/2611.18550",
-    "arxiv": "https://arxiv.org/abs/2611.18550",
     "date": "2026-11-16"
   }
 ]
