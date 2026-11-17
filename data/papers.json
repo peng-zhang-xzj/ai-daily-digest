@@ -8,7 +8,7 @@
       "Duo Li",
       "Siyao Li"
     ],
-    "upvotes": 116,
+    "upvotes": 124,
     "url": "https://huggingface.co/papers/2611.18359",
     "arxiv": "https://arxiv.org/abs/2611.18359",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18359",
@@ -23,7 +23,7 @@
       "Qi Deng",
       "Yukun Chen"
     ],
-    "upvotes": 94,
+    "upvotes": 118,
     "url": "https://huggingface.co/papers/2611.18397",
     "arxiv": "https://arxiv.org/abs/2611.18397",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18397",
@@ -38,11 +38,68 @@
       "Lele Yang",
       "Wenbin Xu"
     ],
-    "upvotes": 86,
+    "upvotes": 88,
     "url": "https://huggingface.co/papers/2611.15789",
     "arxiv": "https://arxiv.org/abs/2611.15789",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.15789",
     "date": "2026-11-16"
+  },
+  {
+    "title": "Sage S2.1 Flash Technical Report",
+    "summary": "We introduce Sage S1.5 Flash, a 320-billion-parameter general-purpose mixture-of-experts model designed to reason over scientific evidence and act in interactive environments. Sage Sci-Perception uses dedicated encoders for molecular graphs and biological sequences and represents spectra as ordered patches of measurem…",
+    "authors": [
+      "Kun Cai",
+      "Haodong Chen",
+      "Guangran Cheng",
+      "Qingxiu Cheng"
+    ],
+    "upvotes": 85,
+    "url": "https://huggingface.co/papers/2611.21072",
+    "arxiv": "https://arxiv.org/abs/2611.21072",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21072",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+    "summary": "An end-to-end flow-matching framework generates joint portfolio allocations from raw multi-asset market histories via a cross-asset flow Transformer and a two-stage imitation and group-relative reinforcement learning procedure, improving risk-adjusted returns on cryptocurrency perpetual futures.",
+    "authors": [
+      "Annan Wang",
+      "Yuchen Xie",
+      "Yu Cen",
+      "Leon Liangyu Chen"
+    ],
+    "upvotes": 67,
+    "url": "https://huggingface.co/papers/2611.19937",
+    "arxiv": "https://arxiv.org/abs/2611.19937",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19937",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+    "summary": "We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are competitive with strong open models of t…",
+    "authors": [
+      "K2 Team",
+      "Zhengzhong Liu",
+      "Haonan Li",
+      "Xuezhe Ma"
+    ],
+    "upvotes": 67,
+    "url": "https://huggingface.co/papers/2611.21003",
+    "arxiv": "https://arxiv.org/abs/2611.21003",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21003",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+    "summary": "InclusionMed is an open medical AI evaluation initiative that audits and reproduces benchmarks across healthcare roles and capabilities, revealing that model rankings and inference costs vary by context and motivating broader, context-specific evaluation.",
+    "authors": [
+      "The InclusionMed Collaboration"
+    ],
+    "upvotes": 62,
+    "url": "https://huggingface.co/papers/2611.21218",
+    "arxiv": "https://arxiv.org/abs/2611.21218",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21218",
+    "date": "2026-11-17"
   },
   {
     "title": "MIRIX-2.0: Multi-Agent Memory System",
@@ -53,11 +110,55 @@
       "Jiayan Nan",
       "Peng Xia"
     ],
-    "upvotes": 46,
+    "upvotes": 52,
     "url": "https://huggingface.co/papers/2611.12068",
     "arxiv": "https://arxiv.org/abs/2611.12068",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.12068",
     "date": "2026-11-16"
+  },
+  {
+    "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+    "summary": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's t…",
+    "authors": [
+      "Woosang Lim",
+      "Yeseul Chang",
+      "Jaewoo Lee"
+    ],
+    "upvotes": 49,
+    "url": "https://huggingface.co/papers/2611.07222",
+    "arxiv": "https://arxiv.org/abs/2611.07222",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07222",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+    "summary": "A benchmark of realistic software engineering assignments reveals that current coding agents struggle to track requirements from clarification through implementation, verification, and handoff, completing few tasks despite partial test success.",
+    "authors": [
+      "Xinping Lei",
+      "Minghao Liu",
+      "Ruijie Zhu",
+      "Xiaohui Hu"
+    ],
+    "upvotes": 44,
+    "url": "https://huggingface.co/papers/2611.20218",
+    "arxiv": "https://arxiv.org/abs/2611.20218",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20218",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+    "summary": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential large…",
+    "authors": [
+      "Ruixi Yu",
+      "Dairu Liu",
+      "Xuchuan Chen",
+      "Zekun Qi"
+    ],
+    "upvotes": 41,
+    "url": "https://huggingface.co/papers/2611.21607",
+    "arxiv": "https://arxiv.org/abs/2611.21607",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21607",
+    "date": "2026-11-17"
   },
   {
     "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
@@ -68,7 +169,7 @@
       "Song Wang",
       "Gongfan Fang"
     ],
-    "upvotes": 36,
+    "upvotes": 38,
     "url": "https://huggingface.co/papers/2611.18482",
     "arxiv": "https://arxiv.org/abs/2611.18482",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18482",
@@ -90,6 +191,36 @@
     "date": "2026-11-16"
   },
   {
+    "title": "PaperCritic: Training AI Reviewers to Assess the Soundness of Papers",
+    "summary": "An AI reviewer trained by reinforcement learning to jointly maximize precision and recall of soundness review points outperforms frontier models and other training methods and transfers to other review domains.",
+    "authors": [
+      "Hyun Ryu",
+      "Ji Yong Cho",
+      "Eunho Yang",
+      "Moontae Lee"
+    ],
+    "upvotes": 26,
+    "url": "https://huggingface.co/papers/2611.17834",
+    "arxiv": "https://arxiv.org/abs/2611.17834",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17834",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+    "summary": "A looped Transformer that separately controls input strength, total update weight, and per-update allocation achieves lower validation loss and higher downstream accuracy than standard and looped residual baselines while using fewer parameters.",
+    "authors": [
+      "Xuan Ouyang",
+      "Zefan Cai",
+      "Chenlong Zhang",
+      "Cheng Luo"
+    ],
+    "upvotes": 24,
+    "url": "https://huggingface.co/papers/2611.07226",
+    "arxiv": "https://arxiv.org/abs/2611.07226",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07226",
+    "date": "2026-11-16"
+  },
+  {
     "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
     "summary": "Counterfactual supervision over pixel transformations enables language models to read motion dynamics from frozen predictive video encoders, yielding V-JEPA-LM models that outperform open video LLMs across benchmarks.",
     "authors": [
@@ -97,7 +228,7 @@
       "Dongjun Kim",
       "Yong Suk Choi"
     ],
-    "upvotes": 25,
+    "upvotes": 24,
     "url": "https://huggingface.co/papers/2611.17831",
     "arxiv": "https://arxiv.org/abs/2611.17831",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17831",
@@ -112,25 +243,40 @@
       "Mingyi He",
       "Can Rong"
     ],
-    "upvotes": 21,
+    "upvotes": 23,
     "url": "https://huggingface.co/papers/2611.17878",
     "arxiv": "https://arxiv.org/abs/2611.17878",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17878",
     "date": "2026-11-16"
   },
   {
-    "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
-    "summary": "A looped Transformer that separately controls input strength, total update weight, and per-update allocation achieves lower validation loss and higher downstream accuracy than standard and looped residual baselines while using fewer parameters.",
+    "title": "VoxMel TTS Technical Report",
+    "summary": "VoxMel is a tokenizer-free autoregressive TTS framework that uses an invertible two-axis Haar transform to decompose mel spectrograms into Coarse-Mel and residual tiers, enabling stable high-fidelity generation with strong recognition and speaker-similarity results.",
     "authors": [
-      "Xuan Ouyang",
-      "Zefan Cai",
-      "Chenlong Zhang",
-      "Cheng Luo"
+      "Wenhao Guan",
+      "Jiaxin Ye",
+      "Haitao Li",
+      "Yifan Duan"
     ],
-    "upvotes": 21,
-    "url": "https://huggingface.co/papers/2611.07226",
-    "arxiv": "https://arxiv.org/abs/2611.07226",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07226",
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.20254",
+    "arxiv": "https://arxiv.org/abs/2611.20254",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20254",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
+    "summary": "With the rapid advancement of Large Language Models (LLMs), an increasing number of users are turning to LLM-powered agents for conversational shopping in e-commerce. However, the user needs continue to change as new product categories, procurement scenarios, and feature requests emerge. At the same time, the product'…",
+    "authors": [
+      "Yuechun Yu",
+      "Wenzheng Kong",
+      "Xiaofeng Mao",
+      "Jin Zhang"
+    ],
+    "upvotes": 20,
+    "url": "https://huggingface.co/papers/2611.17814",
+    "arxiv": "https://arxiv.org/abs/2611.17814",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17814",
     "date": "2026-11-16"
   },
   {
@@ -149,35 +295,6 @@
     "date": "2026-11-16"
   },
   {
-    "title": "Mobile AI Factory: Building Specialized Language Models for Your Mobile Device",
-    "summary": "Mobile AI Factory is an agentic system that automatically builds task- and phone-specific fine-tuned quantized small language models, using an orchestrator LLM, real device measurements, and adaptive search to match or outperform larger models with much less GPU time.",
-    "authors": [
-      "Evan Li",
-      "Krishna Deshpande",
-      "Wen Cheng",
-      "Shyamnath Gollakota"
-    ],
-    "upvotes": 19,
-    "url": "https://huggingface.co/papers/2611.13509",
-    "arxiv": "https://arxiv.org/abs/2611.13509",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
-    "summary": "With the rapid advancement of Large Language Models (LLMs), an increasing number of users are turning to LLM-powered agents for conversational shopping in e-commerce. However, the user needs continue to change as new product categories, procurement scenarios, and feature requests emerge. At the same time, the product'…",
-    "authors": [
-      "Yuechun Yu",
-      "Wenzheng Kong",
-      "Xiaofeng Mao",
-      "Jin Zhang"
-    ],
-    "upvotes": 18,
-    "url": "https://huggingface.co/papers/2611.17814",
-    "arxiv": "https://arxiv.org/abs/2611.17814",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17814",
-    "date": "2026-11-16"
-  },
-  {
     "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
     "summary": "A history-aware benchmark and memory-powered method improve Text-to-SQL accuracy and reduce cost by reusing verified SQL components and consulting schemas on demand.",
     "authors": [
@@ -191,6 +308,21 @@
     "arxiv": "https://arxiv.org/abs/2611.18338",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18338",
     "date": "2026-11-16"
+  },
+  {
+    "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+    "summary": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task pro…",
+    "authors": [
+      "Bowen Liu",
+      "Yuhan Li",
+      "Nuo Chen",
+      "Weile Luo"
+    ],
+    "upvotes": 16,
+    "url": "https://huggingface.co/papers/2611.20882",
+    "arxiv": "https://arxiv.org/abs/2611.20882",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20882",
+    "date": "2026-11-17"
   },
   {
     "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
@@ -207,33 +339,18 @@
     "date": "2026-11-16"
   },
   {
-    "title": "Aligning AI Teams",
-    "summary": "Alignment training on individual LLM agents often fails to transfer to multi-agent teams, but designating a safety lead and having a coordinator publish safety specifications can restore single-agent alignment.",
+    "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+    "summary": "Web agents powered by large language and vision-language models are increasingly applied to realistic browser work that spans heterogeneous applications, multimodal content, and stateful workflows. However, existing reproducible web-agent benchmarks cover only a small number of web applications drawn from a few softwa…",
     "authors": [
-      "Siddarth Srinivasan",
-      "Morgan Jane Matthews",
-      "Jascha Sohl-Dickstein",
-      "Erik Jones"
+      "Imene Kerboua",
+      "Fatemeh Pesaran Zadeh",
+      "Xing Han Lù",
+      "Weijian Qi"
     ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.17820",
-    "arxiv": "https://arxiv.org/abs/2611.17820",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17820",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
-    "summary": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks h…",
-    "authors": [
-      "Yuhang Wang",
-      "Jingxin Yang",
-      "Chuheng Wei",
-      "Suyang Chen"
-    ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.18442",
-    "arxiv": "https://arxiv.org/abs/2611.18442",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18442",
+    "upvotes": 15,
+    "url": "https://huggingface.co/papers/2611.17955",
+    "arxiv": "https://arxiv.org/abs/2611.17955",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17955",
     "date": "2026-11-16"
   },
   {
@@ -245,52 +362,83 @@
       "Ali Ouni",
       "Mohammed Sayagh"
     ],
-    "upvotes": 12,
+    "upvotes": 14,
     "url": "https://huggingface.co/papers/2611.06866",
     "arxiv": "https://arxiv.org/abs/2611.06866",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.06866",
     "date": "2026-11-16"
   },
   {
-    "title": "Evidence-Governed Adoption of Self-Generated Updates in Autonomous AI Agents",
-    "summary": "A governance framework separates generation from adoption of self-modifying autonomous-agent changes, using fresh paired audits, non-inferiority checks, and calibrated statistical bounds to confirm improvements before bounded deployment.",
+    "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+    "summary": "SALA aligns latent actions across human and robot videos by using language-based semantic similarities to form a shared latent action space that supervises embodied foundation model training and improves robot task performance.",
     "authors": [
-      "Subodh Lonkar"
+      "Jiachun Jin",
+      "Zetong Zhou",
+      "Haonan Wang",
+      "Zhijie Deng"
     ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.16378",
-    "arxiv": "https://arxiv.org/abs/2611.16378",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16378",
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.17110",
+    "arxiv": "https://arxiv.org/abs/2611.17110",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17110",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
+    "summary": "Endpoint Distribution Matching Distillation trains a shared fake model only on final student outputs and adds precise teacher supervision to better align few-step diffusion students with teacher distributions for 4-step generation.",
+    "authors": [
+      "Tong Zhao",
+      "Xianfang Zeng",
+      "Yucheng Han",
+      "Ruoyu Wang"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.17194",
+    "arxiv": "https://arxiv.org/abs/2611.17194",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17194",
     "date": "2026-11-16"
   },
   {
-    "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
-    "summary": "Web agents powered by large language and vision-language models are increasingly applied to realistic browser work that spans heterogeneous applications, multimodal content, and stateful workflows. However, existing reproducible web-agent benchmarks cover only a small number of web applications drawn from a few softwa…",
+    "title": "Aligning AI Teams",
+    "summary": "Alignment training on individual LLM agents often fails to transfer to multi-agent teams, but designating a safety lead and having a coordinator publish safety specifications can restore single-agent alignment.",
     "authors": [
-      "Imene Kerboua",
-      "Fatemeh Pesaran Zadeh",
-      "Xing Han Lù",
-      "Weijian Qi"
+      "Siddarth Srinivasan",
+      "Morgan Jane Matthews",
+      "Jascha Sohl-Dickstein",
+      "Erik Jones"
     ],
     "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.17955",
-    "arxiv": "https://arxiv.org/abs/2611.17955",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17955",
+    "url": "https://huggingface.co/papers/2611.17820",
+    "arxiv": "https://arxiv.org/abs/2611.17820",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17820",
     "date": "2026-11-16"
   },
   {
-    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
-    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
+    "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
+    "summary": "A large language model can output single-chain protein structures from its internal residue states by invoking a pretrained structure head, with reduced long-chain accuracy and MMLU-Pro accuracy in the reported tests.",
     "authors": [
-      "Kyudan Jung",
-      "Jihwan Kim",
-      "Minwoo Lee",
-      "Eunji Shin"
+      "Yong Liu",
+      "Zhanpeng Shi",
+      "Peicong Lin",
+      "Zhenyi Zhong"
     ],
     "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.18529",
-    "arxiv": "https://arxiv.org/abs/2611.18529",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18529",
+    "url": "https://huggingface.co/papers/2611.20986",
+    "arxiv": "https://arxiv.org/abs/2611.20986",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20986",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
+    "summary": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heteroge…",
+    "authors": [
+      "Ibragim Badertdinov",
+      "Alexander Golubev"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.17440",
+    "arxiv": "https://arxiv.org/abs/2611.17440",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17440",
     "date": "2026-11-16"
   },
   {
@@ -308,30 +456,18 @@
     "date": "2026-11-16"
   },
   {
-    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
-    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
+    "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
+    "summary": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks h…",
     "authors": [
-      "Kyudan Jung",
-      "Jihwan Kim",
-      "Minwoo Lee",
-      "Eunji Shin"
-    ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.18529",
-    "arxiv": "https://arxiv.org/abs/2611.18529",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "AI Reviews Are Biased Towards the Appendix",
-    "summary": "Large language models used for peer review draw about half or more of their identified weaknesses from paper appendices, whereas human reviewers draw only 8.4% and focus on presentation and core ideas.",
-    "authors": [
-      "Saptarshi Ghosh",
-      "Mohammad Saim",
-      "Tianyu Jiang"
+      "Yuhang Wang",
+      "Jingxin Yang",
+      "Chuheng Wei",
+      "Suyang Chen"
     ],
     "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.17811",
-    "arxiv": "https://arxiv.org/abs/2611.17811",
+    "url": "https://huggingface.co/papers/2611.18442",
+    "arxiv": "https://arxiv.org/abs/2611.18442",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18442",
     "date": "2026-11-16"
   },
   {
@@ -376,6 +512,36 @@
     "date": "2026-11-16"
   },
   {
+    "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
+    "summary": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We firs…",
+    "authors": [
+      "Yunyang Ge",
+      "Weijie Kong",
+      "Ryan Xu",
+      "Yue Wu"
+    ],
+    "upvotes": 10,
+    "url": "https://huggingface.co/papers/2611.21339",
+    "arxiv": "https://arxiv.org/abs/2611.21339",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21339",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+    "summary": "A Twenty Questions-style benchmark for research ideation shows that large language models make most progress early, can recognize good ideas or questions but often cannot generate them, and may benefit from externally sourced candidates in automated research systems.",
+    "authors": [
+      "Muhan Gao",
+      "Hangxiao Zhu",
+      "Xinqi Su",
+      "Yu Zhang"
+    ],
+    "upvotes": 10,
+    "url": "https://huggingface.co/papers/2611.14487",
+    "arxiv": "https://arxiv.org/abs/2611.14487",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14487",
+    "date": "2026-11-16"
+  },
+  {
     "title": "Disen-Forcing: Disentangling Semantic Anchoring from Motion for Autoregressive Video Diffusion",
     "summary": "Disen-Forcing is a distillation-time method for autoregressive video diffusion models that disentangles attention-head specialization to improve long-range consistency and motion dynamics in long-horizon video generation.",
     "authors": [
@@ -391,269 +557,30 @@
     "date": "2026-11-16"
   },
   {
-    "title": "Do Underwater Image Quality Metrics Agree with Human Perception? A Benchmark with Human Choices, Simple Edits and Generative Drift",
-    "summary": "Underwater image enhancement is challenging to evaluate due to the lack of clean reference images, so researchers rely on no-reference image quality assessment (NR-IQA) metrics. However, it remains unclear whether these metrics agree with human judgments. We evaluate 73 handcrafted underwater, learned underwater, visi…",
+    "title": "Evidence-Governed Adoption of Self-Generated Updates in Autonomous AI Agents",
+    "summary": "A governance framework separates generation from adoption of self-modifying autonomous-agent changes, using fresh paired audits, non-inferiority checks, and calibrated statistical bounds to confirm improvements before bounded deployment.",
     "authors": [
-      "Rishii Kumar Singh",
-      "Abhinav Rajput",
-      "Dinesh Kumar Vishwakarma"
+      "Subodh Lonkar"
     ],
     "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.18429",
-    "arxiv": "https://arxiv.org/abs/2611.18429",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18429",
+    "url": "https://huggingface.co/papers/2611.16378",
+    "arxiv": "https://arxiv.org/abs/2611.16378",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16378",
     "date": "2026-11-16"
   },
   {
-    "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
-    "summary": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heteroge…",
+    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
+    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
     "authors": [
-      "Ibragim Badertdinov",
-      "Alexander Golubev"
+      "Kyudan Jung",
+      "Jihwan Kim",
+      "Minwoo Lee",
+      "Eunji Shin"
     ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.17440",
-    "arxiv": "https://arxiv.org/abs/2611.17440",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17440",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams",
-    "summary": "Large language models (LLMs) are increasingly applied to finance, creating a need for benchmarks that evaluate their capabilities across financial systems with different regulations and practices. However, existing financial benchmarks provide limited coverage of country-specific financial systems, and they are diffic…",
-    "authors": [
-      "Issa Sugiura",
-      "Taro Makino",
-      "Takashi Ishida"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.18130",
-    "arxiv": "https://arxiv.org/abs/2611.18130",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18130",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
-    "summary": "A Twenty Questions-style benchmark for research ideation shows that large language models make most progress early, can recognize good ideas or questions but often cannot generate them, and may benefit from externally sourced candidates in automated research systems.",
-    "authors": [
-      "Muhan Gao",
-      "Hangxiao Zhu",
-      "Xinqi Su",
-      "Yu Zhang"
-    ],
-    "upvotes": 6,
-    "url": "https://huggingface.co/papers/2611.14487",
-    "arxiv": "https://arxiv.org/abs/2611.14487",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14487",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
-    "summary": "Endpoint Distribution Matching Distillation trains a shared fake model only on final student outputs and adds precise teacher supervision to better align few-step diffusion students with teacher distributions for 4-step generation.",
-    "authors": [
-      "Tong Zhao",
-      "Xianfang Zeng",
-      "Yucheng Han",
-      "Ruoyu Wang"
-    ],
-    "upvotes": 5,
-    "url": "https://huggingface.co/papers/2611.17194",
-    "arxiv": "https://arxiv.org/abs/2611.17194",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17194",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
-    "summary": "A small fine-tuned parser that emits a well-formed but wrong tree fails silently: nothing downstream can tell. We ask whether the output format, a free design choice, controls how often this happens. On the PIZZA ordering benchmark we fine-tune two sub-billion models (Qwen3.5-0.8B and LFM2.5-350M) with LoRA on six los…",
-    "authors": [
-      "Umar Ahmed",
-      "Maxim Dunaev",
-      "Mohammad Nour Al Awad",
-      "Sergey Ivanov"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.17169",
-    "arxiv": "https://arxiv.org/abs/2611.17169",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17169",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "BrickFlow: Connectivity-Guided Brick Reconstruction",
-    "summary": "A set-conditioned SE(3) flow model pretrained on procedurally generated LEGO assemblies and finetuned with image conditioning, combined with analytic connectivity-field guidance, infers part poses to assemble objects from images.",
-    "authors": [
-      "Peter Kulits",
-      "Cordelia Schmid"
-    ],
-    "upvotes": 2,
-    "url": "https://huggingface.co/papers/2611.17321",
-    "arxiv": "https://arxiv.org/abs/2611.17321",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17321",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
-    "summary": "Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 queries a day costs over $70,000 a year at list…",
-    "authors": [
-      "Ibrahim Memon",
-      "Armin Karamzade",
-      "M. Hanif Jhaveri",
-      "Roy Fox"
-    ],
-    "upvotes": 2,
-    "url": "https://huggingface.co/papers/2611.17780",
-    "arxiv": "https://arxiv.org/abs/2611.17780",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17780",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
-    "summary": "Deployment objectives often specify desired outcomes without providing revised trajectories, while parts of the original reference must still be followed. We present OneSteer, a one-step diffusion whole-body controller that combines general motion tracking with selective test-time steering. To accommodate new objectiv…",
-    "authors": [
-      "Yifei Huang",
-      "Yazhao Yang",
-      "Li Weijia",
-      "Tianle Shi"
-    ],
-    "upvotes": 2,
-    "url": "https://huggingface.co/papers/2610.41354",
-    "arxiv": "https://arxiv.org/abs/2610.41354",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2610.41354",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-    "summary": "Distilled few-step diffusion models exhibit diversity collapse because activation variance is concentrated into fewer directions in an intermediate block at the initial denoising step, and ReDiverse restores sample diversity by reintroducing teacher variance directions through adapter fine-tuning or training-free acti…",
-    "authors": [
-      "Furkan Horoz",
-      "Ozgur Kara",
-      "Kaan Oktay",
-      "Adil Kaan Akan"
-    ],
-    "upvotes": 2,
-    "url": "https://huggingface.co/papers/2611.18550",
-    "arxiv": "https://arxiv.org/abs/2611.18550",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18550",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-    "summary": "Distilled few-step diffusion models exhibit diversity collapse because activation variance is concentrated into fewer directions in an intermediate block at the initial denoising step, and ReDiverse restores sample diversity by reintroducing teacher variance directions through adapter fine-tuning or training-free acti…",
-    "authors": [
-      "Furkan Horoz",
-      "Ozgur Kara",
-      "Kaan Oktay",
-      "Adil Kaan Akan"
-    ],
-    "upvotes": 2,
-    "url": "https://huggingface.co/papers/2611.18550",
-    "arxiv": "https://arxiv.org/abs/2611.18550",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Dual Flow: Joint Image-Measurement Interpolation for Inverse Problems",
-    "summary": "Generative model-based approaches to linear inverse problems typically use the acquired noisy measurement to condition or guide sampling in the image domain. In this work, we introduce Dual Flow, a novel joint-flow model for solving linear inverse problems by jointly estimating the clean image and corresponding noise-…",
-    "authors": [
-      "Sevket Ege Yesilyurt",
-      "Figen S. Oktem"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.05843",
-    "arxiv": "https://arxiv.org/abs/2611.05843",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.05843",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "EvenVLM: A Text and Multimodal Dataset for the Even Language with Vision-Language Fine-Tuning",
-    "summary": "EvenVLM provides a text and multimodal VQA dataset for the endangered Even language, with tokenizer expansion and LoRA fine-tuning improving translation, text benchmarks, and VQA accuracy.",
-    "authors": [
-      "Daniil Makovetskii",
-      "Ivan Bondarenko"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.16500",
-    "arxiv": "https://arxiv.org/abs/2611.16500",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16500",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
-    "summary": "A unified generative backbone jointly models image appearance and depth, surpassing specialized depth models at scale while preserving general image generation.",
-    "authors": [
-      "Alejandro Cañada",
-      "Chema Garabito"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.16010",
-    "arxiv": "https://arxiv.org/abs/2611.16010",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16010",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
-    "summary": "A unified generative backbone jointly models image appearance and depth, surpassing specialized depth models at scale while preserving general image generation.",
-    "authors": [
-      "Alejandro Cañada",
-      "Chema Garabito"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.16010",
-    "arxiv": "https://arxiv.org/abs/2611.16010",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "MemInStream: Memorizing or Merely Recognizing? Rethinking Streaming Video Memory Evaluation",
-    "summary": "MemInStream is a benchmark that evaluates memory capabilities in streaming video understanding using evidence-controlled validation to separate memory limitations from visual understanding failures.",
-    "authors": [
-      "Zhenqi He",
-      "Dunyuan Xu",
-      "Yang Bo",
-      "Kien T. Pham"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.15640",
-    "arxiv": "https://arxiv.org/abs/2611.15640",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.15640",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
-    "summary": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the t…",
-    "authors": [
-      "Wei Feng",
-      "Meiling Chen",
-      "Boxiao Chen",
-      "Lu Liu"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.16661",
-    "arxiv": "https://arxiv.org/abs/2611.16661",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16661",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
-    "summary": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the t…",
-    "authors": [
-      "Wei Feng",
-      "Meiling Chen",
-      "Boxiao Chen",
-      "Lu Liu"
-    ],
-    "upvotes": 1,
-    "url": "https://huggingface.co/papers/2611.16661",
-    "arxiv": "https://arxiv.org/abs/2611.16661",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
-    "summary": "Robots handle much more than rigid objects: towels, cables, water, sand. The simulators used to train robots at scale are strongest on rigid bodies, and adding another material usually means a second engine and hand-written glue between the two. We present Alloy, an open-source physics engine for robot learning in whi…",
-    "authors": [
-      "Pranay Gupta",
-      "Deepanshu Rohilla"
-    ],
-    "upvotes": 0,
-    "url": "https://huggingface.co/papers/2611.16312",
-    "arxiv": "https://arxiv.org/abs/2611.16312",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16312",
+    "upvotes": 8,
+    "url": "https://huggingface.co/papers/2611.18529",
+    "arxiv": "https://arxiv.org/abs/2611.18529",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18529",
     "date": "2026-11-16"
   }
 ]
