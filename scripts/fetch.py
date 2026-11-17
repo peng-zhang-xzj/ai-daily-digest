@@ -78,6 +78,7 @@ def fetch_hf(days_back=3, limit=40):
                 "upvotes": p.get("upvotes", 0),
                 "url": f"https://huggingface.co/papers/{pid}" if pid else "",
                 "arxiv": f"https://arxiv.org/abs/{pid}" if pid else "",
+                "alphaxiv": f"https://www.alphaxiv.org/abs/{pid}" if pid else "",
                 "date": day,
             })
     # de-dup by url, keep highest upvotes, sort by upvotes desc

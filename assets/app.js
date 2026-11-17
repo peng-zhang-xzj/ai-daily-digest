@@ -42,7 +42,8 @@
 
     const links =
       (it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">原文 ↗</a>` : "") +
-      (it.arxiv ? `<a href="${esc(it.arxiv)}" target="_blank" rel="noopener">arXiv ↗</a>` : "");
+      (it.arxiv ? `<a href="${esc(it.arxiv)}" target="_blank" rel="noopener">arXiv ↗</a>` : "") +
+      (it.alphaxiv ? `<a href="${esc(it.alphaxiv)}" target="_blank" rel="noopener">alphaXiv 💬 读+AI对话 ↗</a>` : "");
     const authors = (it.authors || []).join(", ");
     const img = (tab === "batch" && it.image)
       ? `<img class="detail-img" src="${esc(it.image)}" alt="" loading="lazy" />` : "";

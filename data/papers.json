@@ -8,9 +8,10 @@
       "Duo Li",
       "Siyao Li"
     ],
-    "upvotes": 112,
+    "upvotes": 116,
     "url": "https://huggingface.co/papers/2611.18359",
     "arxiv": "https://arxiv.org/abs/2611.18359",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18359",
     "date": "2026-11-16"
   },
   {
@@ -22,9 +23,10 @@
       "Qi Deng",
       "Yukun Chen"
     ],
-    "upvotes": 89,
+    "upvotes": 94,
     "url": "https://huggingface.co/papers/2611.18397",
     "arxiv": "https://arxiv.org/abs/2611.18397",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18397",
     "date": "2026-11-16"
   },
   {
@@ -36,9 +38,10 @@
       "Lele Yang",
       "Wenbin Xu"
     ],
-    "upvotes": 84,
+    "upvotes": 86,
     "url": "https://huggingface.co/papers/2611.15789",
     "arxiv": "https://arxiv.org/abs/2611.15789",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.15789",
     "date": "2026-11-16"
   },
   {
@@ -53,6 +56,7 @@
     "upvotes": 46,
     "url": "https://huggingface.co/papers/2611.12068",
     "arxiv": "https://arxiv.org/abs/2611.12068",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12068",
     "date": "2026-11-16"
   },
   {
@@ -67,6 +71,7 @@
     "upvotes": 36,
     "url": "https://huggingface.co/papers/2611.18482",
     "arxiv": "https://arxiv.org/abs/2611.18482",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18482",
     "date": "2026-11-16"
   },
   {
@@ -78,9 +83,10 @@
       "Zhe Qian",
       "Shiyan Su"
     ],
-    "upvotes": 35,
+    "upvotes": 36,
     "url": "https://huggingface.co/papers/2611.12901",
     "arxiv": "https://arxiv.org/abs/2611.12901",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12901",
     "date": "2026-11-16"
   },
   {
@@ -91,9 +97,10 @@
       "Dongjun Kim",
       "Yong Suk Choi"
     ],
-    "upvotes": 22,
+    "upvotes": 25,
     "url": "https://huggingface.co/papers/2611.17831",
     "arxiv": "https://arxiv.org/abs/2611.17831",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17831",
     "date": "2026-11-16"
   },
   {
@@ -108,6 +115,7 @@
     "upvotes": 21,
     "url": "https://huggingface.co/papers/2611.17878",
     "arxiv": "https://arxiv.org/abs/2611.17878",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17878",
     "date": "2026-11-16"
   },
   {
@@ -122,6 +130,22 @@
     "upvotes": 21,
     "url": "https://huggingface.co/papers/2611.07226",
     "arxiv": "https://arxiv.org/abs/2611.07226",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07226",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Mobile AI Factory: Building Specialized Language Models for Your Mobile Device",
+    "summary": "Mobile AI Factory is an agentic system that automatically builds task- and phone-specific fine-tuned quantized small language models, using an orchestrator LLM, real device measurements, and adaptive search to match or outperform larger models with much less GPU time.",
+    "authors": [
+      "Evan Li",
+      "Krishna Deshpande",
+      "Wen Cheng",
+      "Shyamnath Gollakota"
+    ],
+    "upvotes": 19,
+    "url": "https://huggingface.co/papers/2611.13509",
+    "arxiv": "https://arxiv.org/abs/2611.13509",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.13509",
     "date": "2026-11-16"
   },
   {
@@ -150,6 +174,7 @@
     "upvotes": 18,
     "url": "https://huggingface.co/papers/2611.17814",
     "arxiv": "https://arxiv.org/abs/2611.17814",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17814",
     "date": "2026-11-16"
   },
   {
@@ -164,6 +189,7 @@
     "upvotes": 17,
     "url": "https://huggingface.co/papers/2611.18338",
     "arxiv": "https://arxiv.org/abs/2611.18338",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18338",
     "date": "2026-11-16"
   },
   {
@@ -177,6 +203,7 @@
     "upvotes": 15,
     "url": "https://huggingface.co/papers/2611.18549",
     "arxiv": "https://arxiv.org/abs/2611.18549",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18549",
     "date": "2026-11-16"
   },
   {
@@ -191,6 +218,22 @@
     "upvotes": 12,
     "url": "https://huggingface.co/papers/2611.17820",
     "arxiv": "https://arxiv.org/abs/2611.17820",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17820",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
+    "summary": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks h…",
+    "authors": [
+      "Yuhang Wang",
+      "Jingxin Yang",
+      "Chuheng Wei",
+      "Suyang Chen"
+    ],
+    "upvotes": 12,
+    "url": "https://huggingface.co/papers/2611.18442",
+    "arxiv": "https://arxiv.org/abs/2611.18442",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18442",
     "date": "2026-11-16"
   },
   {
@@ -205,20 +248,7 @@
     "upvotes": 12,
     "url": "https://huggingface.co/papers/2611.06866",
     "arxiv": "https://arxiv.org/abs/2611.06866",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
-    "summary": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks h…",
-    "authors": [
-      "Yuhang Wang",
-      "Jingxin Yang",
-      "Chuheng Wei",
-      "Suyang Chen"
-    ],
-    "upvotes": 11,
-    "url": "https://huggingface.co/papers/2611.18442",
-    "arxiv": "https://arxiv.org/abs/2611.18442",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.06866",
     "date": "2026-11-16"
   },
   {
@@ -230,6 +260,7 @@
     "upvotes": 11,
     "url": "https://huggingface.co/papers/2611.16378",
     "arxiv": "https://arxiv.org/abs/2611.16378",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16378",
     "date": "2026-11-16"
   },
   {
@@ -244,6 +275,36 @@
     "upvotes": 11,
     "url": "https://huggingface.co/papers/2611.17955",
     "arxiv": "https://arxiv.org/abs/2611.17955",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17955",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
+    "summary": "A streaming speaker-diarization method removes the fixed speaker-slot limit by clustering speaker embeddings within slots after all slots are used, allowing unlimited speakers and efficient large-scale linking.",
+    "authors": [
+      "Kyudan Jung",
+      "Jihwan Kim",
+      "Minwoo Lee",
+      "Eunji Shin"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.18529",
+    "arxiv": "https://arxiv.org/abs/2611.18529",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18529",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "AI Reviews Are Biased Towards the Appendix",
+    "summary": "Large language models used for peer review draw about half or more of their identified weaknesses from paper appendices, whereas human reviewers draw only 8.4% and focus on presentation and core ideas.",
+    "authors": [
+      "Saptarshi Ghosh",
+      "Mohammad Saim",
+      "Tianyu Jiang"
+    ],
+    "upvotes": 10,
+    "url": "https://huggingface.co/papers/2611.17811",
+    "arxiv": "https://arxiv.org/abs/2611.17811",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17811",
     "date": "2026-11-16"
   },
   {
@@ -284,6 +345,7 @@
     "upvotes": 10,
     "url": "https://huggingface.co/papers/2611.14505",
     "arxiv": "https://arxiv.org/abs/2611.14505",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14505",
     "date": "2026-11-16"
   },
   {
@@ -295,6 +357,7 @@
     "upvotes": 10,
     "url": "https://huggingface.co/papers/2611.14504",
     "arxiv": "https://arxiv.org/abs/2611.14504",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14504",
     "date": "2026-11-16"
   },
   {
@@ -309,6 +372,7 @@
     "upvotes": 10,
     "url": "https://huggingface.co/papers/2611.16439",
     "arxiv": "https://arxiv.org/abs/2611.16439",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16439",
     "date": "2026-11-16"
   },
   {
@@ -323,6 +387,7 @@
     "upvotes": 9,
     "url": "https://huggingface.co/papers/2611.02822",
     "arxiv": "https://arxiv.org/abs/2611.02822",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02822",
     "date": "2026-11-16"
   },
   {
@@ -336,6 +401,20 @@
     "upvotes": 9,
     "url": "https://huggingface.co/papers/2611.18429",
     "arxiv": "https://arxiv.org/abs/2611.18429",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18429",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
+    "summary": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heteroge…",
+    "authors": [
+      "Ibragim Badertdinov",
+      "Alexander Golubev"
+    ],
+    "upvotes": 9,
+    "url": "https://huggingface.co/papers/2611.17440",
+    "arxiv": "https://arxiv.org/abs/2611.17440",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17440",
     "date": "2026-11-16"
   },
   {
@@ -349,18 +428,7 @@
     "upvotes": 9,
     "url": "https://huggingface.co/papers/2611.18130",
     "arxiv": "https://arxiv.org/abs/2611.18130",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
-    "summary": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heteroge…",
-    "authors": [
-      "Ibragim Badertdinov",
-      "Alexander Golubev"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.17440",
-    "arxiv": "https://arxiv.org/abs/2611.17440",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18130",
     "date": "2026-11-16"
   },
   {
@@ -375,6 +443,7 @@
     "upvotes": 6,
     "url": "https://huggingface.co/papers/2611.14487",
     "arxiv": "https://arxiv.org/abs/2611.14487",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14487",
     "date": "2026-11-16"
   },
   {
@@ -389,6 +458,7 @@
     "upvotes": 5,
     "url": "https://huggingface.co/papers/2611.17194",
     "arxiv": "https://arxiv.org/abs/2611.17194",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17194",
     "date": "2026-11-16"
   },
   {
@@ -403,6 +473,7 @@
     "upvotes": 3,
     "url": "https://huggingface.co/papers/2611.17169",
     "arxiv": "https://arxiv.org/abs/2611.17169",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17169",
     "date": "2026-11-16"
   },
   {
@@ -415,6 +486,7 @@
     "upvotes": 2,
     "url": "https://huggingface.co/papers/2611.17321",
     "arxiv": "https://arxiv.org/abs/2611.17321",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17321",
     "date": "2026-11-16"
   },
   {
@@ -429,6 +501,37 @@
     "upvotes": 2,
     "url": "https://huggingface.co/papers/2611.17780",
     "arxiv": "https://arxiv.org/abs/2611.17780",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17780",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
+    "summary": "Deployment objectives often specify desired outcomes without providing revised trajectories, while parts of the original reference must still be followed. We present OneSteer, a one-step diffusion whole-body controller that combines general motion tracking with selective test-time steering. To accommodate new objectiv…",
+    "authors": [
+      "Yifei Huang",
+      "Yazhao Yang",
+      "Li Weijia",
+      "Tianle Shi"
+    ],
+    "upvotes": 2,
+    "url": "https://huggingface.co/papers/2610.41354",
+    "arxiv": "https://arxiv.org/abs/2610.41354",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.41354",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
+    "summary": "Distilled few-step diffusion models exhibit diversity collapse because activation variance is concentrated into fewer directions in an intermediate block at the initial denoising step, and ReDiverse restores sample diversity by reintroducing teacher variance directions through adapter fine-tuning or training-free acti…",
+    "authors": [
+      "Furkan Horoz",
+      "Ozgur Kara",
+      "Kaan Oktay",
+      "Adil Kaan Akan"
+    ],
+    "upvotes": 2,
+    "url": "https://huggingface.co/papers/2611.18550",
+    "arxiv": "https://arxiv.org/abs/2611.18550",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18550",
     "date": "2026-11-16"
   },
   {
@@ -455,6 +558,7 @@
     "upvotes": 1,
     "url": "https://huggingface.co/papers/2611.05843",
     "arxiv": "https://arxiv.org/abs/2611.05843",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.05843",
     "date": "2026-11-16"
   },
   {
@@ -467,6 +571,20 @@
     "upvotes": 1,
     "url": "https://huggingface.co/papers/2611.16500",
     "arxiv": "https://arxiv.org/abs/2611.16500",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16500",
+    "date": "2026-11-16"
+  },
+  {
+    "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
+    "summary": "A unified generative backbone jointly models image appearance and depth, surpassing specialized depth models at scale while preserving general image generation.",
+    "authors": [
+      "Alejandro Cañada",
+      "Chema Garabito"
+    ],
+    "upvotes": 1,
+    "url": "https://huggingface.co/papers/2611.16010",
+    "arxiv": "https://arxiv.org/abs/2611.16010",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16010",
     "date": "2026-11-16"
   },
   {
@@ -493,20 +611,22 @@
     "upvotes": 1,
     "url": "https://huggingface.co/papers/2611.15640",
     "arxiv": "https://arxiv.org/abs/2611.15640",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.15640",
     "date": "2026-11-16"
   },
   {
-    "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
-    "summary": "Deployment objectives often specify desired outcomes without providing revised trajectories, while parts of the original reference must still be followed. We present OneSteer, a one-step diffusion whole-body controller that combines general motion tracking with selective test-time steering. To accommodate new objectiv…",
+    "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
+    "summary": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the t…",
     "authors": [
-      "Yifei Huang",
-      "Yazhao Yang",
-      "Li Weijia",
-      "Tianle Shi"
+      "Wei Feng",
+      "Meiling Chen",
+      "Boxiao Chen",
+      "Lu Liu"
     ],
     "upvotes": 1,
-    "url": "https://huggingface.co/papers/2610.41354",
-    "arxiv": "https://arxiv.org/abs/2610.41354",
+    "url": "https://huggingface.co/papers/2611.16661",
+    "arxiv": "https://arxiv.org/abs/2611.16661",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16661",
     "date": "2026-11-16"
   },
   {
@@ -533,6 +653,7 @@
     "upvotes": 0,
     "url": "https://huggingface.co/papers/2611.16312",
     "arxiv": "https://arxiv.org/abs/2611.16312",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16312",
     "date": "2026-11-16"
   }
 ]
