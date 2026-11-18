@@ -1,122 +1,157 @@
 [
   {
-    "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
-    "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
-    "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
-    "date": "Wed, 18 Nov 2026 01:44:21 +0000",
+    "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+    "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
+    "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+    "date": "Wed, 18 Nov 2026 21:57:40 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Nvidia promises that revenue will keep soaring — for now",
-    "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
-    "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
-    "date": "Wed, 18 Nov 2026 00:16:50 +0000",
+    "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
+    "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
+    "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+    "date": "Wed, 18 Nov 2026 21:34:13 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
-    "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
-    "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
-    "date": "Tue, 17 Nov 2026 23:37:48 +0000",
+    "title": "Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated",
+    "summary": "\"It makes America weaker to knock him out,\" the Anduril CEO said about ousted Nvidia leader Jensen Huang.",
+    "url": "https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/",
+    "date": "Wed, 18 Nov 2026 21:31:21 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-    "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
-    "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
-    "date": "Tue, 17 Nov 2026 23:04:35 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-    "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
-    "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
-    "date": "Tue, 17 Nov 2026 22:42:27 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-    "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
-    "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
-    "date": "Tue, 17 Nov 2026 22:29:05 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "SEC reportedly investigating Nvidia amid Huang exit",
-    "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
-    "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
-    "date": "Tue, 17 Nov 2026 21:48:07 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Google joins the tech outage trend by announcing it’s not having one",
-    "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
-    "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
-    "date": "Tue, 17 Nov 2026 21:34:50 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "OpenAI launches GPT-6.2 Astra and Sol with lower API prices and some benchmark gains",
-    "summary": "OpenAI releases GPT-6.2 Astra and Sol, two new models that are more capable and cheaper than their predecessors. In the independent Artificial Analysis Intelligence Index, Astra ranks second behind Claude Fable 5.2, and it is the first released model to reach the High threshold for AI self-improvement on OpenAI's own…",
-    "url": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
-    "date": "Tue, 17 Nov 2026 20:30:50 +0000",
+    "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
+    "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per million input tokens and $15 per million output tokens, Neon is priced above previous Gemini 4 models.…",
+    "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
+    "date": "Wed, 18 Nov 2026 21:03:23 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "Model ML raises $250M to automate investment banking grunt work",
-    "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
-    "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-    "date": "Tue, 17 Nov 2026 19:32:11 +0000",
+    "title": "Sam Altman says his life is so weird that he’s unfazed by Andrew Garfield portraying him in upcoming movie",
+    "summary": "\"It doesn't feel like it's in like the top 10 weirdest things about my life,\" Altman said.",
+    "url": "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/",
+    "date": "Wed, 18 Nov 2026 20:07:01 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
-    "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
-    "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
-    "date": "Tue, 17 Nov 2026 19:02:20 +0000",
+    "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+    "summary": "Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.",
+    "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+    "date": "Wed, 18 Nov 2026 19:56:39 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "AI agents are starting to fill out medical forms and file insurance requests in place of human staff",
-    "summary": "OpenAI wants GPT-6 Astra and GPT-6 Luna to automate administrative tasks in US healthcare through computer-use agents that operate existing clinic software and insurance portals the way a human would. Luna handles tasks like prior authorizations for about 8.5 cents each. Companies including CVS Health and Cigna Health…",
-    "url": "https://the-decoder.com/ai-agents-are-starting-to-fill-out-medical-forms-and-file-insurance-requests-in-place-of-human-staff/",
-    "date": "Tue, 17 Nov 2026 16:55:47 +0000",
+    "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
+    "summary": "With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first time, includes native sound. A community gallery allows users to share and remix the worlds they've c…",
+    "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
+    "date": "Wed, 18 Nov 2026 19:26:25 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "The US wants to block China from renting AI power abroad but China already built a parallel supply chain from US AI output",
-    "summary": "The US is tightening its chip export controls. Data centers in third countries like Singapore and Malaysia will soon need a US license to buy Nvidia chips, closing the loophole that let Chinese firms rent cloud compute abroad. A Reuters investigation also reveals how China offsets its hardware shortage through industr…",
-    "url": "https://the-decoder.com/the-us-wants-to-block-china-from-renting-ai-power-abroad-but-china-already-built-a-parallel-supply-chain-from-us-ai-output/",
-    "date": "Tue, 17 Nov 2026 16:47:21 +0000",
+    "title": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
+    "summary": "Microsoft's AI division MAI unveiled seven new models for code, security, images, language, and routing at Ignite. MAI Code 2 reaches 98 percent of GPT-6.1 Sol's performance at 40 percent of the cost, according to Microsoft. The models are built for running AI agents around the clock in enterprises. The article Micros…",
+    "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+    "date": "Wed, 18 Nov 2026 18:47:36 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "OpenAI opens its cybersecurity tool Daybreak to NATO and European governments",
-    "summary": "OpenAI is opening its cybersecurity tool Daybreak to NATO and several European governments, including Germany, France, and Poland. The EU's cybersecurity agency ENISA has already used it to find real vulnerabilities in EU software. The NATO Communications and Information Agency (NCIA) says it's already making heavy us…",
-    "url": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/",
-    "date": "Tue, 17 Nov 2026 15:02:03 +0000",
+    "title": "Google’s AI feature in Search gets its own incognito mode",
+    "summary": "Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.",
+    "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+    "date": "Wed, 18 Nov 2026 18:04:05 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI says its models delivered a year's worth of chip optimization on top of AMD's own engineering",
+    "summary": "Working with AMD, OpenAI achieved up to 14 percent PPA improvement on AMD's flagship GPU IP in less than five months. According to OpenAI, that's roughly a year's worth of progress, and AMD has already folded the changes into a design sent to production. Anthropic is also applying AI to chip work to optimize cost and…",
+    "url": "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/",
+    "date": "Wed, 18 Nov 2026 18:00:33 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "Reports of AI-generated child sexual abuse material have surged more than 8,400 percent in two years",
-    "summary": "Edinburgh's Childlight Institute reports a more than 8,400 percent increase in AI-generated child sexual abuse material over two years, from about 4,700 reports in 2023 to over 400,000 in 2025. Abusers are using tools like nudify apps for blackmail. Childlight CEO Paul Stanfield wants governments to classify the probl…",
-    "url": "https://the-decoder.com/reports-of-ai-generated-child-sexual-abuse-material-have-surged-more-than-8400-percent-in-two-years/",
-    "date": "Tue, 17 Nov 2026 14:59:50 +0000",
+    "title": "More banks say customers using AI agents are on their own — even if they get hacked",
+    "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
+    "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+    "date": "Wed, 18 Nov 2026 17:32:10 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Sam Altman warns against a future where AI, not humans, calls the shots",
+    "summary": "Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.",
+    "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/",
+    "date": "Wed, 18 Nov 2026 16:59:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’",
+    "summary": "Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.",
+    "url": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/",
+    "date": "Wed, 18 Nov 2026 16:14:09 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Pangram flags 99 percent of an award-winning Peruvian novel as AI-generated, but the publisher stands by its author",
+    "summary": "The AI detection tool Pangram flags 99 percent of a prize-winning Peruvian novel as AI-generated, but Mexican publisher Almadía is standing by the award after its own review. Pangram also classified over 80 percent of the author's personal texts as machine-written. French publisher Gallimard plans to start screening m…",
+    "url": "https://the-decoder.com/pangram-flags-99-percent-of-an-award-winning-peruvian-novel-as-ai-generated-but-the-publisher-stands-by-its-author/",
+    "date": "Wed, 18 Nov 2026 16:09:08 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "Isomorphic Labs raises $5 billion in its second mega-round within six months",
-    "summary": "Isomorphic Labs has raised $5 billion, just six months after a $2.1 billion round. Alphabet's AI drug discovery company, led by Demis Hassabis, plans to use the funding to push its drug pipeline toward clinical trials. The company has no approved drugs yet. The article Isomorphic Labs raises $5 billion in its second m…",
-    "url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
-    "date": "Tue, 17 Nov 2026 14:57:02 +0000",
+    "title": "Anthropic, OpenAI, and Google models readily marked medics, journalists, and surrendering soldiers as kamikaze drone targets",
+    "summary": "A Vals AI investigation shows that leading AI models from Anthropic, OpenAI and Google have almost no safeguards against use in autonomous weapons systems. In tests, the models readily flagged civilians as military targets, and a simple video game framing in the prompt was enough to override even belated refusals. The…",
+    "url": "https://the-decoder.com/anthropic-openai-and-google-models-readily-marked-medics-journalists-and-surrendering-soldiers-as-kamikaze-drone-targets/",
+    "date": "Wed, 18 Nov 2026 15:47:49 +0000",
     "source": "The Decoder"
   },
   {
-    "title": "California's attorney general sues OpenAI over rogue AI models that attacked Hugging Face",
-    "summary": "California Attorney General Rob Bonta is suing OpenAI over a cyberattack that the company's out-of-control AI models launched against AI platform Hugging Face in July. The article California's attorney general sues OpenAI over rogue AI models that attacked Hugging Face appeared first on The Decoder .",
-    "url": "https://the-decoder.com/californias-attorney-general-sues-openai-over-rogue-ai-models-that-attacked-hugging-face/",
-    "date": "Tue, 17 Nov 2026 14:54:10 +0000",
+    "title": "The AI Hype Index: AI is everywhere",
+    "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, a…",
+    "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
+    "date": "Wed, 18 Nov 2026 14:42:44 +0000",
+    "source": "MIT Tech Review"
+  },
+  {
+    "title": "Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems",
+    "summary": "Mistral's AI agent Vibe now has its own desktop app. The article Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems appeared first on The Decoder .",
+    "url": "https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/",
+    "date": "Wed, 18 Nov 2026 14:40:52 +0000",
     "source": "The Decoder"
+  },
+  {
+    "title": "OpenAI opens its AI systems to four independent on-site auditors for the first time",
+    "summary": "OpenAI is giving four independent audit organizations, including Apollo Research and METR, direct access to unreleased models, source code, and training data for the first time. The embedded reviews are designed to uncover hidden misbehavior and safety gaps. OpenAI can redact or delay reports, so how independent this…",
+    "url": "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/",
+    "date": "Wed, 18 Nov 2026 14:36:42 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Hugging Face now routes model requests through OpenRouter for the best price or speed",
+    "summary": "Hugging Face now routes language model requests through OpenRouter, which automatically selects the cheapest or fastest provider. Bring-your-own API keys for language models are going away. According to OpenRouter, the new routing cut capacity errors by 46 percent. Both partners face multibillion-dollar acquisitions.…",
+    "url": "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/",
+    "date": "Wed, 18 Nov 2026 14:33:44 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "More than half the electricity feeding America's largest data centers comes from gas and coal",
+    "summary": "A Harvard study published in Nature Sustainability found that 403 US hyperscale data centers produced roughly 25.7 million metric tons of CO2 between May 2024 and April 2025, more than all of Denmark. Over half of their electricity came from fossil fuels. With 2,000 additional facilities planned, the researchers warn…",
+    "url": "https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/",
+    "date": "Wed, 18 Nov 2026 14:25:04 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Nvidia clarifies when it will — and won’t — keep financing neoclouds",
+    "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+    "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+    "date": "Wed, 18 Nov 2026 13:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "This smell startup says its AI nose is as good as a human’s",
+    "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup Osmo calls the wor…",
+    "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+    "date": "Wed, 18 Nov 2026 10:20:30 +0000",
+    "source": "MIT Tech Review"
   },
   {
     "title": "Research Reports",
@@ -126,45 +161,10 @@
     "source": "MIT Tech Review"
   },
   {
-    "title": "Google warns that fully automated cyberattacks have arrived and will get worse fast",
-    "summary": "Google's Threat Intelligence Group has for the first time caught attackers finding and exploiting security vulnerabilities with no human involvement at all. An AI framework called \"exploitagent,\" found on an exposed server, automatically compared code before and after patches, built exploits, and ran them on its own.…",
-    "url": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
-    "date": "Mon, 16 Nov 2026 19:42:13 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OpenAI's GPT-6 Astra tackles the Standard Model's toughest math problem on a lattice",
-    "summary": "OpenAI physicist Nathaniel Craig used GPT-6 Astra to tackle a problem that had stumped particle physicists for over 25 years. The AI model took Craig's strategy for defining the full Standard Model on a computational lattice and turned it into a working proof. Craig says a lot of work remains before realistic simulati…",
-    "url": "https://the-decoder.com/openais-gpt-6-astra-tackles-the-standard-models-toughest-math-problem-on-a-lattice/",
-    "date": "Mon, 16 Nov 2026 19:19:56 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Moonshot AI pivots Kimi models from coding to science as benchmark gains flatten",
-    "summary": "Moonshot AI is done chasing coding benchmarks, it says. The Beijing startup is pivoting its Kimi language models toward biology, chemistry, and pharma research, arguing that science demands smarter AI than law, finance, or code. The article Moonshot AI pivots Kimi models from coding to science as benchmark gains flatt…",
-    "url": "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/",
-    "date": "Mon, 16 Nov 2026 18:52:55 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "The open-source movement wants Jensen Huang back",
     "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several…",
     "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
     "date": "Mon, 16 Nov 2026 18:38:47 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "Building trustworthy AI by fencing it in, not predicting it",
-    "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migration, then said it hadn’t. No rule had told the agents to d…",
-    "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-    "date": "Mon, 16 Nov 2026 16:04:28 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "Building AI that can work across the enterprise",
-    "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and autonomous workflows are confronting a deeper challenge: ret…",
-    "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
-    "date": "Mon, 16 Nov 2026 13:00:00 +0000",
     "source": "MIT Tech Review"
   }
 ]
