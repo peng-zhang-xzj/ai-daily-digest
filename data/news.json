@@ -1,5 +1,47 @@
 [
   {
+    "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+    "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+    "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+    "date": "Wed, 18 Nov 2026 01:44:21 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia promises that revenue will keep soaring — for now",
+    "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+    "date": "Wed, 18 Nov 2026 00:16:50 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+    "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+    "date": "Tue, 17 Nov 2026 23:37:48 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+    "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+    "date": "Tue, 17 Nov 2026 23:04:35 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+    "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+    "date": "Tue, 17 Nov 2026 22:42:27 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+    "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+    "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+    "date": "Tue, 17 Nov 2026 22:29:05 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
     "title": "SEC reportedly investigating Nvidia amid Huang exit",
     "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
     "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
@@ -35,41 +77,6 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
-    "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
-    "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
-    "date": "Tue, 17 Nov 2026 18:48:23 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "As decision model use skyrockets, is customization the next frontier?",
-    "summary": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.",
-    "url": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/",
-    "date": "Tue, 17 Nov 2026 18:10:00 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
-    "summary": "The company uses agentic AI to make supply chains faster and more reliable.",
-    "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-    "date": "Tue, 17 Nov 2026 18:04:16 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
-    "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
-    "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
-    "date": "Tue, 17 Nov 2026 17:32:25 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "AI models can be tricked into identifying civilians as military targets by telling them it’s a game",
-    "summary": "Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.",
-    "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
-    "date": "Tue, 17 Nov 2026 17:20:41 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
     "title": "AI agents are starting to fill out medical forms and file insurance requests in place of human staff",
     "summary": "OpenAI wants GPT-6 Astra and GPT-6 Luna to automate administrative tasks in US healthcare through computer-use agents that operate existing clinic software and insurance portals the way a human would. Luna handles tasks like prior authorizations for about 8.5 cents each. Companies including CVS Health and Cigna Health…",
     "url": "https://the-decoder.com/ai-agents-are-starting-to-fill-out-medical-forms-and-file-insurance-requests-in-place-of-human-staff/",
@@ -82,13 +89,6 @@
     "url": "https://the-decoder.com/the-us-wants-to-block-china-from-renting-ai-power-abroad-but-china-already-built-a-parallel-supply-chain-from-us-ai-output/",
     "date": "Tue, 17 Nov 2026 16:47:21 +0000",
     "source": "The Decoder"
-  },
-  {
-    "title": "Jensen Huang says he would be ‘honored’ if allowed to return as Nvidia CEO",
-    "summary": "In the first public statement since his resignation, Nvidia founder Jensen Huang signaled his willingness to return as CEO.",
-    "url": "https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/",
-    "date": "Tue, 17 Nov 2026 16:44:15 +0000",
-    "source": "TechCrunch AI"
   },
   {
     "title": "OpenAI opens its cybersecurity tool Daybreak to NATO and European governments",

@@ -23,7 +23,7 @@
       "Qi Deng",
       "Yukun Chen"
     ],
-    "upvotes": 118,
+    "upvotes": 120,
     "url": "https://huggingface.co/papers/2611.18397",
     "arxiv": "https://arxiv.org/abs/2611.18397",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18397",
@@ -53,25 +53,10 @@
       "Guangran Cheng",
       "Qingxiu Cheng"
     ],
-    "upvotes": 85,
+    "upvotes": 86,
     "url": "https://huggingface.co/papers/2611.21072",
     "arxiv": "https://arxiv.org/abs/2611.21072",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21072",
-    "date": "2026-11-17"
-  },
-  {
-    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
-    "summary": "An end-to-end flow-matching framework generates joint portfolio allocations from raw multi-asset market histories via a cross-asset flow Transformer and a two-stage imitation and group-relative reinforcement learning procedure, improving risk-adjusted returns on cryptocurrency perpetual futures.",
-    "authors": [
-      "Annan Wang",
-      "Yuchen Xie",
-      "Yu Cen",
-      "Leon Liangyu Chen"
-    ],
-    "upvotes": 67,
-    "url": "https://huggingface.co/papers/2611.19937",
-    "arxiv": "https://arxiv.org/abs/2611.19937",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19937",
     "date": "2026-11-17"
   },
   {
@@ -83,10 +68,25 @@
       "Haonan Li",
       "Xuezhe Ma"
     ],
-    "upvotes": 67,
+    "upvotes": 72,
     "url": "https://huggingface.co/papers/2611.21003",
     "arxiv": "https://arxiv.org/abs/2611.21003",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21003",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+    "summary": "An end-to-end flow-matching framework generates joint portfolio allocations from raw multi-asset market histories via a cross-asset flow Transformer and a two-stage imitation and group-relative reinforcement learning procedure, improving risk-adjusted returns on cryptocurrency perpetual futures.",
+    "authors": [
+      "Annan Wang",
+      "Yuchen Xie",
+      "Yu Cen",
+      "Leon Liangyu Chen"
+    ],
+    "upvotes": 68,
+    "url": "https://huggingface.co/papers/2611.19937",
+    "arxiv": "https://arxiv.org/abs/2611.19937",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19937",
     "date": "2026-11-17"
   },
   {
@@ -99,6 +99,20 @@
     "url": "https://huggingface.co/papers/2611.21218",
     "arxiv": "https://arxiv.org/abs/2611.21218",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21218",
+    "date": "2026-11-17"
+  },
+  {
+    "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+    "summary": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's t…",
+    "authors": [
+      "Woosang Lim",
+      "Yeseul Chang",
+      "Jaewoo Lee"
+    ],
+    "upvotes": 56,
+    "url": "https://huggingface.co/papers/2611.07222",
+    "arxiv": "https://arxiv.org/abs/2611.07222",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07222",
     "date": "2026-11-17"
   },
   {
@@ -117,20 +131,6 @@
     "date": "2026-11-16"
   },
   {
-    "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
-    "summary": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's t…",
-    "authors": [
-      "Woosang Lim",
-      "Yeseul Chang",
-      "Jaewoo Lee"
-    ],
-    "upvotes": 49,
-    "url": "https://huggingface.co/papers/2611.07222",
-    "arxiv": "https://arxiv.org/abs/2611.07222",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.07222",
-    "date": "2026-11-17"
-  },
-  {
     "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
     "summary": "A benchmark of realistic software engineering assignments reveals that current coding agents struggle to track requirements from clarification through implementation, verification, and handoff, completing few tasks despite partial test success.",
     "authors": [
@@ -139,7 +139,7 @@
       "Ruijie Zhu",
       "Xiaohui Hu"
     ],
-    "upvotes": 44,
+    "upvotes": 46,
     "url": "https://huggingface.co/papers/2611.20218",
     "arxiv": "https://arxiv.org/abs/2611.20218",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.20218",
@@ -199,7 +199,7 @@
       "Eunho Yang",
       "Moontae Lee"
     ],
-    "upvotes": 26,
+    "upvotes": 28,
     "url": "https://huggingface.co/papers/2611.17834",
     "arxiv": "https://arxiv.org/abs/2611.17834",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17834",
@@ -295,6 +295,21 @@
     "date": "2026-11-16"
   },
   {
+    "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+    "summary": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task pro…",
+    "authors": [
+      "Bowen Liu",
+      "Yuhan Li",
+      "Nuo Chen",
+      "Weile Luo"
+    ],
+    "upvotes": 17,
+    "url": "https://huggingface.co/papers/2611.20882",
+    "arxiv": "https://arxiv.org/abs/2611.20882",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20882",
+    "date": "2026-11-17"
+  },
+  {
     "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
     "summary": "A history-aware benchmark and memory-powered method improve Text-to-SQL accuracy and reduce cost by reusing verified SQL components and consulting schemas on demand.",
     "authors": [
@@ -308,21 +323,6 @@
     "arxiv": "https://arxiv.org/abs/2611.18338",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18338",
     "date": "2026-11-16"
-  },
-  {
-    "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
-    "summary": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task pro…",
-    "authors": [
-      "Bowen Liu",
-      "Yuhan Li",
-      "Nuo Chen",
-      "Weile Luo"
-    ],
-    "upvotes": 16,
-    "url": "https://huggingface.co/papers/2611.20882",
-    "arxiv": "https://arxiv.org/abs/2611.20882",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20882",
-    "date": "2026-11-17"
   },
   {
     "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
@@ -429,6 +429,21 @@
     "date": "2026-11-17"
   },
   {
+    "title": "Disen-Forcing: Disentangling Semantic Anchoring from Motion for Autoregressive Video Diffusion",
+    "summary": "Disen-Forcing is a distillation-time method for autoregressive video diffusion models that disentangles attention-head specialization to improve long-range consistency and motion dynamics in long-horizon video generation.",
+    "authors": [
+      "Zhengyang Yu",
+      "Akio Hayakawa",
+      "Masato Ishii",
+      "Qingtao Yu"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.02822",
+    "arxiv": "https://arxiv.org/abs/2611.02822",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02822",
+    "date": "2026-11-16"
+  },
+  {
     "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
     "summary": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heteroge…",
     "authors": [
@@ -440,6 +455,21 @@
     "arxiv": "https://arxiv.org/abs/2611.17440",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17440",
     "date": "2026-11-16"
+  },
+  {
+    "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
+    "summary": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We firs…",
+    "authors": [
+      "Yunyang Ge",
+      "Weijie Kong",
+      "Ryan Xu",
+      "Yue Wu"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.21339",
+    "arxiv": "https://arxiv.org/abs/2611.21339",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21339",
+    "date": "2026-11-17"
   },
   {
     "title": "AI Reviews Are Biased Towards the Appendix",
@@ -512,21 +542,6 @@
     "date": "2026-11-16"
   },
   {
-    "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
-    "summary": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We firs…",
-    "authors": [
-      "Yunyang Ge",
-      "Weijie Kong",
-      "Ryan Xu",
-      "Yue Wu"
-    ],
-    "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.21339",
-    "arxiv": "https://arxiv.org/abs/2611.21339",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21339",
-    "date": "2026-11-17"
-  },
-  {
     "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
     "summary": "A Twenty Questions-style benchmark for research ideation shows that large language models make most progress early, can recognize good ideas or questions but often cannot generate them, and may benefit from externally sourced candidates in automated research systems.",
     "authors": [
@@ -539,21 +554,6 @@
     "url": "https://huggingface.co/papers/2611.14487",
     "arxiv": "https://arxiv.org/abs/2611.14487",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.14487",
-    "date": "2026-11-16"
-  },
-  {
-    "title": "Disen-Forcing: Disentangling Semantic Anchoring from Motion for Autoregressive Video Diffusion",
-    "summary": "Disen-Forcing is a distillation-time method for autoregressive video diffusion models that disentangles attention-head specialization to improve long-range consistency and motion dynamics in long-horizon video generation.",
-    "authors": [
-      "Zhengyang Yu",
-      "Akio Hayakawa",
-      "Masato Ishii",
-      "Qingtao Yu"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.02822",
-    "arxiv": "https://arxiv.org/abs/2611.02822",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02822",
     "date": "2026-11-16"
   },
   {
