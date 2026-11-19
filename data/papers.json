@@ -8,11 +8,26 @@
       "Bingkai Yang",
       "Boyang Wang"
     ],
-    "upvotes": 150,
+    "upvotes": 159,
     "url": "https://huggingface.co/papers/2611.22115",
     "arxiv": "https://arxiv.org/abs/2611.22115",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.22115",
     "date": "2026-11-18"
+  },
+  {
+    "title": "Jeveration: System One Models Now Generate",
+    "summary": "Jeveration repurposes a frozen vision-language model to generate coherent images and perform image-to-image and dense prediction tasks in a single forward pass with fast 512x512 generation.",
+    "authors": [
+      "Yuhe Liu",
+      "Qi Li",
+      "Shihua Zhang",
+      "Xinchao Wang"
+    ],
+    "upvotes": 110,
+    "url": "https://huggingface.co/papers/2611.24738",
+    "arxiv": "https://arxiv.org/abs/2611.24738",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24738",
+    "date": "2026-11-19"
   },
   {
     "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
@@ -20,7 +35,7 @@
     "authors": [
       "The InclusionMed Collaboration"
     ],
-    "upvotes": 97,
+    "upvotes": 103,
     "url": "https://huggingface.co/papers/2611.21218",
     "arxiv": "https://arxiv.org/abs/2611.21218",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21218",
@@ -35,7 +50,7 @@
       "Guangran Cheng",
       "Qingxiu Cheng"
     ],
-    "upvotes": 95,
+    "upvotes": 96,
     "url": "https://huggingface.co/papers/2611.21072",
     "arxiv": "https://arxiv.org/abs/2611.21072",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21072",
@@ -50,7 +65,7 @@
       "Jing Li",
       "Amir Abdullin"
     ],
-    "upvotes": 91,
+    "upvotes": 92,
     "url": "https://huggingface.co/papers/2611.17621",
     "arxiv": "https://arxiv.org/abs/2611.17621",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17621",
@@ -65,7 +80,7 @@
       "Haonan Li",
       "Xuezhe Ma"
     ],
-    "upvotes": 84,
+    "upvotes": 86,
     "url": "https://huggingface.co/papers/2611.21003",
     "arxiv": "https://arxiv.org/abs/2611.21003",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21003",
@@ -87,6 +102,19 @@
     "date": "2026-11-17"
   },
   {
+    "title": "Weight-Space Programming Doesn't Need Transformers",
+    "summary": "When large language models write neural network weights without gradient-based training, they tend to design sparse table or associative-memory models that outperform same-sized Transformers with far fewer parameters and faster GPU inference, though pretrained LLMs remain more accurate.",
+    "authors": [
+      "Hyunjong Ok",
+      "Jaeho Lee"
+    ],
+    "upvotes": 54,
+    "url": "https://huggingface.co/papers/2611.22055",
+    "arxiv": "https://arxiv.org/abs/2611.22055",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22055",
+    "date": "2026-11-18"
+  },
+  {
     "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
     "summary": "A benchmark of realistic software engineering assignments reveals that current coding agents struggle to track requirements from clarification through implementation, verification, and handoff, completing few tasks despite partial test success.",
     "authors": [
@@ -102,19 +130,6 @@
     "date": "2026-11-17"
   },
   {
-    "title": "Weight-Space Programming Doesn't Need Transformers",
-    "summary": "When large language models write neural network weights without gradient-based training, they tend to design sparse table or associative-memory models that outperform same-sized Transformers with far fewer parameters and faster GPU inference, though pretrained LLMs remain more accurate.",
-    "authors": [
-      "Hyunjong Ok",
-      "Jaeho Lee"
-    ],
-    "upvotes": 49,
-    "url": "https://huggingface.co/papers/2611.22055",
-    "arxiv": "https://arxiv.org/abs/2611.22055",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22055",
-    "date": "2026-11-18"
-  },
-  {
     "title": "Multi-Branch Transformer",
     "summary": "Branching Transformer blocks into parallel parameterized branches, combined with shared KV caching, improves language model quality and inference efficiency compared with standard sequential Transformers.",
     "authors": [
@@ -123,7 +138,7 @@
       "Chunyuan Deng",
       "Zhiwei Xu"
     ],
-    "upvotes": 45,
+    "upvotes": 44,
     "url": "https://huggingface.co/papers/2611.19800",
     "arxiv": "https://arxiv.org/abs/2611.19800",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.19800",
@@ -137,7 +152,7 @@
       "Yeseul Chang",
       "Jaewoo Lee"
     ],
-    "upvotes": 43,
+    "upvotes": 44,
     "url": "https://huggingface.co/papers/2611.07222",
     "arxiv": "https://arxiv.org/abs/2611.07222",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.07222",
@@ -152,7 +167,7 @@
       "Yike Zhang",
       "Yanzhe Chen"
     ],
-    "upvotes": 39,
+    "upvotes": 41,
     "url": "https://huggingface.co/papers/2611.21099",
     "arxiv": "https://arxiv.org/abs/2611.21099",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21099",
@@ -174,6 +189,21 @@
     "date": "2026-11-17"
   },
   {
+    "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+    "summary": "Agent evolution is often bottlenecked by noisy evaluations that cannot reliably identify better candidate artifacts or rank methods, so progress requires making true improvements detectable and accumulable.",
+    "authors": [
+      "Yuanhao Zeng",
+      "Shaocheng Lan",
+      "Ao Lu",
+      "Kuang Yan"
+    ],
+    "upvotes": 35,
+    "url": "https://huggingface.co/papers/2611.23068",
+    "arxiv": "https://arxiv.org/abs/2611.23068",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23068",
+    "date": "2026-11-19"
+  },
+  {
     "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
     "summary": "A comprehensive benchmark evaluates time-series classification methods on a large clinical breath dataset under realistic temporal splits, showing that sensor drift lowers performance and recurrent models are most consistent across diseases.",
     "authors": [
@@ -182,7 +212,7 @@
       "Galina Zubkova",
       "Svetlana Erofeeva"
     ],
-    "upvotes": 32,
+    "upvotes": 33,
     "url": "https://huggingface.co/papers/2611.15348",
     "arxiv": "https://arxiv.org/abs/2611.15348",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.15348",
@@ -197,7 +227,7 @@
       "Eunho Yang",
       "Moontae Lee"
     ],
-    "upvotes": 32,
+    "upvotes": 33,
     "url": "https://huggingface.co/papers/2611.17834",
     "arxiv": "https://arxiv.org/abs/2611.17834",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17834",
@@ -212,11 +242,26 @@
       "Jiaqi Pan",
       "Youbao Tang"
     ],
-    "upvotes": 31,
+    "upvotes": 33,
     "url": "https://huggingface.co/papers/2611.18856",
     "arxiv": "https://arxiv.org/abs/2611.18856",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.18856",
     "date": "2026-11-18"
+  },
+  {
+    "title": "ALIVE: Making Streaming Video Models Interactive",
+    "summary": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage traini…",
+    "authors": [
+      "Jinzhao Li",
+      "Yuan Xu",
+      "Jinxuan Wu",
+      "Yukun Wang"
+    ],
+    "upvotes": 32,
+    "url": "https://huggingface.co/papers/2611.21366",
+    "arxiv": "https://arxiv.org/abs/2611.21366",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21366",
+    "date": "2026-11-19"
   },
   {
     "title": "FastFrames: Video Generation at Interactive Latency",
@@ -227,11 +272,41 @@
       "Fujun Luan",
       "Lars Mescheder"
     ],
-    "upvotes": 23,
+    "upvotes": 29,
     "url": "https://huggingface.co/papers/2611.23226",
     "arxiv": "https://arxiv.org/abs/2611.23226",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.23226",
     "date": "2026-11-18"
+  },
+  {
+    "title": "PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling",
+    "summary": "High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formul…",
+    "authors": [
+      "Minseo Yoon",
+      "Minseong Bae",
+      "Sojin Lee",
+      "Hyunwoo J. Kim"
+    ],
+    "upvotes": 27,
+    "url": "https://huggingface.co/papers/2611.11318",
+    "arxiv": "https://arxiv.org/abs/2611.11318",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.11318",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+    "summary": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifi…",
+    "authors": [
+      "Xirui Jiang",
+      "Yuxi Chen",
+      "Rui Yang",
+      "Feng Luo"
+    ],
+    "upvotes": 25,
+    "url": "https://huggingface.co/papers/2611.24154",
+    "arxiv": "https://arxiv.org/abs/2611.24154",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24154",
+    "date": "2026-11-19"
   },
   {
     "title": "TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation",
@@ -242,11 +317,55 @@
       "Zhengshen Zhang",
       "Yunfeng Fan"
     ],
-    "upvotes": 23,
+    "upvotes": 24,
     "url": "https://huggingface.co/papers/2611.23143",
     "arxiv": "https://arxiv.org/abs/2611.23143",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.23143",
     "date": "2026-11-18"
+  },
+  {
+    "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+    "summary": "CurvDelta and CurvLoRA constrain LLM updates to a low-curvature preservation space, improving retention while maintaining target adaptation across reasoning, code, and unlearning tasks.",
+    "authors": [
+      "Zeguan Xiao",
+      "Zhuocheng Liang",
+      "Yun Chen",
+      "Yong Wang"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.24654",
+    "arxiv": "https://arxiv.org/abs/2611.24654",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24654",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "summary": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline superv…",
+    "authors": [
+      "Phuong Tuan Dat",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.24789",
+    "arxiv": "https://arxiv.org/abs/2611.24789",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24789",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "LynnReal-Hand: Unlocking World Interaction with Hand Control",
+    "summary": "Interactive video world models enable exploration through text and camera controls, yet direct object interaction requires finer control. Hands provide a natural interface, but translating continuous hand movements into coherent visual responses remains challenging because of complex hand-object dynamics and demanding…",
+    "authors": [
+      "Shaohao Rui",
+      "Chaoyang Zhang",
+      "Xiaofeng Mao",
+      "Weijie Ma"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.21479",
+    "arxiv": "https://arxiv.org/abs/2611.21479",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21479",
+    "date": "2026-11-17"
   },
   {
     "title": "Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration",
@@ -264,19 +383,19 @@
     "date": "2026-11-18"
   },
   {
-    "title": "LynnReal-Hand: Unlocking World Interaction with Hand Control",
-    "summary": "Interactive video world models enable exploration through text and camera controls, yet direct object interaction requires finer control. Hands provide a natural interface, but translating continuous hand movements into coherent visual responses remains challenging because of complex hand-object dynamics and demanding…",
+    "title": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "summary": "LightTAR adapts dimensionality reduction to the prediction task by adding target-aware features from encoder layers via regularized partial least squares, improving multimodal tabular model performance with minimal runtime overhead.",
     "authors": [
-      "Shaohao Rui",
-      "Chaoyang Zhang",
-      "Xiaofeng Mao",
-      "Weijie Ma"
+      "Eilam Shapira",
+      "Alan Arazi",
+      "Shoham Grunblat",
+      "Roi Reichart"
     ],
-    "upvotes": 21,
-    "url": "https://huggingface.co/papers/2611.21479",
-    "arxiv": "https://arxiv.org/abs/2611.21479",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21479",
-    "date": "2026-11-17"
+    "upvotes": 20,
+    "url": "https://huggingface.co/papers/2611.17600",
+    "arxiv": "https://arxiv.org/abs/2611.17600",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17600",
+    "date": "2026-11-19"
   },
   {
     "title": "VideoNexus: Video Perception Beyond the Reasoning Context",
@@ -287,7 +406,7 @@
       "Wei Chen",
       "Luoyuan Zhang"
     ],
-    "upvotes": 19,
+    "upvotes": 20,
     "url": "https://huggingface.co/papers/2611.21392",
     "arxiv": "https://arxiv.org/abs/2611.21392",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21392",
@@ -302,11 +421,26 @@
       "Nuo Chen",
       "Weile Luo"
     ],
-    "upvotes": 18,
+    "upvotes": 19,
     "url": "https://huggingface.co/papers/2611.20882",
     "arxiv": "https://arxiv.org/abs/2611.20882",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.20882",
     "date": "2026-11-17"
+  },
+  {
+    "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
+    "summary": "A rule-graph-based generative world model preserves user-defined rules and world states across saving and loading while accurately realizing rule-induced visual changes on designated objects and attributes.",
+    "authors": [
+      "Mingliang Zhai",
+      "Chuanhao Li",
+      "Jiaming Tan",
+      "Zhen Li"
+    ],
+    "upvotes": 18,
+    "url": "https://huggingface.co/papers/2611.24869",
+    "arxiv": "https://arxiv.org/abs/2611.24869",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24869",
+    "date": "2026-11-19"
   },
   {
     "title": "VoxMel TTS Technical Report",
@@ -324,18 +458,33 @@
     "date": "2026-11-17"
   },
   {
-    "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
-    "summary": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We firs…",
+    "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
+    "summary": "This unified foundation model enables the recovery of dense geometry, camera poses, and object tracking from diverse, uncalibrated observations in 4D scenes using a shared geometry and motion branch architecture.",
     "authors": [
-      "Yunyang Ge",
-      "Weijie Kong",
-      "Ryan Xu",
-      "Yue Wu"
+      "Yifan Wang",
+      "Weiguang Zhao",
+      "Ni Yang",
+      "Haoyu Guo"
+    ],
+    "upvotes": 16,
+    "url": "https://huggingface.co/papers/2611.23144",
+    "arxiv": "https://arxiv.org/abs/2611.23144",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23144",
+    "date": "2026-11-18"
+  },
+  {
+    "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+    "summary": "SALA aligns latent actions across human and robot videos by using language-based semantic similarities to form a shared latent action space that supervises embodied foundation model training and improves robot task performance.",
+    "authors": [
+      "Jiachun Jin",
+      "Zetong Zhou",
+      "Haonan Wang",
+      "Zhijie Deng"
     ],
     "upvotes": 15,
-    "url": "https://huggingface.co/papers/2611.21339",
-    "arxiv": "https://arxiv.org/abs/2611.21339",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21339",
+    "url": "https://huggingface.co/papers/2611.17110",
+    "arxiv": "https://arxiv.org/abs/2611.17110",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17110",
     "date": "2026-11-17"
   },
   {
@@ -354,33 +503,93 @@
     "date": "2026-11-17"
   },
   {
-    "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
-    "summary": "SALA aligns latent actions across human and robot videos by using language-based semantic similarities to form a shared latent action space that supervises embodied foundation model training and improves robot task performance.",
+    "title": "From Repositories to Training Environments: Scaling Long-Horizon Coding Agents with Environment Evolution Loop",
+    "summary": "RepoFactory converts real repositories into verifiable coding environments and optimizes them via an Environment Evolution Loop using proxy feedback, enabling trained coding agents to achieve strong gains on long-horizon coding and agentic benchmarks.",
     "authors": [
-      "Jiachun Jin",
-      "Zetong Zhou",
-      "Haonan Wang",
-      "Zhijie Deng"
+      "Yang Tian",
+      "Tianyu Zheng",
+      "Xiyuan Yang",
+      "Yaxin Du"
     ],
     "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.17110",
-    "arxiv": "https://arxiv.org/abs/2611.17110",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17110",
+    "url": "https://huggingface.co/papers/2611.21152",
+    "arxiv": "https://arxiv.org/abs/2611.21152",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21152",
+    "date": "2026-11-18"
+  },
+  {
+    "title": "Regularized Score Centering",
+    "summary": "Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics…",
+    "authors": [
+      "Hao Bai",
+      "Chenlu Ye",
+      "Xuanchang Zhang",
+      "Aviral Kumar"
+    ],
+    "upvotes": 14,
+    "url": "https://huggingface.co/papers/2611.21791",
+    "arxiv": "https://arxiv.org/abs/2611.21791",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21791",
+    "date": "2026-11-18"
+  },
+  {
+    "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
+    "summary": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry…",
+    "authors": [
+      "Ruoyu Wang",
+      "Hao Zhong",
+      "Yanming Yang",
+      "Jiahao Tian"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.22925",
+    "arxiv": "https://arxiv.org/abs/2611.22925",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22925",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
+    "summary": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We firs…",
+    "authors": [
+      "Yunyang Ge",
+      "Weijie Kong",
+      "Ryan Xu",
+      "Yue Wu"
+    ],
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.21339",
+    "arxiv": "https://arxiv.org/abs/2611.21339",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21339",
     "date": "2026-11-17"
   },
   {
-    "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
-    "summary": "This unified foundation model enables the recovery of dense geometry, camera poses, and object tracking from diverse, uncalibrated observations in 4D scenes using a shared geometry and motion branch architecture.",
+    "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+    "summary": "Medical image understanding with vision-language models (VLMs) typically relies on autoregressively generating reasoning and answer tokens. These unnecessary tokens make the inference cost scale with the response length and force the answer to be parsed from free-form text, incurring avoidable latency and decision err…",
     "authors": [
-      "Yifan Wang",
-      "Weiguang Zhao",
-      "Ni Yang",
-      "Haoyu Guo"
+      "Fan Zhang",
+      "Hao Wu",
+      "Jinyang Wu",
+      "Hongyu Qu"
     ],
-    "upvotes": 13,
-    "url": "https://huggingface.co/papers/2611.23144",
-    "arxiv": "https://arxiv.org/abs/2611.23144",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23144",
+    "upvotes": 12,
+    "url": "https://huggingface.co/papers/2611.20992",
+    "arxiv": "https://arxiv.org/abs/2611.20992",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.20992",
+    "date": "2026-11-18"
+  },
+  {
+    "title": "Beyond Answering: Learning to Speak First and Act in Streaming Video",
+    "summary": "AURA 2.0 is a streaming video large language model that can initiate conversations, call tools, and perform interactive visual grounding, with long-horizon memory and a three-stage training scheme for improved streaming interaction.",
+    "authors": [
+      "Shuhan Li",
+      "Huankang Guan",
+      "Xintong Guo",
+      "Yang Bo"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.17048",
+    "arxiv": "https://arxiv.org/abs/2611.17048",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17048",
     "date": "2026-11-18"
   },
   {

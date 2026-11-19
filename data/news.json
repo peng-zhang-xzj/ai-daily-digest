@@ -1,66 +1,122 @@
 [
   {
-    "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-    "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-    "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-    "date": "Thu, 19 Nov 2026 00:42:56 +0000",
+    "title": "Meta’s new Muse Charm device may cost $300",
+    "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+    "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+    "date": "Thu, 19 Nov 2026 21:58:06 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-    "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-    "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-    "date": "Wed, 18 Nov 2026 23:45:00 +0000",
+    "title": "These tech outages are giving Y2K, AI agent style",
+    "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+    "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+    "date": "Thu, 19 Nov 2026 21:42:31 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-    "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-    "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-    "date": "Wed, 18 Nov 2026 23:25:17 +0000",
+    "title": "An OpenAI agent assigned a simple writing task decided on its own to build a secret email surveillance tool",
+    "summary": "An internal OpenAI model was supposed to create a fitness document but instead began planning scripts to secretly forward emails to an \"attacker.\" The agent recognized the conflict with its assigned task but dismissed it as an environment error. OpenAI identified security training against prompt injection as a possibl…",
+    "url": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
+    "date": "Thu, 19 Nov 2026 21:15:01 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "The unfolding Jensen Huang scandal: a timeline",
+    "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+    "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "date": "Thu, 19 Nov 2026 20:18:49 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-    "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-    "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-    "date": "Wed, 18 Nov 2026 23:17:28 +0000",
+    "title": "AI industry growth remains strong, but the pace is slowing",
+    "summary": "Token prices for AI models fell 21 percent in six weeks while usage volume hit a record high, according to the Ramp AI Index. Anthropic dominates with nearly 59 percent of token spending. Data from Ramp, Stripe and OpenRouter independently show the same pattern: the AI industry is still growing, but revenue momentum i…",
+    "url": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
+    "date": "Thu, 19 Nov 2026 19:28:19 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic’s IPO could deliver $156B to charity",
+    "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+    "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+    "date": "Thu, 19 Nov 2026 19:10:45 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-    "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-    "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-    "date": "Wed, 18 Nov 2026 22:58:11 +0000",
+    "title": "Google gives Gemini the ability to use your Mac for you",
+    "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+    "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "date": "Thu, 19 Nov 2026 18:09:11 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
-    "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-    "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-    "date": "Wed, 18 Nov 2026 22:11:15 +0000",
+    "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
+    "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+    "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "date": "Thu, 19 Nov 2026 17:38:40 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-    "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
-    "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
-    "date": "Wed, 18 Nov 2026 21:57:40 +0000",
+    "title": "Chinese tech firms face a double hit as chip shipments stop and overseas cloud access disappears",
+    "summary": "Stricter US export controls on AI chips are hitting fast. China's Moonshot AI walked away from a $150 million deal in Indonesia, while TSMC and Samsung stopped shipping to Chinese customers. A New York Times investigation found that Alibaba had routed Nvidia chips to Chinese military researchers through a web of front…",
+    "url": "https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/",
+    "date": "Thu, 19 Nov 2026 17:02:41 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
+    "summary": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
+    "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+    "date": "Thu, 19 Nov 2026 17:00:00 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
-    "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
-    "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
-    "date": "Wed, 18 Nov 2026 21:34:13 +0000",
+    "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+    "summary": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
+    "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+    "date": "Thu, 19 Nov 2026 16:59:23 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated",
-    "summary": "\"It makes America weaker to knock him out,\" the Anduril CEO said about ousted Nvidia leader Jensen Huang.",
-    "url": "https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/",
-    "date": "Wed, 18 Nov 2026 21:31:21 +0000",
+    "title": "At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development",
+    "summary": "In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.",
+    "url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+    "date": "Thu, 19 Nov 2026 16:19:41 +0000",
     "source": "TechCrunch AI"
+  },
+  {
+    "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
+    "summary": "Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.",
+    "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+    "date": "Thu, 19 Nov 2026 14:54:39 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates and political headwinds shake the sector",
+    "summary": "Anthropic launches the largest IPO in history, dethroning SpaceX as the previous record holder. Early investor Dustin Moskovitz is publicly distancing himself, warning that his early funding may have been an act \"that ended the world.\" The article Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates…",
+    "url": "https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector/",
+    "date": "Thu, 19 Nov 2026 14:02:22 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
+    "summary": "OpenAI's internal use of coding agents is growing fast, with theoretical token costs now exceeding researchers' base salaries. Even though teams are reluctant to work without these tools, the models still produce a lot of \"AI slop\" beyond routine tasks. The article OpenAI's own researchers now say they value their AI…",
+    "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
+    "date": "Thu, 19 Nov 2026 13:08:35 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
+    "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just week…",
+    "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
+    "date": "Thu, 19 Nov 2026 11:18:18 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months",
+    "summary": "Pulling text out of scanned books and records has gotten a lot cheaper with freely available AI models. The article OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months appeared first on The Decoder .",
+    "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
+    "date": "Thu, 19 Nov 2026 09:28:01 +0000",
+    "source": "The Decoder"
   },
   {
     "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
@@ -68,13 +124,6 @@
     "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
     "date": "Wed, 18 Nov 2026 21:03:23 +0000",
     "source": "The Decoder"
-  },
-  {
-    "title": "Sam Altman says his life is so weird that he’s unfazed by Andrew Garfield portraying him in upcoming movie",
-    "summary": "\"It doesn't feel like it's in like the top 10 weirdest things about my life,\" Altman said.",
-    "url": "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/",
-    "date": "Wed, 18 Nov 2026 20:07:01 +0000",
-    "source": "TechCrunch AI"
   },
   {
     "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
@@ -91,60 +140,11 @@
     "source": "The Decoder"
   },
   {
-    "title": "OpenAI says its models delivered a year's worth of chip optimization on top of AMD's own engineering",
-    "summary": "Working with AMD, OpenAI achieved up to 14 percent PPA improvement on AMD's flagship GPU IP in less than five months. According to OpenAI, that's roughly a year's worth of progress, and AMD has already folded the changes into a design sent to production. Anthropic is also applying AI to chip work to optimize cost and…",
-    "url": "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/",
-    "date": "Wed, 18 Nov 2026 18:00:33 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Pangram flags 99 percent of an award-winning Peruvian novel as AI-generated, but the publisher stands by its author",
-    "summary": "The AI detection tool Pangram flags 99 percent of a prize-winning Peruvian novel as AI-generated, but Mexican publisher Almadía is standing by the award after its own review. Pangram also classified over 80 percent of the author's personal texts as machine-written. French publisher Gallimard plans to start screening m…",
-    "url": "https://the-decoder.com/pangram-flags-99-percent-of-an-award-winning-peruvian-novel-as-ai-generated-but-the-publisher-stands-by-its-author/",
-    "date": "Wed, 18 Nov 2026 16:09:08 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Anthropic, OpenAI, and Google models readily marked medics, journalists, and surrendering soldiers as kamikaze drone targets",
-    "summary": "A Vals AI investigation shows that leading AI models from Anthropic, OpenAI and Google have almost no safeguards against use in autonomous weapons systems. In tests, the models readily flagged civilians as military targets, and a simple video game framing in the prompt was enough to override even belated refusals. The…",
-    "url": "https://the-decoder.com/anthropic-openai-and-google-models-readily-marked-medics-journalists-and-surrendering-soldiers-as-kamikaze-drone-targets/",
-    "date": "Wed, 18 Nov 2026 15:47:49 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "The AI Hype Index: AI is everywhere",
     "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, a…",
     "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
     "date": "Wed, 18 Nov 2026 14:42:44 +0000",
     "source": "MIT Tech Review"
-  },
-  {
-    "title": "Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems",
-    "summary": "Mistral's AI agent Vibe now has its own desktop app. The article Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems appeared first on The Decoder .",
-    "url": "https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/",
-    "date": "Wed, 18 Nov 2026 14:40:52 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OpenAI opens its AI systems to four independent on-site auditors for the first time",
-    "summary": "OpenAI is giving four independent audit organizations, including Apollo Research and METR, direct access to unreleased models, source code, and training data for the first time. The embedded reviews are designed to uncover hidden misbehavior and safety gaps. OpenAI can redact or delay reports, so how independent this…",
-    "url": "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/",
-    "date": "Wed, 18 Nov 2026 14:36:42 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Hugging Face now routes model requests through OpenRouter for the best price or speed",
-    "summary": "Hugging Face now routes language model requests through OpenRouter, which automatically selects the cheapest or fastest provider. Bring-your-own API keys for language models are going away. According to OpenRouter, the new routing cut capacity errors by 46 percent. Both partners face multibillion-dollar acquisitions.…",
-    "url": "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/",
-    "date": "Wed, 18 Nov 2026 14:33:44 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "More than half the electricity feeding America's largest data centers comes from gas and coal",
-    "summary": "A Harvard study published in Nature Sustainability found that 403 US hyperscale data centers produced roughly 25.7 million metric tons of CO2 between May 2024 and April 2025, more than all of Denmark. Over half of their electricity came from fossil fuels. With 2,000 additional facilities planned, the researchers warn…",
-    "url": "https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/",
-    "date": "Wed, 18 Nov 2026 14:25:04 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "This smell startup says its AI nose is as good as a human’s",
