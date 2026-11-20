@@ -1,5 +1,13 @@
 [
   {
+    "title": "Jensen Huang’s Nvidia legacy, Claude Fable 5.2 and Anthropic’s IPO, World Labs Releases Atlas to Developers",
+    "summary": "I was saddened to hear about Jensen Huang resigning from Nvidia last week. Yes, Jensen made serious mistakes. At the same time, he is a brilliant leader that has done tremendous work growing AI — providing compute to power training and inference, championing open source, and more — while turning Nvidia into one of the most valuable companies in the world.",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-380/",
+    "issue": 380,
+    "date": "2026-11-20T07:00:00.000-08:00"
+  },
+  {
     "title": "GPT-6 Cyber Versus Linux, The Problem With LLM-Powered Search, LLMs Edit Model Weights, Agentic Doc Retrieval",
     "summary": "Building an agent harness has been a rapidly growing method to build an AI agent. The OpenWorkerproject just released the open source OpenWorker Agent Harness SDK, which I invite you to check out. If you have not built an agent harness before, I encourage you to do so. (This skill is reflected in the AI Engineering Skills Map, and job interviews increasingl…",
     "image": "",
@@ -38,13 +46,5 @@
     "url": "https://www.deeplearning.ai/the-batch/issue-375/",
     "issue": 375,
     "date": "2026-10-16T07:00:12.000-07:00"
-  },
-  {
-    "title": "OpenAI’s DevDay, Google’s First Gemini 4 Model, Black Forest Labs Dives Into Robots",
-    "summary": "I think most people still underestimate the data center build-outs that will be required to meet demand. In 2024, I predicted that we would need more compute infrastructure for inference because of the large number of tokens consumed by agentic workflows.This remains true today. But many people still underestimate the compute infrastructure that will be nec…",
-    "image": "",
-    "url": "https://www.deeplearning.ai/the-batch/issue-374/",
-    "issue": 374,
-    "date": "2026-10-09T07:00:25.000-07:00"
   }
 ]

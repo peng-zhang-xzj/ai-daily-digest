@@ -1,5 +1,103 @@
 [
   {
+    "title": "OpenAI makes it much harder for attackers to extract how its latest AI models think",
+    "summary": "OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 percent to 0.2 percent. The company is also suspending thousands to tens of thousands of accounts ea…",
+    "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+    "date": "Fri, 20 Nov 2026 20:31:50 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+    "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+    "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+    "date": "Fri, 20 Nov 2026 19:53:41 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats",
+    "summary": "Signal is blocking screenshots to stop AI agents like Apple's Siri AI, Google's Gemini Intelligence, and Meta's Muse from reading private chats. The app calls it an \"existential threat\" to privacy, but admits its protections remain incomplete, including on macOS. Apple, Google, and Microsoft should follow suit. The ar…",
+    "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+    "date": "Fri, 20 Nov 2026 19:50:27 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+    "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+    "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+    "date": "Fri, 20 Nov 2026 19:32:08 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working",
+    "summary": "Google is bringing \"Computer Use\" to Gemini for Mac, letting the AI operate desktop apps, local files, and websites in an isolated background window with a live preview while users keep working. The article Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working appeared…",
+    "url": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
+    "date": "Fri, 20 Nov 2026 18:50:31 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "The most misunderstood graph in AI just got a major update",
+    "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report is an update to the organization’s time horizon plot, whic…",
+    "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "date": "Fri, 20 Nov 2026 18:15:15 +0000",
+    "source": "MIT Tech Review"
+  },
+  {
+    "title": "Chips can survive the space environment — can their financing?",
+    "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+    "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+    "date": "Fri, 20 Nov 2026 17:40:01 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others",
+    "summary": "A Bloomberg News analysis of 10 million job postings suggests AI is compounding China's already weak labor market. Entry-level workers and the creative industry are feeling the shift most, with more than 90% of Chinese micro-dramas now produced using AI. Former central bank adviser Cai Fang warns that a larger AI shoc…",
+    "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
+    "date": "Fri, 20 Nov 2026 15:56:03 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Apple joins the race for AI agents that control your device while raising new barriers for competitors",
+    "summary": "After Meta, OpenAI, Anthropic, and Google launched their own AI agents, Apple is now building one too - while making it harder for rivals to access its devices. The article Apple joins the race for AI agents that control your device while raising new barriers for competitors appeared first on The Decoder .",
+    "url": "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/",
+    "date": "Fri, 20 Nov 2026 15:03:25 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+    "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+    "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+    "date": "Fri, 20 Nov 2026 14:55:44 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
+    "summary": "Nvidia is close to acquiring AI startup Inception for at least $500 million, according to The Information. The company is just two years old and builds language models based on diffusion processes, an alternative approach to the token-by-token generation used by models like ChatGPT. The deal would bolster Nvidia's own…",
+    "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+    "date": "Fri, 20 Nov 2026 14:53:50 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Six AI-powered gadgets that could make your home office smarter",
+    "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+    "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+    "date": "Fri, 20 Nov 2026 14:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Google's latest homepage update pushes its search engine further toward an AI answer engine",
+    "summary": "Google is rolling out a collapsible sidebar globally on its Desktop Search homepage. In AI Mode, it lets users reopen recent AI searches, search threads, and create notebooks. Temporary threads that aren't saved to history are also launching worldwide. Google Search co-lead Robby Stein says the feature should make it…",
+    "url": "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/",
+    "date": "Fri, 20 Nov 2026 13:19:31 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+    "summary": "Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. The article Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill appeared first on The Decoder .",
+    "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+    "date": "Fri, 20 Nov 2026 09:59:51 +0000",
+    "source": "The Decoder"
+  },
+  {
     "title": "Apple may be developing its own AI agent that runs your Mac",
     "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
     "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
@@ -49,97 +147,6 @@
     "source": "The Decoder"
   },
   {
-    "title": "Anthropic’s IPO could deliver $156B to charity",
-    "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-    "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-    "date": "Thu, 19 Nov 2026 19:10:45 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Google gives Gemini the ability to use your Mac for you",
-    "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
-    "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "date": "Thu, 19 Nov 2026 18:09:11 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
-    "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-    "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-    "date": "Thu, 19 Nov 2026 17:38:40 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Chinese tech firms face a double hit as chip shipments stop and overseas cloud access disappears",
-    "summary": "Stricter US export controls on AI chips are hitting fast. China's Moonshot AI walked away from a $150 million deal in Indonesia, while TSMC and Samsung stopped shipping to Chinese customers. A New York Times investigation found that Alibaba had routed Nvidia chips to Chinese military researchers through a web of front…",
-    "url": "https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/",
-    "date": "Thu, 19 Nov 2026 17:02:41 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
-    "summary": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
-    "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-    "date": "Thu, 19 Nov 2026 17:00:00 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-    "summary": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
-    "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-    "date": "Thu, 19 Nov 2026 16:59:23 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates and political headwinds shake the sector",
-    "summary": "Anthropic launches the largest IPO in history, dethroning SpaceX as the previous record holder. Early investor Dustin Moskovitz is publicly distancing himself, warning that his early funding may have been an act \"that ended the world.\" The article Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates…",
-    "url": "https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector/",
-    "date": "Thu, 19 Nov 2026 14:02:22 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
-    "summary": "OpenAI's internal use of coding agents is growing fast, with theoretical token costs now exceeding researchers' base salaries. Even though teams are reluctant to work without these tools, the models still produce a lot of \"AI slop\" beyond routine tasks. The article OpenAI's own researchers now say they value their AI…",
-    "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
-    "date": "Thu, 19 Nov 2026 13:08:35 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
-    "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just week…",
-    "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
-    "date": "Thu, 19 Nov 2026 11:18:18 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months",
-    "summary": "Pulling text out of scanned books and records has gotten a lot cheaper with freely available AI models. The article OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months appeared first on The Decoder .",
-    "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
-    "date": "Thu, 19 Nov 2026 09:28:01 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
-    "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per million input tokens and $15 per million output tokens, Neon is priced above previous Gemini 4 models.…",
-    "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
-    "date": "Wed, 18 Nov 2026 21:03:23 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
-    "summary": "With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first time, includes native sound. A community gallery allows users to share and remix the worlds they've c…",
-    "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
-    "date": "Wed, 18 Nov 2026 19:26:25 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
-    "summary": "Microsoft's AI division MAI unveiled seven new models for code, security, images, language, and routing at Ignite. MAI Code 2 reaches 98 percent of GPT-6.1 Sol's performance at 40 percent of the cost, according to Microsoft. The models are built for running AI agents around the clock in enterprises. The article Micros…",
-    "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
-    "date": "Wed, 18 Nov 2026 18:47:36 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "The AI Hype Index: AI is everywhere",
     "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, a…",
     "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
@@ -158,13 +165,6 @@
     "summary": "To access a report, click on the corresponding image below.",
     "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/",
     "date": "Tue, 17 Nov 2026 14:39:46 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "The open-source movement wants Jensen Huang back",
-    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several…",
-    "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
-    "date": "Mon, 16 Nov 2026 18:38:47 +0000",
     "source": "MIT Tech Review"
   }
 ]
