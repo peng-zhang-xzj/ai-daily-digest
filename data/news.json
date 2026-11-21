@@ -1,5 +1,82 @@
 [
   {
+    "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+    "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "date": "Sat, 21 Nov 2026 21:37:10 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "A tale of two Nvidias",
+    "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+    "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+    "date": "Sat, 21 Nov 2026 21:07:42 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Here are the top AI agents that can live in your text messages",
+    "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+    "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "date": "Sat, 21 Nov 2026 17:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Nvidia researchers argue huge AI context windows are a dead end",
+    "summary": "Nvidia researchers argue that language models often don't need their full context windows—which are slow, expensive, and prone to errors—and propose an alternative. In tests, periodic summaries and targeted keyword search usually matched full-context results at a fraction of the cost. The team even proposes a new clas…",
+    "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+    "date": "Sat, 21 Nov 2026 16:23:45 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
+    "summary": "A Buddhist monastery in Vermont called Maple wants to establish itself as Silicon Valley's spiritual authority while creating its own AI god. According to a New Yorker report, leader Soryu Forall's group records every breath its members take to train an AI in his image. Former members report manipulation and psycholog…",
+    "url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+    "date": "Sat, 21 Nov 2026 16:04:29 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+    "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+    "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+    "date": "Sat, 21 Nov 2026 16:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+    "summary": "OpenAI has released new prompt templates for GPT-6.2 Astra and Sol meant to fix common model behaviors such as overly brief answers, unnecessary follow-up questions, and excessive testing when coding. The API is changing as well, since editing a conversation's history can discard reasoning content and lower response q…",
+    "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+    "date": "Sat, 21 Nov 2026 13:32:35 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+    "summary": "Anthropic mathematician Levent Alpöge says he used Claude to prove the Riemann hypothesis, math's most famous open problem for 167 years, with a proof formalized in Lean that spans over 250,000 pages. Just hours later, Stanford researchers published an independent, entirely human competing proof, and mathematicians ar…",
+    "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+    "date": "Sat, 21 Nov 2026 11:19:49 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
+    "summary": "Thinking Machines has released Inkling 2 Mini, an open looped transformer that runs 12 of its 24 layers three times per token. This lets the model reason internally for longer without generating extra text. On Artificial Analysis's Intelligence Index, it ties with Qwen3.8 27B at roughly six times lower cost. The artic…",
+    "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+    "date": "Sat, 21 Nov 2026 10:33:02 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
+    "summary": "The Nasdaq 100 has slipped into a bear market after its worst weekly loss since the Covid-19 crisis. Nvidia plunged 14 percent as the SEC reviews its accounting, and Anthropic lost nearly all of its gains a day after its record IPO. AI doubts, scandals, rising interest rates, and political headwinds are hitting overhe…",
+    "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+    "date": "Sat, 21 Nov 2026 10:27:44 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
+    "summary": "Bytedance and several US universities introduce Axion 1.0, an AI agent that rivals top commercial models from OpenAI and Anthropic on benchmarks after just three training phases. The researchers attribute the gains to carefully curated training data rather than ever more training steps. The model, data, and code are f…",
+    "url": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
+    "date": "Sat, 21 Nov 2026 09:17:24 +0000",
+    "source": "The Decoder"
+  },
+  {
     "title": "OpenAI makes it much harder for attackers to extract how its latest AI models think",
     "summary": "OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 percent to 0.2 percent. The company is also suspending thousands to tens of thousands of accounts ea…",
     "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
@@ -49,32 +126,11 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others",
-    "summary": "A Bloomberg News analysis of 10 million job postings suggests AI is compounding China's already weak labor market. Entry-level workers and the creative industry are feeling the shift most, with more than 90% of Chinese micro-dramas now produced using AI. Former central bank adviser Cai Fang warns that a larger AI shoc…",
-    "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
-    "date": "Fri, 20 Nov 2026 15:56:03 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Apple joins the race for AI agents that control your device while raising new barriers for competitors",
-    "summary": "After Meta, OpenAI, Anthropic, and Google launched their own AI agents, Apple is now building one too - while making it harder for rivals to access its devices. The article Apple joins the race for AI agents that control your device while raising new barriers for competitors appeared first on The Decoder .",
-    "url": "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/",
-    "date": "Fri, 20 Nov 2026 15:03:25 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
     "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
     "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
     "date": "Fri, 20 Nov 2026 14:55:44 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
-    "summary": "Nvidia is close to acquiring AI startup Inception for at least $500 million, according to The Information. The company is just two years old and builds language models based on diffusion processes, an alternative approach to the token-by-token generation used by models like ChatGPT. The deal would bolster Nvidia's own…",
-    "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
-    "date": "Fri, 20 Nov 2026 14:53:50 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "Six AI-powered gadgets that could make your home office smarter",
@@ -84,67 +140,11 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "Google's latest homepage update pushes its search engine further toward an AI answer engine",
-    "summary": "Google is rolling out a collapsible sidebar globally on its Desktop Search homepage. In AI Mode, it lets users reopen recent AI searches, search threads, and create notebooks. Temporary threads that aren't saved to history are also launching worldwide. Google Search co-lead Robby Stein says the feature should make it…",
-    "url": "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/",
-    "date": "Fri, 20 Nov 2026 13:19:31 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
-    "summary": "Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. The article Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill appeared first on The Decoder .",
-    "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
-    "date": "Fri, 20 Nov 2026 09:59:51 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "Apple may be developing its own AI agent that runs your Mac",
     "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
     "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
     "date": "Fri, 20 Nov 2026 00:56:01 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-    "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-    "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-    "date": "Fri, 20 Nov 2026 00:43:50 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Meta’s new Muse Charm device may cost $300",
-    "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
-    "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-    "date": "Thu, 19 Nov 2026 21:58:06 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "These tech outages are giving Y2K, AI agent style",
-    "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
-    "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-    "date": "Thu, 19 Nov 2026 21:42:31 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "An OpenAI agent assigned a simple writing task decided on its own to build a secret email surveillance tool",
-    "summary": "An internal OpenAI model was supposed to create a fitness document but instead began planning scripts to secretly forward emails to an \"attacker.\" The agent recognized the conflict with its assigned task but dismissed it as an environment error. OpenAI identified security training against prompt injection as a possibl…",
-    "url": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
-    "date": "Thu, 19 Nov 2026 21:15:01 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "The unfolding Jensen Huang scandal: a timeline",
-    "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-    "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-    "date": "Thu, 19 Nov 2026 20:18:49 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "AI industry growth remains strong, but the pace is slowing",
-    "summary": "Token prices for AI models fell 21 percent in six weeks while usage volume hit a record high, according to the Ramp AI Index. Anthropic dominates with nearly 59 percent of token spending. Data from Ramp, Stripe and OpenRouter independently show the same pattern: the AI industry is still growing, but revenue momentum i…",
-    "url": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
-    "date": "Thu, 19 Nov 2026 19:28:19 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "The AI Hype Index: AI is everywhere",

@@ -8,7 +8,7 @@
       "Shihua Zhang",
       "Xinchao Wang"
     ],
-    "upvotes": 146,
+    "upvotes": 148,
     "url": "https://huggingface.co/papers/2611.24738",
     "arxiv": "https://arxiv.org/abs/2611.24738",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24738",
@@ -23,7 +23,7 @@
       "Yechen Xu",
       "Hancheng Ye"
     ],
-    "upvotes": 65,
+    "upvotes": 67,
     "url": "https://huggingface.co/papers/2611.14848",
     "arxiv": "https://arxiv.org/abs/2611.14848",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.14848",
@@ -38,7 +38,7 @@
       "Ying Zhang",
       "Chong Sun"
     ],
-    "upvotes": 49,
+    "upvotes": 51,
     "url": "https://huggingface.co/papers/2611.21373",
     "arxiv": "https://arxiv.org/abs/2611.21373",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21373",
@@ -53,10 +53,38 @@
       "Fanding Huang",
       "Junchao Lin"
     ],
-    "upvotes": 45,
+    "upvotes": 49,
     "url": "https://huggingface.co/papers/2611.26444",
     "arxiv": "https://arxiv.org/abs/2611.26444",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26444",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+    "summary": "WeMM-Video is a family of Chinese-English bilingual omni-modal foundation models that unify text, image, audio, and video processing for joint audio-visual perception and reasoning, using hybrid thinking modes and large-scale training to achieve strong open-source video understanding results.",
+    "authors": [
+      "Changli Tang",
+      "Jie Yang",
+      "Tianyi Wang",
+      "Lei Li"
+    ],
+    "upvotes": 44,
+    "url": "https://huggingface.co/papers/2611.26409",
+    "arxiv": "https://arxiv.org/abs/2611.26409",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26409",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We…",
+    "authors": [
+      "Jiahao Huang",
+      "Jun Wang"
+    ],
+    "upvotes": 42,
+    "url": "https://huggingface.co/papers/2611.26590",
+    "arxiv": "https://arxiv.org/abs/2611.26590",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26590",
     "date": "2026-11-20"
   },
   {
@@ -75,21 +103,6 @@
     "date": "2026-11-19"
   },
   {
-    "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
-    "summary": "WeMM-Video is a family of Chinese-English bilingual omni-modal foundation models that unify text, image, audio, and video processing for joint audio-visual perception and reasoning, using hybrid thinking modes and large-scale training to achieve strong open-source video understanding results.",
-    "authors": [
-      "Changli Tang",
-      "Jie Yang",
-      "Tianyi Wang",
-      "Lei Li"
-    ],
-    "upvotes": 39,
-    "url": "https://huggingface.co/papers/2611.26409",
-    "arxiv": "https://arxiv.org/abs/2611.26409",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26409",
-    "date": "2026-11-20"
-  },
-  {
     "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
     "summary": "Agent evolution is often bottlenecked by noisy evaluations that cannot reliably identify better candidate artifacts or rank methods, so progress requires making true improvements detectable and accumulable.",
     "authors": [
@@ -98,23 +111,25 @@
       "Ao Lu",
       "Kuang Yan"
     ],
-    "upvotes": 37,
+    "upvotes": 39,
     "url": "https://huggingface.co/papers/2611.23068",
     "arxiv": "https://arxiv.org/abs/2611.23068",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.23068",
     "date": "2026-11-19"
   },
   {
-    "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
-    "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We…",
+    "title": "Posterior Matching Distillation",
+    "summary": "Posterior Matching Distillation trains a stochastic student to match a teacher diffusion model’s full posterior via tilted mean constraints, enabling high-quality few-step image generation without auxiliary score networks.",
     "authors": [
-      "Jiahao Huang",
-      "Jun Wang"
+      "Hidir Yesiltepe",
+      "Julius Berner",
+      "Arash Vahdat",
+      "Pinar Yanardag"
     ],
-    "upvotes": 35,
-    "url": "https://huggingface.co/papers/2611.26590",
-    "arxiv": "https://arxiv.org/abs/2611.26590",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26590",
+    "upvotes": 37,
+    "url": "https://huggingface.co/papers/2611.26629",
+    "arxiv": "https://arxiv.org/abs/2611.26629",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26629",
     "date": "2026-11-20"
   },
   {
@@ -126,25 +141,10 @@
       "Yang Shi",
       "Zhuoran Zhang"
     ],
-    "upvotes": 32,
+    "upvotes": 35,
     "url": "https://huggingface.co/papers/2611.26595",
     "arxiv": "https://arxiv.org/abs/2611.26595",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26595",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Posterior Matching Distillation",
-    "summary": "Posterior Matching Distillation trains a stochastic student to match a teacher diffusion model’s full posterior via tilted mean constraints, enabling high-quality few-step image generation without auxiliary score networks.",
-    "authors": [
-      "Hidir Yesiltepe",
-      "Julius Berner",
-      "Arash Vahdat",
-      "Pinar Yanardag"
-    ],
-    "upvotes": 31,
-    "url": "https://huggingface.co/papers/2611.26629",
-    "arxiv": "https://arxiv.org/abs/2611.26629",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26629",
     "date": "2026-11-20"
   },
   {
@@ -156,7 +156,7 @@
       "Junyoung Hong",
       "Seon Joo Kim"
     ],
-    "upvotes": 30,
+    "upvotes": 32,
     "url": "https://huggingface.co/papers/2611.21383",
     "arxiv": "https://arxiv.org/abs/2611.21383",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21383",
@@ -171,7 +171,7 @@
       "Lyndon Duong",
       "Lahav Lipson"
     ],
-    "upvotes": 28,
+    "upvotes": 30,
     "url": "https://huggingface.co/papers/2611.26603",
     "arxiv": "https://arxiv.org/abs/2611.26603",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26603",
@@ -186,7 +186,7 @@
       "Rui Yang",
       "Feng Luo"
     ],
-    "upvotes": 28,
+    "upvotes": 29,
     "url": "https://huggingface.co/papers/2611.24154",
     "arxiv": "https://arxiv.org/abs/2611.24154",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24154",
@@ -216,7 +216,7 @@
       "Yun Chen",
       "Yong Wang"
     ],
-    "upvotes": 25,
+    "upvotes": 26,
     "url": "https://huggingface.co/papers/2611.24654",
     "arxiv": "https://arxiv.org/abs/2611.24654",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24654",
@@ -231,10 +231,25 @@
       "Yuran Wang",
       "Tengfei Liu"
     ],
-    "upvotes": 24,
+    "upvotes": 25,
     "url": "https://huggingface.co/papers/2611.26380",
     "arxiv": "https://arxiv.org/abs/2611.26380",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26380",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators",
+    "summary": "A statistical test, AltRA-Test, determines when large language models can replace human annotators by comparing inter-annotator agreement in resampled mixed human-LLM panels, and evaluations show it often requires about 100 items and makes better replacement decisions than baselines.",
+    "authors": [
+      "Nagham Omar",
+      "Rotem Dror",
+      "Almog Gueta",
+      "Avigdor Gal"
+    ],
+    "upvotes": 23,
+    "url": "https://huggingface.co/papers/2611.26073",
+    "arxiv": "https://arxiv.org/abs/2611.26073",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26073",
     "date": "2026-11-20"
   },
   {
@@ -253,20 +268,6 @@
     "date": "2026-11-20"
   },
   {
-    "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
-    "summary": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline superv…",
-    "authors": [
-      "Phuong Tuan Dat",
-      "Qi Li",
-      "Xinchao Wang"
-    ],
-    "upvotes": 22,
-    "url": "https://huggingface.co/papers/2611.24789",
-    "arxiv": "https://arxiv.org/abs/2611.24789",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24789",
-    "date": "2026-11-19"
-  },
-  {
     "title": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
     "summary": "LightTAR adapts dimensionality reduction to the prediction task by adding target-aware features from encoder layers via regularized partial least squares, improving multimodal tabular model performance with minimal runtime overhead.",
     "authors": [
@@ -275,7 +276,7 @@
       "Shoham Grunblat",
       "Roi Reichart"
     ],
-    "upvotes": 22,
+    "upvotes": 23,
     "url": "https://huggingface.co/papers/2611.17600",
     "arxiv": "https://arxiv.org/abs/2611.17600",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.17600",
@@ -290,10 +291,39 @@
       "Linxin Song",
       "Jiarui Feng"
     ],
-    "upvotes": 22,
+    "upvotes": 23,
     "url": "https://huggingface.co/papers/2611.25387",
     "arxiv": "https://arxiv.org/abs/2611.25387",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.25387",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "summary": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline superv…",
+    "authors": [
+      "Phuong Tuan Dat",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.24789",
+    "arxiv": "https://arxiv.org/abs/2611.24789",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24789",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+    "summary": "ZeroVLN is a slow-fast vision-language navigation framework that avoids navigation-domain supervised fine-tuning of the VLM brain by using a semantic tool-calling interface and closed-loop reinforcement learning to coordinate a language-based brain with an action expert, improving VLN-CE performance while preserving g…",
+    "authors": [
+      "Zixuan Huang",
+      "Yang Zhou",
+      "Guli Zhang",
+      "Sunzhu Li"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.26414",
+    "arxiv": "https://arxiv.org/abs/2611.26414",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26414",
     "date": "2026-11-20"
   },
   {
@@ -312,36 +342,6 @@
     "date": "2026-11-19"
   },
   {
-    "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
-    "summary": "ZeroVLN is a slow-fast vision-language navigation framework that avoids navigation-domain supervised fine-tuning of the VLM brain by using a semantic tool-calling interface and closed-loop reinforcement learning to coordinate a language-based brain with an action expert, improving VLN-CE performance while preserving g…",
-    "authors": [
-      "Zixuan Huang",
-      "Yang Zhou",
-      "Guli Zhang",
-      "Sunzhu Li"
-    ],
-    "upvotes": 21,
-    "url": "https://huggingface.co/papers/2611.26414",
-    "arxiv": "https://arxiv.org/abs/2611.26414",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26414",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators",
-    "summary": "A statistical test, AltRA-Test, determines when large language models can replace human annotators by comparing inter-annotator agreement in resampled mixed human-LLM panels, and evaluations show it often requires about 100 items and makes better replacement decisions than baselines.",
-    "authors": [
-      "Nagham Omar",
-      "Rotem Dror",
-      "Almog Gueta",
-      "Avigdor Gal"
-    ],
-    "upvotes": 20,
-    "url": "https://huggingface.co/papers/2611.26073",
-    "arxiv": "https://arxiv.org/abs/2611.26073",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26073",
-    "date": "2026-11-20"
-  },
-  {
     "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
     "summary": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry…",
     "authors": [
@@ -354,6 +354,36 @@
     "url": "https://huggingface.co/papers/2611.22925",
     "arxiv": "https://arxiv.org/abs/2611.22925",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.22925",
+    "date": "2026-11-19"
+  },
+  {
+    "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+    "summary": "A fixed set of steering vectors added to a frozen diffusion transformer recovers most of the quality gains from reinforcement learning post-training, indicating that much of the improvement comes from a constant shift rather than prompt-specific transformations.",
+    "authors": [
+      "Tuna Han Salih Meral",
+      "Kaan Oktay",
+      "Alec Helbling",
+      "Atakan Kara"
+    ],
+    "upvotes": 17,
+    "url": "https://huggingface.co/papers/2611.26627",
+    "arxiv": "https://arxiv.org/abs/2611.26627",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26627",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
+    "summary": "AnyS1 converts procedural skills into shared decision points, trains a small calibrated pointer model to resolve routine choices, and falls back to a large model when uncertain, reducing cost and latency while preserving reliability.",
+    "authors": [
+      "Rui Li",
+      "Liyang He",
+      "Zheng Zhang",
+      "Zhenya Huang"
+    ],
+    "upvotes": 16,
+    "url": "https://huggingface.co/papers/2611.23751",
+    "arxiv": "https://arxiv.org/abs/2611.23751",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23751",
     "date": "2026-11-19"
   },
   {
@@ -372,18 +402,75 @@
     "date": "2026-11-20"
   },
   {
-    "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-    "summary": "A fixed set of steering vectors added to a frozen diffusion transformer recovers most of the quality gains from reinforcement learning post-training, indicating that much of the improvement comes from a constant shift rather than prompt-specific transformations.",
+    "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
+    "summary": "AFFECT, an auxiliary objective that trains world models to match visual responses to temporally correlated action noise, improves rollout fidelity and planning success in simulated and real robotic tasks.",
     "authors": [
-      "Tuna Han Salih Meral",
-      "Kaan Oktay",
-      "Alec Helbling",
-      "Atakan Kara"
+      "John Won",
+      "Yonghoon Dong",
+      "Jinwoo Shin"
+    ],
+    "upvotes": 15,
+    "url": "https://huggingface.co/papers/2611.25980",
+    "arxiv": "https://arxiv.org/abs/2611.25980",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25980",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+    "summary": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-dr…",
+    "authors": [
+      "Timo Ropinski",
+      "Sebastian Kranz"
+    ],
+    "upvotes": 15,
+    "url": "https://huggingface.co/papers/2611.26408",
+    "arxiv": "https://arxiv.org/abs/2611.26408",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26408",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "WM^MLLM: Turning MLLMs into World Models",
+    "summary": "WM^MLLM uses multimodal large language models to maintain an external panorama state with revision history, enabling persistent, editable world generation from a single image with exact revisits and local edits.",
+    "authors": [
+      "Baiang Li",
+      "Enze Xie",
+      "Jincheng Yu",
+      "Jin Wang"
+    ],
+    "upvotes": 15,
+    "url": "https://huggingface.co/papers/2611.24193",
+    "arxiv": "https://arxiv.org/abs/2611.24193",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24193",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining",
+    "summary": "LightningMoBA combines dynamic routing, KV-centric ownership, and runtime pipelining to accelerate long-context attention while maintaining or improving quality.",
+    "authors": [
+      "Yingqi Shi",
+      "Junru Lu",
+      "Yun Liu",
+      "Di Yin"
     ],
     "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.26627",
-    "arxiv": "https://arxiv.org/abs/2611.26627",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26627",
+    "url": "https://huggingface.co/papers/2611.26268",
+    "arxiv": "https://arxiv.org/abs/2611.26268",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26268",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+    "summary": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable…",
+    "authors": [
+      "Guoxin Chen",
+      "Shuang Sun",
+      "Fanzhe Meng",
+      "Xinyu Tang"
+    ],
+    "upvotes": 14,
+    "url": "https://huggingface.co/papers/2611.26510",
+    "arxiv": "https://arxiv.org/abs/2611.26510",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26510",
     "date": "2026-11-20"
   },
   {
@@ -402,36 +489,6 @@
     "date": "2026-11-19"
   },
   {
-    "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
-    "summary": "AnyS1 converts procedural skills into shared decision points, trains a small calibrated pointer model to resolve routine choices, and falls back to a large model when uncertain, reducing cost and latency while preserving reliability.",
-    "authors": [
-      "Rui Li",
-      "Liyang He",
-      "Zheng Zhang",
-      "Zhenya Huang"
-    ],
-    "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.23751",
-    "arxiv": "https://arxiv.org/abs/2611.23751",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23751",
-    "date": "2026-11-19"
-  },
-  {
-    "title": "WM^MLLM: Turning MLLMs into World Models",
-    "summary": "WM^MLLM uses multimodal large language models to maintain an external panorama state with revision history, enabling persistent, editable world generation from a single image with exact revisits and local edits.",
-    "authors": [
-      "Baiang Li",
-      "Enze Xie",
-      "Jincheng Yu",
-      "Jin Wang"
-    ],
-    "upvotes": 14,
-    "url": "https://huggingface.co/papers/2611.24193",
-    "arxiv": "https://arxiv.org/abs/2611.24193",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24193",
-    "date": "2026-11-20"
-  },
-  {
     "title": "LogT: Logically Think with Images for Visual Search",
     "summary": "Thinking with images empowers vision-language models (VLMs) to use an external Zoom-in tool for fine-grained visual search. Recent works employ supervised fine-tuning (SFT) and reinforcement learning (RL) with tool-specific designs to enable such capabilities. However, achieving logical reasoning alongside accurate an…",
     "authors": [
@@ -447,35 +504,6 @@
     "date": "2026-11-19"
   },
   {
-    "title": "Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining",
-    "summary": "LightningMoBA combines dynamic routing, KV-centric ownership, and runtime pipelining to accelerate long-context attention while maintaining or improving quality.",
-    "authors": [
-      "Yingqi Shi",
-      "Junru Lu",
-      "Yun Liu",
-      "Di Yin"
-    ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.26268",
-    "arxiv": "https://arxiv.org/abs/2611.26268",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26268",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
-    "summary": "AFFECT, an auxiliary objective that trains world models to match visual responses to temporally correlated action noise, improves rollout fidelity and planning success in simulated and real robotic tasks.",
-    "authors": [
-      "John Won",
-      "Yonghoon Dong",
-      "Jinwoo Shin"
-    ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.25980",
-    "arxiv": "https://arxiv.org/abs/2611.25980",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25980",
-    "date": "2026-11-20"
-  },
-  {
     "title": "On-Policy Morphing into Hybrid Attention Models",
     "summary": "FlashMorph2 performs on-policy layer selection and weight adaptation for hybrid attention Transformers, improving long-context benchmark scores while selecting layers efficiently across model scales.",
     "authors": [
@@ -484,7 +512,7 @@
       "Jianbin Zheng",
       "Huafeng Kuang"
     ],
-    "upvotes": 12,
+    "upvotes": 13,
     "url": "https://huggingface.co/papers/2611.24809",
     "arxiv": "https://arxiv.org/abs/2611.24809",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24809",
@@ -499,7 +527,7 @@
       "Daoyuan Chen",
       "Cheng Chen"
     ],
-    "upvotes": 12,
+    "upvotes": 13,
     "url": "https://huggingface.co/papers/2611.24651",
     "arxiv": "https://arxiv.org/abs/2611.24651",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24651",
@@ -514,24 +542,26 @@
       "Song Han",
       "Ligeng Zhu"
     ],
-    "upvotes": 12,
+    "upvotes": 13,
     "url": "https://huggingface.co/papers/2611.23388",
     "arxiv": "https://arxiv.org/abs/2611.23388",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.23388",
     "date": "2026-11-19"
   },
   {
-    "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
-    "summary": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-dr…",
+    "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+    "summary": "A large-scale benchmark of 94 curated biomedical tabular datasets standardizes evaluation across classification, regression, and multi-target tasks and finds that foundation models lead overall while tree-based models and tuned multilayer perceptrons remain competitive under cost constraints.",
     "authors": [
-      "Timo Ropinski",
-      "Sebastian Kranz"
+      "Pau Mateo-Bernadó",
+      "Saivenkata Nagavyjayanthi Polapragada",
+      "David Bonet",
+      "Pol Arbiol Rakuljic"
     ],
-    "upvotes": 12,
-    "url": "https://huggingface.co/papers/2611.26408",
-    "arxiv": "https://arxiv.org/abs/2611.26408",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26408",
-    "date": "2026-11-20"
+    "upvotes": 13,
+    "url": "https://huggingface.co/papers/2611.23779",
+    "arxiv": "https://arxiv.org/abs/2611.23779",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23779",
+    "date": "2026-11-19"
   },
   {
     "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
@@ -549,48 +579,17 @@
     "date": "2026-11-19"
   },
   {
-    "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
-    "summary": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable…",
+    "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+    "summary": "An assistant monitoring a person performing a procedure is most useful when it can detect mistakes while there is still time to recover. This requires judging actions against task instructions as the video unfolds, identifying the attempted step, locating it in time, and assessing its execution. Existing online detect…",
     "authors": [
-      "Guoxin Chen",
-      "Shuang Sun",
-      "Fanzhe Meng",
-      "Xinyu Tang"
+      "Amit Feldman",
+      "Ilan Shimshoni",
+      "Rotem Dror"
     ],
-    "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.26510",
-    "arxiv": "https://arxiv.org/abs/2611.26510",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26510",
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.25567",
+    "arxiv": "https://arxiv.org/abs/2611.25567",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25567",
     "date": "2026-11-20"
-  },
-  {
-    "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
-    "summary": "A large-scale benchmark of 94 curated biomedical tabular datasets standardizes evaluation across classification, regression, and multi-target tasks and finds that foundation models lead overall while tree-based models and tuned multilayer perceptrons remain competitive under cost constraints.",
-    "authors": [
-      "Pau Mateo-Bernadó",
-      "Saivenkata Nagavyjayanthi Polapragada",
-      "David Bonet",
-      "Pol Arbiol Rakuljic"
-    ],
-    "upvotes": 10,
-    "url": "https://huggingface.co/papers/2611.23779",
-    "arxiv": "https://arxiv.org/abs/2611.23779",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23779",
-    "date": "2026-11-19"
-  },
-  {
-    "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
-    "summary": "BLIP-Live unifies data, metrics, inference, and training for proactive streaming video understanding, using the PAUC-F metric and achieving state-of-the-art results on proactive streaming benchmarks.",
-    "authors": [
-      "Kanchana Ranasinghe",
-      "Honglu Zhou",
-      "Dominick Reilly",
-      "Le Xue"
-    ],
-    "upvotes": 9,
-    "url": "https://huggingface.co/papers/2611.21553",
-    "arxiv": "https://arxiv.org/abs/2611.21553",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21553",
-    "date": "2026-11-19"
   }
 ]
