@@ -8,7 +8,7 @@
       "Ying Zhang",
       "Chong Sun"
     ],
-    "upvotes": 52,
+    "upvotes": 55,
     "url": "https://huggingface.co/papers/2611.21373",
     "arxiv": "https://arxiv.org/abs/2611.21373",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.21373",
@@ -23,7 +23,7 @@
       "Fanding Huang",
       "Junchao Lin"
     ],
-    "upvotes": 50,
+    "upvotes": 52,
     "url": "https://huggingface.co/papers/2611.26444",
     "arxiv": "https://arxiv.org/abs/2611.26444",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26444",
@@ -38,7 +38,7 @@
       "Tianyi Wang",
       "Lei Li"
     ],
-    "upvotes": 44,
+    "upvotes": 45,
     "url": "https://huggingface.co/papers/2611.26409",
     "arxiv": "https://arxiv.org/abs/2611.26409",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26409",
@@ -51,25 +51,10 @@
       "Jiahao Huang",
       "Jun Wang"
     ],
-    "upvotes": 42,
+    "upvotes": 43,
     "url": "https://huggingface.co/papers/2611.26590",
     "arxiv": "https://arxiv.org/abs/2611.26590",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26590",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Posterior Matching Distillation",
-    "summary": "Posterior Matching Distillation trains a stochastic student to match a teacher diffusion model’s full posterior via tilted mean constraints, enabling high-quality few-step image generation without auxiliary score networks.",
-    "authors": [
-      "Hidir Yesiltepe",
-      "Julius Berner",
-      "Arash Vahdat",
-      "Pinar Yanardag"
-    ],
-    "upvotes": 37,
-    "url": "https://huggingface.co/papers/2611.26629",
-    "arxiv": "https://arxiv.org/abs/2611.26629",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26629",
     "date": "2026-11-20"
   },
   {
@@ -81,25 +66,25 @@
       "Yang Shi",
       "Zhuoran Zhang"
     ],
-    "upvotes": 35,
+    "upvotes": 39,
     "url": "https://huggingface.co/papers/2611.26595",
     "arxiv": "https://arxiv.org/abs/2611.26595",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26595",
     "date": "2026-11-20"
   },
   {
-    "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
-    "summary": "A plug-and-play objective, VODA, groups per-pixel contributors by local depth to supervise all Gaussians in selected depth clusters, improving volumetric segmentation and enabling evaluation via Removal-3D and Removal Depth Error.",
+    "title": "Posterior Matching Distillation",
+    "summary": "Posterior Matching Distillation trains a stochastic student to match a teacher diffusion model’s full posterior via tilted mean constraints, enabling high-quality few-step image generation without auxiliary score networks.",
     "authors": [
-      "Jeonghwan Cho",
-      "Minsu Kim",
-      "Junyoung Hong",
-      "Seon Joo Kim"
+      "Hidir Yesiltepe",
+      "Julius Berner",
+      "Arash Vahdat",
+      "Pinar Yanardag"
     ],
-    "upvotes": 32,
-    "url": "https://huggingface.co/papers/2611.21383",
-    "arxiv": "https://arxiv.org/abs/2611.21383",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21383",
+    "upvotes": 39,
+    "url": "https://huggingface.co/papers/2611.26629",
+    "arxiv": "https://arxiv.org/abs/2611.26629",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26629",
     "date": "2026-11-20"
   },
   {
@@ -111,10 +96,25 @@
       "Lyndon Duong",
       "Lahav Lipson"
     ],
-    "upvotes": 30,
+    "upvotes": 34,
     "url": "https://huggingface.co/papers/2611.26603",
     "arxiv": "https://arxiv.org/abs/2611.26603",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26603",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+    "summary": "A plug-and-play objective, VODA, groups per-pixel contributors by local depth to supervise all Gaussians in selected depth clusters, improving volumetric segmentation and enabling evaluation via Removal-3D and Removal Depth Error.",
+    "authors": [
+      "Jeonghwan Cho",
+      "Minsu Kim",
+      "Junyoung Hong",
+      "Seon Joo Kim"
+    ],
+    "upvotes": 33,
+    "url": "https://huggingface.co/papers/2611.21383",
+    "arxiv": "https://arxiv.org/abs/2611.21383",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21383",
     "date": "2026-11-20"
   },
   {
@@ -201,10 +201,25 @@
       "Alec Helbling",
       "Atakan Kara"
     ],
-    "upvotes": 17,
+    "upvotes": 20,
     "url": "https://huggingface.co/papers/2611.26627",
     "arxiv": "https://arxiv.org/abs/2611.26627",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26627",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "summary": "Language models are trained once, frozen and deployed: improving one again takes another training run, and a prompt, a scaffold or extra computation at inference is gone once the task ends. A frontier model has been shown to edit the weights of a much smaller one. We ask whether a model can rewrite its own weights to…",
+    "authors": [
+      "Jiajun Fan",
+      "Neil He",
+      "Changyi Yang",
+      "Andy Mao"
+    ],
+    "upvotes": 19,
+    "url": "https://huggingface.co/papers/2611.21885",
+    "arxiv": "https://arxiv.org/abs/2611.21885",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21885",
     "date": "2026-11-20"
   },
   {
@@ -216,7 +231,7 @@
       "Yiran Wang",
       "Yue Yang"
     ],
-    "upvotes": 16,
+    "upvotes": 18,
     "url": "https://huggingface.co/papers/2611.24011",
     "arxiv": "https://arxiv.org/abs/2611.24011",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24011",
@@ -230,7 +245,7 @@
       "Yonghoon Dong",
       "Jinwoo Shin"
     ],
-    "upvotes": 15,
+    "upvotes": 17,
     "url": "https://huggingface.co/papers/2611.25980",
     "arxiv": "https://arxiv.org/abs/2611.25980",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.25980",
@@ -243,7 +258,7 @@
       "Timo Ropinski",
       "Sebastian Kranz"
     ],
-    "upvotes": 15,
+    "upvotes": 17,
     "url": "https://huggingface.co/papers/2611.26408",
     "arxiv": "https://arxiv.org/abs/2611.26408",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26408",
@@ -258,7 +273,7 @@
       "Jincheng Yu",
       "Jin Wang"
     ],
-    "upvotes": 15,
+    "upvotes": 16,
     "url": "https://huggingface.co/papers/2611.24193",
     "arxiv": "https://arxiv.org/abs/2611.24193",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24193",
@@ -303,7 +318,7 @@
       "Jianbin Zheng",
       "Huafeng Kuang"
     ],
-    "upvotes": 13,
+    "upvotes": 14,
     "url": "https://huggingface.co/papers/2611.24809",
     "arxiv": "https://arxiv.org/abs/2611.24809",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.24809",
@@ -317,7 +332,7 @@
       "Ilan Shimshoni",
       "Rotem Dror"
     ],
-    "upvotes": 11,
+    "upvotes": 12,
     "url": "https://huggingface.co/papers/2611.25567",
     "arxiv": "https://arxiv.org/abs/2611.25567",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.25567",
@@ -344,25 +359,10 @@
       "Wenbo Chen",
       "Yichuan Li"
     ],
-    "upvotes": 8,
+    "upvotes": 9,
     "url": "https://huggingface.co/papers/2611.19230",
     "arxiv": "https://arxiv.org/abs/2611.19230",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.19230",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Language Models Can Rewrite Their Own Weights",
-    "summary": "Language models are trained once, frozen and deployed: improving one again takes another training run, and a prompt, a scaffold or extra computation at inference is gone once the task ends. A frontier model has been shown to edit the weights of a much smaller one. We ask whether a model can rewrite its own weights to…",
-    "authors": [
-      "Jiajun Fan",
-      "Neil He",
-      "Changyi Yang",
-      "Andy Mao"
-    ],
-    "upvotes": 8,
-    "url": "https://huggingface.co/papers/2611.21885",
-    "arxiv": "https://arxiv.org/abs/2611.21885",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21885",
     "date": "2026-11-20"
   },
   {
@@ -374,7 +374,7 @@
       "Zihan Liao",
       "Jin Qin"
     ],
-    "upvotes": 7,
+    "upvotes": 8,
     "url": "https://huggingface.co/papers/2611.20455",
     "arxiv": "https://arxiv.org/abs/2611.20455",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.20455",
@@ -389,10 +389,80 @@
       "Jinduo Guo",
       "Yue Huang"
     ],
-    "upvotes": 7,
+    "upvotes": 8,
     "url": "https://huggingface.co/papers/2611.26239",
     "arxiv": "https://arxiv.org/abs/2611.26239",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26239",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+    "summary": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and…",
+    "authors": [
+      "Tanmay Sah"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.26450",
+    "arxiv": "https://arxiv.org/abs/2611.26450",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26450",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
+    "summary": "SpecWM is a training-free inference framework for streaming video world models that verifies draft chunks using the target model's latent velocity field and applies reusable corrections via threshold-based accept/refine/reject decisions to improve visual quality, control, and speed.",
+    "authors": [
+      "Jiaming Li",
+      "Lingzhen Li",
+      "Xiaze Yang",
+      "Chenyu Zhu"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.26211",
+    "arxiv": "https://arxiv.org/abs/2611.26211",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26211",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+    "summary": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilitie…",
+    "authors": [
+      "Yang Wan",
+      "Linchao Zhu"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.26248",
+    "arxiv": "https://arxiv.org/abs/2611.26248",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26248",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU",
+    "summary": "Dense metric mapping from a single camera and IMU remains challenging: visual-inertial odometry (VIO) provides metric motion but sparse geometry, whereas feed-forward depth models predict dense structure without ensuring metric scale. We present Accord, which constructs an accurate online dense metric map from any cam…",
+    "authors": [
+      "Jaafar Mahmoud",
+      "Arthur Movsesyan",
+      "Cuong Huynh",
+      "Mikhail Iumanov"
+    ],
+    "upvotes": 6,
+    "url": "https://huggingface.co/papers/2611.25279",
+    "arxiv": "https://arxiv.org/abs/2611.25279",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25279",
+    "date": "2026-11-20"
+  },
+  {
+    "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
+    "summary": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share t…",
+    "authors": [
+      "Shuang Wu",
+      "Jiachen Qian",
+      "Youtian Lin",
+      "Feihu Zhang"
+    ],
+    "upvotes": 6,
+    "url": "https://huggingface.co/papers/2611.26511",
+    "arxiv": "https://arxiv.org/abs/2611.26511",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26511",
     "date": "2026-11-20"
   },
   {
@@ -424,30 +494,16 @@
     "date": "2026-11-20"
   },
   {
-    "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
-    "summary": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and…",
+    "title": "Do Probing and Steering Favor the Same Directions Within and Across Language Models?",
+    "summary": "The best direction for probing a concept in a language model's hidden state is not the best direction for steering the model toward that concept, with implications for transfer and abstention.",
     "authors": [
-      "Tanmay Sah"
+      "Afshin Sadeghi",
+      "Daniel Becker"
     ],
     "upvotes": 5,
-    "url": "https://huggingface.co/papers/2611.26450",
-    "arxiv": "https://arxiv.org/abs/2611.26450",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26450",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU",
-    "summary": "Dense metric mapping from a single camera and IMU remains challenging: visual-inertial odometry (VIO) provides metric motion but sparse geometry, whereas feed-forward depth models predict dense structure without ensuring metric scale. We present Accord, which constructs an accurate online dense metric map from any cam…",
-    "authors": [
-      "Jaafar Mahmoud",
-      "Arthur Movsesyan",
-      "Cuong Huynh",
-      "Mikhail Iumanov"
-    ],
-    "upvotes": 5,
-    "url": "https://huggingface.co/papers/2611.25279",
-    "arxiv": "https://arxiv.org/abs/2611.25279",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25279",
+    "url": "https://huggingface.co/papers/2611.19499",
+    "arxiv": "https://arxiv.org/abs/2611.19499",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19499",
     "date": "2026-11-20"
   },
   {
@@ -466,19 +522,6 @@
     "date": "2026-11-20"
   },
   {
-    "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
-    "summary": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilitie…",
-    "authors": [
-      "Yang Wan",
-      "Linchao Zhu"
-    ],
-    "upvotes": 5,
-    "url": "https://huggingface.co/papers/2611.26248",
-    "arxiv": "https://arxiv.org/abs/2611.26248",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26248",
-    "date": "2026-11-20"
-  },
-  {
     "title": "DailySafe: Benchmarking Dynamic Safety Awareness in Everyday Multi-Turn Multimodal Interactions",
     "summary": "A new benchmark, DailySafe, evaluates the ability of multimodal large language models to maintain safety and address evolving risks within complex, multi-turn, real-world interactions.",
     "authors": [
@@ -491,34 +534,6 @@
     "url": "https://huggingface.co/papers/2611.26298",
     "arxiv": "https://arxiv.org/abs/2611.26298",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.26298",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
-    "summary": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share t…",
-    "authors": [
-      "Shuang Wu",
-      "Jiachen Qian",
-      "Youtian Lin",
-      "Feihu Zhang"
-    ],
-    "upvotes": 4,
-    "url": "https://huggingface.co/papers/2611.26511",
-    "arxiv": "https://arxiv.org/abs/2611.26511",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26511",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "Do Probing and Steering Favor the Same Directions Within and Across Language Models?",
-    "summary": "The best direction for probing a concept in a language model's hidden state is not the best direction for steering the model toward that concept, with implications for transfer and abstention.",
-    "authors": [
-      "Afshin Sadeghi",
-      "Daniel Becker"
-    ],
-    "upvotes": 4,
-    "url": "https://huggingface.co/papers/2611.19499",
-    "arxiv": "https://arxiv.org/abs/2611.19499",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19499",
     "date": "2026-11-20"
   },
   {
@@ -562,21 +577,6 @@
     "url": "https://huggingface.co/papers/2611.00911",
     "arxiv": "https://arxiv.org/abs/2611.00911",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.00911",
-    "date": "2026-11-20"
-  },
-  {
-    "title": "In Situ Training of Optical Neural Networks by Coding Agents",
-    "summary": "A coding agent trains an optical neural network from measurements alone by reparametrizing it with interpretable optical elements, achieving better classification and image encoding than gradient-free methods and approaching backpropagation through a calibrated model at lower cost.",
-    "authors": [
-      "Ilker Oguz",
-      "Colin Christian",
-      "Christophe Moser",
-      "Demetri Psaltis"
-    ],
-    "upvotes": 3,
-    "url": "https://huggingface.co/papers/2611.23875",
-    "arxiv": "https://arxiv.org/abs/2611.23875",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23875",
     "date": "2026-11-20"
   }
 ]

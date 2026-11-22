@@ -1,5 +1,61 @@
 [
   {
+    "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+    "summary": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+    "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "date": "Sun, 22 Nov 2026 21:14:07 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Why data centers are at the center of the Big Tech backlash",
+    "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+    "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+    "date": "Sun, 22 Nov 2026 18:08:43 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+    "summary": "A new real-world test puts AI coding agents in a simulated developer job with colleagues, project boards, and incomplete handoffs, where they have to keep developing software on their own and reliably close open tickets in a messy daily workflow. Even Opus 5.5 and Astra fall far short, solving fewer than one in ten ta…",
+    "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+    "date": "Sun, 22 Nov 2026 15:15:48 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
+    "summary": "Perplexity is launching a Monitor API that searches the web on a schedule and alerts agents via webhook only when relevant changes occur. Its own decision model filters out unimportant results. For Perplexity, the API is part of a broader strategy to stand out from an increasingly interchangeable chatbot business thro…",
+    "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+    "date": "Sun, 22 Nov 2026 14:20:28 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+    "summary": "METR reports that leading AI models like Opus 5.5 and GPT-6 Astra are improving rapidly at research tasks but getting harder to measure. Current data can't rule out a dangerous acceleration in AI development, the organization warns, though it also says common tests may overestimate what the models can actually do. The…",
+    "url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+    "date": "Sun, 22 Nov 2026 13:00:43 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Security researchers show how cheap AI inference providers steal keys and snoop on users",
+    "summary": "Security researchers at Dragos used two million fake AI requests to uncover serious vulnerabilities in the AI supply chain, finding at least three compromised providers, hundreds of stolen AWS keys, and marketplace resellers who were simply reading customer requests. OpenRouter responded by removing three providers an…",
+    "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+    "date": "Sun, 22 Nov 2026 12:07:56 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+    "summary": "The Lean and Mathlib community has officially confirmed Levent Alpöge's proof of the Riemann hypothesis as correct. Dozens of independent verifiers checked the 17 million lines of computer code. The solution arrived years earlier than expected: Terence Tao had predicted it wouldn't happen until around 2050 and didn't…",
+    "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+    "date": "Sun, 22 Nov 2026 11:08:31 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+    "summary": "OpenAI's GPT-6.2 Astra and Sol give much shorter, more direct answers than their predecessors, but they are also less willing to admit uncertainty. Anthropic's Claude models score well ahead on transparency. The article GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude appeared…",
+    "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+    "date": "Sun, 22 Nov 2026 09:41:37 +0000",
+    "source": "The Decoder"
+  },
+  {
     "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
     "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
     "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
@@ -56,34 +112,6 @@
     "source": "The Decoder"
   },
   {
-    "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
-    "summary": "Thinking Machines has released Inkling 2 Mini, an open looped transformer that runs 12 of its 24 layers three times per token. This lets the model reason internally for longer without generating extra text. On Artificial Analysis's Intelligence Index, it ties with Qwen3.8 27B at roughly six times lower cost. The artic…",
-    "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
-    "date": "Sat, 21 Nov 2026 10:33:02 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
-    "summary": "The Nasdaq 100 has slipped into a bear market after its worst weekly loss since the Covid-19 crisis. Nvidia plunged 14 percent as the SEC reviews its accounting, and Anthropic lost nearly all of its gains a day after its record IPO. AI doubts, scandals, rising interest rates, and political headwinds are hitting overhe…",
-    "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
-    "date": "Sat, 21 Nov 2026 10:27:44 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
-    "summary": "Bytedance and several US universities introduce Axion 1.0, an AI agent that rivals top commercial models from OpenAI and Anthropic on benchmarks after just three training phases. The researchers attribute the gains to carefully curated training data rather than ever more training steps. The model, data, and code are f…",
-    "url": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
-    "date": "Sat, 21 Nov 2026 09:17:24 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "OpenAI makes it much harder for attackers to extract how its latest AI models think",
-    "summary": "OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 percent to 0.2 percent. The company is also suspending thousands to tens of thousands of accounts ea…",
-    "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
-    "date": "Fri, 20 Nov 2026 20:31:50 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
     "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
     "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
@@ -91,25 +119,11 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats",
-    "summary": "Signal is blocking screenshots to stop AI agents like Apple's Siri AI, Google's Gemini Intelligence, and Meta's Muse from reading private chats. The app calls it an \"existential threat\" to privacy, but admits its protections remain incomplete, including on macOS. Apple, Google, and Microsoft should follow suit. The ar…",
-    "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
-    "date": "Fri, 20 Nov 2026 19:50:27 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
     "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
     "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
     "date": "Fri, 20 Nov 2026 19:32:08 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working",
-    "summary": "Google is bringing \"Computer Use\" to Gemini for Mac, letting the AI operate desktop apps, local files, and websites in an isolated background window with a live preview while users keep working. The article Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working appeared…",
-    "url": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
-    "date": "Fri, 20 Nov 2026 18:50:31 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "The most misunderstood graph in AI just got a major update",
@@ -130,20 +144,6 @@
     "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
     "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
     "date": "Fri, 20 Nov 2026 14:55:44 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Six AI-powered gadgets that could make your home office smarter",
-    "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
-    "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-    "date": "Fri, 20 Nov 2026 14:00:00 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Apple may be developing its own AI agent that runs your Mac",
-    "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-    "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-    "date": "Fri, 20 Nov 2026 00:56:01 +0000",
     "source": "TechCrunch AI"
   },
   {
