@@ -1,1 +1,337 @@
-[]
+[
+  {
+    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+    "summary": "Constraining residual stream mixing within the Birkhoff polytope via geometric contraction improves stability and scalability of hyper-connections in large-scale dense and mixture-of-experts model pretraining.",
+    "authors": [
+      "Haowei He",
+      "Ziwen Zhao",
+      "Chenshuo Pan",
+      "Gang Lin"
+    ],
+    "upvotes": 86,
+    "url": "https://huggingface.co/papers/2611.27193",
+    "arxiv": "https://arxiv.org/abs/2611.27193",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27193",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Non-penetrating World Models",
+    "summary": "A benchmark and lightweight framework leverage hidden states from frozen diffusion transformers to detect and prevent object penetration in interactive video world models, reducing physical violations and generalizing zero-shot.",
+    "authors": [
+      "Yuhang Dai",
+      "Yinwei Wu",
+      "Ziyue Lin",
+      "Han Ji"
+    ],
+    "upvotes": 54,
+    "url": "https://huggingface.co/papers/2611.27963",
+    "arxiv": "https://arxiv.org/abs/2611.27963",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27963",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Clover-35B-A3B-Preview Technical Report",
+    "summary": "We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation. Clover adapts Gated Delta Networks to block diffusion by combining recurrent memory of previously generated context with…",
+    "authors": [
+      "DiffuSpace Technical Team"
+    ],
+    "upvotes": 36,
+    "url": "https://huggingface.co/papers/2611.24636",
+    "arxiv": "https://arxiv.org/abs/2611.24636",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24636",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Reading the Unreadable: Text-Aware Image Super-Resolution Needs Reasoning",
+    "summary": "Text-aware image super-resolution (TAISR) aims to recover high-resolution images from low-resolution inputs while preserving textual content. Existing methods treat this as a visual restoration problem, yet severely degraded text often cannot be read from local visual evidence alone. Humans instead read it by reasonin…",
+    "authors": [
+      "Jaeseong Lee",
+      "Jinwoo Kim",
+      "Jinho Jeong",
+      "Seon Joo Kim"
+    ],
+    "upvotes": 21,
+    "url": "https://huggingface.co/papers/2611.15449",
+    "arxiv": "https://arxiv.org/abs/2611.15449",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.15449",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+    "summary": "Future-OPSD trains vision-language models via on-policy self-distillation and a contrastive privilege advantage derived from a foresight score, improving video foresight prediction and planning without extra annotations or LLM supervision.",
+    "authors": [
+      "Jingchen Sun",
+      "Jiaxing Zhang",
+      "Qingqiao Hu",
+      "Dingqiang Ye"
+    ],
+    "upvotes": 19,
+    "url": "https://huggingface.co/papers/2611.26954",
+    "arxiv": "https://arxiv.org/abs/2611.26954",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26954",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+    "summary": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing challenges for existing architectures. Standard Transformers accumulate layer-wise, token-level KV caches, incurring linear GPU memory growth and quadratic computat…",
+    "authors": [
+      "Chang Nie",
+      "Chaoyou Fu",
+      "Songlin Liu",
+      "Yiqing Hu"
+    ],
+    "upvotes": 17,
+    "url": "https://huggingface.co/papers/2611.27973",
+    "arxiv": "https://arxiv.org/abs/2611.27973",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27973",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Duopra: From Full-Duplex Conversation to Full-Duplex Agency",
+    "summary": "Full-duplex interaction models exhibit strong conversational agency, enabling natural, low-latency turn-taking, backchannels, and interruptions. However, completing tasks further requires task agency: timely tool invocation and argument revision following user corrections. Frontend-backend agents separate initiation f…",
+    "authors": [
+      "Chiyu Chen",
+      "Pengzhou Cheng",
+      "Yuezhao Ma",
+      "Xiaocheng Li"
+    ],
+    "upvotes": 11,
+    "url": "https://huggingface.co/papers/2611.25773",
+    "arxiv": "https://arxiv.org/abs/2611.25773",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25773",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+    "summary": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations oft…",
+    "authors": [
+      "Henry Zheng",
+      "Weibo Gong",
+      "Yang Yue",
+      "Rui Huang"
+    ],
+    "upvotes": 10,
+    "url": "https://huggingface.co/papers/2611.21485",
+    "arxiv": "https://arxiv.org/abs/2611.21485",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21485",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+    "summary": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scal…",
+    "authors": [
+      "Shiwei Wu",
+      "Yuwen Pan",
+      "Zhi Li",
+      "Yaowen Li"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.24077",
+    "arxiv": "https://arxiv.org/abs/2611.24077",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24077",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+    "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fa…",
+    "authors": [
+      "Yiyang Du",
+      "Yuxuan Kuang",
+      "Qitao Zhao",
+      "Yixuan Wang"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.26613",
+    "arxiv": "https://arxiv.org/abs/2611.26613",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26613",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+    "summary": "StereoVLM is a geometry-aware binocular vision-language model trained with hierarchical supervision from calibrated stereo to enable metric 3D spatial reasoning, evaluated by Stereo3D-Bench.",
+    "authors": [
+      "Chi Yan",
+      "Guoyang Zhao",
+      "Wentao Yuan",
+      "Yixiao Ge"
+    ],
+    "upvotes": 7,
+    "url": "https://huggingface.co/papers/2611.27915",
+    "arxiv": "https://arxiv.org/abs/2611.27915",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27915",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+    "summary": "A diagnostic benchmark evaluates multimodal large language models on multi-granularity identity matching, revealing gaps in understanding, reasoning, and evidence-grounded judgment across base and variant levels.",
+    "authors": [
+      "Hengyu You",
+      "Xintong Wang",
+      "Jin Cao",
+      "Liang Ding"
+    ],
+    "upvotes": 5,
+    "url": "https://huggingface.co/papers/2611.22343",
+    "arxiv": "https://arxiv.org/abs/2611.22343",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22343",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Intent Contracts: Taking Tools Away from Agents",
+    "summary": "Intent contracts, in which a planner submits logged contracts and a trusted model writes tool calls, do not reduce unauthorized actions and match blind review, but complete more benign over-reach tasks than an intent-visible reviewer.",
+    "authors": [
+      "Ziyuan Wang",
+      "Genliang Zhu",
+      "Xiaobo Chen",
+      "Chu Wang"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.24025",
+    "arxiv": "https://arxiv.org/abs/2611.24025",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24025",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+    "summary": "Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. Our…",
+    "authors": [
+      "Zhenling Chen",
+      "Zhiguo Zeng",
+      "Anne Barros"
+    ],
+    "upvotes": 4,
+    "url": "https://huggingface.co/papers/2611.25252",
+    "arxiv": "https://arxiv.org/abs/2611.25252",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25252",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
+    "summary": "A method that explicitly extracts a user's stylistic profile and uses it to guide drafting and revision improves personalized long-form text generation over retrieval-augmented baselines.",
+    "authors": [
+      "Jenitha Reddy Patel",
+      "Sameeksha Kini",
+      "Amulya Rayasam",
+      "Anisa Dye"
+    ],
+    "upvotes": 3,
+    "url": "https://huggingface.co/papers/2611.27211",
+    "arxiv": "https://arxiv.org/abs/2611.27211",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27211",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence",
+    "summary": "-05-X-03), Known Exploited Vulnerabilities (KEV) catalogs, and exploitation sightings. We introduce an evidence model implemented in Vulnerability-Lookup that selects the earliest evidence for each lifecycle event, distinguishes vulnerability-specific records, preserves date precision, and ensures traceability to orig…",
+    "authors": [
+      "Cédric Bonhomme",
+      "Alexandre Dulaunoy"
+    ],
+    "upvotes": 3,
+    "url": "https://huggingface.co/papers/2611.22479",
+    "arxiv": "https://arxiv.org/abs/2611.22479",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22479",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
+    "summary": "Prune to Expand (P2E) refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound, improving prompt enhancement alignment with human preferences and visual quality over conventional dense-caption supervised fine-tuning.",
+    "authors": [
+      "Tianhe Wu",
+      "Qilin Sun",
+      "Kede Ma"
+    ],
+    "upvotes": 3,
+    "url": "https://huggingface.co/papers/2611.27229",
+    "arxiv": "https://arxiv.org/abs/2611.27229",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27229",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
+    "summary": "A training-free framework tracks objects through physical assemblies and disassemblies by generating and evaluating split/merge proposals and querying a multimodal large language model for verification and labeling, achieving state-of-the-art accuracy and faster performance on a new benchmark.",
+    "authors": [
+      "Davide Gardenal",
+      "Mingxuan Liu",
+      "Flavio Vella",
+      "Quentin Guimard"
+    ],
+    "upvotes": 3,
+    "url": "https://huggingface.co/papers/2611.27398",
+    "arxiv": "https://arxiv.org/abs/2611.27398",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27398",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models",
+    "summary": "GameWM divides game generation between an engine that preserves exact rules and state and a generative video model that creates visual and interactive detail, allowing personalized games with consistent mechanics.",
+    "authors": [
+      "Bing He",
+      "Runze Wang",
+      "Fei Zha",
+      "Zhongyuan Wu"
+    ],
+    "upvotes": 2,
+    "url": "https://huggingface.co/papers/2611.19247",
+    "arxiv": "https://arxiv.org/abs/2611.19247",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.19247",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Search From the Start: Search-Native Pretraining for Language Models",
+    "summary": "Modern language models (LMs) are increasingly deployed with access to search tools at inference. Yet pretraining remains predominantly focused on predicting static text, with search capabilities typically introduced during post-training. We propose Search-Native Pretraining as a practical route to teach search capabil…",
+    "authors": [
+      "Kaustubh Ponkshe",
+      "Gyung Hyun Je",
+      "Stefan Taga",
+      "Colin Raffel"
+    ],
+    "upvotes": 2,
+    "url": "https://huggingface.co/papers/2611.26809",
+    "arxiv": "https://arxiv.org/abs/2611.26809",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26809",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Motion-Aware Reward Modeling for Instruction-Guided Video Editing",
+    "summary": "Reward models for instruction-guided video editing can favor temporal consistency at the expense of motion. We study this failure, termed motion collapse, using controlled motion-suppression variants of real edits. On VE-Bench, the evaluated composite reward prefers a motion-suppressed candidate in 97% of cases. Learn…",
+    "authors": [
+      "Li Li",
+      "Xiangbo Gao",
+      "Bo Ni",
+      "Samyadeep Basu"
+    ],
+    "upvotes": 1,
+    "url": "https://huggingface.co/papers/2611.22495",
+    "arxiv": "https://arxiv.org/abs/2611.22495",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22495",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
+    "summary": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the ph…",
+    "authors": [
+      "Turhan Can Kargin"
+    ],
+    "upvotes": 1,
+    "url": "https://huggingface.co/papers/2611.27490",
+    "arxiv": "https://arxiv.org/abs/2611.27490",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27490",
+    "date": "2026-11-23"
+  },
+  {
+    "title": "Autoregressive View Model",
+    "summary": "We present the Autoregressive View Model (AVM), which generates a scene as a stream of views without constructing an explicit 3D representation. Through a unified in-context interface, AVM conditions on images or videos to generate short clips along a requested camera path. Visual context grounds reconstruction and in…",
+    "authors": [
+      "Jensen",
+      "Zhou",
+      "Samuel Rota Bulo",
+      "Denis Rozumny"
+    ],
+    "upvotes": 0,
+    "url": "https://huggingface.co/papers/2611.23417",
+    "arxiv": "https://arxiv.org/abs/2611.23417",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23417",
+    "date": "2026-11-23"
+  }
+]
