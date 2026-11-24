@@ -1,31 +1,136 @@
 [
   {
-    "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-    "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
-    "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-    "date": "Mon, 23 Nov 2026 22:05:50 +0000",
+    "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
+    "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
+    "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+    "date": "Tue, 24 Nov 2026 21:48:27 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-    "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
-    "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-    "date": "Mon, 23 Nov 2026 22:02:05 +0000",
+    "title": "Even the best AI agents struggle with everyday life",
+    "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
+    "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+    "date": "Tue, 24 Nov 2026 21:33:29 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
-    "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
-    "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
-    "date": "Mon, 23 Nov 2026 21:47:41 +0000",
+    "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+    "summary": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
+    "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+    "date": "Tue, 24 Nov 2026 21:32:38 +0000",
     "source": "TechCrunch AI"
   },
   {
-    "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-    "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
-    "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
-    "date": "Mon, 23 Nov 2026 21:25:42 +0000",
+    "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+    "summary": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
+    "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+    "date": "Tue, 24 Nov 2026 21:19:52 +0000",
     "source": "TechCrunch AI"
+  },
+  {
+    "title": "Anthropic turns Claude Artifacts into standalone desktop apps for macOS and Windows",
+    "summary": "Anthropic now lets you install Claude Artifacts as desktop apps on Mac and Windows, and a free account is enough. You build one in chat without writing code, and it can add menu bar items, send notifications, and create transparent windows. The article Anthropic turns Claude Artifacts into standalone desktop apps for…",
+    "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/",
+    "date": "Tue, 24 Nov 2026 20:42:29 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic tops 700 million monthly MCP SDK downloads and expands the protocol for more autonomous AI agents",
+    "summary": "Two years after launch, Anthropic reports more than 700 million monthly downloads for its MCP interface standard. New features such as background tasks, follow-up questions for users, and file uploads are meant to let Claude work more independently. The article Anthropic tops 700 million monthly MCP SDK downloads and…",
+    "url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/",
+    "date": "Tue, 24 Nov 2026 19:23:41 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
+    "summary": "Anthropic’s post-IPO slump could put pressure on AI startup valuations.",
+    "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+    "date": "Tue, 24 Nov 2026 18:30:42 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+    "summary": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws.",
+    "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+    "date": "Tue, 24 Nov 2026 18:02:59 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Novartis CEO says AI will shave four years off drug development, not cure all disease",
+    "summary": "Novartis CEO Vas Narasimhan, who also sits on Anthropic's board, is pushing back on the cure-all promises from Anthropic CEO Amodei and DeepMind founder Hassabis. AI will speed up drug development, he says, but it won't beat cancer in a decade. The real value lies \"somewhere in the middle.\" The article Novartis CEO sa…",
+    "url": "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/",
+    "date": "Tue, 24 Nov 2026 18:01:55 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "OpenAI o1 co-creator Noam Brown urges promising students to drop out as AI enters a \"very steep rate of progress\"",
+    "summary": "OpenAI researcher Noam Brown is urging promising students to drop out, saying it's \"not a great time to sit on the sidelines.\" The o1 co-creator says AI is still in a \"centaur period\" and struggles with planning and self-correction, though he expects a \"very steep rate of progress\" soon. According to Brown, language m…",
+    "url": "https://the-decoder.com/openai-o1-co-creator-noam-brown-urges-promising-students-to-drop-out-as-ai-enters-a-very-steep-rate-of-progress/",
+    "date": "Tue, 24 Nov 2026 17:58:44 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+    "summary": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+    "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "date": "Tue, 24 Nov 2026 17:00:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+    "summary": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
+    "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+    "date": "Tue, 24 Nov 2026 16:46:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+    "summary": "Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.",
+    "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+    "date": "Tue, 24 Nov 2026 16:10:00 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Pinterest will now let parents limit the AI-generated content their teens see",
+    "summary": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
+    "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+    "date": "Tue, 24 Nov 2026 16:02:37 +0000",
+    "source": "TechCrunch AI"
+  },
+  {
+    "title": "Raising the stakes for enterprise networks with AI modernization",
+    "summary": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than the same tasks done…",
+    "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+    "date": "Tue, 24 Nov 2026 15:15:16 +0000",
+    "source": "MIT Tech Review"
+  },
+  {
+    "title": "Anthropic researcher stands by his AI-assisted Riemann proof but owns up to \"stupid things\" in the rollout",
+    "summary": "Anthropic researcher Levent Alpöge is walking back parts of his announcement of an AI-assisted proof of the generalized Riemann hypothesis. The claim that it ran to more than 250,000 pages was a joke, he says, and the published Lean code is \"full of garbage.\" He still stands by the math. The article Anthropic research…",
+    "url": "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/",
+    "date": "Tue, 24 Nov 2026 14:28:41 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Dozens of insiders say OpenAI and Anthropic's unreleased models have outgrown their safety measures",
+    "summary": "According to an Axios report, many employees at OpenAI and Anthropic believe the companies' own unreleased frontier models can no longer be safely controlled. Both companies are internally debating whether to halt releases or even stop training altogether, while employee trust in leadership is eroding. The article Doz…",
+    "url": "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+    "date": "Tue, 24 Nov 2026 14:02:31 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "German researchers call for computer science to reinvent itself as \"Computer and AI Science\"",
+    "summary": "In a position paper, TU Darmstadt researchers call for redefining computer science as \"Computer and AI Science.\" Their biggest concern is code generated on the fly at runtime, which they say upends today's safety and correctness guarantees. The article German researchers call for computer science to reinvent itself as…",
+    "url": "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/",
+    "date": "Tue, 24 Nov 2026 12:30:49 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own",
+    "summary": "Anthropic has introduced Claude Ship, a new tool currently in beta that automatically reviews, corrects, and approves suggestions for code changes in accordance with team guidelines. The article Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own appeared first on The Decoder .",
+    "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
+    "date": "Tue, 24 Nov 2026 11:26:23 +0000",
+    "source": "The Decoder"
   },
   {
     "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
@@ -35,20 +140,6 @@
     "source": "The Decoder"
   },
   {
-    "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
-    "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
-    "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
-    "date": "Mon, 23 Nov 2026 20:38:53 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-    "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
-    "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-    "date": "Mon, 23 Nov 2026 19:14:46 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
     "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
     "summary": "Since May, SpaceXSI has been renting compute to competitors like Anthropic and Google while scaling back its own AI projects. Anthropic pays about $3.1 billion a month, Google $800 million, the New York Times reports. After its June IPO, SpaceXSI disbanded the 60-person Grok Imagine team, among other cuts. The article…",
     "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
@@ -56,95 +147,11 @@
     "source": "The Decoder"
   },
   {
-    "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
-    "summary": "OpenAI chief scientist Jakub Pachocki has released internal perplexity scores for the entire GPT series for the first time, up to an unreleased model beyond the current generation. The metric shows that core capabilities emerge at surprisingly precise thresholds. Pachocki is pushing to make perplexity an industry-wide…",
-    "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
-    "date": "Mon, 23 Nov 2026 18:42:38 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
-    "summary": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.",
-    "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
-    "date": "Mon, 23 Nov 2026 18:12:22 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
     "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
     "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentien…",
     "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
     "date": "Mon, 23 Nov 2026 17:36:08 +0000",
     "source": "MIT Tech Review"
-  },
-  {
-    "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
-    "summary": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
-    "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
-    "date": "Mon, 23 Nov 2026 17:14:23 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Jensen Huang isn’t out of the woods yet",
-    "summary": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement.",
-    "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
-    "date": "Mon, 23 Nov 2026 16:57:40 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
-    "summary": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC.",
-    "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
-    "date": "Mon, 23 Nov 2026 16:39:10 +0000",
-    "source": "TechCrunch AI"
-  },
-  {
-    "title": "Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model",
-    "summary": "Z.ai is moving its flagship GLM-5.4 model to a loop architecture in which 28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters. Benchmark scores are only available for a smaller 30B test model so far, and Z.ai is positioning GLM-5.4 as the start…",
-    "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
-    "date": "Mon, 23 Nov 2026 15:13:03 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Chinese military fears AI could let the US find and destroy its nuclear missiles",
-    "summary": "Chinese military researchers fear that AI advances could give the US an edge in the nuclear balance of power. The article Chinese military fears AI could let the US find and destroy its nuclear missiles appeared first on The Decoder .",
-    "url": "https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles/",
-    "date": "Mon, 23 Nov 2026 14:43:23 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Nvidia tried life without Jensen Huang and it lasted about two weeks",
-    "summary": "Nvidia's board of directors has reinstated Jensen Huang as president, CEO, and board member, effective immediately. The article Nvidia tried life without Jensen Huang and it lasted about two weeks appeared first on The Decoder .",
-    "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
-    "date": "Mon, 23 Nov 2026 14:24:47 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough",
-    "summary": "Meta's Chief AI Officer Alexandr Wang sees the recent AI-assisted proof sketch of the Riemann Hypothesis as a clear sign that superintelligence is right around the corner. The article Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough appeared first on The Decoder .",
-    "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/",
-    "date": "Mon, 23 Nov 2026 13:59:36 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
-    "summary": "US intelligence agencies tracked contacts between Alice Huang and China's Ministry of State Security for over a year, the New York Times reports. The surveillance ran parallel to her secret affair with then-Nvidia CEO Jensen Huang. Federal investigators are now looking into whether a network of companies in Southeast…",
-    "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
-    "date": "Mon, 23 Nov 2026 13:45:32 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
-    "summary": "OpenAI's GPT-6.2 Astra independently produced a machine-verifiable Lean proof of Smoktunowicz's gap theorem, the first of its kind according to Vals AI. The model chose its own approach because key foundations were missing from Mathlib. On Autoform-Hard, Astra now leads the leaderboard with 49 of 56 tasks solved. The…",
-    "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
-    "date": "Mon, 23 Nov 2026 12:17:01 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
-    "summary": "A new real-world test puts AI coding agents in a simulated developer job with colleagues, project boards, and incomplete handoffs, where they have to keep developing software on their own and reliably close open tickets in a messy daily workflow. Even Opus 5.5 and Astra fall far short, solving fewer than one in ten ta…",
-    "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
-    "date": "Sun, 22 Nov 2026 15:15:48 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "The most misunderstood graph in AI just got a major update",
@@ -158,13 +165,6 @@
     "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, a…",
     "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
     "date": "Wed, 18 Nov 2026 14:42:44 +0000",
-    "source": "MIT Tech Review"
-  },
-  {
-    "title": "This smell startup says its AI nose is as good as a human’s",
-    "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup Osmo calls the wor…",
-    "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
-    "date": "Wed, 18 Nov 2026 10:20:30 +0000",
     "source": "MIT Tech Review"
   }
 ]
