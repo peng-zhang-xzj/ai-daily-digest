@@ -8,7 +8,7 @@
       "Zeyu Zhang",
       "Jayeon Kang"
     ],
-    "upvotes": 207,
+    "upvotes": 222,
     "url": "https://huggingface.co/papers/2611.29897",
     "arxiv": "https://arxiv.org/abs/2611.29897",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.29897",
@@ -22,25 +22,10 @@
       "Qi Li",
       "Xinchao Wang"
     ],
-    "upvotes": 136,
+    "upvotes": 137,
     "url": "https://huggingface.co/papers/2611.30989",
     "arxiv": "https://arxiv.org/abs/2611.30989",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30989",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
-    "summary": "A systematic framework shows that frontier multimodal models can serve as robot policies when harnessed with interfaces favoring native visual reasoning and tool use, achieving high success in simulated and real manipulation tasks.",
-    "authors": [
-      "Xiao-Ming Wu",
-      "Kang Liao",
-      "Yuexiao Ma",
-      "Taolin Zhang"
-    ],
-    "upvotes": 103,
-    "url": "https://huggingface.co/papers/2611.31201",
-    "arxiv": "https://arxiv.org/abs/2611.31201",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.31201",
     "date": "2026-11-24"
   },
   {
@@ -52,26 +37,26 @@
       "Jie Sheng",
       "Youxi Pan"
     ],
-    "upvotes": 102,
+    "upvotes": 106,
     "url": "https://huggingface.co/papers/2611.25403",
     "arxiv": "https://arxiv.org/abs/2611.25403",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.25403",
     "date": "2026-11-25"
   },
   {
-    "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
-    "summary": "A reinforcement learning method rewards agents for delaying commitment until their inferred posterior over answers is sufficiently narrow, improving evidence-based answering across vision-language benchmarks.",
+    "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+    "summary": "A systematic framework shows that frontier multimodal models can serve as robot policies when harnessed with interfaces favoring native visual reasoning and tool use, achieving high success in simulated and real manipulation tasks.",
     "authors": [
-      "Richmond Sin Jing Xuan",
-      "Peilin Feng",
-      "Wenbin Wang",
-      "Soujanya Poria"
+      "Xiao-Ming Wu",
+      "Kang Liao",
+      "Yuexiao Ma",
+      "Taolin Zhang"
     ],
-    "upvotes": 96,
-    "url": "https://huggingface.co/papers/2611.32884",
-    "arxiv": "https://arxiv.org/abs/2611.32884",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32884",
-    "date": "2026-11-25"
+    "upvotes": 106,
+    "url": "https://huggingface.co/papers/2611.31201",
+    "arxiv": "https://arxiv.org/abs/2611.31201",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.31201",
+    "date": "2026-11-24"
   },
   {
     "title": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
@@ -82,10 +67,40 @@
       "Yichen Liu",
       "Long-Kai Huang"
     ],
-    "upvotes": 95,
+    "upvotes": 102,
     "url": "https://huggingface.co/papers/2611.28947",
     "arxiv": "https://arxiv.org/abs/2611.28947",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.28947",
+    "date": "2026-11-25"
+  },
+  {
+    "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+    "summary": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual b…",
+    "authors": [
+      "Yongchang Zhang",
+      "Jie Huang",
+      "Yunhe Ni",
+      "Ningyu Zhou"
+    ],
+    "upvotes": 101,
+    "url": "https://huggingface.co/papers/2611.34849",
+    "arxiv": "https://arxiv.org/abs/2611.34849",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34849",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+    "summary": "A reinforcement learning method rewards agents for delaying commitment until their inferred posterior over answers is sufficiently narrow, improving evidence-based answering across vision-language benchmarks.",
+    "authors": [
+      "Richmond Sin Jing Xuan",
+      "Peilin Feng",
+      "Wenbin Wang",
+      "Soujanya Poria"
+    ],
+    "upvotes": 98,
+    "url": "https://huggingface.co/papers/2611.32884",
+    "arxiv": "https://arxiv.org/abs/2611.32884",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32884",
     "date": "2026-11-25"
   },
   {
@@ -97,11 +112,26 @@
       "Shengping Li",
       "Xingyuan Yuan"
     ],
-    "upvotes": 86,
+    "upvotes": 92,
     "url": "https://huggingface.co/papers/2611.30634",
     "arxiv": "https://arxiv.org/abs/2611.30634",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30634",
     "date": "2026-11-25"
+  },
+  {
+    "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+    "summary": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily im…",
+    "authors": [
+      "Med Team",
+      "Ming Hu",
+      "Cheng Tang",
+      "Wei Li"
+    ],
+    "upvotes": 84,
+    "url": "https://huggingface.co/papers/2611.34575",
+    "arxiv": "https://arxiv.org/abs/2611.34575",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34575",
+    "date": "2026-11-26"
   },
   {
     "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
@@ -112,7 +142,7 @@
       "Yushi Lan",
       "Chengkai Jin"
     ],
-    "upvotes": 62,
+    "upvotes": 64,
     "url": "https://huggingface.co/papers/2611.31205",
     "arxiv": "https://arxiv.org/abs/2611.31205",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.31205",
@@ -127,7 +157,7 @@
       "Yifan Yang",
       "Dongge Yu"
     ],
-    "upvotes": 59,
+    "upvotes": 62,
     "url": "https://huggingface.co/papers/2611.30013",
     "arxiv": "https://arxiv.org/abs/2611.30013",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30013",
@@ -142,11 +172,26 @@
       "Zeina Aldallal",
       "Sara Chrouf"
     ],
-    "upvotes": 59,
+    "upvotes": 61,
     "url": "https://huggingface.co/papers/2611.12164",
     "arxiv": "https://arxiv.org/abs/2611.12164",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.12164",
     "date": "2026-11-24"
+  },
+  {
+    "title": "Mixture-of-Loops Transformer",
+    "summary": "A Mixture-of-Loops Transformer reuses key-value memory across loops and depths, and its U-shaped variant improves pretraining efficiency and inference latency.",
+    "authors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai"
+    ],
+    "upvotes": 57,
+    "url": "https://huggingface.co/papers/2611.34923",
+    "arxiv": "https://arxiv.org/abs/2611.34923",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34923",
+    "date": "2026-11-26"
   },
   {
     "title": "A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation",
@@ -179,6 +224,36 @@
     "date": "2026-11-24"
   },
   {
+    "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
+    "summary": "A dynamic looped mixture-of-experts diffusion transformer reuses shared parameters and varies compute across noise levels, improving image generation quality under matched budgets.",
+    "authors": [
+      "Lernie Li",
+      "Yuanliu Liu",
+      "Pengfei Xiong",
+      "Wei Zhang"
+    ],
+    "upvotes": 54,
+    "url": "https://huggingface.co/papers/2611.30844",
+    "arxiv": "https://arxiv.org/abs/2611.30844",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30844",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+    "summary": "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, a camera aimed away…",
+    "authors": [
+      "Xuanyu Zheng",
+      "Luoyuan Zhang",
+      "Yancheng Long",
+      "Haoyang Xu"
+    ],
+    "upvotes": 54,
+    "url": "https://huggingface.co/papers/2611.34237",
+    "arxiv": "https://arxiv.org/abs/2611.34237",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34237",
+    "date": "2026-11-26"
+  },
+  {
     "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
     "summary": "CUA-SEE is a closed-loop evaluation environment that co-evolves tasks and executable verifiers to adaptively measure computer-use agents’ capabilities, boundaries, and progress reliability.",
     "authors": [
@@ -187,7 +262,7 @@
       "Quyu Kong",
       "Pengxiang Li"
     ],
-    "upvotes": 47,
+    "upvotes": 51,
     "url": "https://huggingface.co/papers/2611.30962",
     "arxiv": "https://arxiv.org/abs/2611.30962",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30962",
@@ -202,10 +277,55 @@
       "Ziyi Bai",
       "Yuxuan Cai"
     ],
-    "upvotes": 42,
+    "upvotes": 44,
     "url": "https://huggingface.co/papers/2611.30254",
     "arxiv": "https://arxiv.org/abs/2611.30254",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30254",
+    "date": "2026-11-24"
+  },
+  {
+    "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+    "summary": "Image-to-Video Transfer improves pretrained video editors by training them as image editors on single images, enabling new video editing tasks and state-of-the-art results on OpenVE-Bench and OpenVE++.",
+    "authors": [
+      "Ji Xie",
+      "Yanhao Jia",
+      "Xiangpeng Yang",
+      "Martin Q. Ma"
+    ],
+    "upvotes": 43,
+    "url": "https://huggingface.co/papers/2611.34941",
+    "arxiv": "https://arxiv.org/abs/2611.34941",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34941",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+    "summary": "A framework enables coding agents to develop dexterous manipulation policies without demonstrations by exploring and distilling successful attempts into a program, then refining it for strong simulated and real-world results.",
+    "authors": [
+      "Feixiang Ruan",
+      "Guodong Lv",
+      "Kewei Zhang",
+      "Wenbo Huang"
+    ],
+    "upvotes": 43,
+    "url": "https://huggingface.co/papers/2611.33144",
+    "arxiv": "https://arxiv.org/abs/2611.33144",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33144",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "ViDecide: Teaching Video Diffusion Models to Reason and Plan Step by Step",
+    "summary": "ViDecide trains video diffusion models to make causal state-transition and stopping decisions, using Corrective Fine-tuning to improve multi-step planning success without policy gradients.",
+    "authors": [
+      "Kaiwen Zhang",
+      "Yiming Gao",
+      "Zeqi Xiao",
+      "Xintao Wang"
+    ],
+    "upvotes": 42,
+    "url": "https://huggingface.co/papers/2611.26389",
+    "arxiv": "https://arxiv.org/abs/2611.26389",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26389",
     "date": "2026-11-24"
   },
   {
@@ -224,19 +344,19 @@
     "date": "2026-11-25"
   },
   {
-    "title": "ViDecide: Teaching Video Diffusion Models to Reason and Plan Step by Step",
-    "summary": "ViDecide trains video diffusion models to make causal state-transition and stopping decisions, using Corrective Fine-tuning to improve multi-step planning success without policy gradients.",
+    "title": "PartAgent: Agentic 3D Part Segmentation via Expert Integration and Closed-Loop Refinement",
+    "summary": "A training-free agentic framework integrates pretrained 3D and 2D experts with closed-loop refinement to achieve state-of-the-art 3D part segmentation across multiple benchmarks.",
     "authors": [
-      "Kaiwen Zhang",
-      "Yiming Gao",
-      "Zeqi Xiao",
-      "Xintao Wang"
+      "Yang Cao",
+      "Zhe Zhu",
+      "Yiheng Zhang",
+      "Zhengqiang Zhang"
     ],
-    "upvotes": 41,
-    "url": "https://huggingface.co/papers/2611.26389",
-    "arxiv": "https://arxiv.org/abs/2611.26389",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26389",
-    "date": "2026-11-24"
+    "upvotes": 36,
+    "url": "https://huggingface.co/papers/2611.32554",
+    "arxiv": "https://arxiv.org/abs/2611.32554",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32554",
+    "date": "2026-11-25"
   },
   {
     "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
@@ -269,18 +389,18 @@
     "date": "2026-11-24"
   },
   {
-    "title": "PartAgent: Agentic 3D Part Segmentation via Expert Integration and Closed-Loop Refinement",
-    "summary": "A training-free agentic framework integrates pretrained 3D and 2D experts with closed-loop refinement to achieve state-of-the-art 3D part segmentation across multiple benchmarks.",
+    "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+    "summary": "A new benchmark shows that many robot manipulation policies perform worse when mirrors are present, often because they confuse reflections with real objects rather than simply colliding with the mirror.",
     "authors": [
-      "Yang Cao",
-      "Zhe Zhu",
-      "Yiheng Zhang",
-      "Zhengqiang Zhang"
+      "Xuanchen Liu",
+      "Hejun Zhang",
+      "Boxuan Dong",
+      "Ying Wu"
     ],
     "upvotes": 33,
-    "url": "https://huggingface.co/papers/2611.32554",
-    "arxiv": "https://arxiv.org/abs/2611.32554",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32554",
+    "url": "https://huggingface.co/papers/2611.33010",
+    "arxiv": "https://arxiv.org/abs/2611.33010",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33010",
     "date": "2026-11-25"
   },
   {
@@ -289,7 +409,7 @@
     "authors": [
       "LingSante MedGuard Team"
     ],
-    "upvotes": 30,
+    "upvotes": 33,
     "url": "https://huggingface.co/papers/2611.25509",
     "arxiv": "https://arxiv.org/abs/2611.25509",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.25509",
@@ -326,18 +446,73 @@
     "date": "2026-11-24"
   },
   {
-    "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
-    "summary": "A new benchmark shows that many robot manipulation policies perform worse when mirrors are present, often because they confuse reflections with real objects rather than simply colliding with the mirror.",
+    "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
+    "summary": "DocSEAM is a lightweight module between a pretrained vision encoder and language model that enriches page visual tokens with neighboring-page context via center-anchored masked self-attention, improving multi-page document VQA and reducing boundary sensitivity.",
     "authors": [
-      "Xuanchen Liu",
-      "Hejun Zhang",
-      "Boxuan Dong",
-      "Ying Wu"
+      "Hoang-Nhat Nguyen",
+      "Chen Change Loy"
     ],
-    "upvotes": 27,
-    "url": "https://huggingface.co/papers/2611.33010",
-    "arxiv": "https://arxiv.org/abs/2611.33010",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33010",
+    "upvotes": 26,
+    "url": "https://huggingface.co/papers/2611.34420",
+    "arxiv": "https://arxiv.org/abs/2611.34420",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34420",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals",
+    "summary": "LoopRes enables pretrained large language models to benefit from looped computation by letting layers attend to recent earlier loops with trainable loop-aware keys, yielding consistent gains and improved test-time scaling.",
+    "authors": [
+      "Xuanlei Zhao",
+      "Hailun Xu",
+      "Kai Wang",
+      "Yang Luo"
+    ],
+    "upvotes": 24,
+    "url": "https://huggingface.co/papers/2611.31094",
+    "arxiv": "https://arxiv.org/abs/2611.31094",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.31094",
+    "date": "2026-11-24"
+  },
+  {
+    "title": "KMed-31B Technical Report",
+    "summary": "We present KMed-31B, a medical large language model post-trained from an open-weight model for on-premises deployment with limited hardware. Post-training a model for diverse medical tasks remains difficult, because improving one kind of task can lower performance on another. We attribute this to differences between t…",
+    "authors": [
+      "KMed Team"
+    ],
+    "upvotes": 23,
+    "url": "https://huggingface.co/papers/2611.28719",
+    "arxiv": "https://arxiv.org/abs/2611.28719",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28719",
+    "date": "2026-11-25"
+  },
+  {
+    "title": "HOG-WAM: Improving Visual Robustness through Future Gradient Prediction",
+    "summary": "HOG-WAM improves visually robust control in world-action models by adding future Histograms of Oriented Gradients as auxiliary structural supervision through a training-only HOG diffusion transformer, yielding higher success under observation corruptions while preserving the original RGB-to-action inference architectu…",
+    "authors": [
+      "Boxuan Dong",
+      "Yupeng Qian",
+      "Ying Wu",
+      "Heshuai Li"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.34811",
+    "arxiv": "https://arxiv.org/abs/2611.34811",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34811",
+    "date": "2026-11-26"
+  },
+  {
+    "title": "Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation",
+    "summary": "Fine-tuning a generator on a complete high-resolution canvas requires long image sequences and substantial computation, yet local regions can still exhibit unnatural repetitive stripes when training resources are limited. We introduce Qwen-Image-HD, which adapts Qwen-Image 2.0 to high-resolution synthesis through loca…",
+    "authors": [
+      "Zihao Liu",
+      "Zekai Zhang",
+      "Shengming Yin",
+      "Zikai Zhou"
+    ],
+    "upvotes": 22,
+    "url": "https://huggingface.co/papers/2611.32736",
+    "arxiv": "https://arxiv.org/abs/2611.32736",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32736",
     "date": "2026-11-25"
   },
   {
@@ -356,6 +531,36 @@
     "date": "2026-11-24"
   },
   {
+    "title": "Beam Model Technical Report",
+    "summary": "Beam is a sparse Mixture-of-Experts language model optimized for coding, reasoning, and agentic workloads, using large-scale asynchronous reinforcement learning, long-context midtraining, quantization, and speculative decoding to deliver strong reasoning and safety with efficient inference.",
+    "authors": [
+      "Reflection Team",
+      "Adam Abdulhamid",
+      "Osama Abuelsorour",
+      "Yasmin Alameddine"
+    ],
+    "upvotes": 21,
+    "url": "https://huggingface.co/papers/2611.26358",
+    "arxiv": "https://arxiv.org/abs/2611.26358",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26358",
+    "date": "2026-11-24"
+  },
+  {
+    "title": "Distilling Visual Agents from Limited Interaction Experience",
+    "summary": "A few selected interaction trajectories combined with on-policy distillation allow a small visual agent to transfer broadly and recover most of a larger teacher's performance with minimal online experience.",
+    "authors": [
+      "Siyu Zhou",
+      "Jing Jiang",
+      "Chengqi Zhang",
+      "Guodong Long"
+    ],
+    "upvotes": 21,
+    "url": "https://huggingface.co/papers/2611.28618",
+    "arxiv": "https://arxiv.org/abs/2611.28618",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28618",
+    "date": "2026-11-24"
+  },
+  {
     "title": "ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks",
     "summary": "A two-stage training approach uses visual pretext tasks to generate interleaved image-text reasoning traces and automatically built demonstrations, improving multimodal reasoning over instruction tuning alone.",
     "authors": [
@@ -371,66 +576,6 @@
     "date": "2026-11-25"
   },
   {
-    "title": "Beam Model Technical Report",
-    "summary": "Beam is a sparse Mixture-of-Experts language model optimized for coding, reasoning, and agentic workloads, using large-scale asynchronous reinforcement learning, long-context midtraining, quantization, and speculative decoding to deliver strong reasoning and safety with efficient inference.",
-    "authors": [
-      "Reflection Team",
-      "Adam Abdulhamid",
-      "Osama Abuelsorour",
-      "Yasmin Alameddine"
-    ],
-    "upvotes": 20,
-    "url": "https://huggingface.co/papers/2611.26358",
-    "arxiv": "https://arxiv.org/abs/2611.26358",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26358",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "Distilling Visual Agents from Limited Interaction Experience",
-    "summary": "A few selected interaction trajectories combined with on-policy distillation allow a small visual agent to transfer broadly and recover most of a larger teacher's performance with minimal online experience.",
-    "authors": [
-      "Siyu Zhou",
-      "Jing Jiang",
-      "Chengqi Zhang",
-      "Guodong Long"
-    ],
-    "upvotes": 20,
-    "url": "https://huggingface.co/papers/2611.28618",
-    "arxiv": "https://arxiv.org/abs/2611.28618",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28618",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation",
-    "summary": "Fine-tuning a generator on a complete high-resolution canvas requires long image sequences and substantial computation, yet local regions can still exhibit unnatural repetitive stripes when training resources are limited. We introduce Qwen-Image-HD, which adapts Qwen-Image 2.0 to high-resolution synthesis through loca…",
-    "authors": [
-      "Zihao Liu",
-      "Zekai Zhang",
-      "Shengming Yin",
-      "Zikai Zhou"
-    ],
-    "upvotes": 20,
-    "url": "https://huggingface.co/papers/2611.32736",
-    "arxiv": "https://arxiv.org/abs/2611.32736",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32736",
-    "date": "2026-11-25"
-  },
-  {
-    "title": "Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals",
-    "summary": "LoopRes enables pretrained large language models to benefit from looped computation by letting layers attend to recent earlier loops with trainable loop-aware keys, yielding consistent gains and improved test-time scaling.",
-    "authors": [
-      "Xuanlei Zhao",
-      "Hailun Xu",
-      "Kai Wang",
-      "Yang Luo"
-    ],
-    "upvotes": 20,
-    "url": "https://huggingface.co/papers/2611.31094",
-    "arxiv": "https://arxiv.org/abs/2611.31094",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.31094",
-    "date": "2026-11-24"
-  },
-  {
     "title": "ViDiHand2: Unifying Video Diffusion Priors and Hand Geometry for 3D Hand Motion Reconstruction in the Wild",
     "summary": "Learning robot manipulation from egocentric human videos requires accurate metric 3D hand motion. Recent methods leverage pretrained video diffusion model (VDM) priors to recover occluded hands directly from full-frame videos, but their appearance-based depth regression generalizes poorly to unseen cameras. In this wo…",
     "authors": [
@@ -444,151 +589,5 @@
     "arxiv": "https://arxiv.org/abs/2611.30597",
     "alphaxiv": "https://www.alphaxiv.org/abs/2611.30597",
     "date": "2026-11-24"
-  },
-  {
-    "title": "DiLE: Discrimination-Aware Latent-Space Learning for Universal Multimodal Embeddings",
-    "summary": "A discrimination-aware latent-space learning framework combines task guidance with on-policy retrieval feedback to preserve discriminative evidence in multimodal embeddings and improve retrieval across modalities and tasks.",
-    "authors": [
-      "Ben Kang",
-      "Junda Wang",
-      "Yuxuan Yuan",
-      "Hang Li"
-    ],
-    "upvotes": 19,
-    "url": "https://huggingface.co/papers/2611.25419",
-    "arxiv": "https://arxiv.org/abs/2611.25419",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.25419",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "KMed-31B Technical Report",
-    "summary": "We present KMed-31B, a medical large language model post-trained from an open-weight model for on-premises deployment with limited hardware. Post-training a model for diverse medical tasks remains difficult, because improving one kind of task can lower performance on another. We attribute this to differences between t…",
-    "authors": [
-      "KMed Team"
-    ],
-    "upvotes": 19,
-    "url": "https://huggingface.co/papers/2611.28719",
-    "arxiv": "https://arxiv.org/abs/2611.28719",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28719",
-    "date": "2026-11-25"
-  },
-  {
-    "title": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
-    "summary": "Auditing reward labels in coding-agent reinforcement learning tasks shows many unsolved tasks are mislabeled, and training on corrected tasks improves policy performance on SWE-bench benchmarks.",
-    "authors": [
-      "Yikai Zhang",
-      "Mai Xu",
-      "Yunbei Zhang",
-      "Qirui Jin"
-    ],
-    "upvotes": 19,
-    "url": "https://huggingface.co/papers/2611.30207",
-    "arxiv": "https://arxiv.org/abs/2611.30207",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30207",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
-    "summary": "An online benchmark evaluates in-context learning across computer-use and robot-use agent tasks, revealing large gaps between digital and physical performance and between recognizing rules and acting on them.",
-    "authors": [
-      "Qingle Liu",
-      "Jieming Li",
-      "Pei-lin Li",
-      "Shenghan Zheng"
-    ],
-    "upvotes": 18,
-    "url": "https://huggingface.co/papers/2611.32649",
-    "arxiv": "https://arxiv.org/abs/2611.32649",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32649",
-    "date": "2026-11-25"
-  },
-  {
-    "title": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
-    "summary": "Vision Banana showed that a closed image generator, instruction-tuned to paint perception outputs as RGB images, becomes a generalist vision model. Does this carry over to open generators, and if not, what fails? We answer with Open Vision Banana (OVB), an open framework that adapts the 7B diffusion generator of Qwen-…",
-    "authors": [
-      "Xu Lin",
-      "Ruilin Yao",
-      "Haoran Xu",
-      "Zixiang Wang"
-    ],
-    "upvotes": 18,
-    "url": "https://huggingface.co/papers/2611.28489",
-    "arxiv": "https://arxiv.org/abs/2611.28489",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28489",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "Single-Transformer Latent Diffusion",
-    "summary": "A single diffusion transformer can unify encoding, generation, and decoding by treating them as position-aligned sequence maps distinguished by a mode token and timestep, improving image generation quality and efficiency.",
-    "authors": [
-      "Hao-Yu Hsu",
-      "Shenlong Wang",
-      "Alexander G. Schwing"
-    ],
-    "upvotes": 17,
-    "url": "https://huggingface.co/papers/2611.29064",
-    "arxiv": "https://arxiv.org/abs/2611.29064",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.29064",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "Polytropos: What Do Vision-Language Model Descriptions Make of a Cultural Object?",
-    "summary": "Vision-language models have become a new kind of describer, writing about almost anything people see, and their descriptions now shape how cultures are known by people and by other models. Descriptions of cultures tend to turn particular things into types, and what a description loses shows what its describer lacks. W…",
-    "authors": [
-      "Yuechen Jiang",
-      "Enze Zhang",
-      "Yuyan Wang",
-      "Mohsinul Kabir"
-    ],
-    "upvotes": 16,
-    "url": "https://huggingface.co/papers/2611.29355",
-    "arxiv": "https://arxiv.org/abs/2611.29355",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.29355",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "UUBench: Understanding the Unspoken toward Full-Duplex Multimodal Interaction",
-    "summary": "UUBench assesses how well multimodal interactive systems understand and respond to users' implicit communicative needs through process- and outcome-oriented scoring grounded in observable audiovisual evidence.",
-    "authors": [
-      "Ye Pan",
-      "Chenfei Liao",
-      "Bin Ren",
-      "Hanqian Li"
-    ],
-    "upvotes": 16,
-    "url": "https://huggingface.co/papers/2611.30157",
-    "arxiv": "https://arxiv.org/abs/2611.30157",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30157",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
-    "summary": "An open-source agentic platform and benchmark enable iterative transformation of multimodal inspirations into playable game extensions, revealing that coding agents can adapt reference content but still struggle with playable interactions and precise modifications.",
-    "authors": [
-      "Wenyi Wu",
-      "Siqi Liu",
-      "Yuru Feng",
-      "Zixuan Song"
-    ],
-    "upvotes": 15,
-    "url": "https://huggingface.co/papers/2611.29238",
-    "arxiv": "https://arxiv.org/abs/2611.29238",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.29238",
-    "date": "2026-11-24"
-  },
-  {
-    "title": "PhyCoVE: Benchmarking Physical Counterfactual Video Editing across Diverse Material Dynamics",
-    "summary": "PhyCoVE, a 533-case benchmark, and counterfactual fidelity evaluate video editing models on physical counterfactual edits involving rigid, elastic, and fluid dynamics, showing that even the best model reproduces only about one seventh of the physical change.",
-    "authors": [
-      "Conghan Yue",
-      "Yuanjie Chen",
-      "Yunyan Xiao",
-      "Zeyu Peng"
-    ],
-    "upvotes": 15,
-    "url": "https://huggingface.co/papers/2611.29184",
-    "arxiv": "https://arxiv.org/abs/2611.29184",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2611.29184",
-    "date": "2026-11-25"
   }
 ]
