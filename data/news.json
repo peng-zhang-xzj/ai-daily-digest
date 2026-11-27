@@ -1,5 +1,54 @@
 [
   {
+    "title": "OpenAI countersues Apple over trade secret theft and alleged coercion of shared suppliers",
+    "summary": "OpenAI is suing Apple in a California court, accusing it of trade secret theft and of coercing shared suppliers. The countersuit follows Apple's own lawsuit from the summer. Just two years ago, the two companies teamed up to bring ChatGPT to the iPhone. Now OpenAI is building its own devices to compete directly with A…",
+    "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+    "date": "Fri, 27 Nov 2026 19:38:37 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Banned Nvidia Blackwell chips turn up in a Shanghai data center linked to Alice Huang, Bloomberg reports",
+    "summary": "Two Chinese companies installed Nvidia's powerful Blackwell chips at a Shanghai data center linked to Alice Huang, according to a Bloomberg investigation. A serial number led Bloomberg to Taiwanese manufacturer Gigabyte. Exporting these chips to China without a US license is illegal. The article Banned Nvidia Blackwel…",
+    "url": "https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/",
+    "date": "Fri, 27 Nov 2026 18:27:02 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Three studies from Meta and AMI Labs back Yann LeCun's bet on JEPA world models over large language models",
+    "summary": "Yann LeCun is pushing forward with his alternative to language models through his startup AMI Labs. The JEPA architecture aims to give machines an internal world model that captures cause and effect. Three new studies show progress in robot planning, more efficient training, and error correction, though the pieces sti…",
+    "url": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/",
+    "date": "Fri, 27 Nov 2026 16:58:56 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Hackers breached the US Air Force's flagship Cloud One platform, report says",
+    "summary": "Hackers breached the US Air Force's flagship cloud platform. The article Hackers breached the US Air Force's flagship Cloud One platform, report says appeared first on The Decoder .",
+    "url": "https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/",
+    "date": "Fri, 27 Nov 2026 16:06:43 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "OpenAI is building \"Athena\" data platform to cut down on AI agent guesswork",
+    "summary": "OpenAI's data agent in ChatGPT Work still isn't accurate enough. Under the codename \"Athena,\" the company is building a semantic layer that gives agents standardized definitions for business metrics. The tool could also put OpenAI in direct competition with Snowflake and Databricks. The article OpenAI is building \"Ath…",
+    "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+    "date": "Fri, 27 Nov 2026 16:05:23 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "Rockstar's AI dilemma: Can GTA 6's staggered release model survive coding agents?",
+    "summary": "More than 40 projects are working to bring a leaked Xbox build of GTA 6 to PC through reverse engineering just days after its $3.79 billion record console launch. AI coding agents like Claude Code are speeding up the process so much that an early unofficial multiplayer mode is already running. Rockstar's delayed PC bu…",
+    "url": "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/",
+    "date": "Fri, 27 Nov 2026 15:37:47 +0000",
+    "source": "The Decoder"
+  },
+  {
+    "title": "SAP plans to cut at least 10,000 jobs as it pivots to AI",
+    "summary": "SAP is preparing to eliminate at least 10,000 positions as part of a sweeping AI restructuring, Bloomberg reports, citing people familiar with the matter. The article SAP plans to cut at least 10,000 jobs as it pivots to AI appeared first on The Decoder .",
+    "url": "https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/",
+    "date": "Fri, 27 Nov 2026 14:57:25 +0000",
+    "source": "The Decoder"
+  },
+  {
     "title": "Nvidia hits pause on chip shipments to Southeast Asia",
     "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
     "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
@@ -35,46 +84,11 @@
     "source": "The Decoder"
   },
   {
-    "title": "FCC clears SpaceX to deploy up to 1 million Starmind satellites for orbital AI data centers by 2040",
-    "summary": "The FCC has authorized SpaceX to deploy up to 1 million Starmind satellites to process AI data as orbital data centers. SpaceX is targeting its first launches in 2027, and the full constellation is set to be operating by 2040. Google and Blue Origin are also working on AI infrastructure in space, but Boston Consulting…",
-    "url": "https://the-decoder.com/fcc-clears-spacex-to-deploy-up-to-1-million-starmind-satellites-for-orbital-ai-data-centers-by-2040/",
-    "date": "Thu, 26 Nov 2026 13:41:07 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Microsoft details how state-backed hackers use the ARTEX AI framework to automate cyberattacks",
-    "summary": "Microsoft has published the technical architecture of ARTEX, an AI framework in wide use since July 2026 that runs cyberattacks with specialized agents and almost no human involvement. State-backed groups from China and North Korea, along with criminal organizations, are already using the system. Microsoft recommends…",
-    "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
-    "date": "Thu, 26 Nov 2026 11:30:06 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Nvidia halts server shipments to Malaysia, Singapore, Thailand, and Indonesia after tighter US export controls",
-    "summary": "Nvidia has told partners such as Dell and Supermicro to stop shipping servers to Malaysia, Singapore, Thailand, and Indonesia. Following new US export controls targeting Chinese cloud access, dealers are already seeking buyers for thousands of B300 chips, while one cloud executive describes \"chaos\", Loans and major de…",
-    "url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/",
-    "date": "Thu, 26 Nov 2026 11:21:16 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
     "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
     "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
     "date": "Wed, 25 Nov 2026 22:44:32 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "US chip-access curbs and anti-distillation measures are reportedly already slowing Chinese AI labs",
-    "summary": "Chip restrictions, anti-distillation measures, and shrinking access to Nvidia hardware abroad are putting growing pressure on Deepseek, Moonshot AI, and Alibaba, according to a report. Deepseek researchers internally estimate they're already up to nine months behind US models, and the gap is widening. The article US c…",
-    "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
-    "date": "Wed, 25 Nov 2026 20:51:02 +0000",
-    "source": "The Decoder"
-  },
-  {
-    "title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
-    "summary": "Anthropic CEO Dario Amodei is pushing back on an Axios report saying some employees believe humanity will hand power to superintelligent systems. Amodei says \"turning over governance to AI is a bad idea.\" The article Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\" appeared first on The…",
-    "url": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/",
-    "date": "Wed, 25 Nov 2026 20:15:50 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
@@ -98,13 +112,6 @@
     "source": "TechCrunch AI"
   },
   {
-    "title": "OpenAI wants companies to trust it with sensitive work by promising not to look at their data",
-    "summary": "OpenAI is testing a new feature called \"Private Inference\" that lets companies run queries on its most powerful models without OpenAI being able to access the data. The article OpenAI wants companies to trust it with sensitive work by promising not to look at their data appeared first on The Decoder .",
-    "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
-    "date": "Wed, 25 Nov 2026 18:22:02 +0000",
-    "source": "The Decoder"
-  },
-  {
     "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
     "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
     "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
@@ -117,13 +124,6 @@
     "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
     "date": "Wed, 25 Nov 2026 17:35:58 +0000",
     "source": "TechCrunch AI"
-  },
-  {
-    "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
-    "summary": "Amazon and Meta are in talks to bring back Muse, Meta's AI shopping agent that Amazon kicked off its platform in September. The two sides are stuck on ad revenue and who gets to control search results. That matters because Amazon's ad business generates $68.6 billion a year, and Muse already commands 51 percent of all…",
-    "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
-    "date": "Wed, 25 Nov 2026 16:44:37 +0000",
-    "source": "The Decoder"
   },
   {
     "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Google Orchestrator, llama.cpp 1.0, The \"Token Tax,\" and Agent Messaging",
+    "summary": "I look forward to seeing many of you at AI Dev in New York City on Monday Nov 30th!",
+    "image": "",
+    "url": "https://www.deeplearning.ai/the-batch/issue-381/",
+    "issue": 381,
+    "date": "2026-11-27T07:00:00.000-08:00"
+  },
+  {
     "title": "Jensen Huang’s Nvidia legacy, Claude Fable 5.2 and Anthropic’s IPO, World Labs Releases Atlas to Developers",
     "summary": "I was saddened to hear about Jensen Huang resigning from Nvidia last week. Yes, Jensen made serious mistakes. At the same time, he is a brilliant leader that has done tremendous work growing AI — providing compute to power training and inference, championing open source, and more — while turning Nvidia into one of the most valuable companies in the world.",
     "image": "",
@@ -38,13 +46,5 @@
     "url": "https://www.deeplearning.ai/the-batch/issue-376/",
     "issue": 376,
     "date": "2026-10-23T07:00:00.000-07:00"
-  },
-  {
-    "title": "Claude Haiku 5.5, Mistral Large 4, and Local Models for Mac and Windows",
-    "summary": "The gulf between LLM performance on verifiable tasks vs. unverifiable tasks that require judgement is larger than most people realize. Verifiable tasks, like coding or solving math problems, have a right answer that can be checked automatically. Judgement tasks — like how to respond to a customer complaint, how to organize data collection for your AI projec…",
-    "image": "",
-    "url": "https://www.deeplearning.ai/the-batch/issue-375/",
-    "issue": 375,
-    "date": "2026-10-16T07:00:12.000-07:00"
   }
 ]
